@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import { products as produ } from "../../assests/dataProducts";
 
@@ -20,8 +21,9 @@ const ProductDetailPage = () => {
       <p>
         {product.map((item) => (
           <>
-            <p key={1}>{item.name}</p>
-            <p>{item.img}</p>
+            <p key={item.id}>{item.name}</p>
+            <Image src={item.image} alt="img" width={200} height={200} />
+            <p>{item.description}</p>
           </>
         ))}
       </p>

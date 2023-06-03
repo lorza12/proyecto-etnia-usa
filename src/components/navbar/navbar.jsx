@@ -4,7 +4,7 @@ import { Prompt } from "next/font/google";
 import Link from "next/link";
 import styles from "@/styles/NavBar.module.css";
 import Image from "next/image";
-import Logo from "../../../public/assets/LOGOETNIAAVL.png";
+import Logo from "../../../public/assets/etnia-usa.jpeg";
 import { ImMenu } from "react-icons/im";
 import { AiFillHome } from "react-icons/ai";
 import { SiWebpack } from "react-icons/si";

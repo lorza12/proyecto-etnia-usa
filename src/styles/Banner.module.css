@@ -1,5 +1,5 @@
 .bannerContainer {
-  background-color: rgb(25, 24, 24);
+  background-color: rgb(255, 255, 255);
   text-align: center;
 
 }
@@ -61,7 +61,7 @@
 
 
 .bannerContainer__banner__SwiperSlide {
-  background: rgb(25, 24, 24);
+  background: rgb(255, 255, 255);
   background-position: center;
   background-size: cover;
   width: 100%;

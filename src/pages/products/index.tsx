@@ -19,29 +19,16 @@ const Products = () => {
           <>
             <div>
               <Link key={product.id} href={`/products/${product.id}`}>
-                {product.category === "torres" ? (
-                  <>
-                    <p>{product.id}</p>
-                    <h2>{product.name}</h2>
-                    <Image
-                      src={product.image}
-                      alt={""}
-                      width={200}
-                      height={250}
-                    ></Image>
-                  </>
-                ) : null}
-              </Link>
-            </div>
-            <div>
-              <Link key={product.id} href={`/products/${product.id}`}>
-                {product.category === "bafles" ? (
-                  <>
-                    <p>{product.id}</p>
-                    <h2>{product.name}</h2>
-                    <p>{product.img}</p>
-                  </>
-                ) : null}
+                <>
+                  <p>{product.id}</p>
+                  <h2>{product.name}</h2>
+                  <Image
+                    src={product.image}
+                    alt={""}
+                    width={200}
+                    height={250}
+                  ></Image>
+                </>
               </Link>
             </div>
           </>
