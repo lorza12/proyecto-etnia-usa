@@ -15,8 +15,8 @@ function Home() {
       </Head>
       <Banner />
       <Brands />
-      <KnowUs />
       <Products />
+      <KnowUs />
     </>
   );
 }

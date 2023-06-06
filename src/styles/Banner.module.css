@@ -1,4 +1,4 @@
-.bannerContainer {
+/* .bannerContainer {
   background-color: rgb(255, 255, 255);
   text-align: center;
 
@@ -54,8 +54,7 @@
 
 .bannerContainer__banner__mySwiper {
   width: 100%;
-  padding-top: 45px;
-  padding-bottom: 50px;
+  height: 100%;
 
 }
 
@@ -147,4 +146,4 @@
    }
 
 }
-
+ */
