@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import { products as prod } from "../../assests/dataProducts";
+import { products as prod } from "../../assets/dataProducts";
 // import styles from "@/styles/Produts.module.css";
 
 const Products = () => {

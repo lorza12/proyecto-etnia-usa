@@ -4,7 +4,7 @@ import styles from "@/styles/Products.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { GiCheckMark } from "react-icons/gi";
-import { mainProducts as prod } from "../../assests/dataMainProducts";
+import { mainProducts as prod } from "../../assets/dataMainProducts";
 
 const prompt = Prompt({
   subsets: ["latin"],
