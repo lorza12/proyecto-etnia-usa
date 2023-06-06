@@ -1,7 +1,5 @@
 .main2 {
   /* background-color: rgb(25, 24, 24); */
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("../../public/assets/img3.jpg");
-  box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
   background-size: 100%;
   padding-top:150px;
   position: relative;
