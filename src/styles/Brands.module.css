@@ -1,12 +1,14 @@
 .bransContainer {
   /* background-color: rgb(5, 5, 5); */
   /* background-image: url("../../public/assets/backgraund-img1.jpg") ; */
-  background: linear-gradient(0deg, rgba(26, 118, 209, 0.665), rgba(26, 118, 209, 0.654)), url("../../public/assets/backgraund-img1.jpg");
+  background: linear-gradient(0deg, rgba(26, 118, 209, 0.5), rgba(26, 118, 209, 0.5)), url("../../public/assets/backgraund-img1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-height: 300px;
-margin-top: 200px;
+  height: 100%;
+  margin-top: 5%;
+  /* height: 300px;
+  margin-top: 200px; */
 }
 
 .bransContainer__title {
@@ -22,7 +24,7 @@ margin-top: 200px;
   justify-content: center;
   align-items: center;
   gap: 200px;
-  padding-bottom: 200px;
+
 }
 
 .bransContainer__brand__circle {

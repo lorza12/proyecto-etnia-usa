@@ -18,16 +18,37 @@ import img8 from "../../../public/assets/banner-img/11.png";
 import img9 from "../../../public/assets/banner-img/5.png";
 import img10 from "../../../public/assets/banner-img/6.png";
 import img11 from "../../../public/assets/banner-img/1.png";
-import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import { useEffect, useState } from "react";
 
 SwiperCore.use([Navigation, Pagination, EffectCoverflow, Autoplay]);
 
 function Banner() {
+  const [imageWidth, setImageWidth] = useState(500);
+  const [imageHeight, setImageHeight] = useState(800);
+
+  const handleResize = () => {
+    if (window.innerWidth < 1500) {
+      setImageWidth(400);
+      setImageHeight(700);
+    } else {
+      setImageWidth(500);
+      setImageHeight(800);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => {
+      window.addEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
       <div className={styles.bannerContainer}>
@@ -54,8 +75,8 @@ function Banner() {
                   <Image
                     src={img1}
                     alt="img"
-                    width={500}
-                    height={800}
+                    width={imageWidth}
+                    height={imageHeight}
                     priority={true}
                   />
                 </div>
@@ -67,8 +88,8 @@ function Banner() {
                 <Image
                   src={img2}
                   alt="img"
-                  width={500}
-                  height={800}
+                  width={imageWidth}
+                  height={imageHeight}
                   priority={true}
                 />
               </SwiperSlide>
@@ -79,8 +100,8 @@ function Banner() {
                 <Image
                   src={img3}
                   alt="img"
-                  width={500}
-                  height={800}
+                  width={imageWidth}
+                  height={imageHeight}
                   priority={true}
                 />
               </SwiperSlide>
@@ -91,8 +112,8 @@ function Banner() {
                 <Image
                   src={img4}
                   alt="img"
-                  width={500}
-                  height={800}
+                  width={imageWidth}
+                  height={imageHeight}
                   priority={true}
                 />
               </SwiperSlide>
@@ -103,8 +124,8 @@ function Banner() {
                 <Image
                   src={img5}
                   alt="img"
-                  width={500}
-                  height={800}
+                  width={imageWidth}
+                  height={imageHeight}
                   priority={true}
                 />
               </SwiperSlide>
@@ -115,8 +136,8 @@ function Banner() {
                 <Image
                   src={img6}
                   alt="img"
-                  width={500}
-                  height={800}
+                  width={imageWidth}
+                  height={imageHeight}
                   priority={true}
                 />
               </SwiperSlide>
@@ -127,8 +148,8 @@ function Banner() {
                 <Image
                   src={img7}
                   alt="img"
-                  width={500}
-                  height={800}
+                  width={imageWidth}
+                  height={imageHeight}
                   priority={true}
                 />
               </SwiperSlide>
@@ -139,8 +160,8 @@ function Banner() {
                 <Image
                   src={img8}
                   alt="img"
-                  width={500}
-                  height={800}
+                  width={imageWidth}
+                  height={imageHeight}
                   priority={true}
                 />
               </SwiperSlide>
@@ -151,8 +172,8 @@ function Banner() {
                 <Image
                   src={img9}
                   alt="img"
-                  width={500}
-                  height={800}
+                  width={imageWidth}
+                  height={imageHeight}
                   priority={true}
                 />
               </SwiperSlide>
@@ -163,8 +184,8 @@ function Banner() {
                 <Image
                   src={img10}
                   alt="img"
-                  width={500}
-                  height={800}
+                  width={imageWidth}
+                  height={imageHeight}
                   priority={true}
                 />
               </SwiperSlide>
@@ -175,8 +196,8 @@ function Banner() {
                 <Image
                   src={img11}
                   alt="img"
-                  width={500}
-                  height={800}
+                  width={imageWidth}
+                  height={imageHeight}
                   priority={true}
                 />
               </SwiperSlide>
@@ -198,7 +219,7 @@ function Banner() {
               <Image
                 src={img1}
                 alt="img logo"
-                width={500}
+                width={imageWidth}
                 height={800}
                 priority={true}
               />
