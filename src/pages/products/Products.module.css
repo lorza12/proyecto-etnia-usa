@@ -1,7 +1,13 @@
+.productsContainer {
+  margin-left: 5em;
+}
+
 .products__div {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
-  gap: 3em;
   place-content: center;
+
   width: 100%;
+  gap: 3em;
+  margin: 0 0 0 3em;
 }
