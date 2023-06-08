@@ -6,6 +6,7 @@ import brand1 from "../../../public/assets/descargammmmm-removebg-preview.png";
 import brand2 from "../../../public/assets/descarga-removebg-preview.png";
 import brand3 from "../../../public/assets/descarga__1_-removebg-preview.png";
 import Link from "next/link";
+import { products as prod } from "../../assets/dataProducts";
 
 const prompt = Prompt({
   subsets: ["latin"],

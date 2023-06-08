@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { products as produ } from "../../assests/dataProducts";
+import { products as produ } from "../../assets/dataProducts";
 
 const ProductDetailPage = () => {
   const router = useRouter();
