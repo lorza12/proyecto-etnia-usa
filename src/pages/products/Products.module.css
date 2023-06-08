@@ -1,5 +1,6 @@
-.productsContainer {
-  margin-left: 5em;
+.productsGlobalContainer {
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .products__div {
