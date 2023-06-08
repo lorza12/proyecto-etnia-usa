@@ -24,13 +24,14 @@ function Products() {
         <div className={styles.productsContainer}>
           <div className={styles.productsContainer__title}>
             <div className={prompt.className}>
-              <h1>Nuestros productos</h1>
+              <h1>/NUESTROS PRODUCTOS/</h1>
             </div>
           </div>
 
           <div className={styles.productsContainer__products}>
             {prod.map((product) => (
               <>
+<<<<<<< HEAD
                 <div
                   key={product.id}
                   className={styles.productsContainer__product__section1}
@@ -38,32 +39,26 @@ function Products() {
                   <div
                     className={styles.productsContainer__product__section1_1}
                   >
+=======
+                <Link href={`/mainProducts/${product.id}`}>
+                  <div className={styles.productsContainer__product__cart}>
+                    {" "}
+>>>>>>> develop
                     <Image
                       src={product.image}
                       alt={product.name}
-                      width={300}
-                      height={250}
+                      width={200}
+                      height={150}
                     />
-                    <div className={styles.pading__heareIcon}>
-                      <div className={styles.heartIcon}>
-                        <GiCheckMark fontSize={22} color="#ffffff" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    className={styles.productsContainer__product__section1_2}
-                  >
                     <h1 className={prompt.className}>{product.name}</h1>
                     <p className={prompt.className}>{product.tags}</p>
-                    <br />
-                    <Link href={`/products/${product.id}`}>
+                    {/* <Link href={`/products/${product.id}`}>
                       <button type="button" className={styles.product__button}>
                         Ver Producto
                       </button>
-                    </Link>
+                    </Link> */}
                   </div>
-                </div>
+                </Link>
               </>
             ))}
           </div>

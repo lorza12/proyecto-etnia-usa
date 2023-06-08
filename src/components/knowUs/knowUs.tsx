@@ -23,11 +23,7 @@ function KnowUs() {
         <div className={styles.knowUSContainer}>
           <div className={styles.knowUSContainer__logo}>
             <br />
-            <Image src={Logo} alt="img logo" width={500} height={300} />
-          </div>
-          <div className={styles.knowUSContainer__logo2}>
-            <br />
-            <Image src={Logo2} alt="img logo" width={400} height={200} />
+            <Image src={Logo} alt="img logo" width={300} height={150} />
           </div>
           <div className={styles.knowUSContainer__text}>
             <div className={prompt.className}>

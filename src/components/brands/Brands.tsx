@@ -18,7 +18,6 @@ const lato = Lato({
 });
 
 function Brands() {
-  const brands = prod.map((element) => element.brand);
   return (
     <>
       <Head>
