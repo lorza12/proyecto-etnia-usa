@@ -1,7 +1,7 @@
 .main2 {
   /* background-color: rgb(25, 24, 24); */
   background-size: 100%;
-  padding-top:150px;
+  padding-top: 150px;
   position: relative;
   padding-bottom: 200px;
 }
@@ -44,125 +44,118 @@
 .productsContainer__product__section1 {
   width: 400px;
   height: 500px;
-  background: linear-gradient(250deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.9));
+  background: linear-gradient(
+    250deg,
+    rgba(255, 255, 255, 0.18),
+    rgba(255, 255, 255, 0.9)
+  );
   /* border-radius: 5%; */
   border-radius: 3em/13em;
+}
+
+.productsContainer__product__section1_1 {
+  display: flex;
+  text-align: left;
+  padding-top: 15px;
+}
+
+.pading__heareIcon {
+  padding-top: 50px;
+}
+
+.heartIcon {
+  display: flex;
+  background-color: #e11b1b;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.productsContainer__product__section1_2 {
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 100px;
+}
+
+.productsContainer__product__section1_2 p {
+  font-size: 13px;
+}
+
+.product__button {
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: 800;
+  border: none;
+  border-radius: 10px;
+  width: 150px;
+  height: 30px;
+  transition: all 200ms;
+}
+
+.product__button:hover {
+  transform: scale(1.1);
+  color: #ffffff;
+  background-color: #eb1010;
+}
+
+.productsContainer__title2 {
+  font-size: 22px;
+}
+
+.productsContainer__title2 {
+  padding-top: 60px;
+}
+
+.product__button2 {
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: 800;
+  border: none;
+  border-radius: 10px;
+  width: 300px;
+  height: 30px;
+  transition: all 200ms;
+}
+
+.product__button2:hover {
+  transform: scale(1.1);
+  color: #ffffff;
+  background-color: #eb1010;
+}
+
+@media (max-width: 1507px) {
+  .main2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(360deg, rgba(24, 23, 26, 0) 90%, rgb(25, 24, 24) 100%); */
+    z-index: 1;
+    pointer-events: none;
   }
+}
 
-  .productsContainer__product__section1_1 {
-    display: flex;
-    text-align: left;
-    padding-top: 15px;
+@media (max-width: 1005px) {
+  .main2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      360deg,
+      rgba(24, 23, 26, 0) 95%,
+      rgb(25, 24, 24) 100%
+    );
+    z-index: 1;
+    pointer-events: none;
   }
-
-  .pading__heareIcon {
-    padding-top: 50px;
-  }
-
-  .heartIcon {
-    display: flex;
-    background-color: #e11b1b;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    justify-content: center;
-    align-items: center;
-
-  }
-
-  .productsContainer__product__section1_2 {
-    text-align: left;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 100px;
-  }
-
-  .productsContainer__product__section1_2 p {
-    font-size: 13px;
-  }
-
-  .product__button{
-    color: #000000;
-    background-color: #ffffff;
-    font-size: 16px;
-    font-weight: 800;
-    border: none;
-    border-radius: 10px;
-    width: 150px;
-    height: 30px;
-    transition: all 200ms;
-
-  }
-
-  .product__button:hover{
-    transform: scale(1.1);
-    color: #ffffff;
-    background-color: #eb1010;
-  }
-
-  .productsContainer__title2  {
-    font-size: 22px;
-  }
-
-  .productsContainer__title2 {
-    padding-top: 60px;
-  }
-
-  .product__button2 {
-    color: #000000;
-    background-color: #ffffff;
-    font-size: 16px;
-    font-weight: 800;
-    border: none;
-    border-radius: 10px;
-    width: 300px;
-    height: 30px;
-    transition: all 200ms;
-
-  }
-
-  .product__button2:hover{
-    transform: scale(1.1);
-    color: #ffffff;
-    background-color: #eb1010;
-  }
-
-  @media (max-width: 1507px) {
-
-    .main2::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      /* background: linear-gradient(360deg, rgba(24, 23, 26, 0) 90%, rgb(25, 24, 24) 100%); */
-      z-index: 1;
-      pointer-events: none;
-    }
-
-  }
-
-
-  @media (max-width: 1005px) {
-
-    .main2::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(360deg, rgba(24, 23, 26, 0) 95%, rgb(25, 24, 24) 100%);
-      z-index: 1;
-      pointer-events: none;
-    }
-
-  }
-
-
-
-
-
-
-
+}

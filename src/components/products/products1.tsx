@@ -38,7 +38,6 @@ function Products() {
                   <div
                     className={styles.productsContainer__product__section1_1}
                   >
-                    {" "}
                     <Image
                       src={product.image}
                       alt={product.name}
@@ -60,7 +59,7 @@ function Products() {
                     <br />
                     <Link href={`/products/${product.id}`}>
                       <button type="button" className={styles.product__button}>
-                        Ver Producto{" "}
+                        Ver Producto
                       </button>
                     </Link>
                   </div>
