@@ -105,13 +105,23 @@ const Products = () => {
 
           <div className={styles.productsContainer}>
             {filteredProducts.map((product) => (
-              <Link key={product.id} href={`/products/${product.id}`}>
-                <h2>{product.name}</h2>
+              <Link
+                key={product.id}
+                href={`/products/${product.id}`}
+                className={styles.productsItem}
+              >
+                <h2 className={montserrat.className}>{product.name}</h2>
                 <Image
                   src={product.image}
-                  alt={""}
-                  width={200}
-                  height={250}
+                  alt={product.name}
+                  width={300}
+                  height={300}
+                  className={styles.productImage}
+                  style={{
+                    objectFit: "contain",
+                    width: "100%",
+                    height: "80%",
+                  }}
                 ></Image>
               </Link>
             ))}

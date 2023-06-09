@@ -1,26 +1,15 @@
-.productsGlobalContainer {
-  width: 85%;
-  margin: 0 auto;
-}
-
 .productsGlobalContainer > h1 {
-  font-size: 1.5em;
-}
-
-.productsContainer {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 25%;
+  font-size: 1.3em;
+  margin: 0 0.6em;
 }
 
 .brandTitle > h3 {
   color: #3595f5;
-  border: 1px solid #bcbcbc;
+  border-top: 1px solid #bcbcbc;
+  border-bottom: 1px solid #bcbcbc;
 
-  text-align: center;
-
-  margin: 0.5em -1em;
-  padding: 0.5em;
+  width: 100%;
+  padding: 0.5em 0.7em;
 }
 
 .brandList {
@@ -58,4 +47,16 @@
 .brandTitle ~ input:checked ~ .brandList {
   display: block;
   height: 100%;
+}
+
+.productsContainer {
+  display: grid;
+  grid-auto-flow: row;
+
+}
+
+.productsItem {
+  width: 100%;
+
+  text-align: center;
 }
