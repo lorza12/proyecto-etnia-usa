@@ -4,7 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { products as prod } from "../../assets/dataProducts";
 import styles from "./Products.module.css";
-import { useState } from "react";
+import { useId, useState } from "react";
+import { montserrat } from "@/styles/fonts";
 
 export interface ProductModel {
   id: number;
@@ -19,6 +20,8 @@ export interface ProductModel {
 
 const Products = () => {
   const [brand, setBrand] = useState<string>("all");
+  const [checked, setChecked] = useState(false);
+  const brandCheckboxId = useId();
 
   const getUniqueCategory = (data: ProductModel[], field: string) => {
     let newElement = data.map((currentElement) => {
@@ -33,13 +36,18 @@ const Products = () => {
     });
   };
 
-  const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleRadioChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const newBrand = event.target.value;
     setBrand(newBrand);
+    setChecked(!checked);
   };
 
   const brandType = getUniqueCategory(prod, "brand");
   const filteredProducts = filterProducts(prod);
+
+  const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    event.target.checked ? setChecked(!checked) : null;
+  };
 
   return (
     <>
@@ -50,32 +58,45 @@ const Products = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.productsGlobalContainer}>
-        <h1>PRODUCTOS</h1>
+        <h1 className={montserrat.className}>PRODUCTOS</h1>
         <div className={styles.productsWrapper}>
           <div className={styles.brandContainer}>
-            <h3>Marcas</h3>
-            <ul>
-              <li>
-                <div>
+            <label htmlFor={brandCheckboxId} className={styles.brandTitle}>
+              <h3 className={montserrat.className}>Marcas</h3>
+            </label>
+            <input
+              type="checkbox"
+              id={brandCheckboxId}
+              checked={checked}
+              onChange={handleCheckboxChange}
+              hidden
+            />
+            <ul className={styles.brandList}>
+              <li className={styles.brandListItem}>
+                <div className={montserrat.className}>
                   <input
                     type="radio"
                     name="brand"
                     value="all"
-                    onChange={handleCheckboxChange}
+                    id="all"
+                    className={styles.inputBrand}
+                    onChange={handleRadioChange}
                   />
-                  <span>Todas</span>
+                  <label htmlFor="all">Todas</label>
                 </div>
               </li>
               {brandType.map((brand, idx) => (
-                <li key={idx}>
-                  <div>
+                <li key={idx} className={styles.brandListItem}>
+                  <div className={montserrat.className}>
                     <input
                       type="radio"
                       name="brand"
                       value={brand}
-                      onChange={handleCheckboxChange}
+                      id={brand}
+                      className={styles.inputBrand}
+                      onChange={handleRadioChange}
                     />
-                    <span>{brand}</span>
+                    <label htmlFor={brand}>{brand}</label>
                   </div>
                 </li>
               ))}
