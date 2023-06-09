@@ -1,6 +1,12 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
-import { Prompt } from "next/font/google";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import SwiperCore, {
+  Pagination,
+  Autoplay,
+} from "swiper";
 import Link from "next/link";
 import styles from "@/styles/NavBar.module.css";
 import Image from "next/image";
@@ -13,13 +19,7 @@ import { AiFillHome } from "react-icons/ai";
 import { SiWebpack } from "react-icons/si";
 import { RiRegisteredFill } from "react-icons/ri";
 import { HiOfficeBuilding } from "react-icons/hi";
-
-
-const prompt = Prompt({
-  subsets: ["latin"],
-  weight: "400",
-});
-
+import { montserrat } from "@/styles/fonts";
 
 
 function NavBar() {
@@ -37,7 +37,7 @@ function NavBar() {
 
   return (
     <>
-    <main className={prompt.className}>
+    <main className={montserrat.className}>
     <div className={styles.navBarContainer}>
         <div className={styles.navBarContainer__logoInfo}>
           <div className={styles.navbarContainer__LogoInfo__logo}>
@@ -88,7 +88,6 @@ function NavBar() {
               <div className={styles.span}>
                 <Link href={"/"}>
                   <li
-                    className={prompt.className}
                     onClick={() => handleItemClick("/")}
                   >
                     {" "}
@@ -141,7 +140,6 @@ function NavBar() {
               <div className={styles.span}>
                 <Link href={"/brands"}>
                   <li
-                    className={prompt.className}
                     onClick={() => handleItemClick("brands")}
                   >
                     <HiOfficeBuilding size={20} /> ABOUT US
