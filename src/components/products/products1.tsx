@@ -31,19 +31,9 @@ function Products() {
           <div className={styles.productsContainer__products}>
             {prod.map((product) => (
               <>
-<<<<<<< HEAD
-                <div
-                  key={product.id}
-                  className={styles.productsContainer__product__section1}
-                >
-                  <div
-                    className={styles.productsContainer__product__section1_1}
-                  >
-=======
                 <Link href={`/mainProducts/${product.id}`}>
                   <div className={styles.productsContainer__product__cart}>
                     {" "}
->>>>>>> develop
                     <Image
                       src={product.image}
                       alt={product.name}
