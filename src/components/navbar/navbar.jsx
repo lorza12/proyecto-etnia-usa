@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
-import { Prompt } from "next/font/google";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -22,15 +21,9 @@ import { AiFillHome } from "react-icons/ai";
 import { SiWebpack } from "react-icons/si";
 import { RiRegisteredFill } from "react-icons/ri";
 import { HiOfficeBuilding } from "react-icons/hi";
+import { montserrat } from "@/styles/fonts";
 
 SwiperCore.use([Pagination, Autoplay]);
-
-const prompt = Prompt({
-  subsets: ["latin"],
-  weight: "400",
-});
-
-
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,7 +40,7 @@ function NavBar() {
 
   return (
     <>
-    <main className={prompt.className}>
+    <main className={montserrat.className}>
     <div className={styles.navBarContainer}>
         <div className={styles.navBarContainer__logoInfo}>
           <div className={styles.navbarContainer__LogoInfo__logo}>
@@ -99,7 +92,6 @@ function NavBar() {
               <div className={styles.span}>
                 <Link href={"/"}>
                   <li
-                    className={prompt.className}
                     onClick={() => handleItemClick("/")}
                   >
                     {" "}
@@ -113,7 +105,6 @@ function NavBar() {
               <div className={styles.span}>
                 <Link href={"products"}>
                   <li
-                    className={prompt.className}
                     onClick={() => handleItemClick("products")}
                   >
                     {" "}
@@ -127,7 +118,6 @@ function NavBar() {
               <div className={styles.span}>
                 <Link href={"/about"}>
                   <li
-                    className={prompt.className}
                     onClick={() => handleItemClick("about")}
                   >
                     <HiOfficeBuilding size={20} /> Compañia
@@ -140,7 +130,6 @@ function NavBar() {
               <div className={styles.span}>
                 <Link href={"/brands"}>
                   <li
-                    className={prompt.className}
                     onClick={() => handleItemClick("brands")}
                   >
                     <RiRegisteredFill size={20} /> Marcas

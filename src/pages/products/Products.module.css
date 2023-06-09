@@ -1,14 +1,13 @@
 .productsGlobalContainer {
-  display: flex;
-  flex-flow: row nowrap;
+  width: 85%;
+  margin: 0 auto;
 }
 
-.products__div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
-  place-content: center;
+.productsTitle {
+}
 
-  width: 100%;
-  gap: 3em;
-  margin: 0 0 0 3em;
+.productsContainer {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 25%;
 }
