@@ -1,5 +1,6 @@
 .navBarContainer {
   padding-top: 30px;
+
 }
 
 .navBarContainer__logoInfo {
@@ -18,16 +19,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 24px;
+  font-size: 18px;
   width: 70%;
   height: 50px;
-  margin-bottom: 10px;
+
 }
 
 .navBarContainer__options1 {
   display: flex;
   justify-content: space-evenly;
-  width: 50%;
+  width: 80%;
 }
 
 .navBarContainer__optionsRedes {
@@ -80,5 +81,122 @@
   display: none;
 }
 
+@media (max-width: 1070px) {
+
+  .navBarContainer__options {
+    font-size: 16px;
+
+  }
+
+  .navBarContainer__optionsRedes {
+    gap: 10px;
+
+  }
+
+  .navBarContainer__logoInfo {
+    padding-left: 0rem;
+  }
+
+  .navbarContainer__LogoInfo__logo img{
+    width: 220px;
+    height: 80px;
+  }
+}
+
+
+
+@media (max-width: 800px) {
+
+  .navBarContainer {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+
+  }
+
+  .navBarContainer__logoInfo {
+    padding: 0px;
+  }
+
+  .navBarContainer__options {
+    display: none;
+
+
+  }
+
+  .menuButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+   .menuContainer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 40%;
+    background-color: rgb(53, 149, 245, 0.9);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+    z-index: 999;
+    padding: 10px;
+
+ }
+
+ .menuOpen {
+  transform: translateX(0);
+}
+
+.menuItems {
+  padding: 20px;
+  list-style: none;
+  margin: 0;
+  color: rgb(255, 255, 255);
+}
+
+.span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+}
+
+.span2 {
+  font-size: 24px;
+
+}
+
+.butto_cart {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.butto_cart2 {
+  color: rgb(255, 255, 255);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: start;
+  font-size: 20px;
+}
+
+.navBarContainer__option2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+}
+
+@media (max-width: 490px) {
+
+  .navBarContainer {
+    padding: 2rem 0.5rem;
+
+  }
+}
 
 

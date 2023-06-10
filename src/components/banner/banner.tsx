@@ -30,14 +30,32 @@ SwiperCore.use([Navigation, Pagination, EffectCoverflow, Autoplay]);
 function Banner() {
   const [imageWidth, setImageWidth] = useState(500);
   const [imageHeight, setImageHeight] = useState(800);
+  const [slidesPerView, setSlidesPerView] = useState(3);
 
   const handleResize = () => {
     if (window.innerWidth < 1500) {
       setImageWidth(400);
       setImageHeight(700);
+      console.log("1");
     } else {
       setImageWidth(500);
       setImageHeight(800);
+      console.log("2");
+    }
+
+    if (window.innerWidth < 1210) {
+      setImageWidth(300);
+      setImageHeight(600);
+      console.log("3");
+    } else {
+      setImageWidth(400);
+      setImageHeight(700);
+      console.log("4");
+    }
+    if (window.innerWidth < 910) {
+      setSlidesPerView(2);
+    } else {
+      setSlidesPerView(3);
     }
   };
 
@@ -59,8 +77,9 @@ function Banner() {
                 delay: 4000,
                 disableOnInteraction: false,
               }}
-              slidesPerView={3}
-              spaceBetween={30}
+              slidesPerView={slidesPerView}
+              spaceBetween={0}
+              freeMode={true}
               pagination={{
                 clickable: true,
               }}

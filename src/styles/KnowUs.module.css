@@ -19,6 +19,10 @@
     width: 30%;
   }
 
+  .knowUSContainer__text__h1 {
+    font-size: 32px;
+  }
+
 
   .knowUSContainer__text__p1 {
     color: rgb(0, 0, 0);
@@ -60,15 +64,20 @@
 
   @media (max-width: 1024px) {
 
+    .knowUSContainer__logo img{
+      width: 200px;
+      height: 80px;
+    }
+
     .main1 {
-      padding-top: 40px;
-      padding-bottom: 150px;
+      padding: 7rem 0rem;
+
     }
 
     .knowUSContainer {
       display: flex;
       flex-direction: column;
-      gap: 0;
+      gap: 3rem;
 
     }
 
@@ -83,8 +92,9 @@
 
   @media (max-width: 490px) {
 
-    .knowUSContainer__logo {
-      display: none;
+    .knowUSContainer__logo img{
+      width: 200;
+      height: 80;
     }
 
     .knowUSContainer__logo2 {
