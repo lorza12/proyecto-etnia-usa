@@ -103,7 +103,7 @@ function NavBar() {
                 <Link href={"/about"}>
                   <li
                     className={prompt.className}
-                    onClick={() => handleItemClick("about")}
+                    onClick={() => handleItemClick("/brands")}
                   >
                     <RiRegisteredFill size={20} /> BRANDS
                   </li>
