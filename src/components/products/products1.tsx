@@ -11,7 +11,7 @@ function Products() {
       <main className={styles.main2}>
         <div className={styles.productsContainer}>
           <div className={styles.productsContainer__title}>
-            <div className={prompt.className}>
+            <div className={montserrat.className}>
               <h1>/OUR PRODUCTS/</h1>
             </div>
           </div>
