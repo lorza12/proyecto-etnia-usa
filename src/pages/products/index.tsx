@@ -117,11 +117,6 @@ const Products = () => {
                   width={300}
                   height={300}
                   className={styles.productImage}
-                  style={{
-                    objectFit: "contain",
-                    width: "100%",
-                    height: "80%",
-                  }}
                 ></Image>
               </Link>
             ))}
