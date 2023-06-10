@@ -1,7 +1,14 @@
 import Head from "next/head";
 import Image from "next/image";
+import { Prompt } from "next/font/google";
+import styles from "@/styles/ProductDetailPage.module.css";
 import { useRouter } from "next/router";
 import { products as produ } from "../../assets/dataProducts";
+
+const prompt = Prompt({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const ProductDetailPage = () => {
   const router = useRouter();
@@ -17,16 +24,44 @@ const ProductDetailPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>Produ details {id}</h1>
-      <p>
+
+      <main className={prompt.className}>
         {product.map((item) => (
           <>
-            <p key={item.id}>{item.name}</p>
-            <Image src={item.image} alt="img" width={200} height={200} />
-            <p>{item.description}</p>
+            <section className={styles.ProductDetailContainer__mainConteiner}>
+              <section className={styles.ProductDetailContainer__info}>
+                <article>
+                  <Image
+                    src={item.image}
+                    alt="productDetail"
+                    width={500}
+                    height={450}
+                  />
+                </article>
+                <article className={styles.ProductDetailContainer__description}>
+                  <div>
+                    <h2>{item.name}</h2>
+                    <p>{item.brand}</p>
+                    <br />
+                    <span
+                      className={
+                        styles.ProductDetailContainer__description__tag
+                      }
+                    >
+                      {item.tags}
+                    </span>
+                    <br />
+                    <br />
+                    <p>{item.description}</p>
+                    <br />
+                    <p>{item.description2}</p>
+                  </div>
+                </article>
+              </section>
+            </section>
           </>
         ))}
-      </p>
+      </main>
     </>
   );
 };
