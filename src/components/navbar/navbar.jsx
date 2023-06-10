@@ -113,7 +113,7 @@ function NavBar() {
               <br />
               <br />
               <div className={styles.span}>
-                <Link href={"products"}>
+                <Link href={"/products"}>
                   <li
                     className={prompt.className}
                     onClick={() => handleItemClick("products")}
