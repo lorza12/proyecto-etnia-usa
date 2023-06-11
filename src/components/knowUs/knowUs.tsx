@@ -20,12 +20,12 @@ function KnowUs() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main1}>
-        <div className={styles.knowUSContainer}>
-          <div className={styles.knowUSContainer__logo}>
+        <section className={styles.knowUSContainer}>
+          <article className={styles.knowUSContainer__logo}>
             <br />
             <Image src={Logo} alt="img logo" width={300} height={150} />
-          </div>
-          <div className={styles.knowUSContainer__text}>
+          </article>
+          <article className={styles.knowUSContainer__text}>
             <div className={prompt.className}>
               <h1 className={styles.knowUSContainer__text__h1}>ABOUT US</h1>
               <p className={styles.knowUSContainer__text__p1}>
@@ -49,8 +49,8 @@ function KnowUs() {
                 </button>
               </Link>
             </div>
-          </div>
-        </div>
+          </article>
+        </section>
       </main>
     </>
   );

@@ -1,11 +1,20 @@
 import Head from "next/head";
 import Image from "next/image";
+import styles from "@/styles/ProductDetailPage.module.css";
+import { Prompt } from "next/font/google";
 import { useRouter } from "next/router";
 import { mainProducts as produ } from "../../assets/dataMainProducts";
+
+const prompt = Prompt({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const ProductMainDetail = () => {
   const router = useRouter();
   const { mainId } = router.query;
+
+  //change clasName to original of component
 
   const product = produ.filter((element) => element.id.toString() === mainId);
 
@@ -17,16 +26,44 @@ const ProductMainDetail = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>Produ details {mainId}</h1>
-      <p>
+
+      <main className={prompt.className}>
         {product.map((item) => (
           <>
-            <p key={item.id}>{item.name}</p>
-            <Image src={item.image} alt="img" width={200} height={200} />
-            <p>{item.description}</p>
+            <section className={styles.ProductDetailContainer__mainConteiner}>
+              <section className={styles.ProductDetailContainer__info}>
+                <article>
+                  <Image
+                    src={item.image}
+                    alt="productDetail"
+                    width={500}
+                    height={450}
+                  />
+                </article>
+                <article className={styles.ProductDetailContainer__description}>
+                  <div>
+                    <h2>{item.name}</h2>
+                    <p>{item.brand}</p>
+                    <br />
+                    <span
+                      className={
+                        styles.ProductDetailContainer__description__tag
+                      }
+                    >
+                      {item.tags}
+                    </span>
+                    <br />
+                    <br />
+                    <p>{item.description}</p>
+                    <br />
+                    <p>{item.description2}</p>
+                  </div>
+                </article>
+              </section>
+            </section>
           </>
         ))}
-      </p>
+      </main>
     </>
   );
 };

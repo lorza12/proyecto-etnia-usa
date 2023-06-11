@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "@/styles/Brands.module.css";
+import styles from "@/styles/BrandsAll.module.css";
 import Image from "next/image";
 import { Prompt, Lato } from "next/font/google";
 import brand1 from "../../../public/assets/descargammmmm-removebg-preview.png";
@@ -37,33 +37,33 @@ function BrandsAll() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.bransAllContainer}>
+      <main className={styles.bransALlContainer}>
         <section className={styles.bransALlContainer__title}>
           <h1 className={lato.className}>ASSOCIATED BRANDS</h1>
         </section>
         <section className={styles.bransAllContainer__brands}>
-          <article className={styles.bransAllContainer__brand1}>
-            <div className={styles.bransAllContainer__brand__circle}>
+          <article className={styles.bransAllContainer__brand__conteiner}>
+            <div className={prompt.className}>
               <Link href={`/brands/workpro`}>
                 <Image src={brand1} alt="brand1" width={200} height={150} />
               </Link>
-              <p>{lengthWokpro} </p>
+              <p className={styles.bransAllContainer__brands__paragraf}>WORKPRO {`(${lengthWokpro})`} </p>
             </div>
           </article>
-          <article className={styles.bransAllContainer__brand2}>
-            <div className={styles.bransAllContainer__brand__circle}>
+          <article className={styles.bransAllContainer__brand__conteiner}>
+            <div className={prompt.className}>
               <Link href={`/brands/lightshark`}>
                 <Image src={brand2} alt="brand2" width={200} height={150} />
               </Link>
-              <p>{lengthLightshark}</p>
+              <p className={styles.bransAllContainer__brands__paragraf}>LIGTHSHRK {`(${lengthLightshark})`}</p>
             </div>
           </article>
-          <article className={styles.bransAllContainer__brand3}>
-            <div className={styles.bransAllContainer__brand__circle}>
+          <article className={styles.bransAllContainer__brand__conteiner}>
+            <div className={prompt.className}>
               <Link href={`/brands/equipson`}>
                 <Image src={brand3} alt="brand3" width={200} height={150} />
               </Link>
-              <p>{lengthEquipson}</p>
+              <p className={styles.bransAllContainer__brands__paragraf}>EQUIPSON {`(${lengthEquipson})`}</p>
             </div>
           </article>
         </section>

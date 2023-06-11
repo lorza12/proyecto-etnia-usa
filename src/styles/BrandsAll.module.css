@@ -1,0 +1,31 @@
+.bransALlContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 3rem 0rem 15rem;
+}
+.bransALlContainer__title {
+  text-align: center;
+}
+.bransAllContainer__brands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.bransAllContainer__brand__conteiner {
+  text-align: center;
+  transition: all 200ms;
+}
+.bransAllContainer__brand__conteiner:hover {
+  transform: scale(1.1);
+}
+
+
+.bransAllContainer__brands__paragraf {
+  font-size: 10px;
+  opacity: 0.5;
+}
+
+
+

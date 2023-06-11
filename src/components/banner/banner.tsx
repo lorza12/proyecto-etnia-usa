@@ -69,9 +69,9 @@ function Banner() {
 
   return (
     <>
-      <div className={styles.bannerContainer}>
-        <div className={styles.bannerContainer__banner}>
-          <div className={styles.navBarContainer__banner}>
+      <main className={styles.bannerContainer}>
+        <section className={styles.bannerContainer__banner}>
+          <article className={styles.navBarContainer__banner}>
             <Swiper
               autoplay={{
                 delay: 4000,
@@ -292,9 +292,9 @@ function Banner() {
               />
             </SwiperSlide>
           </Swiper> */}
-          </div>
-        </div>
-      </div>
+          </article>
+        </section>
+      </main>
     </>
   );
 }
