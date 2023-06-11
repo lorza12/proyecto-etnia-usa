@@ -9,16 +9,23 @@ function KnowUs() {
   return (
     <>
       <main className={styles.main1}>
-        <div className={styles.knowUSContainer}>
-          <div className={styles.knowUSContainer__logo}>
+        <section className={styles.knowUSContainer}>
+          <article className={styles.knowUSContainer__logo}>
             <br />
             <Image src={Logo} alt="img logo" width={300} height={150} />
+<<<<<<< HEAD
           </div>
           <div className={styles.knowUSContainer__text}>
             <div className={montserrat.className}>
               <h1 className={styles.knowUSContainer__text__h1}>
                 ¿Quienes somos?
               </h1>
+=======
+          </article>
+          <article className={styles.knowUSContainer__text}>
+            <div className={prompt.className}>
+              <h1 className={styles.knowUSContainer__text__h1}>ABOUT US</h1>
+>>>>>>> develop
               <p className={styles.knowUSContainer__text__p1}>
                 Somos una empresa dedicada a la importación y exportación de
                 productos de alta calidad para el mundo de Audio, Video,
@@ -35,12 +42,16 @@ function KnowUs() {
                   type="button"
                   className={styles.knowUSContainer__button}
                 >
+<<<<<<< HEAD
                   Conocer mas
+=======
+                  MORE INFO{" "}
+>>>>>>> develop
                 </button>
               </Link>
             </div>
-          </div>
-        </div>
+          </article>
+        </section>
       </main>
     </>
   );

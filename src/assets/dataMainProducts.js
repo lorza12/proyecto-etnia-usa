@@ -58,13 +58,13 @@ export const mainProducts = [
   },
   {
     id: 6,
-    category: "G-Truss, Spigot Truss",
-    name: "290mm/6 Way Cube",
-    tags: "G-Truss, GT-290mm, Led, Lighting",
-    image: "/assets/mainProducts/Truss-Cube-Silver.png2_-removebg-preview.png",
+    category: "",
+    name: "Athos 10R",
+    tags: "Passive loudspeaker",
+    image: "/assets/mainProducts/athos10r_20221014085956-removebg-preview.png",
     brand: "G-Trus",
     description:
-      "Our GT-290mm 6 Way Cube is a perfect corner/junction piece. Having the capability to connect 6 pieces of our 290mm truss. When purchased, it comes with 8 connectors which is enough for 2 sides of the 6 way cube. Additional connectors can be purchased in our “Accessories” section.",
+      "The new ATHOS R series is updated with the aim of obtaining a product resistant to inclement weather and at the same time much more sustainable by changing its structure (previously made of fiberglass), and now in an innovative material that is more resistant to effects. adverse weather conditions (rain, extreme temperatures or solid microparticles), making the polymer with which they are built immune to these problems",
     description2: ""
   },
 

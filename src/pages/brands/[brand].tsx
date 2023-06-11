@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { products as produ } from "../../assets/dataProducts";
+import Link from "next/link";
 
 const BrandsDetail = () => {
   const router = useRouter();
@@ -21,10 +22,12 @@ const BrandsDetail = () => {
       <p>
         {product.map((item) => (
           <>
-            <p key={item.id}>{item.name}</p>
-            <Image src={item.image} alt="img" width={200} height={200} />
+            <Link href={`/products/${item.id}`}>
+              <p key={item.id}>{item.name}</p>
+              <Image src={item.image} alt="img" width={200} height={200} />
 
-            <p>{item.brand}</p>
+              <p>{item.brand}</p>
+            </Link>
           </>
         ))}
       </p>

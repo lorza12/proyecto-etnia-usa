@@ -11,8 +11,13 @@ function Products() {
       <main className={styles.main2}>
         <div className={styles.productsContainer}>
           <div className={styles.productsContainer__title}>
+<<<<<<< HEAD
             <div className={montserrat.className}>
               <h1>/ NUESTROS PRODUCTOS /</h1>
+=======
+            <div className={prompt.className}>
+              <h1>/OUR PRODUCTS/</h1>
+>>>>>>> develop
             </div>
           </div>
 
@@ -28,6 +33,7 @@ function Products() {
                       width={200}
                       height={150}
                     />
+<<<<<<< HEAD
                     <h1 className={montserrat.className}>{product.name}</h1>
                     <p className={montserrat.className}>{product.tags}</p>
                     {/* <Link href={`/products/${product.id}`}>
@@ -35,6 +41,10 @@ function Products() {
                         Ver Producto
                       </button>
                     </Link> */}
+=======
+                    <h1 className={prompt.className}>{product.name}</h1>
+                    <p className={prompt.className}>{product.tags}</p>
+>>>>>>> develop
                   </div>
                 </Link>
               </>
@@ -44,7 +54,7 @@ function Products() {
             <div className={styles.productsContainer__title2}>
               <Link href={`/products`}>
                 <button className={styles.product__button2}>
-                  Ver todos nuestros productos
+                  ALL PRODUCTS
                 </button>
               </Link>
             </div>

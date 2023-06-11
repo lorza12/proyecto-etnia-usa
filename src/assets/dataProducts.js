@@ -672,6 +672,61 @@ export const products = [
       "ARC SUB 12 MKIII is a powered subwoofer that integrates a 200W power amplifier and a high-performance 12'' woofer. The amplifier has several controls, allowing you to set parameters such as output gain, subwoofer, frequency crossover or phase inversion.The built-in Standby function offers the possibility of turning off the amplifier in the absence of audio input.ARC SUB 12 MKIII incorporates 2 types of input: full-range mono LINE input and stereo High Level input stereo) for direct connection between external amplifiers and the satellite system.",
     description2: ""
   },
+  {
+    id: 62,
+    category: "G-Truss, Spigot Truss",
+    name: "290mm/Square Truss",
+    tags: "Our 290mm GT-Truss (GT-290) is a 4-point truss system.",
+    image: "/assets/g-truss/EC-40_PRO_Persp_20161005104542.jpeg",
+    brand: "G-Truss",
+    description:
+      "This provides optimum volume and load capacity for its construction size and a tube diameter of 50mm. This system is connected via a special conical connector system, which is joined together to a complete form fit by means of a copper hammer, creating optimal traction. It is also characterized by a minimum transport volume and the special lightweight design. The conical connectors are of course included in the scope of delivery – special designs and powder coatings can be carried out at short notice. This size truss is meant for a more light duty design.",
+    description2: ""
+  },
+  {
+    id: 63,
+    category: "G-Truss, Spigot Truss",
+    name: "290mm/6 Way Cube",
+    tags: "G-Truss, GT-290mm, Led, Lighting",
+    image: "/assets/g-truss/Truss-Cube-Silver.png2_.png",
+    brand: "G-Truss",
+    description:
+      "Our GT-290mm 6 Way Cube is a perfect corner/junction piece. Having the capability to connect 6 pieces of our 290mm truss. When purchased, it comes with 8 connectors which is enough for 2 sides of the 6 way cube. Additional connectors can be purchased in our “Accessories” section.",
+    description2: ""
+  },
+  {
+    id: 64,
+    category: "G-Truss, Spigot Truss",
+    name: "400mm/Square Truss",
+    tags: "G-Truss, GT-400mm, Lighting, Square Truss",
+    image: "/assets/g-truss/EC-40_PRO_Persp_20161005104542.jpeg",
+    brand: "G-Truss",
+    description:
+      "Our 400mm GT-Truss (GT-400) is a 4-point truss system. This provides optimum volume and load capacity for its construction size and a tube diameter of 50mm. This system is connected via a special conical connector system, which is joined together to a complete form fit by means of a copper hammer, creating optimal traction. It is also characterized by a minimum transport volume and the special lightweight design. The conical connectors are of course included in the scope of delivery – special designs and powder coatings can be carried out at short notice. This size truss offer a higher load capacity compared to any of our other sizes.",
+    description2: ""
+  },
+  {
+    id: 65,
+    category: "G-Truss, Spigot Truss",
+    name: "400mm/6 Way Cube",
+    tags: " G-Truss, GT-400mm, Led, LED Effects / Special Effects, LED Pars/Bars, Lighting, Theatrical",
+    image: "/assets/g-truss/cube-29-pro_20211027092329.jpeg",
+    brand: "G-Truss",
+    description:
+      "Our GT-400mm 6 Way Cube is a perfect corner/junction piece. Having the capability to connect 6 pieces of our 400mm truss. When purchased, it comes with 8 connectors which is enough for 2 sides of the 6 way cube. Additional connectors can be purchased in our “Accessories” section.",
+    description2: ""
+  },
+  {
+    id: 66,
+    category: "G-Truss, Spigot Truss",
+    name: "Universal Steel Base Plate",
+    tags: " (24x24”), G-Truss, GT- Universal, Led, LED Effects / Special Effects, LED Pars/Bars, Lighting, Moving Heads, Steel Base Plate, Theatrical",
+    image: "/assets/g-truss/WCX_4C_pers_20180328113641.jpeg",
+    brand: "G-Truss",
+    description:
+      "Our GT-Universal Steel Base Plate is heavy duty and fits a variety of different truss sizes. Made with 4 diagonal slits, this allows the connector to adjust to your size truss. Also made with 6mm thick steel and coming in two different sizes. The first option is a 24×24″ base and the second is a 36×24″ base. Ideal for any truss structure that needs stability and a base that can handle heavy loads.",
+    description2: ""
+  },
 
 
 ];
