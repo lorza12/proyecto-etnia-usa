@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "@/styles/BrandsAll.module.css";
-import Image from "next/image";
 import { Prompt, Lato } from "next/font/google";
+import Image from "next/image";
 import brand1 from "../../../public/assets/descargammmmm-removebg-preview.png";
 import brand2 from "../../../public/assets/descarga-removebg-preview.png";
 import brand3 from "../../../public/assets/descarga__1_-removebg-preview.png";
@@ -41,6 +41,7 @@ function BrandsAll() {
         <section className={styles.bransALlContainer__title}>
           <h1 className={lato.className}>ASSOCIATED BRANDS</h1>
         </section>
+
         <section className={styles.bransAllContainer__brands}>
           <article className={styles.bransAllContainer__brand__conteiner}>
             <div className={prompt.className}>
