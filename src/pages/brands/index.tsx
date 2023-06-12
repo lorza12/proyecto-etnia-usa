@@ -7,7 +7,7 @@ import brand2 from "../../../public/assets/descarga-removebg-preview.png";
 import brand3 from "../../../public/assets/descarga__1_-removebg-preview.png";
 import Link from "next/link";
 import { products as produ } from "../../assets/dataProducts";
-import { useState } from "react";
+
 
 const prompt = Prompt({
   subsets: ["latin"],
