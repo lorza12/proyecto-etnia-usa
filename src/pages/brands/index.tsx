@@ -28,12 +28,7 @@ function BrandsAll() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-<<<<<<< HEAD
       <main className={styles.bransALlContainer}>
-=======
-
-      <main className={styles.bransAllContainer}>
->>>>>>> 12cc3edcb8f2b2be4ee161309e21af48c07085c8
         <section className={styles.bransALlContainer__title}>
           <h1 className={montserrat.className}>ASSOCIATED BRANDS</h1>
         </section>
@@ -47,28 +42,16 @@ function BrandsAll() {
               <p className={styles.bransAllContainer__brands__paragraf}>WORKPRO {`(${lengthWokpro})`} </p>
             </div>
           </article>
-<<<<<<< HEAD
           <article className={styles.bransAllContainer__brand__conteiner}>
             <div className={prompt.className}>
-=======
-
-          <article className={styles.bransAllContainer__brand2}>
-            <div className={styles.bransAllContainer__brand__circle}>
->>>>>>> 12cc3edcb8f2b2be4ee161309e21af48c07085c8
               <Link href={`/brands/lightshark`}>
                 <Image src={brand2} alt="brand2" width={200} height={150} />
               </Link>
               <p className={styles.bransAllContainer__brands__paragraf}>LIGTHSHRK {`(${lengthLightshark})`}</p>
             </div>
           </article>
-<<<<<<< HEAD
           <article className={styles.bransAllContainer__brand__conteiner}>
             <div className={prompt.className}>
-=======
-
-          <article className={styles.bransAllContainer__brand3}>
-            <div className={styles.bransAllContainer__brand__circle}>
->>>>>>> 12cc3edcb8f2b2be4ee161309e21af48c07085c8
               <Link href={`/brands/equipson`}>
                 <Image src={brand3} alt="brand3" width={200} height={150} />
               </Link>
