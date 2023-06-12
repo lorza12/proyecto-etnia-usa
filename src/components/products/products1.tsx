@@ -11,7 +11,7 @@ function Products() {
       <main className={styles.main2}>
         <div className={styles.productsContainer}>
           <div className={styles.productsContainer__title}>
-            <div className={prompt.className}>
+            <div className={montserrat.className}>
               <h1>/OUR PRODUCTS/</h1>
             </div>
           </div>
@@ -28,8 +28,13 @@ function Products() {
                       width={200}
                       height={150}
                     />
-                    <h1 className={prompt.className}>{product.name}</h1>
-                    <p className={prompt.className}>{product.tags}</p>
+                    <h1 className={montserrat.className}>{product.name}</h1>
+                    <p className={montserrat.className}>{product.tags}</p>
+                    {/* <Link href={`/products/${product.id}`}>
+                      <button type="button" className={styles.product__button}>
+                        Ver Producto
+                      </button>
+                    </Link> */}
                   </div>
                 </Link>
               </>

@@ -117,11 +117,14 @@ const Products = () => {
                   width={300}
                   height={300}
                   className={styles.productImage}
+<<<<<<< HEAD
                   style={{
                     objectFit: "contain",
                     width: "100%",
                     height: "80%",
                   }}
+=======
+>>>>>>> 12cc3edcb8f2b2be4ee161309e21af48c07085c8
                 ></Image>
               </Link>
             ))}
