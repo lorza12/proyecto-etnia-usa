@@ -4,7 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { products as prod } from "../../assets/dataProducts";
 import styles from "./Products.module.css";
-import { useState } from "react";
+import { useId, useState } from "react";
+import { montserrat } from "@/styles/fonts";
 
 export interface ProductModel {
   id: number;
@@ -19,6 +20,8 @@ export interface ProductModel {
 
 const Products = () => {
   const [brand, setBrand] = useState<string>("all");
+  const [checked, setChecked] = useState(false);
+  const brandCheckboxId = useId();
 
   const getUniqueCategory = (data: ProductModel[], field: string) => {
     let newElement = data.map((currentElement) => {
@@ -33,13 +36,18 @@ const Products = () => {
     });
   };
 
-  const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleRadioChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const newBrand = event.target.value;
     setBrand(newBrand);
+    setChecked(!checked);
   };
 
   const brandType = getUniqueCategory(prod, "brand");
   const filteredProducts = filterProducts(prod);
+
+  const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    event.target.checked ? setChecked(!checked) : null;
+  };
 
   return (
     <>
@@ -49,53 +57,80 @@ const Products = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.productsGlobalContainer}>
-        <h1 className="styles.productsContainer__title">PRODUCTOS</h1>
-
-        <div className={styles.productsContainer}>
-          <h3>Marcas</h3>
-          <ul>
-            <li>
-              <div>
-                <input
-                  type="radio"
-                  name="brand"
-                  value="all"
-                  onChange={handleCheckboxChange}
-                />
-                <span>Todas</span>
-              </div>
-            </li>
-            {brandType.map((brand, idx) => (
-              <li key={idx}>
-                <div>
+      <div className={styles.productsGlobalContainer}>
+        <h1 className={montserrat.className}>PRODUCTOS</h1>
+        <div className={styles.productsWrapper}>
+          <div className={styles.brandContainer}>
+            <label htmlFor={brandCheckboxId} className={styles.brandTitle}>
+              <h3 className={montserrat.className}>Marcas</h3>
+            </label>
+            <input
+              type="checkbox"
+              id={brandCheckboxId}
+              checked={checked}
+              onChange={handleCheckboxChange}
+              hidden
+            />
+            <ul className={styles.brandList}>
+              <li className={styles.brandListItem}>
+                <div className={montserrat.className}>
                   <input
                     type="radio"
                     name="brand"
-                    value={brand}
-                    onChange={handleCheckboxChange}
+                    value="all"
+                    id="all"
+                    className={styles.inputBrand}
+                    onChange={handleRadioChange}
                   />
-                  <span>{brand}</span>
+                  <label htmlFor="all">Todas</label>
                 </div>
               </li>
-            ))}
-          </ul>
-        </div>
+              {brandType.map((brand, idx) => (
+                <li key={idx} className={styles.brandListItem}>
+                  <div className={montserrat.className}>
+                    <input
+                      type="radio"
+                      name="brand"
+                      value={brand}
+                      id={brand}
+                      className={styles.inputBrand}
+                      onChange={handleRadioChange}
+                    />
+                    <label htmlFor={brand}>{brand}</label>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-        <div className={styles.products__div}>
-          {filteredProducts.map((product) => (
-            <Link key={product.id} href={`/products/${product.id}`}>
-              <h2>{product.name}</h2>
-              <Image
-                src={product.image}
-                alt={""}
-                width={200}
-                height={250}
-              ></Image>
-            </Link>
-          ))}
+          <div className={styles.productsContainer}>
+            {filteredProducts.map((product) => (
+              <Link
+                key={product.id}
+                href={`/products/${product.id}`}
+                className={styles.productsItem}
+              >
+                <h2 className={montserrat.className}>{product.name}</h2>
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  width={300}
+                  height={300}
+                  className={styles.productImage}
+<<<<<<< HEAD
+                  style={{
+                    objectFit: "contain",
+                    width: "100%",
+                    height: "80%",
+                  }}
+=======
+>>>>>>> 12cc3edcb8f2b2be4ee161309e21af48c07085c8
+                ></Image>
+              </Link>
+            ))}
+          </div>
         </div>
-      </main>
+      </div>
     </>
   );
 };

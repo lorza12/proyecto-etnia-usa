@@ -1,14 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Prompt } from "next/font/google";
 import styles from "@/styles/ProductDetailPage.module.css";
 import { useRouter } from "next/router";
 import { products as produ } from "../../assets/dataProducts";
-
-const prompt = Prompt({
-  subsets: ["latin"],
-  weight: "400",
-});
+import { montserrat } from "@/styles/fonts";
 
 const ProductDetailPage = () => {
   const router = useRouter();
@@ -25,7 +20,7 @@ const ProductDetailPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={prompt.className}>
+      <main className={montserrat.className}>
         {product.map((item) => (
           <>
             <section className={styles.ProductDetailContainer__mainConteiner}>
@@ -38,6 +33,7 @@ const ProductDetailPage = () => {
                     height={450}
                   />
                 </article>
+
                 <article className={styles.ProductDetailContainer__description}>
                   <div>
                     <h2>{item.name}</h2>
