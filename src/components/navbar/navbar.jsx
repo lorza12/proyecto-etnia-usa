@@ -1,16 +1,6 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
-<<<<<<< HEAD
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import SwiperCore, {
-  Pagination,
-  Autoplay,
-} from "swiper";
-=======
 import { Prompt } from "next/font/google";
->>>>>>> develop
 import Link from "next/link";
 import styles from "@/styles/NavBar.module.css";
 import Image from "next/image";
@@ -24,6 +14,13 @@ import { SiWebpack } from "react-icons/si";
 import { RiRegisteredFill } from "react-icons/ri";
 import { HiOfficeBuilding } from "react-icons/hi";
 import { montserrat } from "@/styles/fonts";
+
+
+const prompt = Prompt({
+  subsets: ["latin"],
+  weight: "400",
+});
+
 
 
 function NavBar() {
@@ -118,6 +115,7 @@ function NavBar() {
               <div className={styles.span}>
                 <Link href={"/products"}>
                   <li
+                    className={prompt.className}
                     onClick={() => handleItemClick("products")}
                   >
                     {" "}
@@ -131,11 +129,7 @@ function NavBar() {
               <div className={styles.span}>
                 <Link href={"#footer"}>
                   <li
-<<<<<<< HEAD
-                    onClick={() => handleItemClick("about")}
-=======
                     className={prompt.className}
->>>>>>> develop
                   >
                     <MdPermContactCalendar size={20} /> CONTACT US
                   </li>

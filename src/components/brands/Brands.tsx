@@ -12,11 +12,7 @@ function Brands() {
     <>
       <main className={styles.bransContainer}>
         <section className={styles.bransContainer__title}>
-<<<<<<< HEAD
-          <h1 className={montserrat.className}>Marcas asociadas</h1>
-=======
           <h1 className={lato.className}>ASSOCIATED BRANDS</h1>
->>>>>>> develop
         </section>
         <section className={styles.bransContainer__brands}>
           <article className={styles.bransContainer__brand1}>
