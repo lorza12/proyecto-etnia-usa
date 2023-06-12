@@ -14,7 +14,7 @@ function Footer() {
 
   return (
     <>
-      <main className={styles.footerContainer}>
+      <main className={styles.footerContainer} id="footer">
         <section className={montserrat.className}>
           <section className={styles.footerContainer__section1}>
             <article className={styles.footerContainer__section1__inf}>
