@@ -7,6 +7,7 @@ import styles from "./Products.module.css";
 import { useId, useRef, useState } from "react";
 import { montserrat } from "@/styles/fonts";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+import { AiOutlineCloseSquare } from "react-icons/ai";
 
 export interface ProductModel {
   id: number;
@@ -78,6 +79,12 @@ const Products = () => {
               hidden
             />
             <ul className={styles.brandList}>
+              <button
+                onClick={(e) => setChecked(!checked)}
+                className={styles.btnClose}
+              >
+                <AiOutlineCloseSquare className={styles.closeSqu} />
+              </button>
               <li className={styles.brandListItem}>
                 <div className={montserrat.className}>
                   <input
