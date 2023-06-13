@@ -1,5 +1,11 @@
+.productsGlobalContainer {
+  margin: 0;
+  padding: 0;
+}
+
 .productsGlobalContainer > h1 {
   text-align: center;
+  margin: 0 0 0 2em;
 }
 
 .productsWrapper {
@@ -47,7 +53,7 @@
 .productsContainer {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 23%;
+  grid-auto-columns: 32%;
 
   width: 80%;
   margin: 0 auto;
@@ -80,6 +86,10 @@
 .productImage {
   inline-size: 100%;
   object-fit: contain;
+}
+
+.productsItem:hover {
+  transform: scale(1.1);
 }
 
 .productsContainer__btn {
