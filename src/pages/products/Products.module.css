@@ -237,4 +237,17 @@
     display: block;
     height: 100%;
   }
+
+  .btnClose {
+    font-size: 2em;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 0 0 0.3em;
+  }
+
+  .brandListItem:hover,
+  .inputBrand:checked + label {
+    color: #000;
+  }
 }
