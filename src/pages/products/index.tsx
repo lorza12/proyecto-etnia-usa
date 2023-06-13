@@ -4,8 +4,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { products as prod } from "../../assets/dataProducts";
 import styles from "./Products.module.css";
-import { useId, useState } from "react";
+import { useId, useRef, useState } from "react";
 import { montserrat } from "@/styles/fonts";
+import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
 export interface ProductModel {
   id: number;
@@ -22,6 +23,7 @@ const Products = () => {
   const [brand, setBrand] = useState<string>("all");
   const [checked, setChecked] = useState(false);
   const brandCheckboxId = useId();
+  const scrollRef = useRef(null);
 
   const getUniqueCategory = (data: ProductModel[], field: string) => {
     let newElement = data.map((currentElement) => {
@@ -47,6 +49,10 @@ const Products = () => {
 
   const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     event.target.checked ? setChecked(!checked) : null;
+  };
+
+  const scrollButton = (scrollOffset: number) => {
+    scrollRef.current.scrollLeft += scrollOffset;
   };
 
   return (
@@ -103,7 +109,14 @@ const Products = () => {
             </ul>
           </div>
 
-          <div className={styles.productsContainer}>
+          <div className={styles.productsContainer} ref={scrollRef}>
+            <button
+              className={styles.productsContainer__btn}
+              onClick={() => scrollButton(-300)}
+            >
+              <BsChevronLeft />
+            </button>
+
             {filteredProducts.map((product) => (
               <Link
                 key={product.id}
@@ -113,14 +126,21 @@ const Products = () => {
                 <Image
                   src={product.image}
                   alt={product.name}
-                  width={200}
-                  height={150}
+                  width={300}
+                  height={300}
                   className={styles.productImage}
                 ></Image>
                 <h2 className={montserrat.className}>{product.name}</h2>
                 <p className={montserrat.className}>{product.tags}</p>
               </Link>
             ))}
+
+            <button
+              className={styles.productsContainer__btn}
+              onClick={() => scrollButton(300)}
+            >
+              <BsChevronRight />
+            </button>
           </div>
         </div>
       </div>
