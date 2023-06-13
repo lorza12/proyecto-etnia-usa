@@ -47,13 +47,15 @@
 .productsContainer {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 21%;
+  grid-auto-columns: 23%;
 
+  width: 80%;
+  margin: 0 auto;
   gap: 2rem;
   padding: 0 2rem 2rem;
   text-align: center;
 
-  overflow-x: auto;
+  overflow-x: hidden;
   scrollbar-width: none;
   overscroll-behavior-inline: contain;
 
