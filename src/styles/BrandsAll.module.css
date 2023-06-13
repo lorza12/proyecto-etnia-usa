@@ -1,8 +1,8 @@
 .bransALlContainer {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
-  padding: 3rem 0rem 15rem;
+  gap: 10rem;
+  padding: 3rem 0rem 20rem;
 }
 .bransALlContainer__title {
   text-align: center;
@@ -11,6 +11,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  gap: 9.3rem 6.2rem;
 }
 
 .bransAllContainer__brand__conteiner {

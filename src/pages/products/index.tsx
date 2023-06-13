@@ -7,19 +7,13 @@ import styles from "./Products.module.css";
 import { useId, useState } from "react";
 import { montserrat } from "@/styles/fonts";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, {
-  Navigation,
-  Pagination,
-  Autoplay,
-} from "swiper";
+import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
-
 SwiperCore.use([Navigation, Pagination, Autoplay]);
-
 
 export interface ProductModel {
   id: number;
@@ -118,42 +112,41 @@ const Products = () => {
           </div>
 
           <div className={styles.productsContainer}>
-            {filteredProducts.map((product) => (
-
+            {filteredProducts.map((product, index) => (
               <Swiper
-              autoplay={{
-                delay: 4000,
-                disableOnInteraction: false,
-              }}
-
-              slidesPerView={3}
-              centeredSlides={true}
-              spaceBetween={30}
-              pagination={{
-                type: "fraction",
-              }}
-              navigation={true}
-              modules={[Pagination, Navigation]}
-              className={styles.mySwiper__products}
-            >
-              <SwiperSlide className={styles.swiperSlide__products}>
-              <Link
-                key={product.id}
-                href={`/products/${product.id}`}
-                className={styles.productsItem}
+                key={index}
+                autoplay={{
+                  delay: 4000,
+                  disableOnInteraction: false,
+                }}
+                slidesPerView={3}
+                centeredSlides={true}
+                spaceBetween={30}
+                pagination={{
+                  type: "fraction",
+                }}
+                navigation={true}
+                modules={[Pagination, Navigation]}
+                className={styles.mySwiper__products}
               >
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  width={200}
-                  height={150}
-                  className={styles.productImage}
-                ></Image>
-                <h2 className={montserrat.className}>{product.name}</h2>
-                <p className={montserrat.className}>{product.tags}</p>
-              </Link>
-              </SwiperSlide>
-            </Swiper>
+                <SwiperSlide className={styles.swiperSlide__products}>
+                  <Link
+                    key={product.id}
+                    href={`/products/${product.id}`}
+                    className={styles.productsItem}
+                  >
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      width={200}
+                      height={150}
+                      className={styles.productImage}
+                    ></Image>
+                    <h2 className={montserrat.className}>{product.name}</h2>
+                    <p className={montserrat.className}>{product.tags}</p>
+                  </Link>
+                </SwiperSlide>
+              </Swiper>
             ))}
           </div>
         </div>
