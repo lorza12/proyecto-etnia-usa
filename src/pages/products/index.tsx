@@ -6,20 +6,6 @@ import { products as prod } from "../../assets/dataProducts";
 import styles from "./Products.module.css";
 import { useId, useState } from "react";
 import { montserrat } from "@/styles/fonts";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, {
-  Navigation,
-  Pagination,
-  Autoplay,
-} from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-
-
-SwiperCore.use([Navigation, Pagination, Autoplay]);
-
 
 export interface ProductModel {
   id: number;
@@ -72,11 +58,11 @@ const Products = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.productsGlobalContainer}>
-        <h1 className={montserrat.className}>PRODUCTOS</h1>
+        <h1 className={montserrat.className}>/PRODUCTS/</h1>
         <div className={styles.productsWrapper}>
           <div className={styles.brandContainer}>
             <label htmlFor={brandCheckboxId} className={styles.brandTitle}>
-              <h3 className={montserrat.className}>Marcas</h3>
+              <h3 className={montserrat.className}>Brands</h3>
             </label>
             <input
               type="checkbox"
@@ -96,7 +82,7 @@ const Products = () => {
                     className={styles.inputBrand}
                     onChange={handleRadioChange}
                   />
-                  <label htmlFor="all">Todas</label>
+                  <label htmlFor="all">All</label>
                 </div>
               </li>
               {brandType.map((brand, idx) => (
@@ -119,24 +105,6 @@ const Products = () => {
 
           <div className={styles.productsContainer}>
             {filteredProducts.map((product) => (
-
-              <Swiper
-              autoplay={{
-                delay: 4000,
-                disableOnInteraction: false,
-              }}
-
-              slidesPerView={3}
-              centeredSlides={true}
-              spaceBetween={30}
-              pagination={{
-                type: "fraction",
-              }}
-              navigation={true}
-              modules={[Pagination, Navigation]}
-              className={styles.mySwiper__products}
-            >
-              <SwiperSlide className={styles.swiperSlide__products}>
               <Link
                 key={product.id}
                 href={`/products/${product.id}`}
@@ -152,8 +120,6 @@ const Products = () => {
                 <h2 className={montserrat.className}>{product.name}</h2>
                 <p className={montserrat.className}>{product.tags}</p>
               </Link>
-              </SwiperSlide>
-            </Swiper>
             ))}
           </div>
         </div>
