@@ -110,26 +110,27 @@ const Products = () => {
               ))}
             </ul>
           </div>
-
-          <div className={styles.productsContainer}>
-            {filteredProducts.map((product, index) => (
-              <Swiper
-                key={index}
-                autoplay={{
-                  delay: 4000,
-                  disableOnInteraction: false,
-                }}
-                slidesPerView={3}
-                centeredSlides={true}
-                spaceBetween={30}
-                pagination={{
-                  type: "fraction",
-                }}
-                navigation={true}
-                modules={[Pagination, Navigation]}
-                className={styles.mySwiper__products}
-              >
-                <SwiperSlide className={styles.swiperSlide__products}>
+          <Swiper
+            autoplay={{
+              delay: 4000,
+              disableOnInteraction: false,
+            }}
+            slidesPerView={3}
+            centeredSlides={true}
+            spaceBetween={30}
+            pagination={{
+              type: "fraction",
+            }}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+            className={styles.mySwiper__products}
+          >
+            <div className={styles.productsContainer}>
+              {filteredProducts.map((product, index) => (
+                <SwiperSlide
+                  className={styles.swiperSlide__products}
+                  key={index}
+                >
                   <Link
                     key={product.id}
                     href={`/products/${product.id}`}
@@ -146,9 +147,9 @@ const Products = () => {
                     <p className={montserrat.className}>{product.tags}</p>
                   </Link>
                 </SwiperSlide>
-              </Swiper>
-            ))}
-          </div>
+              ))}
+            </div>
+          </Swiper>
         </div>
       </div>
     </>
