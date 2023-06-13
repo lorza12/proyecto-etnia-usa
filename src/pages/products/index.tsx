@@ -111,10 +111,10 @@ const Products = () => {
             </ul>
           </div>
           <Swiper
-            autoplay={{
-              delay: 4000,
-              disableOnInteraction: false,
-            }}
+            // autoplay={{
+            //   delay: 4000,
+            //   disableOnInteraction: false,
+            // }}
             slidesPerView={3}
             centeredSlides={true}
             spaceBetween={30}
@@ -136,13 +136,16 @@ const Products = () => {
                     href={`/products/${product.id}`}
                     className={styles.productsItem}
                   >
-                    <Image
-                      src={product.image}
-                      alt={product.name}
-                      width={200}
-                      height={150}
-                      className={styles.productImage}
-                    ></Image>
+                    <div className={styles.customImageContainer}>
+                      <Image
+                        src={product.image}
+                        alt={product.name}
+                        width={100}
+                        height={100}
+                        className={`${styles.productImage} ${styles.customImageSize}`}
+                      ></Image>
+                    </div>
+
                     <h2 className={montserrat.className}>{product.name}</h2>
                     <p className={montserrat.className}>{product.tags}</p>
                   </Link>
