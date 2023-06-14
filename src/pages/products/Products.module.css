@@ -5,7 +5,8 @@
 
 .productsWrapper {
   display: flex;
-  padding: 0 0 0 5em;
+  gap: 4rem;
+  padding: 0 0 0 2em;
 }
 
 .brandContainer {
@@ -25,9 +26,12 @@
 
 .brandList {
   width: 100%;
-  margin: 0 2em 0 0;
   list-style: none;
   text-transform: capitalize;
+}
+
+.btnClose {
+  display: none;
 }
 
 .brandListItem {
@@ -41,9 +45,17 @@
   color: #3595f5;
 }
 
+
 .inputBrand {
   appearance: none;
   -webkit-appearance: none;
+}
+
+.productsContainerMajor {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 100%;
 }
 
 .productsContainer {
@@ -52,7 +64,6 @@
   grid-auto-columns: 32%;
 
   width: 80%;
-  margin: 0 auto;
   gap: 2rem;
   padding: 0 2rem 2rem;
   text-align: center;
@@ -85,13 +96,18 @@
   object-fit: contain;
 }
 
-.productsItem:hover {
+.details {
+  border: none;
+  background-color: transparent;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.productsLink:hover {
   transform: scale(1.1);
 }
 
 .productsContainer__btn {
-  position: absolute;
-
   width: 1%;
   padding: 0;
 
@@ -104,26 +120,26 @@
   cursor: pointer;
 }
 
-.productsContainer__btn:nth-child(1) {
-  top: 60%;
-  left: 13%;
-}
-
-.productsContainer__btn:nth-child(n + 2) {
-  left: auto;
-  top: 60%;
-  right: 5%;
-}
-
 @media screen and (min-width: 769px) and (max-width: 1200px) {
   .productsContainer {
     grid-auto-columns: 50%;
   }
 
+  .productsContainerMajor {
+    justify-content: center;
+  }
+
+  .productsWrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    padding: 0;
+  }
+
   .brandTitle > h3 {
     font-size: 1.2em;
-    border: 1px solid #bcbcbc;
-    padding: 1em;
+    border-bottom: 1px solid #bcbcbc;
+    padding: 1em 1em 1em 2em;
   }
 
   .brandTitle {
@@ -136,11 +152,13 @@
   }
 
   .btnClose {
-    font-size: 2em;
-    background-color: transparent;
-    color: #fff;
+    color: rgb(255, 255, 255);
+    background: none;
     border: none;
-    padding: 0 0 0.3em;
+    cursor: pointer;
+    text-align: start;
+    font-size: 1.5rem;
+    display: inline;
   }
 
   .brandList {
@@ -149,16 +167,17 @@
     background: rgb(53, 149, 245, 0.9);
     color: #fff;
     top: 0;
+    left: 0;
+    margin: 0;
     padding: 2em;
     height: 100vh;
   }
 
   .brandListItem {
-    font-size: 1.4em;
-    padding: 2em 0;
-
-    border-top: 1px solid #fff;
+    font-size: 1.2em;
+    padding: 1em 0;
     border-bottom: 1px solid #fff;
+    cursor: pointer;
   }
 
   .brandTitle ~ input:checked ~ .brandList {
@@ -180,39 +199,43 @@
     margin: 0 0 1em;
   }
 
-  .brandTitle > h3 {
-    font-size: 1.2em;
-    border: 1px solid #bcbcbc;
-    padding: 1em;
+  .productsContainerMajor {
+    justify-content: center;
   }
 
-  .productsContainer {
+  .productsWrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
     padding: 0;
+  }
+
+  .brandTitle > h3 {
+    font-size: 1.2em;
+    border-bottom: 1px solid #bcbcbc;
+    padding: 1em 1em 1em 2em;
   }
 
   .brandTitle {
     pointer-events: all;
   }
 
-  .productsContainer__btn:nth-child(1) {
-    left: 5%;
-  }
-
-  .productsContainer__btn:nth-child(n + 2) {
-    left: auto;
-    right: 15%;
-  }
-
-  .productsWrapper {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+  .productsContainer {
     padding: 0;
   }
 
   .productsContainer {
     grid-auto-columns: 100%;
+  }
+
+  .btnClose {
+    color: rgb(255, 255, 255);
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1.2rem;
+    display: inline;
   }
 
   .brandList {
@@ -221,16 +244,17 @@
     background: rgb(53, 149, 245, 0.9);
     color: #fff;
     top: 0;
+    left: 0;
+    margin: 0;
     padding: 2em;
     height: 100vh;
   }
 
   .brandListItem {
-    font-size: 1.4em;
-    padding: 2em 0;
-
-    border-top: 1px solid #fff;
+    font-size: 1.2em;
+    padding: 1em 0;
     border-bottom: 1px solid #fff;
+    cursor: pointer;
   }
 
   .brandTitle ~ input:checked ~ .brandList {
@@ -249,5 +273,9 @@
   .brandListItem:hover,
   .inputBrand:checked + label {
     color: #000;
+  }
+
+  .productsContainer__btn {
+    font-size: 2em;
   }
 }
