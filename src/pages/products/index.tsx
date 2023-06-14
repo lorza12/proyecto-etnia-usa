@@ -83,7 +83,7 @@ const Products = () => {
                 onClick={(e) => setChecked(!checked)}
                 className={styles.btnClose}
               >
-                <AiOutlineCloseSquare className={styles.closeSqu} />
+                X
               </button>
               <li className={styles.brandListItem}>
                 <div className={montserrat.className}>
@@ -116,38 +116,47 @@ const Products = () => {
             </ul>
           </div>
 
-          <div className={styles.productsContainer} ref={scrollRef}>
-            <button
-              className={styles.productsContainer__btn}
-              onClick={() => scrollButton(-300)}
-            >
-              <BsChevronLeft />
-            </button>
-
-            {filteredProducts.map((product) => (
-              <Link
-                key={product.id}
-                href={`/products/${product.id}`}
-                className={styles.productsItem}
+          <div className={styles.productsContainerMajor}>
+            <div className={styles.buttonContainer}>
+              <button
+                className={styles.productsContainer__btn}
+                onClick={() => scrollButton(-300)}
               >
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  width={300}
-                  height={300}
-                  className={styles.productImage}
-                ></Image>
-                <h2 className={montserrat.className}>{product.name}</h2>
-                <p className={montserrat.className}>{product.tags}</p>
-              </Link>
-            ))}
+                <BsChevronLeft />
+              </button>
+            </div>
 
-            <button
-              className={styles.productsContainer__btn}
-              onClick={() => scrollButton(300)}
-            >
-              <BsChevronRight />
-            </button>
+            <div className={styles.productsContainer} ref={scrollRef}>
+              {filteredProducts.map((product) => (
+                <div key={product.name} className={styles.productsItem}>
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    width={300}
+                    height={300}
+                    className={styles.productImage}
+                  ></Image>
+                  <h2 className={montserrat.className}>{product.name}</h2>
+                  <p className={montserrat.className}>{product.tags}</p>
+                  <Link
+                    key={product.id}
+                    href={`/products/${product.id}`}
+                    className={styles.productsLink}
+                  >
+                    <button className={styles.details}>{`Details >`}</button>
+                  </Link>
+                </div>
+              ))}
+            </div>
+
+            <div className={styles.buttonContainer}>
+              <button
+                className={styles.productsContainer__btn}
+                onClick={() => scrollButton(300)}
+              >
+                <BsChevronRight />
+              </button>
+            </div>
           </div>
         </div>
       </div>
