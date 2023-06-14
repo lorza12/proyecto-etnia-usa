@@ -36,7 +36,7 @@ const BrandsDetail = () => {
         <div className={styles.buttonContainer}>
           <button
             className={styles.productsContainer__btn}
-            onClick={() => scrollButton(-250)}
+            onClick={() => scrollButton(-270)}
           >
             <BsChevronLeft />
           </button>
@@ -69,7 +69,7 @@ const BrandsDetail = () => {
         <div className={styles.buttonContainer}>
           <button
             className={styles.productsContainer__btn}
-            onClick={() => scrollButton(250)}
+            onClick={() => scrollButton(270)}
           >
             <BsChevronRight />
           </button>
