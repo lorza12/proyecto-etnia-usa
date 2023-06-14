@@ -1,3 +1,63 @@
+.title {
+  text-align: center;
+}
+.productsGlobalContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 100%;
+}
+
+.productsContainer__btn {
+  width: 1%;
+  padding: 0;
+
+  background-color: transparent;
+  color: #727272;
+  outline: none;
+  border: none;
+  font-size: 4em;
+
+  cursor: pointer;
+}
+
+.productsContainer {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 32%;
+
+  width: 80%;
+  gap: 2rem;
+  padding: 0 2rem 2rem;
+  text-align: center;
+
+  overflow-x: hidden;
+  scrollbar-width: none;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+}
+
+.productsContainer > * {
+  scroll-snap-align: start;
+  scroll-padding-inline: 3rem;
+}
+
+.productsContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.productsItem {
+  display: grid;
+  grid-template-rows: min-content;
+  justify-items: center;
+  padding: 2rem;
+}
+
+.productImage {
+  inline-size: 80%;
+  object-fit: contain;
+}
+
 .bransALlContainer {
   display: flex;
   flex-direction: column;
@@ -22,11 +82,7 @@
   transform: scale(1.1);
 }
 
-
 .bransAllContainer__brands__paragraf {
   font-size: 10px;
   opacity: 0.5;
 }
-
-
-
