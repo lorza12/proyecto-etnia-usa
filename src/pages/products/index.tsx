@@ -4,16 +4,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { products as prod } from "../../assets/dataProducts";
 import styles from "./Products.module.css";
-import { useId, useState } from "react";
+import { useId, useRef, useState } from "react";
 import { montserrat } from "@/styles/fonts";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-
-SwiperCore.use([Navigation, Pagination, Autoplay]);
+import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+import { AiOutlineCloseSquare } from "react-icons/ai";
 
 export interface ProductModel {
   id: number;
@@ -30,6 +24,7 @@ const Products = () => {
   const [brand, setBrand] = useState<string>("all");
   const [checked, setChecked] = useState(false);
   const brandCheckboxId = useId();
+  const scrollRef = useRef(null);
 
   const getUniqueCategory = (data: ProductModel[], field: string) => {
     let newElement = data.map((currentElement) => {
@@ -57,6 +52,10 @@ const Products = () => {
     event.target.checked ? setChecked(!checked) : null;
   };
 
+  const scrollButton = (scrollOffset: number) => {
+    scrollRef.current.scrollLeft += scrollOffset;
+  };
+
   return (
     <>
       <Head>
@@ -66,11 +65,11 @@ const Products = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.productsGlobalContainer}>
-        <h1 className={montserrat.className}>PRODUCTOS</h1>
+        <h1 className={montserrat.className}>/PRODUCTS/</h1>
         <div className={styles.productsWrapper}>
           <div className={styles.brandContainer}>
             <label htmlFor={brandCheckboxId} className={styles.brandTitle}>
-              <h3 className={montserrat.className}>Marcas</h3>
+              <h3 className={montserrat.className}>Brands</h3>
             </label>
             <input
               type="checkbox"
@@ -80,6 +79,12 @@ const Products = () => {
               hidden
             />
             <ul className={styles.brandList}>
+              <button
+                onClick={(e) => setChecked(!checked)}
+                className={styles.btnClose}
+              >
+                X
+              </button>
               <li className={styles.brandListItem}>
                 <div className={montserrat.className}>
                   <input
@@ -90,7 +95,7 @@ const Products = () => {
                     className={styles.inputBrand}
                     onChange={handleRadioChange}
                   />
-                  <label htmlFor="all">Todas</label>
+                  <label htmlFor="all">All</label>
                 </div>
               </li>
               {brandType.map((brand, idx) => (
@@ -110,49 +115,49 @@ const Products = () => {
               ))}
             </ul>
           </div>
-          <Swiper
-            // autoplay={{
-            //   delay: 4000,
-            //   disableOnInteraction: false,
-            // }}
-            slidesPerView={3}
-            centeredSlides={true}
-            spaceBetween={30}
-            pagination={{
-              type: "fraction",
-            }}
-            navigation={true}
-            modules={[Pagination, Navigation]}
-            className={styles.mySwiper__products}
-          >
-            <div className={styles.productsContainer}>
-              {filteredProducts.map((product, index) => (
-                <SwiperSlide
-                  className={styles.swiperSlide__products}
-                  key={index}
-                >
+
+          <div className={styles.productsContainerMajor}>
+            <div className={styles.buttonContainer}>
+              <button
+                className={styles.productsContainer__btn}
+                onClick={() => scrollButton(-300)}
+              >
+                <BsChevronLeft />
+              </button>
+            </div>
+
+            <div className={styles.productsContainer} ref={scrollRef}>
+              {filteredProducts.map((product) => (
+                <div key={product.name} className={styles.productsItem}>
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    width={300}
+                    height={300}
+                    className={styles.productImage}
+                  ></Image>
+                  <h2 className={montserrat.className}>{product.name}</h2>
+                  <p className={montserrat.className}>{product.tags}</p>
                   <Link
                     key={product.id}
                     href={`/products/${product.id}`}
-                    className={styles.productsItem}
+                    className={styles.productsLink}
                   >
-                    <div className={styles.customImageContainer}>
-                      <Image
-                        src={product.image}
-                        alt={product.name}
-                        width={100}
-                        height={100}
-                        className={`${styles.productImage} ${styles.customImageSize}`}
-                      ></Image>
-                    </div>
-
-                    <h2 className={montserrat.className}>{product.name}</h2>
-                    <p className={montserrat.className}>{product.tags}</p>
+                    <button className={styles.details}>{`Details >`}</button>
                   </Link>
-                </SwiperSlide>
+                </div>
               ))}
             </div>
-          </Swiper>
+
+            <div className={styles.buttonContainer}>
+              <button
+                className={styles.productsContainer__btn}
+                onClick={() => scrollButton(300)}
+              >
+                <BsChevronRight />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </>
