@@ -1,10 +1,13 @@
 .title {
   text-align: center;
+  text-transform: capitalize;
 }
+
 .productsGlobalContainer {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
@@ -19,6 +22,11 @@
   font-size: 4em;
 
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.productsContainer__btn:hover {
+  color: #000;
 }
 
 .productsContainer {
@@ -26,7 +34,7 @@
   grid-auto-flow: column;
   grid-auto-columns: 32%;
 
-  width: 80%;
+  width: 90%;
   gap: 2rem;
   padding: 0 2rem 2rem;
   text-align: center;
@@ -51,11 +59,24 @@
   grid-template-rows: min-content;
   justify-items: center;
   padding: 2rem;
+  cursor: auto;
 }
 
 .productImage {
   inline-size: 80%;
   object-fit: contain;
+}
+
+.details {
+  border: none;
+  background-color: transparent;
+  font-size: 1.1em;
+  margin-top: 0.3em;
+  cursor: pointer;
+}
+
+.details:hover {
+  transform: scale(1.1);
 }
 
 .bransALlContainer {
@@ -85,4 +106,38 @@
 .bransAllContainer__brands__paragraf {
   font-size: 10px;
   opacity: 0.5;
+}
+
+
+@media screen and (max-width: 576px) {
+  .buttonContainer {
+    padding: 1em;
+  }
+
+  .productsContainer__btn {
+    font-size: 2.5em;
+  }
+
+  .productsContainer {
+    grid-auto-columns: 100%;
+
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .buttonContainer {
+    padding: 0.7em;
+  }
+
+  .productsContainer__btn {
+    font-size: 2.5em;
+  }
+
+  .productsContainer {
+    grid-auto-columns: 48%;
+
+    gap: 1rem;
+    padding: 0;
+  }
 }

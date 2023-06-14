@@ -29,14 +29,14 @@ const BrandsDetail = () => {
       </Head>
 
       <h1 className={`${montserrat.className} ${styles.title}`}>
-        Produ details {brand}
+        Product details {brand}
       </h1>
 
       <div className={styles.productsGlobalContainer}>
         <div className={styles.buttonContainer}>
           <button
             className={styles.productsContainer__btn}
-            onClick={() => scrollButton(-200)}
+            onClick={() => scrollButton(-250)}
           >
             <BsChevronLeft />
           </button>
@@ -44,30 +44,32 @@ const BrandsDetail = () => {
 
         <div className={styles.productsContainer} ref={scrollRef}>
           {product.map((item) => (
-            <>
-              <Link
-                href={`/products/${item.id}`}
-                className={styles.productsItem}
-              >
-                <p key={item.id} className={montserrat.className}>
-                  {item.name}
-                </p>
-                <Image
-                  src={item.image}
-                  alt="img"
-                  width={200}
-                  height={200}
-                  className={styles.productImage}
-                />
-                <p className={montserrat.className}>{item.brand}</p>
-              </Link>
-            </>
+            <Link
+              key={item.id}
+              href={`/products/${item.id}`}
+              className={styles.productsItem}
+            >
+              <p key={item.id} className={montserrat.className}>
+                {item.name}
+              </p>
+              <Image
+                src={item.image}
+                alt="img"
+                width={200}
+                height={200}
+                className={styles.productImage}
+              />
+              <p className={montserrat.className}>{item.brand}</p>
+              <button
+                className={`${montserrat.className} ${styles.details}`}
+              >{`Details >`}</button>
+            </Link>
           ))}
         </div>
         <div className={styles.buttonContainer}>
           <button
             className={styles.productsContainer__btn}
-            onClick={() => scrollButton(200)}
+            onClick={() => scrollButton(250)}
           >
             <BsChevronRight />
           </button>
