@@ -8,7 +8,7 @@ import { montserrat } from "@/styles/fonts";
 
 function Footer() {
   const googleMapsUrl =
-    "https://www.google.com/maps/place/Cl+136+%2353b-30,+Suba,+Bogot%C3%A1/@4.7239334,-74.0608413,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f853e622b1bc3:0x67e208c9631872c4!8m2!3d4.7239281!4d-74.0582664!16s%2Fg%2F11h4nb091x?hl=es&entry=ttu";
+    "https://www.google.com/maps/place/10400+W+McNab+Rd,+Tamarac,+FL+33321,+EE.+UU./@26.2075532,-80.2887334,17z/data=!4m6!3m5!1s0x88d90f42a34a120f:0xaa4da0f6e6cf93bb!8m2!3d26.2077165!4d-80.2888942!16s%2Fg%2F11c5jmn9__?hl=es&entry=ttu";
 
   const facebookUrl = "https://es-la.facebook.com/";
 
@@ -18,41 +18,41 @@ function Footer() {
         <section className={montserrat.className}>
           <section className={styles.footerContainer__section1}>
             <article className={styles.footerContainer__section1__inf}>
-              <h1>Dirección</h1>
-              <p>Calle 136 # 53b-30 - Bogota</p>
+              <h1>SHOW ROOM LOCATION</h1>
+              <p>10400 W McNab Rd Tamarac, Fl 33321</p>
               <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer">
                 <TbMapSearch fontSize={19} /> &nbsp;
-                <span className={styles.subrayado}>Ver mapa</span>
+                <span className={styles.subrayado}>See map</span>
               </a>
               <br />
               <br />
-              <h1>Correo electronico</h1>
-              <p>etnia@gmail.com</p>
+              <h1>E-Mail</h1>
+              <p>info@etniapro.com</p>
               <br />
-              <h1>Telefono</h1>
-              <p>314 673 05423</p>
+              <h1>Phone Number</h1>
+              <p>305 608 3596</p>
             </article>
             <article className={styles.footerContainer__section1__hours}>
-              <h1>Horarios</h1>
+              <h1>attention schedule</h1>
               <div
                 className={styles.footerContainer__section1__hours__sections}
               >
                 <div className={styles.divs__interval}>
-                  <p>Lun-Vie</p>
+                  <p>Monday-Friday</p>
                   <p>8:00 a.m - 5:00 p.m</p>
                 </div>
                 <div className={styles.divs__interval}>
-                  <p>Sáb</p>
+                  <p>Saturday</p>
                   <p>9:00 a.m - 5:00 p.m</p>
                 </div>
                 <div>
-                  <p>Lun-Vie</p>
+                  <p>Sunday</p>
                   <p>10:00 a.m - 4:00 p.m</p>
                 </div>
               </div>
             </article>
             <article className={styles.footerContainer__section1__networks}>
-              <h1>Síguenos</h1>
+              <h1>follow us</h1>
               <div className={styles.div__networks}>
                 <a href={facebookUrl} target="_blank" rel="iconFacebook">
                   <BsFacebook fontSize={30} />
@@ -67,11 +67,11 @@ function Footer() {
           <section className={styles.footerContainer__section2}>
             <article>
               <p>
-                <FaCopyright /> Todos los derechos reservados 2023
+                <FaCopyright /> All rights reserved 2023
               </p>
             </article>
             <article>
-              <p>Politicas EtniaAvl</p>
+              <p>political EtniaA</p>
             </article>
             <article>
               <Image src={Logo} alt="logo" width={200} />

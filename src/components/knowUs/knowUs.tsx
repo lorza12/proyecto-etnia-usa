@@ -20,15 +20,14 @@ function KnowUs() {
                 ¿Quienes somos?
               </h1>
               <p className={styles.knowUSContainer__text__p1}>
-                Somos una empresa dedicada a la importación y exportación de
-                productos de alta calidad para el mundo de Audio, Video,
-                Iluminación en el sector de espectáculos, eventos en vivo y
-                teatral. Nos enfocamos en la distribución directa. Estamos
-                comprometidos con ofrecer soluciones{" "}
-                <b className={styles.b}>innovadoras</b> y
-                <b className={styles.b}> tecnológicas</b> para crear
-                experiencias <b className={styles.b}> únicas</b> y
-                <b className={styles.b}> memorables</b>.
+                We are a company dedicated to the import and export of high
+                quality products for the world of Audio, Video, Lighting in the
+                sector of shows, live and theatrical events. We focus on direct
+                distribution. We are committed to offering{" "}
+                <b className={styles.b}> innovative</b> and
+                <b className={styles.b}> technological </b> solutions to create
+                <b className={styles.b}> unique</b> and
+                <b className={styles.b}> memorable </b> experiences.
               </p>
               <Link href={"/about"}>
                 <button

@@ -36,26 +36,31 @@ function Banner() {
     if (window.innerWidth < 1500) {
       setImageWidth(400);
       setImageHeight(700);
-      console.log("1");
-    } else {
-      setImageWidth(500);
-      setImageHeight(800);
-      console.log("2");
     }
 
     if (window.innerWidth < 1210) {
       setImageWidth(300);
       setImageHeight(600);
-      console.log("3");
-    } else {
-      setImageWidth(400);
-      setImageHeight(700);
-      console.log("4");
     }
     if (window.innerWidth < 910) {
+      setImageWidth(350);
+      setImageHeight(650);
       setSlidesPerView(2);
     } else {
       setSlidesPerView(3);
+    }
+    if (window.innerWidth < 730) {
+      setImageWidth(500);
+      setImageHeight(800);
+      setSlidesPerView(1);
+    }
+    if (window.innerWidth < 540) {
+      setImageWidth(400);
+      setImageHeight(700);
+    }
+    if (window.innerWidth < 440) {
+      setImageWidth(300);
+      setImageHeight(600);
     }
   };
 
