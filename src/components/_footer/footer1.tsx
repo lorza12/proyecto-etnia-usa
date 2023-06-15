@@ -34,6 +34,7 @@ function Footer() {
             </article>
             <article className={styles.footerContainer__section1__hours}>
               <h1>attention schedule</h1>
+              <br />
               <div
                 className={styles.footerContainer__section1__hours__sections}
               >
@@ -72,9 +73,6 @@ function Footer() {
             </article>
             <article>
               <p>political EtniaA</p>
-            </article>
-            <article>
-              <Image src={Logo} alt="logo" width={200} />
             </article>
           </section>
         </section>

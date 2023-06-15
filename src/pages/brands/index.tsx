@@ -41,14 +41,14 @@ function BrandsAll() {
       </Head>
       <main className={styles.bransALlContainer}>
         <section className={styles.bransALlContainer__title}>
-          <h1 className={lato.className}>ASSOCIATED BRANDS</h1>
+          <h1 className={lato.className}>/ ASSOCIATED BRANDS /</h1>
         </section>
 
         <section className={styles.bransAllContainer__brands}>
           <article className={styles.bransAllContainer__brand__conteiner}>
             <div className={prompt.className}>
               <Link href={`/brands/workpro`}>
-                <Image src={brand1} alt="brand1" width={200} height={100} />
+                <Image src={brand1} alt="brand1" width={220} height={90} />
               </Link>
               <p className={styles.bransAllContainer__brands__paragraf}>
                 WORKPRO {`(${lengthWokpro})`}{" "}
@@ -58,7 +58,7 @@ function BrandsAll() {
           <article className={styles.bransAllContainer__brand__conteiner}>
             <div className={prompt.className}>
               <Link href={`/brands/lightshark`}>
-                <Image src={brand2} alt="brand2" width={200} height={100} />
+                <Image src={brand2} alt="brand2" width={220} height={80} />
               </Link>
               <p className={styles.bransAllContainer__brands__paragraf}>
                 LIGTHSHRK {`(${lengthLightshark})`}

@@ -65,7 +65,7 @@ const Products = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.productsGlobalContainer}>
-        <h1 className={montserrat.className}>/PRODUCTS/</h1>
+        <h1 className={montserrat.className}>/ PRODUCTS /</h1>
         <div className={styles.productsWrapper}>
           <div className={styles.brandContainer}>
             <label htmlFor={brandCheckboxId} className={styles.brandTitle}>
@@ -138,12 +138,15 @@ const Products = () => {
                   ></Image>
                   <h2 className={montserrat.className}>{product.name}</h2>
                   <p className={montserrat.className}>{product.tags}</p>
+                  <br />
                   <Link
                     key={product.id}
                     href={`/products/${product.id}`}
                     className={styles.productsLink}
                   >
-                    <button className={styles.details}>{`Details >`}</button>
+                    <button className={styles.details}>
+                      <h3>{`Details >`}</h3>
+                    </button>
                   </Link>
                 </div>
               ))}

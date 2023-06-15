@@ -16,9 +16,7 @@ function KnowUs() {
           </article>
           <article className={styles.knowUSContainer__text}>
             <div className={montserrat.className}>
-              <h1 className={styles.knowUSContainer__text__h1}>
-                ¿Quienes somos?
-              </h1>
+              <h1 className={styles.knowUSContainer__text__h1}>ABOUT US</h1>
               <p className={styles.knowUSContainer__text__p1}>
                 We are a company dedicated to the import and export of high
                 quality products for the world of Audio, Video, Lighting in the
@@ -29,7 +27,7 @@ function KnowUs() {
                 <b className={styles.b}> unique</b> and
                 <b className={styles.b}> memorable </b> experiences.
               </p>
-              <Link href={"/about"}>
+              <Link href={""}>
                 <button
                   type="button"
                   className={styles.knowUSContainer__button}

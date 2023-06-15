@@ -6,6 +6,7 @@
 }
 .bransALlContainer__title {
   text-align: center;
+  font-size: 18px;
 }
 .bransAllContainer__brands {
   display: flex;

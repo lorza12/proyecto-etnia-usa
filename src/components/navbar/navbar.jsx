@@ -1,9 +1,5 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import SwiperCore, { Pagination, Autoplay } from "swiper";
 import Link from "next/link";
 import styles from "@/styles/NavBar.module.css";
 import Image from "next/image";
@@ -56,7 +52,7 @@ function NavBar() {
                   <p>CONTACT US</p>
                 </Link>
 
-                <Link href={"/brans"}>
+                <Link href={"/"}>
                   <p>ABOUT US</p>
                 </Link>
               </div>

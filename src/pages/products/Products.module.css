@@ -1,6 +1,12 @@
+.productsGlobalContainer {
+  padding: 3rem 0 7rem;
+}
+
 .productsGlobalContainer > h1 {
   text-align: center;
   margin: 0 0 3em;
+  font-size: 28px;
+
 }
 
 .productsWrapper {
@@ -99,8 +105,9 @@
 .details {
   border: none;
   background-color: transparent;
-  font-size: 1.2em;
+  font-size: 1.1em;
   cursor: pointer;
+
 }
 
 .productsLink:hover {

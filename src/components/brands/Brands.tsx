@@ -5,7 +5,6 @@ import brand2 from "../../../public/assets/brands-logos/88434ced-6a7b-4817-b9f2-
 import brand3 from "../../../public/assets/brands-logos/82aa8aab-3493-40e0-873e-4f7dc1cd3792.png";
 import brand4 from "../../../public/assets/brands-logos/104a04d9-e509-4ea5-ad82-d06c7bdf3a07.png";
 import Link from "next/link";
-import { products as prod } from "../../assets/dataProducts";
 import { montserrat } from "@/styles/fonts";
 
 function Brands() {
@@ -26,7 +25,7 @@ function Brands() {
           <article className={styles.bransContainer__brand__scale}>
             <div className={styles.bransContainer__brand__circle}>
               <Link href={`/brands/lightshark`}>
-                <Image src={brand2} alt="brand2" width={220} height={90} />
+                <Image src={brand2} alt="brand2" width={230} height={80} />
               </Link>
             </div>
           </article>

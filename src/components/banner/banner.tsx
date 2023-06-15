@@ -7,17 +7,17 @@ import SwiperCore, {
 } from "swiper";
 import styles from "@/styles/Banner.module.css";
 import Image from "next/image";
-import img1 from "../../../public/assets/banner-img/1.png";
+import img1 from "../../../public/assets/banner-img/18.png";
 import img2 from "../../../public/assets/banner-img/11.png";
 import img3 from "../../../public/assets/banner-img/12.png";
 import img4 from "../../../public/assets/banner-img/14.png";
-import img5 from "../../../public/assets/banner-img/18.png";
+import img5 from "../../../public/assets/banner-img/1.png";
 import img6 from "../../../public/assets/banner-img/21.png";
 import img7 from "../../../public/assets/banner-img/2.png";
-import img8 from "../../../public/assets/banner-img/11.png";
+import img8 from "../../../public/assets/banner-img/8.png";
 import img9 from "../../../public/assets/banner-img/5.png";
 import img10 from "../../../public/assets/banner-img/6.png";
-import img11 from "../../../public/assets/banner-img/1.png";
+import img11 from "../../../public/assets/banner-img/17.png";
 
 import "swiper/css";
 import "swiper/css/navigation";
