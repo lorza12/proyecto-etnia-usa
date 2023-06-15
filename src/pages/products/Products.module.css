@@ -120,6 +120,14 @@
   cursor: pointer;
 }
 
+.productsContainer__btn:hover {
+  color: #000;
+}
+
+.productsContainer__btn:disabled {
+  color: #e5e5e5;
+}
+
 @media screen and (min-width: 769px) and (max-width: 1200px) {
   .productsContainer {
     grid-auto-columns: 50%;
