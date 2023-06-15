@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { products as prod } from "../../assets/dataProducts";
 import styles from "./Products.module.css";
-import { useId, useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useId, useLayoutEffect, useRef, useState } from "react";
 import { montserrat } from "@/styles/fonts";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
@@ -56,9 +56,8 @@ const Products = () => {
 
   const scrollButton = (scrollOffset: number) => {
     const bottom = (scrollRef.current.scrollLeft += scrollOffset);
-    const btnRight = bottom + 300;
-    const widthRight = width - 600;
-    const buttonRight = btnRight >= widthRight ? true : null;
+    const widthRight = width - bottom;
+    const buttonRight = widthRight <= 1283 ? true : null;
     const buttonLeft = bottom <= 300 ? true : false;
     setBottom(buttonRight);
     setTop(buttonLeft);
