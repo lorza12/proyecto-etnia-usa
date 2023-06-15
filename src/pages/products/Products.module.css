@@ -45,7 +45,6 @@
   color: #3595f5;
 }
 
-
 .inputBrand {
   appearance: none;
   -webkit-appearance: none;
@@ -171,18 +170,17 @@
 
   .brandList {
     display: none;
-    position: fixed;
-    background: rgb(53, 149, 245, 0.9);
+    position: absolute;
+    background: rgb(53, 149, 245);
     color: #fff;
-    top: 0;
-    left: 0;
-    margin: 0;
+    width: 40%;
+    margin: -0.8em 0 0;
     padding: 2em;
-    height: 100vh;
+    height: auto;
   }
 
   .brandListItem {
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 1em 0;
     border-bottom: 1px solid #fff;
     cursor: pointer;
@@ -190,7 +188,7 @@
 
   .brandTitle ~ input:checked ~ .brandList {
     display: block;
-    height: 100%;
+    height: auto;
   }
 
   .brandContainer {
@@ -248,18 +246,16 @@
 
   .brandList {
     display: none;
-    position: fixed;
-    background: rgb(53, 149, 245, 0.9);
+    position: absolute;
+    background: rgb(53, 149, 245);
     color: #fff;
-    top: 0;
-    left: 0;
-    margin: 0;
+    margin: -0.8em 0 0;
     padding: 2em;
-    height: 100vh;
+    height: auto;
   }
 
   .brandListItem {
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 1em 0;
     border-bottom: 1px solid #fff;
     cursor: pointer;
@@ -267,7 +263,7 @@
 
   .brandTitle ~ input:checked ~ .brandList {
     display: block;
-    height: 100%;
+    height: auto;
   }
 
   .btnClose {

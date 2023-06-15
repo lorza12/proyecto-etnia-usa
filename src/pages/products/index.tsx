@@ -50,10 +50,6 @@ const Products = () => {
   const brandType = getUniqueCategory(prod, "brand");
   const filteredProducts = filterProducts(prod);
 
-  const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    event.target.checked ? setChecked(!checked) : null;
-  };
-
   useLayoutEffect(() => {
     setWidth(scrollRef.current.scrollWidth);
   }, [filteredProducts]);
@@ -87,16 +83,10 @@ const Products = () => {
               type="checkbox"
               id={brandCheckboxId}
               checked={checked}
-              onChange={handleCheckboxChange}
+              onChange={(e) => setChecked(!checked)}
               hidden
             />
             <ul className={styles.brandList}>
-              <button
-                onClick={(e) => setChecked(!checked)}
-                className={styles.btnClose}
-              >
-                X
-              </button>
               <li className={styles.brandListItem}>
                 <div className={montserrat.className}>
                   <input
