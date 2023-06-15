@@ -7,7 +7,6 @@ import styles from "./Products.module.css";
 import { useId, useLayoutEffect, useRef, useState } from "react";
 import { montserrat } from "@/styles/fonts";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
-import { AiOutlineCloseSquare } from "react-icons/ai";
 
 export interface ProductModel {
   id: number;
@@ -24,7 +23,7 @@ const Products = () => {
   const [brand, setBrand] = useState<string>("all");
   const [checked, setChecked] = useState(false);
   const [width, setWidth] = useState(0);
-  const [top, setTop] = useState(false);
+  const [top, setTop] = useState(true);
   const [bottom, setBottom] = useState(false);
   const brandCheckboxId = useId();
   const scrollRef = useRef(null);
@@ -56,21 +55,17 @@ const Products = () => {
   };
 
   useLayoutEffect(() => {
-    setWidth(scrollRef.current.offsetWidth);
-  }, []);
+    setWidth(scrollRef.current.scrollWidth);
+  }, [filteredProducts]);
 
   const scrollButton = (scrollOffset: number) => {
     const bottom = (scrollRef.current.scrollLeft += scrollOffset);
-    const buttonRight = bottom >= width ? true : null;
-    const buttonLeft = bottom <= 300 ? true : null;
-    console.log(
-      "width: ", width,
-      "scrollOffset: ",
-      bottom,
-      "buttonRight: ",
-      buttonRight,
-    );
-    setTop(buttonLeft)
+    const btnRight = bottom + 300;
+    const widthRight = width - 600;
+    const buttonRight = btnRight >= widthRight ? true : null;
+    const buttonLeft = bottom <= 300 ? true : false;
+    setBottom(buttonRight);
+    setTop(buttonLeft);
   };
 
   return (
@@ -171,6 +166,7 @@ const Products = () => {
               <button
                 className={styles.productsContainer__btn}
                 onClick={() => scrollButton(300)}
+                disabled={bottom}
               >
                 <BsChevronRight />
               </button>

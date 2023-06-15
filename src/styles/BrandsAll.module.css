@@ -29,6 +29,10 @@
   color: #000;
 }
 
+.productsContainer__btn:disabled {
+  color: #e5e5e5;
+}
+
 .productsContainer {
   display: grid;
   grid-auto-flow: column;

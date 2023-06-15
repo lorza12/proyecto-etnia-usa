@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { products as produ } from "../../assets/dataProducts";
 import Link from "next/link";
-import { useRef } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import { montserrat } from "@/styles/fonts";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import styles from "../../styles/BrandsAll.module.css";
@@ -12,11 +12,24 @@ const BrandsDetail = () => {
   const router = useRouter();
   const { brand } = router.query;
   const scrollRef = useRef(null);
+  const [width, setWidth] = useState(0);
+  const [top, setTop] = useState(true);
+  const [bottom, setBottom] = useState(false);
 
   const product = produ.filter((element) => element.brand === brand);
 
-  const scrollButton = (scrollOffset) => {
-    scrollRef.current.scrollLeft += scrollOffset;
+  useLayoutEffect(() => {
+    setWidth(scrollRef.current.scrollWidth);
+  }, []);
+
+  const scrollButton = (scrollOffset: number) => {
+    const bottom = (scrollRef.current.scrollLeft += scrollOffset);
+    const btnRight = bottom + 400;
+    const widthRight = width - 700;
+    const buttonRight = btnRight >= widthRight ? true : null;
+    const buttonLeft = bottom <= 300 ? true : false;
+    setBottom(buttonRight);
+    setTop(buttonLeft);
   };
 
   return (
@@ -37,6 +50,7 @@ const BrandsDetail = () => {
           <button
             className={styles.productsContainer__btn}
             onClick={() => scrollButton(-300)}
+            disabled={top}
           >
             <BsChevronLeft />
           </button>
@@ -70,6 +84,7 @@ const BrandsDetail = () => {
           <button
             className={styles.productsContainer__btn}
             onClick={() => scrollButton(300)}
+            disabled={bottom}
           >
             <BsChevronRight />
           </button>
