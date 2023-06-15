@@ -12,7 +12,7 @@ function Products() {
         <div className={styles.productsContainer}>
           <div className={styles.productsContainer__title}>
             <div className={montserrat.className}>
-              <h1>/OUR PRODUCTS/</h1>
+              <h1>/ OUR PRODUCTS /</h1>
             </div>
           </div>
 

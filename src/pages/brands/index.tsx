@@ -8,6 +8,7 @@ import brand3 from "../../../public/assets/brands-logos/82aa8aab-3493-40e0-873e-
 import brand4 from "../../../public/assets/brands-logos/104a04d9-e509-4ea5-ad82-d06c7bdf3a07.png";
 import Link from "next/link";
 import { products as produ } from "../../assets/dataProducts";
+import { montserrat } from "@/styles/fonts";
 
 const prompt = Prompt({
   subsets: ["latin"],
@@ -41,7 +42,7 @@ function BrandsAll() {
       </Head>
       <main className={styles.bransALlContainer}>
         <section className={styles.bransALlContainer__title}>
-          <h1 className={lato.className}>/ ASSOCIATED BRANDS /</h1>
+          <h1 className={montserrat.className}>/ ASSOCIATED BRANDS /</h1>
         </section>
 
         <section className={styles.bransAllContainer__brands}>
@@ -60,6 +61,8 @@ function BrandsAll() {
               <Link href={`/brands/lightshark`}>
                 <Image src={brand2} alt="brand2" width={220} height={80} />
               </Link>
+              <br />
+              <br />
               <p className={styles.bransAllContainer__brands__paragraf}>
                 LIGTHSHRK {`(${lengthLightshark})`}
               </p>

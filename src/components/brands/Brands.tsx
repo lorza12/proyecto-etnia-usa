@@ -18,7 +18,7 @@ function Brands() {
           <article className={styles.bransContainer__brand__scale}>
             <div className={styles.bransContainer__brand__circle}>
               <Link href={`/brands/workpro`}>
-                <Image src={brand1} alt="brand1" width={200} height={100} />
+                <Image src={brand1} alt="brand1" width={220} height={90} />
               </Link>
             </div>
           </article>
