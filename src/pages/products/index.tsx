@@ -4,10 +4,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { products as prod } from "../../assets/dataProducts";
 import styles from "./Products.module.css";
-import { useId, useRef, useState } from "react";
+import { useEffect, useId, useLayoutEffect, useRef, useState } from "react";
 import { montserrat } from "@/styles/fonts";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
-import { AiOutlineCloseSquare } from "react-icons/ai";
 
 export interface ProductModel {
   id: number;
@@ -23,6 +22,9 @@ export interface ProductModel {
 const Products = () => {
   const [brand, setBrand] = useState<string>("all");
   const [checked, setChecked] = useState(false);
+  const [width, setWidth] = useState(0);
+  const [top, setTop] = useState(true);
+  const [bottom, setBottom] = useState(false);
   const brandCheckboxId = useId();
   const scrollRef = useRef(null);
 
@@ -48,12 +50,17 @@ const Products = () => {
   const brandType = getUniqueCategory(prod, "brand");
   const filteredProducts = filterProducts(prod);
 
-  const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    event.target.checked ? setChecked(!checked) : null;
-  };
+  useLayoutEffect(() => {
+    setWidth(scrollRef.current.scrollWidth);
+  }, [filteredProducts]);
 
   const scrollButton = (scrollOffset: number) => {
-    scrollRef.current.scrollLeft += scrollOffset;
+    const bottom = (scrollRef.current.scrollLeft += scrollOffset);
+    const widthRight = width - bottom;
+    const buttonRight = widthRight <= 1283 ? true : null;
+    const buttonLeft = bottom <= 300 ? true : false;
+    setBottom(buttonRight);
+    setTop(buttonLeft);
   };
 
   return (
@@ -75,16 +82,10 @@ const Products = () => {
               type="checkbox"
               id={brandCheckboxId}
               checked={checked}
-              onChange={handleCheckboxChange}
+              onChange={(e) => setChecked(!checked)}
               hidden
             />
             <ul className={styles.brandList}>
-              <button
-                onClick={(e) => setChecked(!checked)}
-                className={styles.btnClose}
-              >
-                X
-              </button>
               <li className={styles.brandListItem}>
                 <div className={montserrat.className}>
                   <input
@@ -121,6 +122,7 @@ const Products = () => {
               <button
                 className={styles.productsContainer__btn}
                 onClick={() => scrollButton(-300)}
+                disabled={top}
               >
                 <BsChevronLeft />
               </button>
@@ -156,6 +158,7 @@ const Products = () => {
               <button
                 className={styles.productsContainer__btn}
                 onClick={() => scrollButton(300)}
+                disabled={bottom}
               >
                 <BsChevronRight />
               </button>
