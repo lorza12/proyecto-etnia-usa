@@ -45,7 +45,7 @@ const BrandsDetail = () => {
         Product details {brand}
       </h1>
 
-      <div className={styles.productsGlobalContainer}>
+      <main className={styles.productsGlobalContainer}>
         <div className={styles.buttonContainer}>
           <button
             className={styles.productsContainer__btn}
