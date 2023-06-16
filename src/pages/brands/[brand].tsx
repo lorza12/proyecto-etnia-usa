@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { products as produ } from "../../assets/dataProducts";
 import Link from "next/link";
-import { useRef } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import { montserrat } from "@/styles/fonts";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import styles from "../../styles/BrandsAll.module.css";
@@ -12,11 +12,24 @@ const BrandsDetail = () => {
   const router = useRouter();
   const { brand } = router.query;
   const scrollRef = useRef(null);
+  const [width, setWidth] = useState(0);
+  const [top, setTop] = useState(true);
+  const [bottom, setBottom] = useState(false);
 
   const product = produ.filter((element) => element.brand === brand);
 
-  const scrollButton = (scrollOffset) => {
-    scrollRef.current.scrollLeft += scrollOffset;
+  useLayoutEffect(() => {
+    setWidth(scrollRef.current.scrollWidth);
+  }, []);
+
+  const scrollButton = (scrollOffset: number) => {
+    const bottom = (scrollRef.current.scrollLeft += scrollOffset);
+    const btnRight = bottom + 400;
+    const widthRight = width - 700;
+    const buttonRight = btnRight >= widthRight ? true : null;
+    const buttonLeft = bottom <= 300 ? true : false;
+    setBottom(buttonRight);
+    setTop(buttonLeft);
   };
 
   return (
@@ -28,58 +41,51 @@ const BrandsDetail = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.productsAllContainer}>
-        <div>
-          <h1 className={`${montserrat.className} ${styles.title}`}>
-            / {brand} /
-          </h1>
-        </div>
-        <div className={styles.productsGlobalContainer}>
-          <div className={styles.buttonContainer}>
-            <button
-              className={styles.productsContainer__btn}
-              onClick={() => scrollButton(-300)}
-            >
-              <BsChevronLeft />
-            </button>
-          </div>
+      <h1 className={`${montserrat.className} ${styles.title}`}>
+        Product details {brand}
+      </h1>
 
-          <div className={styles.productsContainer} ref={scrollRef}>
-            {product.map((item) => (
-              <Link
-                key={item.id}
-                href={`/products/${item.id}`}
-                className={styles.productsItem}
-              >
-                <Image
-                  src={item.image}
-                  alt="img"
-                  width={200}
-                  height={200}
-                  className={styles.productImage}
-                />
-                <br />
-                <br />
-                <h2 key={item.id} className={montserrat.className}>
-                  {item.name}
-                </h2>
-                <br />
-                <p className={montserrat.className}>{item.tags}</p>
-                <br />
-                <button className={`${montserrat.className} ${styles.details}`}>
-                  <h3>{`Details >`}</h3>
-                </button>
-              </Link>
-            ))}
-          </div>
-          <div className={styles.buttonContainer}>
-            <button
-              className={styles.productsContainer__btn}
-              onClick={() => scrollButton(300)}
+      <div className={styles.productsGlobalContainer}>
+        <div className={styles.buttonContainer}>
+          <button
+            className={styles.productsContainer__btn}
+            onClick={() => scrollButton(-300)}
+          >
+            <BsChevronLeft />
+          </button>
+        </div>
+
+        <div className={styles.productsContainer} ref={scrollRef}>
+          {product.map((item) => (
+            <Link
+              key={item.id}
+              href={`/products/${item.id}`}
+              className={styles.productsItem}
             >
-              <BsChevronRight />
-            </button>
-          </div>
+              <p key={item.id} className={montserrat.className}>
+                {item.name}
+              </p>
+              <Image
+                src={item.image}
+                alt="img"
+                width={200}
+                height={200}
+                className={styles.productImage}
+              />
+              <p className={montserrat.className}>{item.brand}</p>
+              <button
+                className={`${montserrat.className} ${styles.details}`}
+              >{`Details >`}</button>
+            </Link>
+          ))}
+        </div>
+        <div className={styles.buttonContainer}>
+          <button
+            className={styles.productsContainer__btn}
+            onClick={() => scrollButton(300)}
+          >
+            <BsChevronRight />
+          </button>
         </div>
       </main>
     </>
