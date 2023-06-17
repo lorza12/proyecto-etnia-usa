@@ -17,7 +17,7 @@ export const mainProducts = [
     name: "LS 1",
     tags: "Led, LED Effects / Special Effects, Lighting, Lightshark Controllers, LS-1, Theatrical",
     image: "/assets/mainProducts/LightShark_pers-removebg-preview.png",
-    brand: "lightshark",
+    brand: "Lightshark",
     description:
       "The power of the LightShark engine combined with a complete hardware surface.The LS-1 brings together the best features from the world of the LightShark software engine and marries them to an intuitive, ergonomic hardware control surface. 4 encoders, 10 master playbacks and a color built-in display, combined with a complete set of RGB buttons, give the users a full console platform able to manage incredible shows in a very reduced size, which is compatible with airplane carry-on luggage.",
     description2: "LS-1: Includes (LS-1 & Gooseneck Lamp)The LS-1 includes a built-in stand to hold a device like a tablet on the back of the LS-1, and an extra dedicated USB charging socket on the rear panel to keep associated tablets or Smartphones charged at all times."
@@ -29,7 +29,7 @@ export const mainProducts = [
     name: "WTS 506",
     tags: "Led, LED Effects / Special Effects, LED Video Walls, Lighting, Work Pro Lifters, WTS 506",
     image: "/assets/mainProducts/WTS_506-e1676499676148-removebg-preview.png",
-    brand: "workpro",
+    brand: "Workpro",
     description:
       "WTS 506. The WTS Series means a change of concept within the front load towers, as it introduces the new Structural Mode. This Structural Mode does not use the winch to lift the load, but involves lifting the load with the help of a manual or electric hoist. That is, the tower is used as a structure that is all locked to the required working height. Once the tower is raised to this desired height, the load must be raised with the hoist. ",
     description2: "The Structural Mode performs improved loading capacities. Furthermore, the WTS Series incorporates the innovative Dynamic Overlap system."
@@ -40,7 +40,7 @@ export const mainProducts = [
     name: "AWS 402",
     tags: "Accesory, Attachments, AWS 402, Line Array, Work Pro Lifters, WTS 506",
     image: "/assets/mainProducts/AWS-403_20200311120728-removebg-preview.png",
-    brand: "workpro",
+    brand: "Workpro",
     description:
       "AWS 402. Reinforcement bar, for safe lifting of heavy Line Array systems.",
     description2: "Suitable for models: WTS 506. "
@@ -51,7 +51,7 @@ export const mainProducts = [
     name: "FUNDA SL 210 A",
     tags: "Protective cover for SL 210 A",
     image: "/assets/mainProducts/SL-210-FUNDA--2_20181203131855-removebg-preview.png",
-    brand: "equipson",
+    brand: "Equipson",
     description:
       "Protective foam-filled cover for 6 units of SL 210 A.",
     description2: ""

@@ -97,7 +97,7 @@ function NavBar() {
                 <br />
 
                 <div className={styles.span}>
-                  <Link href={"/about"}>
+                  <Link href={"/brands"}>
                     <li
                       className={montserrat.className}
                       onClick={() => handleItemClick("/brands")}

@@ -33,7 +33,7 @@ function Footer() {
               <p>305 608 3596</p>
             </article>
             <article className={styles.footerContainer__section1__hours}>
-              <h1>attention schedule</h1>
+              <h1>Attention schedule</h1>
               <br />
               <div
                 className={styles.footerContainer__section1__hours__sections}
@@ -53,7 +53,7 @@ function Footer() {
               </div>
             </article>
             <article className={styles.footerContainer__section1__networks}>
-              <h1>follow us</h1>
+              <h1>Follow us</h1>
               <div className={styles.div__networks}>
                 <a href={facebookUrl} target="_blank" rel="iconFacebook">
                   <BsFacebook fontSize={30} />
