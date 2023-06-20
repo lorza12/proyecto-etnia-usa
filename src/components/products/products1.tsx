@@ -30,11 +30,6 @@ function Products() {
                     />
                     <h1 className={montserrat.className}>{product.name}</h1>
                     <p className={montserrat.className}>{product.tags}</p>
-                    {/* <Link href={`/products/${product.id}`}>
-                      <button type="button" className={styles.product__button}>
-                        Ver Producto
-                      </button>
-                    </Link> */}
                   </div>
                 </Link>
               </>

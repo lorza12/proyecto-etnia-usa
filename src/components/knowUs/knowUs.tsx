@@ -12,7 +12,7 @@ function KnowUs() {
         <section className={styles.knowUSContainer}>
           <article className={styles.knowUSContainer__logo}>
             <br />
-            <Image src={Logo} alt="img logo" width={300} height={150} />
+            <Image src={Logo} alt="img logo" width={300} height={100} />
           </article>
           <article className={styles.knowUSContainer__text}>
             <div className={montserrat.className}>

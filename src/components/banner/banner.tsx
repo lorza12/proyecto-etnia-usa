@@ -33,6 +33,11 @@ function Banner() {
   const [slidesPerView, setSlidesPerView] = useState(3);
 
   const handleResize = () => {
+    if (window.innerWidth > 2099) {
+      setSlidesPerView(4);
+    } else {
+      setSlidesPerView(3);
+    }
     if (window.innerWidth < 1500) {
       setImageWidth(400);
       setImageHeight(700);
@@ -55,12 +60,12 @@ function Banner() {
       setSlidesPerView(1);
     }
     if (window.innerWidth < 540) {
-      setImageWidth(400);
-      setImageHeight(700);
+      setImageWidth(450);
+      setImageHeight(750);
     }
     if (window.innerWidth < 440) {
-      setImageWidth(300);
-      setImageHeight(600);
+      setImageWidth(350);
+      setImageHeight(650);
     }
   };
 

@@ -33,7 +33,7 @@ function Footer() {
               <p>305 608 3596</p>
             </article>
             <article className={styles.footerContainer__section1__hours}>
-              <h1>Attention schedule</h1>
+              <h1>ATTENTION SCHEDULE</h1>
               <br />
               <div
                 className={styles.footerContainer__section1__hours__sections}
@@ -42,18 +42,10 @@ function Footer() {
                   <p>Monday-Friday</p>
                   <p>8:00 a.m - 5:00 p.m</p>
                 </div>
-                <div className={styles.divs__interval}>
-                  <p>Saturday</p>
-                  <p>9:00 a.m - 5:00 p.m</p>
-                </div>
-                <div>
-                  <p>Sunday</p>
-                  <p>10:00 a.m - 4:00 p.m</p>
-                </div>
               </div>
             </article>
             <article className={styles.footerContainer__section1__networks}>
-              <h1>Follow us</h1>
+              <h1>Follow As</h1>
               <div className={styles.div__networks}>
                 <a href={facebookUrl} target="_blank" rel="iconFacebook">
                   <BsFacebook fontSize={30} />

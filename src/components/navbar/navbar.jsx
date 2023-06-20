@@ -34,7 +34,7 @@ function NavBar() {
           <div className={styles.navBarContainer__logoInfo}>
             <div className={styles.navbarContainer__LogoInfo__logo}>
               <Link href={"/"}>
-                <Image src={Logo} alt="img logo" width={300} height={120} />
+                <Image src={Logo} alt="img logo" width={300} height={100} />
               </Link>
             </div>
 

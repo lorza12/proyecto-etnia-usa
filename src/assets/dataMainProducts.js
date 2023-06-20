@@ -48,12 +48,12 @@ export const mainProducts = [
   {
     id: 5,
     category: "",
-    name: "FUNDA SL 210 A",
-    tags: "Protective cover for SL 210 A",
-    image: "/assets/mainProducts/SL-210-FUNDA--2_20181203131855-removebg-preview.png",
-    brand: "Equipson",
+    name: "NGS 80 LX",
+    tags: "Speaker with led light for garden",
+    image: "/assets/equipson-img/NGS_80_LX_01_20210916160215-removebg-preview.png",
+    brand: "equipson",
     description:
-      "Protective foam-filled cover for 6 units of SL 210 A.",
+      "NGS 80 LX is an acoustic enclosure with built-in LED light, designed for installation in gardens. It has an 8'' woofer and a 1.4'' tweeter. It can work both in low impedance installations and in 70/100 volt line installations, with a power of 120W @ 8Ohm and 60/40/20 W in 100 v line (selectable). It incorporates 9W and 3000K led lighting powered at 12v DC (power supply not included). It is made of ABS plastic and designed to offer omnidirectional coverage.",
     description2: ""
   },
   {
