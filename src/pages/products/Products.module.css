@@ -158,16 +158,6 @@
     color: #000;
   }
 
-  .btnClose {
-    color: rgb(255, 255, 255);
-    background: none;
-    border: none;
-    cursor: pointer;
-    text-align: start;
-    font-size: 1.5rem;
-    display: inline;
-  }
-
   .brandList {
     display: none;
     position: absolute;
@@ -212,7 +202,7 @@
   .productsWrapper {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: start;
+    justify-content: flex-start;
     padding: 0;
   }
 

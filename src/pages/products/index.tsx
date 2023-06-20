@@ -23,10 +23,26 @@ const Products = () => {
   const [brand, setBrand] = useState<string>("all");
   const [checked, setChecked] = useState(false);
   const [width, setWidth] = useState(0);
+  const [windowSize, setWindowSize] = useState(() => {
+    if (typeof window !== "undefined") {
+      return window.innerWidth;
+    }
+    return null;
+  });
   const [top, setTop] = useState(true);
   const [bottom, setBottom] = useState(false);
   const brandCheckboxId = useId();
   const scrollRef = useRef(null);
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowSize(window.innerWidth);
+    };
+    window.addEventListener("resize", handleWindowResize);
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
 
   const getUniqueCategory = (data: ProductModel[], field: string) => {
     let newElement = data.map((currentElement) => {
@@ -54,12 +70,33 @@ const Products = () => {
     setWidth(scrollRef.current.scrollWidth);
   }, [filteredProducts]);
 
+  const scrollSlide = () => {
+    if (windowSize >= 710 && windowSize <= 768) {
+      return 400;
+    } else {
+      return 300;
+    }
+  };
+
+  const sizeScroll = scrollSlide();
+
   const scrollButton = (scrollOffset: number) => {
-    const bottom = (scrollRef.current.scrollLeft += scrollOffset);
-    const widthRight = width - bottom;
-    const buttonRight = widthRight <= 1283 ? true : null;
-    const buttonLeft = bottom <= 300 ? true : false;
-    setBottom(buttonRight);
+    const scrollPosition = (scrollRef.current.scrollLeft += scrollOffset);
+    const scrollToTop =
+      Math.floor(
+        scrollRef.current.scrollWidth - (scrollRef.current.scrollLeft + 1)
+      ) <= scrollRef.current.clientWidth;
+    const buttonLeft = scrollPosition <= 300 ? true : false;
+    console.log(
+      "position: ",
+      Math.floor(
+        scrollRef.current.scrollWidth - (scrollRef.current.scrollLeft + 1)
+      ),
+      "window: ",
+      scrollRef.current.clientWidth
+    );
+
+    setBottom(scrollToTop);
     setTop(buttonLeft);
   };
 
@@ -121,7 +158,7 @@ const Products = () => {
             <div className={styles.buttonContainer}>
               <button
                 className={styles.productsContainer__btn}
-                onClick={() => scrollButton(-300)}
+                onClick={() => scrollButton(-sizeScroll)}
                 disabled={top}
               >
                 <BsChevronLeft />
@@ -154,7 +191,7 @@ const Products = () => {
             <div className={styles.buttonContainer}>
               <button
                 className={styles.productsContainer__btn}
-                onClick={() => scrollButton(300)}
+                onClick={() => scrollButton(sizeScroll)}
                 disabled={bottom}
               >
                 <BsChevronRight />
