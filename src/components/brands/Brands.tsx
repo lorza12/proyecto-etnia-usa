@@ -20,42 +20,42 @@ function Brands() {
           <article className={styles.bransContainer__brand__scale}>
             <div className={styles.bransContainer__brand__circle}>
               <Link href={`https://gammaledvision.com/`}>
-                <Image src={brand0} alt="brand0" width={220} height={80} />
+                <Image src={brand0} alt="brand0" width={200} height={80} />
               </Link>
             </div>
           </article>
           <article className={styles.bransContainer__brand__scale}>
             <div className={styles.bransContainer__brand__circle}>
               <Link href={`/brands/workpro`}>
-                <Image src={brand1} alt="brand1" width={210} height={80} />
+                <Image src={brand1} alt="brand1" width={190} height={60} />
               </Link>
             </div>
           </article>
           <article className={styles.bransContainer__brand__scale}>
             <div className={styles.bransContainer__brand__circle}>
               <Link href={`/brands/lightshark`}>
-                <Image src={brand2} alt="brand2" width={250} height={50} />
+                <Image src={brand2} alt="brand2" width={230} height={40} />
               </Link>
             </div>
           </article>
           <article className={styles.bransContainer__brand__scale}>
             <div className={styles.bransContainer__brand__circle}>
               <Link href={`/brands/G-Truss`}>
-                <Image src={brand3} alt="brand3" width={210} height={90} />
+                <Image src={brand3} alt="brand3" width={190} height={70} />
               </Link>
             </div>
           </article>
           <article className={styles.bransContainer__brand__scale}>
             <div className={styles.bransContainer__brand__circle}>
               <Link href={`/brands/fantek`}>
-                <Image src={brand4} alt="brand3" width={200} height={60} />
+                <Image src={brand4} alt="brand3" width={180} height={50} />
               </Link>
             </div>
           </article>
           <article className={styles.bransContainer__brand__scale}>
             <div className={styles.bransContainer__brand__circle}>
               <Link href={`/brands/equipson`}>
-                <Image src={brand5} alt="brand3" width={200} height={60} />
+                <Image src={brand5} alt="brand3" width={190} height={50} />
               </Link>
             </div>
           </article>

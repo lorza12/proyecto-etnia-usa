@@ -68,6 +68,10 @@ function Banner() {
       setImageWidth(350);
       setImageHeight(650);
     }
+    if (window.innerWidth < 321) {
+      setImageWidth(300);
+      setImageHeight(600);
+    }
   };
 
   useEffect(() => {

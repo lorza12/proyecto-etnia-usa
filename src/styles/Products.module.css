@@ -54,11 +54,10 @@
 
   .productsContainer__title2  {
     font-size: 22px;
-  }
-
-  .productsContainer__title2 {
     padding-top: 60px;
   }
+
+
 
   .product__button2 {
     color: #ffffff;
@@ -76,6 +75,31 @@
     transform: scale(1.1);
     color: #ffffff;
     background-color: #429efa;
+  }
+
+  @media (max-width: 426px){
+
+    .productsContainer__product__cart {
+      transition: none;
+      padding: 0rem 3rem;
+
+    }
+    .productsContainer__product__cart:hover{
+      transform: none;
+
+    }
+
+    .productsContainer__title {
+      font-size: 12px;
+
+    }
+
+    .productsContainer__product__cart h1 {
+      font-size: 18px;
+    }
+
+
+
   }
 
 

@@ -40,53 +40,55 @@ const BrandsDetail = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <h1 className={`${montserrat.className} ${styles.title}`}>
-        Product details {brand}
-      </h1>
-
-      <main className={styles.productsGlobalContainer}>
-        <div className={styles.buttonContainer}>
-          <button
-            className={styles.productsContainer__btn}
-            onClick={() => scrollButton(-300)}
-          >
-            <BsChevronLeft />
-          </button>
-        </div>
-
-        <div className={styles.productsContainer} ref={scrollRef}>
-          {product.map((item) => (
-            <Link
-              key={item.id}
-              href={`/products/${item.id}`}
-              className={styles.productsItem}
+      <main className={styles.productsGlobalContainer_main}>
+        <h1 className={`${montserrat.className} ${styles.title}`}>
+          / {brand} /
+        </h1>
+        <main className={styles.productsGlobalContainer}>
+          <div className={styles.buttonContainer}>
+            <button
+              className={styles.productsContainer__btn}
+              onClick={() => scrollButton(-300)}
             >
-              <p key={item.id} className={montserrat.className}>
-                {item.name}
-              </p>
-              <Image
-                src={item.image}
-                alt="img"
-                width={200}
-                height={200}
-                className={styles.productImage}
-              />
-              <p className={montserrat.className}>{item.brand}</p>
-              <button
-                className={`${montserrat.className} ${styles.details}`}
-              >{`Details >`}</button>
-            </Link>
-          ))}
-        </div>
-        <div className={styles.buttonContainer}>
-          <button
-            className={styles.productsContainer__btn}
-            onClick={() => scrollButton(300)}
-          >
-            <BsChevronRight />
-          </button>
-        </div>
+              <BsChevronLeft />
+            </button>
+          </div>
+
+          <div className={styles.productsContainer} ref={scrollRef}>
+            {product.map((item) => (
+              <Link
+                key={item.id}
+                href={`/products/${item.id}`}
+                className={styles.productsItem}
+              >
+                <Image
+                  src={item.image}
+                  alt="img"
+                  width={200}
+                  height={200}
+                  className={styles.productImage}
+                />
+                <br />
+                <h2 key={item.id} className={montserrat.className}>
+                  {item.name}
+                </h2>
+                <p className={montserrat.className}>{item.tags}</p>
+                <br />
+                <button className={`${montserrat.className} ${styles.details}`}>
+                  <h3>{`Details >`}</h3>
+                </button>
+              </Link>
+            ))}
+          </div>
+          <div className={styles.buttonContainer}>
+            <button
+              className={styles.productsContainer__btn}
+              onClick={() => scrollButton(300)}
+            >
+              <BsChevronRight />
+            </button>
+          </div>
+        </main>
       </main>
     </>
   );
