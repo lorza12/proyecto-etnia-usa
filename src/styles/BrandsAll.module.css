@@ -157,6 +157,10 @@
     font-size: 22px;
   }
 
+  .bransAllContainer__brands__inter {
+    gap: 6rem;
+  }
+
   .productsContainer__btn {
     font-size: 2.5em;
   }
