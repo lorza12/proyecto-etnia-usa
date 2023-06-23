@@ -62,7 +62,7 @@
   scroll-snap-type: inline mandatory;
 }
 
-.productsContainer > * {
+.productsContainer>* {
   scroll-snap-align: start;
   scroll-padding-inline: 3rem;
 }
@@ -103,21 +103,31 @@
   gap: 10rem;
   padding: 3rem 0rem 10rem;
 }
+
 .bransALlContainer__title {
   text-align: center;
   font-size: 18px;
 }
+
 .bransAllContainer__brands {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+}
+
+.bransAllContainer__brands__inter {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 5rem 15rem;
+  gap: 3rem;
 }
 
 .bransAllContainer__brand__conteiner {
   text-align: center;
   transition: all 200ms;
 }
+
 .bransAllContainer__brand__conteiner:hover {
   transform: scale(1.1);
 }

@@ -48,14 +48,12 @@ function BrandsAll() {
         </section>
 
         <section className={styles.bransAllContainer__brands}>
+          <section className={styles.bransAllContainer__brands__inter}>
           <article className={styles.bransAllContainer__brand__conteiner}>
             <div className={prompt.className}>
-              <Link href={`/brands/workpro`}>
-                <Image src={brand1} alt="brand1" width={200} height={70} />
+              <Link href={`https://gammaledvision.com/`}>
+                <Image src={brand6} alt="brand3" width={200} height={80} />
               </Link>
-              <p className={styles.bransAllContainer__brands__paragraf}>
-                WORKPRO LIFTERS {`(${lengthWokpro})`}{" "}
-              </p>
             </div>
           </article>
           <article className={styles.bransAllContainer__brand__conteiner}>
@@ -80,7 +78,9 @@ function BrandsAll() {
               </p>
             </div>
           </article>
-          <article className={styles.bransAllContainer__brand__conteiner}>
+          </section>
+         <section className={styles.bransAllContainer__brands__inter}>
+         <article className={styles.bransAllContainer__brand__conteiner}>
             <div className={prompt.className}>
               <Link href={`/brands/fantek`}>
                 <Image src={brand4} alt="brand3" width={190} height={80} />
@@ -102,11 +102,17 @@ function BrandsAll() {
           </article>
           <article className={styles.bransAllContainer__brand__conteiner}>
             <div className={prompt.className}>
-              <Link href={`https://gammaledvision.com/`}>
-                <Image src={brand6} alt="brand3" width={200} height={80} />
+              <Link href={`/brands/workpro`}>
+                <Image src={brand1} alt="brand1" width={200} height={70} />
               </Link>
+              <p className={styles.bransAllContainer__brands__paragraf}>
+                WORKPRO LIFTERS {`(${lengthWokpro})`}{" "}
+              </p>
             </div>
           </article>
+
+         </section>
+
         </section>
       </main>
     </>

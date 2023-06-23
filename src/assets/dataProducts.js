@@ -644,7 +644,7 @@ export const products = [
     category: "",
     name: "NGS 80 LX",
     tags: "Speaker with led light for garden",
-    image: "/assets/equipson-img/NGS_80_LX_01_20210916160215.jpg",
+    image: "/assets/equipson-img/NGS_80_LX_01_20210916160215-removebg-preview.png",
     brand: "equipson",
     description:
       "NGS 80 LX is an acoustic enclosure with built-in LED light, designed for installation in gardens. It has an 8'' woofer and a 1.4'' tweeter. It can work both in low impedance installations and in 70/100 volt line installations, with a power of 120W @ 8Ohm and 60/40/20 W in 100 v line (selectable). It incorporates 9W and 3000K led lighting powered at 12v DC (power supply not included). It is made of ABS plastic and designed to offer omnidirectional coverage.",

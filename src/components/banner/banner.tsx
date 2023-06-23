@@ -9,16 +9,16 @@ import styles from "@/styles/Banner.module.css";
 import Image from "next/image";
 import img1 from "../../../public/assets/banner-img/18.png";
 import img2 from "../../../public/assets/banner-img/6.png";
-import img3 from "../../../public/assets/banner-img/12.png";
+import img3 from "../../../public/assets/banner-img/2.png";
 import img4 from "../../../public/assets/banner-img/14.png";
-import img5 from "../../../public/assets/banner-img/1.png";
 import img6 from "../../../public/assets/banner-img/21.png";
-import img7 from "../../../public/assets/banner-img/2.png";
+import img7 from "../../../public/assets/banner-img/12.png";
 import img8 from "../../../public/assets/banner-img/8.png";
 import img9 from "../../../public/assets/banner-img/5.png";
 import img10 from "../../../public/assets/banner-img/19.png";
 import img11 from "../../../public/assets/banner-img/17.png";
 import img12 from "../../../public/assets/banner-img/15.png";
+import img13 from "../../../public/assets/banner-img/20.png";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -156,7 +156,7 @@ function Banner() {
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
                 <Image
-                  src={img5}
+                  src={img13}
                   alt="img"
                   width={imageWidth}
                   height={imageHeight}
