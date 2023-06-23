@@ -21,7 +21,9 @@
 
 .brandTitle {
   pointer-events: none;
+
 }
+
 
 .brandTitle > h3 {
   color: #3595f5;

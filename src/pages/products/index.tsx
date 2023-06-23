@@ -7,6 +7,7 @@ import styles from "./Products.module.css";
 import { useEffect, useId, useLayoutEffect, useRef, useState } from "react";
 import { montserrat } from "@/styles/fonts";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+import { AiOutlineDown } from "react-icons/ai";
 
 export interface ProductModel {
   id: number;
@@ -66,17 +67,19 @@ const Products = () => {
   return (
     <>
       <Head>
-        <title>Products Page</title>
+        <title>Etniapro | Products</title>
         <meta name="description" content="Products Page" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logoIcon1.ico" />
       </Head>
       <div className={styles.productsGlobalContainer}>
         <h1 className={montserrat.className}>/ PRODUCTS /</h1>
         <div className={styles.productsWrapper}>
           <div className={styles.brandContainer}>
             <label htmlFor={brandCheckboxId} className={styles.brandTitle}>
-              <h3 className={montserrat.className}>Brands</h3>
+              <h3 className={montserrat.className}>
+                Brands <AiOutlineDown />
+              </h3>
             </label>
             <input
               type="checkbox"

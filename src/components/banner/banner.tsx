@@ -8,9 +8,10 @@ import SwiperCore, {
 import styles from "@/styles/Banner.module.css";
 import Image from "next/image";
 import img1 from "../../../public/assets/banner-img/18.png";
-import img2 from "../../../public/assets/banner-img/6.png";
-import img3 from "../../../public/assets/banner-img/2.png";
-import img4 from "../../../public/assets/banner-img/14.png";
+import img2 from "../../../public/assets/banner-img/1.png";
+import img3 from "../../../public/assets/banner-img/6.png";
+import img4 from "../../../public/assets/banner-img/2.png";
+import img5 from "../../../public/assets/banner-img/14.png";
 import img6 from "../../../public/assets/banner-img/21.png";
 import img7 from "../../../public/assets/banner-img/12.png";
 import img8 from "../../../public/assets/banner-img/8.png";
@@ -119,13 +120,15 @@ function Banner() {
                 key={2}
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
-                <Image
-                  src={img2}
-                  alt="img"
-                  width={imageWidth}
-                  height={imageHeight}
-                  priority={true}
-                />
+                <div className={styles.sssss}>
+                  <Image
+                    src={img2}
+                    alt="img"
+                    width={imageWidth}
+                    height={imageHeight}
+                    priority={true}
+                  />
+                </div>
               </SwiperSlide>
               <SwiperSlide
                 key={3}
@@ -156,7 +159,7 @@ function Banner() {
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
                 <Image
-                  src={img13}
+                  src={img5}
                   alt="img"
                   width={imageWidth}
                   height={imageHeight}
@@ -168,7 +171,7 @@ function Banner() {
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
                 <Image
-                  src={img6}
+                  src={img13}
                   alt="img"
                   width={imageWidth}
                   height={imageHeight}
@@ -180,7 +183,7 @@ function Banner() {
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
                 <Image
-                  src={img7}
+                  src={img6}
                   alt="img"
                   width={imageWidth}
                   height={imageHeight}
@@ -192,7 +195,7 @@ function Banner() {
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
                 <Image
-                  src={img8}
+                  src={img7}
                   alt="img"
                   width={imageWidth}
                   height={imageHeight}
@@ -204,7 +207,7 @@ function Banner() {
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
                 <Image
-                  src={img9}
+                  src={img8}
                   alt="img"
                   width={imageWidth}
                   height={imageHeight}
@@ -216,7 +219,7 @@ function Banner() {
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
                 <Image
-                  src={img10}
+                  src={img9}
                   alt="img"
                   width={imageWidth}
                   height={imageHeight}
@@ -228,7 +231,7 @@ function Banner() {
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
                 <Image
-                  src={img11}
+                  src={img10}
                   alt="img"
                   width={imageWidth}
                   height={imageHeight}
@@ -237,6 +240,18 @@ function Banner() {
               </SwiperSlide>
               <SwiperSlide
                 key={12}
+                className={styles.navBarContainer__banner__SwiperSlide}
+              >
+                <Image
+                  src={img11}
+                  alt="img"
+                  width={imageWidth}
+                  height={imageHeight}
+                  priority={true}
+                />
+              </SwiperSlide>
+              <SwiperSlide
+                key={13}
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
                 <Image
