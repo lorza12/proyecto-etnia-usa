@@ -1,10 +1,10 @@
 .footerContainer {
-    background-color: rgb(5, 5, 5);
+    background-color: rgb(18, 84, 170);
     height: 100%;
     padding-top: 70px;
     padding-bottom: 30px;
-
-
+    color: #fff;
+    border-top-right-radius: 150px;
 }
 
 .footerContainer h1 {

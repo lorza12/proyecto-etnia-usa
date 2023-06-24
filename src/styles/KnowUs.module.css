@@ -1,7 +1,8 @@
 .main1 {
-    background-color: rgb(25, 24, 24);
-
-    padding-top: 200px;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    padding-top: 150px ;
+    padding-bottom: 150px ;
     /* background: linear-gradient(180deg, rgba(24, 23, 26, 0) 50%, #000000 100%); */
 }
 
@@ -11,34 +12,36 @@
     align-items: center;
     justify-content: center;
     gap: 100px;
-
   }
 
 
   .knowUSContainer__text {
-
     width: 30%;
+  }
 
+  .knowUSContainer__text__h1 {
+    font-size: 32px;
   }
 
 
   .knowUSContainer__text__p1 {
-    color: rgb(225, 225, 225);
+    color: rgb(0, 0, 0);
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-bottom: 20px;
+    opacity: 0.9;
   }
 
 
   .b {
-    color: white;
+    color: rgb(0, 0, 0);
   }
 
   .knowUSContainer__button{
-    color: #000000;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #429efa;
     font-size: 16px;
     font-weight: 800;
     border: none;
@@ -51,8 +54,7 @@
 
   .knowUSContainer__button:hover{
     transform: scale(1.1);
-    color: #ffffff;
-    background-color: #eb1010;
+
   }
 
   .knowUSContainer__logo2 {
@@ -62,15 +64,20 @@
 
   @media (max-width: 1024px) {
 
+    .knowUSContainer__logo img{
+      width: 200px;
+      height: 80px;
+    }
+
     .main1 {
-      padding-top: 40px;
-      padding-bottom: 150px;
+      padding: 7rem 0rem;
+
     }
 
     .knowUSContainer {
       display: flex;
       flex-direction: column;
-      gap: 0;
+      gap: 3rem;
 
     }
 
@@ -85,8 +92,9 @@
 
   @media (max-width: 490px) {
 
-    .knowUSContainer__logo {
-      display: none;
+    .knowUSContainer__logo img{
+      width: 200;
+      height: 80;
     }
 
     .knowUSContainer__logo2 {

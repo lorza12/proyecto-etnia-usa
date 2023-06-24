@@ -1,22 +1,76 @@
 .navBarContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(25, 24, 24);
-  padding: 15px;
-  padding-right: 100px;
-  padding-left: 30px;
-  padding-bottom: 20px;
+  padding-top: 30px;
 
 }
 
-.navBarContainer__options {
-  color: #ffffff;
+.navBarContainer__logoInfo {
   display: flex;
-  flex-direction: row;
-  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 3rem;
+  padding-bottom: 4rem;
+}
+
+
+.navBarContainer__options {
+  background-color: #3595f5;
+  color: rgb(255, 255, 255) ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 18px;
+  width: 70%;
+  height: 50px;
+
+}
+
+.navBarContainer__options1 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.navBarContainer__optionsRedes {
+  display: flex;
+  gap: 20px;
+  border-left: 1px solid #fff;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.navBarContainer__banner {
+  width: 100%;
+  background-color: #ffffff;
+  padding-top: 20px;
+
+}
+
+.navBarContainer__banner__mySwiper {
+  width: 100%;
+  height: 100%;
+
+}
+
+
+.navBarContainer__banner__SwiperSlide {
+  text-align: center;
+  font-size: 18px;
+  background: #ffffff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.SwiperSlide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
 }
 
 .navBarContainer__option2 {
@@ -27,15 +81,47 @@
   display: none;
 }
 
-@media (max-width: 730px) {
+@media (max-width: 1070px) {
+
+  .navBarContainer__options {
+    font-size: 16px;
+
+  }
+
+  .navBarContainer__optionsRedes {
+    gap: 10px;
+
+  }
+
+  .navBarContainer__logoInfo {
+    padding-left: 0rem;
+  }
+
+  .navbarContainer__LogoInfo__logo img{
+    width: 220px;
+    height: 80px;
+  }
+}
+
+
+
+@media (max-width: 800px) {
 
   .navBarContainer {
-    padding: 10px;
-    padding-left: 0;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+
+  }
+
+  .navBarContainer__logoInfo {
+    padding: 0px;
   }
 
   .navBarContainer__options {
     display: none;
+
+
   }
 
   .menuButton {
@@ -44,62 +130,73 @@
     cursor: pointer;
   }
 
-  .menuContainer {
+   .menuContainer {
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 40%;
-    background-color: rgba(39, 37, 37, 0.95);
+    background-color: rgb(53, 149, 245, 0.9);
     transform: translateX(100%);
     transition: transform 0.3s ease-out;
     z-index: 999;
     padding: 10px;
+
+ }
+
+ .menuOpen {
+  transform: translateX(0);
+}
+
+.menuItems {
+  padding: 20px;
+  list-style: none;
+  margin: 0;
+  color: rgb(255, 255, 255);
+}
+
+.span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+}
+
+.span2 {
+  font-size: 24px;
+
+}
+
+.butto_cart {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.butto_cart2 {
+  color: rgb(255, 255, 255);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: start;
+  font-size: 20px;
+}
+
+.navBarContainer__option2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+}
+
+@media (max-width: 490px) {
+
+  .navBarContainer {
+    padding: 2rem 0.5rem;
+
   }
-
-  .menuOpen {
-    transform: translateX(0);
-  }
-
-  .menuItems {
-    padding: 20px;
-    list-style: none;
-    margin: 0;
-  }
-
-  .span {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-bottom: 1px solid rgb(255, 255, 255, 0.5);
-  }
-
-  .span2 {
-    font-size: 24px;
-
-  }
-
-  .butto_cart {
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
-  .butto_cart2 {
-    background: none;
-    border: none;
-    cursor: pointer;
-    text-align: start;
-    font-size: 20px;
-  }
-
-  .navBarContainer__option2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-  }
-
 }
 
 

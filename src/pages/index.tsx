@@ -14,9 +14,9 @@ function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Banner />
-      <KnowUs />
-      <Products />
       <Brands />
+      <Products />
+      <KnowUs />
     </>
   );
 }
