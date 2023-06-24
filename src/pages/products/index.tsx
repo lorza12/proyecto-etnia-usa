@@ -87,15 +87,6 @@ const Products = () => {
         scrollRef.current.scrollWidth - (scrollRef.current.scrollLeft + 1)
       ) <= scrollRef.current.clientWidth;
     const buttonLeft = scrollPosition <= 300 ? true : false;
-    console.log(
-      "position: ",
-      Math.floor(
-        scrollRef.current.scrollWidth - (scrollRef.current.scrollLeft + 1)
-      ),
-      "window: ",
-      scrollRef.current.clientWidth
-    );
-
     setBottom(scrollToTop);
     setTop(buttonLeft);
   };
