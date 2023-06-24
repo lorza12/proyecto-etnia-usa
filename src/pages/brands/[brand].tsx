@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { products as produ } from "../../assets/dataProducts";
 import Link from "next/link";
-import { useLayoutEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef, useState, useEffect } from "react";
 import { montserrat } from "@/styles/fonts";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import styles from "../../styles/BrandsAll.module.css";
@@ -12,23 +12,50 @@ const BrandsDetail = () => {
   const router = useRouter();
   const { brand } = router.query;
   const scrollRef = useRef(null);
-  const [width, setWidth] = useState(0);
   const [top, setTop] = useState(true);
   const [bottom, setBottom] = useState(false);
+  const [width, setWidth] = useState(0);
+  const [windowSize, setWindowSize] = useState(() => {
+    if (typeof window !== "undefined") {
+      return window.innerWidth;
+    }
+    return null;
+  });
 
   const product = produ.filter((element) => element.brand === brand);
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowSize(window.innerWidth);
+    };
+    window.addEventListener("resize", handleWindowResize);
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
 
   useLayoutEffect(() => {
     setWidth(scrollRef.current.scrollWidth);
   }, []);
 
+  const scrollSlide = () => {
+    if (windowSize >= 710 && windowSize <= 768) {
+      return 400;
+    } else {
+      return 300;
+    }
+  };
+
+  const sizeScroll = scrollSlide();
+
   const scrollButton = (scrollOffset: number) => {
-    const bottom = (scrollRef.current.scrollLeft += scrollOffset);
-    const btnRight = bottom + 400;
-    const widthRight = width - 700;
-    const buttonRight = btnRight >= widthRight ? true : null;
-    const buttonLeft = bottom <= 300 ? true : false;
-    setBottom(buttonRight);
+    const scrollPosition = (scrollRef.current.scrollLeft += scrollOffset);
+    const scrollToTop =
+      Math.floor(
+        scrollRef.current.scrollWidth - (scrollRef.current.scrollLeft + 1)
+      ) <= scrollRef.current.clientWidth;
+    const buttonLeft = scrollPosition <= 300 ? true : false;
+    setBottom(scrollToTop);
     setTop(buttonLeft);
   };
 
@@ -49,7 +76,7 @@ const BrandsDetail = () => {
         <div className={styles.buttonContainer}>
           <button
             className={styles.productsContainer__btn}
-            onClick={() => scrollButton(-300)}
+            onClick={() => scrollButton(-sizeScroll)}
             disabled={top}
           >
             <BsChevronLeft />
@@ -83,7 +110,7 @@ const BrandsDetail = () => {
         <div className={styles.buttonContainer}>
           <button
             className={styles.productsContainer__btn}
-            onClick={() => scrollButton(300)}
+            onClick={() => scrollButton(sizeScroll)}
             disabled={bottom}
           >
             <BsChevronRight />
