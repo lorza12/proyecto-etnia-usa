@@ -18,14 +18,6 @@ function Footer() {
         <section className={montserrat.className}>
           <section className={styles.footerContainer__section1}>
             <article className={styles.footerContainer__section1__inf}>
-              <h1>SHOW ROOM LOCATION</h1>
-              <p>10400 W McNab Rd Tamarac, Fl 33321</p>
-              <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer">
-                <TbMapSearch fontSize={19} /> &nbsp;
-                <span className={styles.subrayado}>See map</span>
-              </a>
-              <br />
-              <br />
               <h1>E-MAIL</h1>
               <p>info@etniapro.com</p>
               <br />
