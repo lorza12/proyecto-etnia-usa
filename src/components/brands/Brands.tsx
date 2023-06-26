@@ -1,7 +1,7 @@
 import styles from "@/styles/Brands.module.css";
 import Image from "next/image";
 import brand0 from "../../../public/assets/brands-logos/ea52129e-6176-4927-9e4e-63d962e5c948.png";
-import brand1 from "../../../public/assets/brands-logos/1f624ddc-3cc2-4b0c-8e4b-5c10ad00bad8.jpg";
+import brand1 from "../../../public/assets/brands-logos/WORK_PRO_LIFTE.png";
 import brand2 from "../../../public/assets/brands-logos/88434ced-6a7b-4817-b9f2-6c060ec40470.png";
 import brand3 from "../../../public/assets/brands-logos/82aa8aab-3493-40e0-873e-4f7dc1cd3792.png";
 import brand4 from "../../../public/assets/brands-logos/104a04d9-e509-4ea5-ad82-d06c7bdf3a07.png";
@@ -58,7 +58,7 @@ function Brands() {
             <article className={styles.bransContainer__brand__scale}>
               <div className={styles.bransContainer__brand__circle}>
                 <Link href={`/brands/workpro`}>
-                  <Image src={brand1} alt="brand1" width={190} height={60} />
+                  <Image src={brand1} alt="brand1" width={210} height={55} />
                 </Link>
               </div>
             </article>

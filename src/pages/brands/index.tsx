@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "@/styles/BrandsAll.module.css";
 import { Prompt, Lato } from "next/font/google";
 import Image from "next/image";
-import brand1 from "../../../public/assets/brands-logos/1f624ddc-3cc2-4b0c-8e4b-5c10ad00bad8.jpg";
+import brand1 from "../../../public/assets/brands-logos/WORK_PRO_LIFTE.png";
 import brand2 from "../../../public/assets/brands-logos/88434ced-6a7b-4817-b9f2-6c060ec40470.png";
 import brand3 from "../../../public/assets/brands-logos/82aa8aab-3493-40e0-873e-4f7dc1cd3792.png";
 import brand4 from "../../../public/assets/brands-logos/104a04d9-e509-4ea5-ad82-d06c7bdf3a07.png";
@@ -103,7 +103,7 @@ function BrandsAll() {
             <article className={styles.bransAllContainer__brand__conteiner}>
               <div className={prompt.className}>
                 <Link href={`/brands/workpro`}>
-                  <Image src={brand1} alt="brand1" width={200} height={70} />
+                  <Image src={brand1} alt="brand1" width={210} height={55} />
                 </Link>
                 <p className={styles.bransAllContainer__brands__paragraf}>
                   WORKPRO LIFTERS {`(${lengthWokpro})`}{" "}
