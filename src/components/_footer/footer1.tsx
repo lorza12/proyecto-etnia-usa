@@ -2,8 +2,6 @@ import styles from "@/styles/Footer.module.css";
 import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
 import { FaCopyright } from "react-icons/fa";
 import { TbMapSearch } from "react-icons/tb";
-import Image from "next/image";
-import Logo from "../../../public/assets/logo-indcomer.png";
 import { montserrat } from "@/styles/fonts";
 
 function Footer() {
@@ -18,6 +16,14 @@ function Footer() {
         <section className={montserrat.className}>
           <section className={styles.footerContainer__section1}>
             <article className={styles.footerContainer__section1__inf}>
+              <h1>SHOW ROOM LOCATION</h1>
+              <p>10400 W McNab Rd Tamarac, Fl 33321</p>
+              <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer">
+                <TbMapSearch fontSize={19} /> &nbsp;
+                <span className={styles.subrayado}>See map</span>
+              </a>
+              <br />
+              <br />
               <h1>E-MAIL</h1>
               <p>info@etniapro.com</p>
               <br />

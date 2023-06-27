@@ -43,7 +43,7 @@ function Brands() {
           <section className={styles.bransContainer__brands__inter}>
             <article className={styles.bransContainer__brand__scale}>
               <div className={styles.bransContainer__brand__circle}>
-                <Link href={`/brands/equipson`}>
+                <Link href={`/brands/workpro-sound`}>
                   <Image src={brand5} alt="brand3" width={190} height={50} />
                 </Link>
               </div>
@@ -57,7 +57,7 @@ function Brands() {
             </article>
             <article className={styles.bransContainer__brand__scale}>
               <div className={styles.bransContainer__brand__circle}>
-                <Link href={`/brands/workpro`}>
+                <Link href={`/brands/workpro-lifters`}>
                   <Image src={brand1} alt="brand1" width={210} height={55} />
                 </Link>
               </div>

@@ -11,12 +11,14 @@
 
 .productsWrapper {
   display: flex;
-  gap: 4rem;
+  gap: 5rem;
   padding: 0 0 0 2em;
+
 }
 
 .brandContainer {
   margin: 2em 0 0;
+
 }
 
 .brandTitle {
@@ -43,7 +45,7 @@
 }
 
 .brandListItem {
-  padding: 0.2em 0;
+  padding: 0.5em 0;
 
   transition: all 0.2s linear;
 }

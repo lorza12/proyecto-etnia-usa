@@ -26,6 +26,7 @@ import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 SwiperCore.use([Navigation, Pagination, EffectCoverflow, Autoplay]);
 
@@ -107,13 +108,15 @@ function Banner() {
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
                 <div className={styles.sssss}>
-                  <Image
-                    src={img1}
-                    alt="img"
-                    width={imageWidth}
-                    height={imageHeight}
-                    priority={true}
-                  />
+                  <Link href={`/brands/G-Truss`}>
+                    <Image
+                      src={img1}
+                      alt="img"
+                      width={imageWidth}
+                      height={imageHeight}
+                      priority={true}
+                    />
+                  </Link>
                 </div>
               </SwiperSlide>
               <SwiperSlide
@@ -134,133 +137,155 @@ function Banner() {
                 key={3}
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
-                <Image
-                  src={img3}
-                  alt="img"
-                  width={imageWidth}
-                  height={imageHeight}
-                  priority={true}
-                />
+                <Link href={`/brands/workpro-lifters`}>
+                  <Image
+                    src={img3}
+                    alt="img"
+                    width={imageWidth}
+                    height={imageHeight}
+                    priority={true}
+                  />
+                </Link>
               </SwiperSlide>
               <SwiperSlide
                 key={4}
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
-                <Image
-                  src={img4}
-                  alt="img"
-                  width={imageWidth}
-                  height={imageHeight}
-                  priority={true}
-                />
+                <Link href={`https://gammaledvision.com/`}>
+                  <Image
+                    src={img4}
+                    alt="img"
+                    width={imageWidth}
+                    height={imageHeight}
+                    priority={true}
+                  />
+                </Link>
               </SwiperSlide>
               <SwiperSlide
                 key={5}
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
-                <Image
-                  src={img5}
-                  alt="img"
-                  width={imageWidth}
-                  height={imageHeight}
-                  priority={true}
-                />
+                <Link href={`/brands/lightshark`}>
+                  <Image
+                    src={img5}
+                    alt="img"
+                    width={imageWidth}
+                    height={imageHeight}
+                    priority={true}
+                  />
+                </Link>
               </SwiperSlide>
               <SwiperSlide
                 key={6}
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
-                <Image
-                  src={img13}
-                  alt="img"
-                  width={imageWidth}
-                  height={imageHeight}
-                  priority={true}
-                />
+                <Link href={`/brands/workpro-sound`}>
+                  <Image
+                    src={img13}
+                    alt="img"
+                    width={imageWidth}
+                    height={imageHeight}
+                    priority={true}
+                  />
+                </Link>
               </SwiperSlide>
               <SwiperSlide
                 key={7}
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
-                <Image
-                  src={img6}
-                  alt="img"
-                  width={imageWidth}
-                  height={imageHeight}
-                  priority={true}
-                />
+                <Link href={`/brands/fantek`}>
+                  <Image
+                    src={img6}
+                    alt="img"
+                    width={imageWidth}
+                    height={imageHeight}
+                    priority={true}
+                  />
+                </Link>
               </SwiperSlide>
               <SwiperSlide
                 key={8}
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
-                <Image
-                  src={img7}
-                  alt="img"
-                  width={imageWidth}
-                  height={imageHeight}
-                  priority={true}
-                />
+                <Link href={`/brands/workpro-lifters`}>
+                  <Image
+                    src={img7}
+                    alt="img"
+                    width={imageWidth}
+                    height={imageHeight}
+                    priority={true}
+                  />
+                </Link>
               </SwiperSlide>
               <SwiperSlide
                 key={9}
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
-                <Image
-                  src={img8}
-                  alt="img"
-                  width={imageWidth}
-                  height={imageHeight}
-                  priority={true}
-                />
+                <Link href={`/brands/workpro-sound`}>
+                  <Image
+                    src={img8}
+                    alt="img"
+                    width={imageWidth}
+                    height={imageHeight}
+                    priority={true}
+                  />
+                </Link>
               </SwiperSlide>
               <SwiperSlide
                 key={10}
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
-                <Image
-                  src={img9}
-                  alt="img"
-                  width={imageWidth}
-                  height={imageHeight}
-                  priority={true}
-                />
+                <Link href={`https://gammaledvision.com/`}>
+                  <Image
+                    src={img9}
+                    alt="img"
+                    width={imageWidth}
+                    height={imageHeight}
+                    priority={true}
+                  />
+                </Link>
               </SwiperSlide>
               <SwiperSlide
                 key={11}
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
-                <Image
-                  src={img10}
-                  alt="img"
-                  width={imageWidth}
-                  height={imageHeight}
-                  priority={true}
-                />
+                <Link href={`/brands/workpro-lifters`}>
+                  <Image
+                    src={img10}
+                    alt="img"
+                    width={imageWidth}
+                    height={imageHeight}
+                    priority={true}
+                  />
+                </Link>
               </SwiperSlide>
               <SwiperSlide
                 key={12}
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
-                <Image
-                  src={img11}
-                  alt="img"
-                  width={imageWidth}
-                  height={imageHeight}
-                  priority={true}
-                />
+                <Link href={`/brands/lightshark`}>
+                  <Image
+                    src={img11}
+                    alt="img"
+                    width={imageWidth}
+                    height={imageHeight}
+                    priority={true}
+                  />
+                </Link>
               </SwiperSlide>
               <SwiperSlide
                 key={13}
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
-                <Image
-                  src={img12}
-                  alt="img"
-                  width={imageWidth}
-                  height={imageHeight}
-                  priority={true}
-                />
+                <Link href={`/brands/fantek`}>
+                  <Image
+                    src={img12}
+                    alt="img"
+                    width={imageWidth}
+                    height={imageHeight}
+                    priority={true}
+                  />
+                </Link>
               </SwiperSlide>
             </Swiper>
           </article>

@@ -28,8 +28,8 @@ function BrandsAll() {
     });
     return lengthBrands.length;
   };
-  const lengthWokpro = filterBrands("workpro");
-  const lengthEquipson = filterBrands("equipson");
+  const lengthWokpro = filterBrands("workpro-lifters");
+  const lengthEquipson = filterBrands("workpro-sound");
   const lengthLightshark = filterBrands("lightshark");
   const lengthGtrus = filterBrands("G-Truss");
   const lengthFantek = filterBrands("fantek");
@@ -92,7 +92,7 @@ function BrandsAll() {
             </article>
             <article className={styles.bransAllContainer__brand__conteiner}>
               <div className={prompt.className}>
-                <Link href={`/brands/equipson`}>
+                <Link href={`/brands/workpro-sound`}>
                   <Image src={brand5} alt="brand3" width={200} height={60} />
                 </Link>
                 <p className={styles.bransAllContainer__brands__paragraf}>
@@ -102,7 +102,7 @@ function BrandsAll() {
             </article>
             <article className={styles.bransAllContainer__brand__conteiner}>
               <div className={prompt.className}>
-                <Link href={`/brands/workpro`}>
+                <Link href={`/brands/workpro-lifters`}>
                   <Image src={brand1} alt="brand1" width={210} height={55} />
                 </Link>
                 <p className={styles.bransAllContainer__brands__paragraf}>
