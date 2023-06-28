@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { products as produ } from "../../assets/dataProducts";
 import Link from "next/link";
-import { useLayoutEffect, useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import { montserrat } from "@/styles/fonts";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import styles from "../../styles/BrandsAll.module.css";
@@ -14,7 +14,6 @@ const BrandsDetail = () => {
   const scrollRef = useRef(null);
   const [top, setTop] = useState(true);
   const [bottom, setBottom] = useState(false);
-  const [width, setWidth] = useState(0);
   const [windowSize, setWindowSize] = useState(() => {
     if (typeof window !== "undefined") {
       return window.innerWidth;
@@ -32,10 +31,6 @@ const BrandsDetail = () => {
     return () => {
       window.removeEventListener("resize", handleWindowResize);
     };
-  }, []);
-
-  useLayoutEffect(() => {
-    setWidth(scrollRef.current.scrollWidth);
   }, []);
 
   const scrollSlide = () => {

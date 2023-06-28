@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { products as prod } from "../../assets/dataProducts";
 import styles from "./Products.module.css";
-import { useEffect, useId, useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { montserrat } from "@/styles/fonts";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
@@ -22,7 +22,6 @@ export interface ProductModel {
 const Products = () => {
   const [brand, setBrand] = useState<string>("all");
   const [checked, setChecked] = useState(false);
-  const [width, setWidth] = useState(0);
   const [windowSize, setWindowSize] = useState(() => {
     if (typeof window !== "undefined") {
       return window.innerWidth;
@@ -65,10 +64,6 @@ const Products = () => {
 
   const brandType = getUniqueCategory(prod, "brand");
   const filteredProducts = filterProducts(prod);
-
-  useLayoutEffect(() => {
-    setWidth(scrollRef.current.scrollWidth);
-  }, [filteredProducts]);
 
   const scrollSlide = () => {
     if (windowSize >= 710 && windowSize <= 768) {
