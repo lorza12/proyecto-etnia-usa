@@ -33,11 +33,6 @@
   align-items: center;
 }
 
-.divs__interval {
-  padding-right: 20px;
-  border-right: 1px solid #fff;
-}
-
 .footerContainer__section1__networks {
   display: flex;
   flex-direction: column;

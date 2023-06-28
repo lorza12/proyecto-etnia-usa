@@ -1,3 +1,17 @@
+.productsGlobalContainer_main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5rem 0 10rem;
+}
+
+.productsAllContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 5rem 0 8rem 0;
+}
+
 .title {
   text-align: center;
   text-transform: capitalize;
@@ -49,7 +63,7 @@
   scroll-snap-type: inline mandatory;
 }
 
-.productsContainer > * {
+.productsContainer>* {
   scroll-snap-align: start;
   scroll-padding-inline: 3rem;
 }
@@ -74,9 +88,10 @@
 .details {
   border: none;
   background-color: transparent;
-  font-size: 1.1em;
+  font-size: 1em;
   margin-top: 0.3em;
   cursor: pointer;
+
 }
 
 .details:hover {
@@ -87,22 +102,33 @@
   display: flex;
   flex-direction: column;
   gap: 10rem;
-  padding: 3rem 0rem 20rem;
+  padding: 3rem 0rem 10rem;
 }
+
 .bransALlContainer__title {
   text-align: center;
+  font-size: 18px;
 }
+
 .bransAllContainer__brands {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+}
+
+.bransAllContainer__brands__inter {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 9.3rem 6.2rem;
+  gap: 3rem;
 }
 
 .bransAllContainer__brand__conteiner {
   text-align: center;
   transition: all 200ms;
 }
+
 .bransAllContainer__brand__conteiner:hover {
   transform: scale(1.1);
 }
@@ -114,8 +140,26 @@
 
 
 @media screen and (max-width: 576px) {
+
+  .productsGlobalContainer {
+    padding: 0 0 2rem 0;
+  }
+
   .buttonContainer {
-    padding: 1em;
+    padding: 0em;
+  }
+
+  .productsItem {
+    padding: 0;
+
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .bransAllContainer__brands__inter {
+    gap: 6rem;
   }
 
   .productsContainer__btn {
@@ -126,6 +170,15 @@
     grid-auto-columns: 100%;
 
     padding: 0;
+  }
+
+  .bransALlContainer__title {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .productsContainer h2 {
+    font-size: 20px;
   }
 }
 

@@ -1,9 +1,5 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import SwiperCore, { Pagination, Autoplay } from "swiper";
 import Link from "next/link";
 import styles from "@/styles/NavBar.module.css";
 import Image from "next/image";
@@ -38,7 +34,7 @@ function NavBar() {
           <div className={styles.navBarContainer__logoInfo}>
             <div className={styles.navbarContainer__LogoInfo__logo}>
               <Link href={"/"}>
-                <Image src={Logo} alt="img logo" width={300} height={120} />
+                <Image src={Logo} alt="img logo" width={300} height={100} />
               </Link>
             </div>
 
@@ -56,7 +52,7 @@ function NavBar() {
                   <p>CONTACT US</p>
                 </Link>
 
-                <Link href={"/brans"}>
+                <Link href={"/"}>
                   <p>ABOUT US</p>
                 </Link>
               </div>
@@ -101,7 +97,7 @@ function NavBar() {
                 <br />
 
                 <div className={styles.span}>
-                  <Link href={"/about"}>
+                  <Link href={"/brands"}>
                     <li
                       className={montserrat.className}
                       onClick={() => handleItemClick("/brands")}

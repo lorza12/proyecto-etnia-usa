@@ -1,5 +1,5 @@
 .bransContainer {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.735), rgba(255, 255, 255, 0.735)), url("../../public/assets/backgraund-img1.jpg");
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.735), rgba(255, 255, 255, 0.735)), url("../../public/assets/fondobrands.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -10,17 +10,22 @@
 
 .bransContainer__title {
   text-align: center;
-  color: white;
-  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
 }
 
 .bransContainer__brands {
   display: flex;
+  flex-direction: column;
+
+}
+
+.bransContainer__brands__inter {
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 50px 200px;
-
+  gap: 0px 150px;
 }
 
 .bransContainer__brand__scale {
@@ -46,20 +51,29 @@
 @media (max-width: 1020px) {
 
   .bransContainer__brands {
-    gap: 100px;
+    gap: 0px 100px;
 
   }
 }
+
 @media (max-width: 820px) {
 
   .bransContainer__brands {
-    gap: 80px;
+    gap: 0px 100px;
   }
 }
+
 @media (max-width: 493px) {
 
   .bransContainer__brands {
-    gap: 60px;
+    gap: 0px 80px;
   }
 }
 
+@media (max-width: 321px) {
+
+  .bransContainer__brands {
+    gap: 0px;
+
+  }
+}

@@ -62,7 +62,7 @@ export const products = [
     name: "LW 155D",
     tags: "Led, Lighting, LW 155D, Work Pro Lifters",
     image: "/assets/workpro-img/LW_155_D-Abierta_20171020100546.jpg",
-    brand: "workpro",
+    brand: "workpro-lifters",
     description:
       "LW 155D. WORK PRO LIFTERS has redesigned the well-known LW series in order to comply with the DIN 56950 standard, becoming the LW D /DY Series. The LW-D /DY Series incorporates the innovative Wire Drive system, which has been developed in order to prevent undesired and dangerous cable crosses in the drum of the winch, making easier the roll up/unroll process and avoiding crashing or fraying that could reduce the useful life of the cable or (in the worst case) its breakage.",
       description2: "Wire Drive consists of a multidirectional grooved pulley that reduces the wire fleet angle between the winch drum and its entry to the first mast, in order to be compliant with DIN 56950 standard. On the other hand, the Dynsys system, the optional solution for the control of the maximum load in lifting systems, is only available on LW-DY Series. *Please make sure you order the desired accessory as this is sold separately"
@@ -73,7 +73,7 @@ export const products = [
     name: "LW 265D",
     tags: "Led, Lighting, LW 265D, Work Pro Lifters",
     image: "/assets/workpro-img/LW-290-1.png",
-    brand: "workpro",
+    brand: "workpro-lifters",
     description:
       "LW 265D. WORK PRO LIFTERS has redesigned the well-known LW series in order to comply with the DIN 56950 standard, becoming the LW D /DY Series. The LW-D /DY Series incorporates the innovative Wire Drive system, which has been developed in order to prevent undesired and dangerous cable crosses in the drum of the winch, making easier the roll up/unroll process and avoiding crashing or fraying that could reduce the useful life of the cable or (in the worst case) its breakage.",
     description2: "Wire Drive consists of a multidirectional grooved pulley that reduces the wire fleet angle between the winch drum and its entry to the first mast, in order to be compliant with DIN 56950 standard."
@@ -84,7 +84,7 @@ export const products = [
     name: "LW 290D",
     tags: "Led, Lighting, LW 290D, Work Pro Lifters",
     image: "/assets/workpro-img/LW-290-4.png",
-    brand: "workpro",
+    brand: "workpro-lifters",
     description:
       "LW 290D. WORK PRO LIFTERS has redesigned the well-known LW series in order to comply with the DIN 56950 standard, becoming the LW D /DY Series. The LW-D /DY Series incorporates the innovative Wire Drive system, which has been developed in order to prevent undesired and dangerous cable crosses in the drum of the winch, making easier the roll up/unroll process and avoiding crashing or fraying that could reduce the useful life of the cable or (in the worst case) its breakage.",
     description2: "Wire Drive consists of a multidirectional grooved pulley that reduces the wire fleet angle between the winch drum and its entry to the first mast, in order to be compliant with DIN 56950 standard."
@@ -95,7 +95,7 @@ export const products = [
     name: "WTS 506",
     tags: "Led, LED Effects / Special Effects, LED Video Walls, Lighting, Work Pro Lifters, WTS 506",
     image: "/assets/workpro-img/WTS_506-e1676499676148.jpg",
-    brand: "workpro",
+    brand: "workpro-lifters",
     description:
       "WTS 506. The WTS Series means a change of concept within the front load towers, as it introduces the new Structural Mode. This Structural Mode does not use the winch to lift the load, but involves lifting the load with the help of a manual or electric hoist. That is, the tower is used as a structure that is all locked to the required working height. Once the tower is raised to this desired height, the load must be raised with the hoist. ",
     description2: "The Structural Mode performs improved loading capacities. Furthermore, the WTS Series incorporates the innovative Dynamic Overlap system."
@@ -106,7 +106,7 @@ export const products = [
     name: "WTS 708",
     tags: "Led, LED Video Walls, Lighting, Lightshark Controllers, Work Pro Lifters, WTS 708",
     image: "/assets/workpro-img/WTS_708_C_pers_cerrada_20180212161229-e1676500439857.jpg",
-    brand: "workpro",
+    brand: "workpro-lifters",
     description:
       "WTS 708. The WTS Series means a change of concept within the front load towers, as it introduces the new Structural Mode. This Structural Mode does not use the winch to lift the load, but involves lifting the load with the help of a manual or electric hoist. That is, the tower is used as a structure that is all locked to the required working height. Once the tower is raised to this desired height, the load must be raised with the hoist. ",
     description2: "The Structural Mode performs improved loading capacities. Furthermore, the WTS Series incorporates the innovative Dynamic Overlap system."
@@ -117,7 +117,7 @@ export const products = [
     name: "WTS 1206",
     tags: "Led, LED Video Walls, Lighting, Lightshark Controllers, Work Pro Lifters, WTS 1206",
     image: "/assets/workpro-img/WTS_708_C_pers_cerrada_20180212161229-e1676500439857.jpg",
-    brand: "workpro",
+    brand: "workpro-lifters",
     description:
       "WTS 1206. The WTS Series means a change of concept within the front load towers, as it introduces the new Structural Mode. This Structural Mode does not use the winch to lift the load, but involves lifting the load with the help of a manual or electric hoist. That is, the tower is used as a structure that is all locked to the required working height. ",
     description2: "Once the tower is raised to this desired height, the load must be raised with the hoist. The Structural Mode performs improved loading capacities. Furthermore, the WTS Series incorporates the innovative Dynamic Overlap system."
@@ -128,7 +128,7 @@ export const products = [
     name: "AWS 402",
     tags: "Accesory, Attachments, AWS 402, Line Array, Work Pro Lifters, WTS 506",
     image: "/assets/workpro-img/AWS-403_20200311120728.jpg",
-    brand: "workpro",
+    brand: "workpro-lifters",
     description:
       "AWS 402. Reinforcement bar, for safe lifting of heavy Line Array systems.",
     description2: "Suitable for models: WTS 506. "
@@ -139,7 +139,7 @@ export const products = [
     name: "AWS 502",
     tags: "Accesory, Attachments, AWS 502, Line Array, Work Pro Lifters, WTS 1206, WTS 708, WTS 905",
     image: "/assets/workpro-img/AWS-403-B_20200311120736.jpg",
-    brand: "workpro",
+    brand: "workpro-lifters",
     description:
       "AWS 502. Reinforcement bar, for safe lifting of heavy Line Array systems.",
     description2: "Suitable for models: WTS 1206, WTS 905, WTS 708. "
@@ -150,7 +150,7 @@ export const products = [
     name: "AWS 302",
     tags: "Accesory, Attachments, AWS 302, Line Array, Work Pro Lifters, WTS 256, WTS 375, WTS 506",
     image: "/assets/workpro-img/AWS-301_20200311120426.jpg",
-    brand: "workpro",
+    brand: "workpro-lifters",
     description:
       "AWS 302. Accessory specially designed for the WTS 506, WTS 375, WTS 256 models of the WTS series. It is fixed on each bar of the horizontal support and allows to fix truss. It is reversible, allowing to fix truss horizontally or vertically.",
     description2: ""
@@ -161,7 +161,7 @@ export const products = [
     name: "AWS 301",
     tags: "Accesory, Attachments, AWS 301, Line Array, Work Pro Lifters, WTS 1206, WTS 708, WTS 905",
     image: "/assets/workpro-img/AWS-301-B_20200311120438-600x450.jpg",
-    brand: "workpro",
+    brand: "workpro-lifters",
     description:
       "AWS 301. Accessory specially designed for the WTS 1206, WTS 905, WTS 708 models of the WTS series. It is fixed on each bar of the horizontal support and allows to fix truss. It is reversible, allowing to fix truss horizontally or vertically.",
     description2: ""
@@ -172,7 +172,7 @@ export const products = [
     name: "AW 135",
     tags: "Accesory, Attachments, AWS 135, Line Array, Work Pro Lifters",
     image: "/assets/workpro-img/AW135-137-140-150-155_20180208113603.jpg",
-    brand: "workpro",
+    brand: "workpro-lifters",
     description:
       "AWS 135. Support bar for truss. Adjustable width. The fastering admits a 50 mm diameter truss.",
     description2: "Bar length: 600mm - Diameter: 35 mm male"
@@ -183,7 +183,7 @@ export const products = [
     name: "AWS 401",
     tags: "Accesory, Attachments, AWS 401, Line Array, Work Pro Lifters, WTS 256, WTS 375, WTS 506",
     image: "/assets/workpro-img/AWS-401_20200311120619-600x450.jpg",
-    brand: "workpro",
+    brand: "workpro-lifters",
     description:
       "AWS 401. Accessory specially designed for the WTS 256, WTS 375, WTS 506 models of the WTS series. It is fixed on each bar of the horizontal support and allows to fix a carabiner to lift chains or line array systems.",
     description2: ""
@@ -194,7 +194,7 @@ export const products = [
     name: "AWS 501",
     tags: "Accesory, Attachments, AWS 501, Line Array, Work Pro Lifters, WTS 1206, WTS 708, WTS 905",
     image: "/assets/workpro-img/AWS-401-B_20200311120628-600x450.jpg",
-    brand: "workpro",
+    brand: "workpro-lifters",
     description:
       "AWS 501. Accessory specially designed for the WTS 1206, WTS 905, WTS 708  models of the WTS series. It is fixed on each bar of the horizontal support and allows to fix a carabiner to lift chains or line array systems.",
     description2: ""
@@ -348,7 +348,7 @@ export const products = [
     name: "ARION SL 218 SA",
     tags: "Self-powered subwoofer 2 x 18",
     image: "/assets/equipson-img/SL-218-SA_20181003174408.jpg",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "SL 218 SA features a powerful digital signal processing, which provides the filtering and the necessary corrections to the transducers in order to obtain a faithful sound. Both from the monitoring software, via Ethernet, and from the keyboard and screen on the rear side, the preset to be used can be chosen.  Two low pass crossover frequencies are available with or without enhancement at 55Hz, and their corresponding presets for 1 to 1 cardioid settings (one forward, one backward) or 2 to 1 cardioid settings (two forward, one backward). You can also add delay and use up to 8 parametric filters for room corrections.",
     description2: "The SL 210 A features high performance and sensitivity transducers: two 10 speakers, one of them passively filtered in order to control the directivity in the Mid-Low range, along with a compression driver featuring a polymer PM-4 membrane coupled to a 120º Horizontal coverage horn"
@@ -359,7 +359,7 @@ export const products = [
     name: "ARION SL 218 RD",
     tags: "Passive subwoofer",
     image: "/assets/equipson-img/SL_218_RD_pers_20220209155630.jpg",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "This new subwoofers series is designed for installation and portable audio applications, since both users are in search of a compact element but with a powerful response.Being a direct radiating design, has a large impulse response and compact size (which becomes a 'punch' bass) so it is very suitable for the direct sound and / or discos and clubs.",
     description2: "This same design achieves direct radiation cardioid configuration if necessary. This configuration reduces (almost eliminates) the low frequency radiation to the back of the enclosure, eliminating the effect of low level frequencies caused by the musicians on stage and allowing clearly hear the monitor loudspeakers located on the stage."
@@ -370,7 +370,7 @@ export const products = [
     name: "ARION MFF 210",
     tags: "Rigging frame for SL 210 A",
     image: "/assets/equipson-img/MFF_210_20180130160130_20230322122422.jpg",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "MFF 210 is arigging frame for SL 210 A. It is an optional accessory.",
     description2: ""
@@ -381,7 +381,7 @@ export const products = [
     name: "CRL 210",
     tags: "Transportation dolly for SL 210 A",
     image: "/assets/equipson-img/CRL_210_pers_20180129124936_20230322110205.jpg",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "CRL 210 is a transportation dolly which has been designed for use with the mid-high unit, SL 210 A, of the ARION 21 A line array system ",
     description2: ""
@@ -392,7 +392,7 @@ export const products = [
     name: "FUNDA SL 210 A",
     tags: "Protective cover for SL 210 A",
     image: "/assets/equipson-img/SL-210-FUNDA--2_20181203131855.jpg",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "Protective foam-filled cover for 6 units of SL 210 A.",
     description2: ""
@@ -403,7 +403,7 @@ export const products = [
     name: "FUNDA SL 218 SA",
     tags: "Protective cover for SL 218 SA",
     image: "/assets/equipson-img/Sl_218_SA_funda__20180426161434.jpg",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "Protective foam-filled cover for 2 units of SL 218 SA.",
     description2: ""
@@ -414,7 +414,7 @@ export const products = [
     name: "ARION 5 (4 Cajas)",
     tags: "Self-powered subwoofer + 4 satellites + rigging frame. Amplifier 1000+650+150W",
     image: "/assets/equipson-img/Arion_5_array_Black_4_20211123103543.jpg",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "ARION 5 is an active three-way line array, composed of 4 SL 025 units and 1 SL 115 A unit. Each SL 025 consists of 2 5.22 loudspeakers and a 2.2 compression driver with polymer membrane attached to the VI-5 waveguide. The SL 115 SA subwoofer cabinet uses a 15 driver, with a 3.5 voice coil. It has digital signal processing, and the power is provided by a Class D amplifier of 800W peak in bass, 650W peak in midrange and 150W peak in treble, which incorporate thermal and overload protections. Independent RMS and peak limiters are used on each path.",
     description2: ""
@@ -425,7 +425,7 @@ export const products = [
     name: "ENTAR 10A",
     tags: "10'' self-powered loudspeaker",
     image: "/assets/equipson-img/Entar10-A_Pers_20210608125354.jpg",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "ENTAR 10A is a two-way self-powered loudspeaker that incorporates a 700W amplifier, made of wood. It consists of a 10'' loudspeaker with a 2'' voice coil and a 1.35'' compression driver, and incorporates a signal processing DSP. Thanks to this DSP, it is possible to select 4 equalization presets, 3 HPF filters with selectable frequency, tone control (treble and bass) and differentiated preset for use as a floor monitor or placed on a support. It has an insertion vessel for a 35 mm support that allows 0º/10º angulations and rigging fixation points. Incorporates 2 Mic/Line inputs with level control and mix function.",
     description2: ""
@@ -436,7 +436,7 @@ export const products = [
     name: "ENTAR 15 SUB",
     tags: "Passive subwoofer 700 W @ 8 Ohm",
     image: "/assets/equipson-img/entarsub15_w_20230504133648.png",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "ENTAR 15 SUB is a 700 W passive subwoofer at 8 Ohm, incorporating an 15'' loudspeaker, made of high density wood. It has XLN4 connections, side carrying handles and 35 mm diameter top insert for support.",
     description2: ""
@@ -447,7 +447,7 @@ export const products = [
     name: "ZENITH 1000",
     tags: "Audio amplifier",
     image: "/assets/equipson-img/Zenith_1000_pers_20210603171953.jpg",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "Zenith 1000 is a 500W @ 4 Ohm 2-channel professional audio amplifier, with switching power supply, built in a 2-rack-unit metal enclosure. It has balanced inputs in XLR3 format and outputs with XLN4 connectors. It has selectors for input sensitivity and operating mode. It also has protection systems against short circuit, temperature, DC, VHF and constant high frequency signal. The front panel has a power switch, independent volume controls for each channel, and power, signal, clip and protection indicators.",
     description2: ""
@@ -458,7 +458,7 @@ export const products = [
     name: "ZENITH 2500",
     tags: "Audio amplifier",
     image: "/assets/equipson-img/Zenith_2500_front_20210603172132.jpg",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "Zenith 2500 is a 2-channel 1250 W @ 4 Ohm professional audio amplifier, with switching power supply, built in a 2-rack-unit metal enclosure. It has balanced inputs in XLR3 format and outputs with XLN4 connectors. It has selectors for input sensitivity and operating mode. It also has protection systems against short circuit, temperature, DC, VHF and constant high frequency signal. The front panel has a power switch, independent volume controls for each channel, and power, signal, clip and protection indicators.",
     description2: ""
@@ -469,7 +469,7 @@ export const products = [
     name: "NEO 5 IP",
     tags: "Passive loudspeaker 40 W @ 8 Ohm, 16 W L100V.",
     image: "/assets/equipson-img/NEO_6_bicolor_20221014090132_20230322161234.jpg",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "With an IP protection factor of 65, NEO 5 IP guarantees installations in outdoors with heavy rains, which are a very demmanded feature for this kind of surface mounted loudspeakers. Technical specs are identical to NEO 5 except for the rear connection which has been changed to a cable with the different power taps.",
     description2: ""
@@ -480,7 +480,7 @@ export const products = [
     name: "NEO 8 IP",
     tags: "IP65 70W installation loudspeaker (32W@100V line)",
     image: "/assets/equipson-img/NEO_6_bicolor_20221014090132_20230322161234.jpg",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "NEO 8 IP is a 2-way acoustic box made of ABS plastic and white or black aluminum grille, specially designed for outdoor installation with a degree of protection IP 65. It is composed of an 8'' loudspeaker and a tweeter of 1''. It can be used both in 70/100 V installations and in low impedance installations. When a speaker is connected at low impedance the audio does not pass through the transformer in order to maintain a high level of quality. NEO 8 IP is also very simple and quick to install, thanks to the new support designed exclusively for this model, which also allows a quick orientation of the box in both axes. Sold in pairs (two passive boxes).",
     description2: ""
@@ -491,7 +491,7 @@ export const products = [
     name: "Athos 6R",
     tags: "Passive loudspeaker",
     image: "/assets/equipson-img/ATHOS8R_COUPLE_20220428104343_20230322160813.jpg",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "The new ATHOS R series is updated with the aim of obtaining a product resistant to inclement weather and at the same time much more sustainable by changing its structure (previously made of fiberglass), and now in an innovative material that is more resistant to effects. adverse weather conditions (rain, extreme temperatures or solid microparticles), making the polymer with which they are built immune to these problems. Its finish simulating wood also provides aesthetic improvements to the product. The new ATHOS R series incorporates a “U”-shaped wall bracket that can use rear supports that allow movement in both horizontal and vertical axis.",
     description2: ""
@@ -502,7 +502,7 @@ export const products = [
     name: "ATHOS B15 BLACK",
     tags: "Passive loudspeaker",
     image: "/assets/equipson-img/ATHOS_B15_DIB_20221220095456.jpg",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "ATHOS B 15 is a passive speaker system with a 15'' woofer. Its robust design, elegant finish (made of medium density wood) and shape are very suitable for bass reinforcement applications, such as conference rooms, schools or home cinema installations. ATHOS B 15 features a 35 mm insert at the top of the woofer.",
     description2: ""
@@ -513,7 +513,7 @@ export const products = [
     name: "PA 120 USB/R",
     tags: "Amplifier with mixer and player",
     image: "/assets/equipson-img/PA1202_20170220111142.jpg",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "PA 120 USB / R is a 100 V 60 W line or low impedance installation amplifier with 5-input mixer audio player / recorder on USB / SD support up to 32 GB, with which it is possible to record messages and store them for use later. The mixer has independent volume control, master control and tone control (treble / bass). It has a Pre-out output to send the mixed signal to an external amplification system. It includes a push button for the siren and a Tel / Emer connection for the broadcasting of messages with priority over all entrances. In addition, it has emergency power terminals (24 V DC).",
     description2: ""
@@ -524,7 +524,7 @@ export const products = [
     name: "PA 200",
     tags: "Amplifier 2 x 100W @ 8 Ohm, 200 W L70 / 100V",
     image: "/assets/equipson-img/Accesorios_PA_03_20171004094942.jpg",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "PA 200 is an installation amplifier that can work both in low impedance and with 70 / 100V line loudspeakers. It incorporates a switched power supply. The operating mode is selected by means of a switch on the rear panel and a switch block, which has some terminals reserved for future improvements. It incorporates an unbalanced LINE input and its own volume control, as well as 2 LEDs that mark the presence of a signal and if it exceeds the limit value. At the rear, the amplifier incorporates an RJ45 socket, which supports RS485 commands from an external device to control various functions of the amplifier.",
     description2: ""
@@ -535,7 +535,7 @@ export const products = [
     name: "PA 200 MX",
     tags: "Amplifier 2 x 100W @ 8/16 Ohm, 200W L70 / 100V",
     image: "/assets/equipson-img/PA_200_MX_pers_20180111165951.jpg",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "PA 200 MX is a 200 W amplifier for installation, which can work in low impedance or in 70/100 V line. It incorporates 3 LINE inputs (LINE 1 with BLUETOOTH functionality) with selector, volume, and 2 tone controls. It also has a microphone input with Euroblock connector. The rear panel has a dipswitch selector that allows selecting the operating mode (feedback suppression, microphone gain, microphone priority, stereo / mono input, low impedance or L70 / 100V), and an RJ45 connection that supports RS485 commands. from an external device.",
     description2: ""
@@ -546,7 +546,7 @@ export const products = [
     name: "PA 4150 L",
     tags: "Amplifier 4 x 150 W @ L70 / 100V",
     image: "/assets/equipson-img/PA_4150_L_pers_20190827112512.jpg",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "PA 4150 L is an installation amplifier with 4 channels of 150W each, class D. It can work both in 70V and 100V line (selectable through dip-switches). Each channel has its own volume control and LED indicators (signal, clip, and protect). The PA 4150 L amplifier integrates various protections such as short circuit, thermal, ultrasound and RF. Its inputs and outputs are connected through Euroblock terminals, and it has dimensions of 1 HU rack 19''.",
     description2: ""
@@ -557,7 +557,7 @@ export const products = [
     name: "WFS 5 CX B",
     tags: "200W audio projector. IP 66 70/100V line - 8 Ohm",
     image: "/assets/equipson-img/WFS_5CX_B_FRONT_WEB_20221121114257.jpg",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "WFS 5 CX is an audio projector that has been designed for outdoor applications. It incorporates a 10'' coaxial transducer and a 1'' compression driver. Its high IP rating (IP 66) makes it suitable for sports facilities, recreational areas, etc. Its two connection modes (low impedance 8 Ohm and 70/100V line) allow to adjust the device for different acoustic solutions. WFS 5 CX is also available in white color.",
     description2: ""
@@ -568,7 +568,7 @@ export const products = [
     name: "WFS 10 CX R",
     tags: "Outdoor sound projector",
     image: "/assets/equipson-img/10CX_pers_Asa_20210120160808_copy.jpg",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "This audio projector has been designed for outdoor appliances. It incorporates a 10'' coaxial transducer and a 1'' compression driver.It elevate IP range (IP 65) makes it very suitable for sports facilities, entertainment complexes, etc.Its 90ºx90º directivity in most of the band, making easier the contractors job designing an installation with the adequate audio dispersion. Its 2 connectivity modes (low impedance 8 Ohm and 100V line) allows to set the devices to several acoustic solutions.",
     description2: "WFS 10 CX incorporates the WSTB 10 H for an easy and fast installation."
@@ -579,7 +579,7 @@ export const products = [
     name: "SET MK BIGMAN 1000 A",
     tags: "Subs + Satellites amplified system. 1000 W",
     image: "/assets/equipson-img/SET-MK-BIGMAN-1000-A_Persp-Pareja.jpg",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "SET MK BIGMAN 1000 A is an amplified system that consists of 2 self-powered subwoofers and 2 satellites, using a 35 mm extensible stand to fix each subwoofer/satellite.",
     description2: "The subwoofer integrates a 400+100 W amplifier and several input types (including microphone and Line level inputs), to expand the possibilities and operation modes."
@@ -590,7 +590,7 @@ export const products = [
     name: "SET MK BIGMAN 1000 A White",
     tags: "Subs + Satellites amplified system. 1000 W",
     image: "/assets/equipson-img/SET_MK_BIGMAN_1000_20210203174520.jpg",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "SET MK BIGMAN 1000 A is an amplified system that consists of 2 self-powered subwoofers and 2 satellites, using a 35 mm extensible stand to fix each subwoofer/satellite.",
     description2: ""
@@ -601,7 +601,7 @@ export const products = [
     name: "SET MK MEGAMAN",
     tags: "Self-powered audio system",
     image: "/assets/equipson-img/SET_MK_MEGAMAN_20201022091714.jpg",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "SET MK MEGAMAN is an self-powered system consisting of 2 amplified subwoofers and 4 satellites with a total maximum power of 1600W. Each subwoofer integrates a 600 + 200 W amplifier and various types of input (including 2 MIC / LINE inputs and 4 stereo line level inputs with different connection types). It has a USB/Bluetooth player to offer maximum versatility. Includes an echo effect for channels 1 to 4 and DSP with 4 presets. It also has the necessary controls to adjust the volume, the 2 tones and the effect level of the first 4 channels (channels 5-6 only include the volume level).",
     description2: ""
@@ -612,7 +612,7 @@ export const products = [
     name: "C PRO 6",
     tags: "Subgrave de techo",
     image: "/assets/equipson-img/C-PRO-8-SUB_20181004120817.jpg",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "C PRO 6 is a two-way ceiling loudspeaker suitable for low impedance or 70/100 V line installations. It consists of a 6.5'' loudspeaker and a 1'' tweeter. It has a grid with magnets, facilitating its assembly. In addition, its cover can be painted, thus facilitating its integration into any space. Once installed, the tweeter can be rotated to control directionality to enhance the audio experience.",
     description2: ""
@@ -623,7 +623,7 @@ export const products = [
     name: "C PRO 8 SUB",
     tags: "Subgrave de techo",
     image: "/assets/equipson-img/CPRO_6_20180425161123.jpg",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "The new CPRO 8 SUB is part of the PURE PRO SERIES ceiling loudspeaker series, a series known for its high quality, design and avant-garde. This new loudspeaker is the one that has just completed the series, being a ceiling subwoofer, the CPRO 8 SUB incorporates an 8'' transducer capable of offering up to 40W of power. It allows its installation both in low impedance and high impedance lines. (100V) and depending on this, the professional can choose the desired power through wiring.",
     description2: ""
@@ -634,7 +634,7 @@ export const products = [
     name: "IC 5 K PRO",
     tags: "Subgrave de techo",
     image: "/assets/equipson-img/IC-5-K-PRO_Con-Rejilla_20190903160723.jpg",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "Designed for commercial audio applications, this ceiling speaker has a transducer made of Kevlar, obtaining high performance in speech intelligibility and musical clarity. Its power selector makes it adaptable to high impedance installations (with several positions depending on the model), and low impedance. The body of the loudspeaker is made of ABS plastic and its metal grill, fixed with magnets, covers almost the entire loudspeaker, configuring a discreet element in any installation.",
     description2: ""
@@ -644,8 +644,8 @@ export const products = [
     category: "",
     name: "NGS 80 LX",
     tags: "Speaker with led light for garden",
-    image: "/assets/equipson-img/NGS_80_LX_01_20210916160215.jpg",
-    brand: "equipson",
+    image: "/assets/equipson-img/NGS_80_LX_01_20210916160215-removebg-preview.png",
+    brand: "workpro-sound",
     description:
       "NGS 80 LX is an acoustic enclosure with built-in LED light, designed for installation in gardens. It has an 8'' woofer and a 1.4'' tweeter. It can work both in low impedance installations and in 70/100 volt line installations, with a power of 120W @ 8Ohm and 60/40/20 W in 100 v line (selectable). It incorporates 9W and 3000K led lighting powered at 12v DC (power supply not included). It is made of ABS plastic and designed to offer omnidirectional coverage.",
     description2: ""
@@ -656,7 +656,7 @@ export const products = [
     name: "UDA 16",
     tags: "Passive acoustic column 400 W @ 8 Ohm.",
     image: "/assets/equipson-img/UDA_16_B_pers_20201104092939.jpg",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "UDA 16 is a passive acoustic enclosure made up of sixteen 2.75'' diameter transducers, with a 0.75'' voice coil. The narrow extruded aluminum enclosure has been designed for seamless visual integration in all locations and is available in a black or white finish. The grill is also made of aluminum and internally covered with a protective water-repellent fabric that prevents splashes and dust from damaging the transducers, with an IP 65 rating. Two wall-mounting accessories are included. The Wall 4V allows you to aim the enclosure up to +/- 50º horizontally and up to +/- 30º vertically. The 4H allows the cabinet to be pointed up to +/- 50º only laterally.",
     description2: ""
@@ -667,7 +667,7 @@ export const products = [
     name: "ARC SUB 12 MKIII",
     tags: "Subwoofer amplificado. 200 W.",
     image: "/assets/equipson-img/ARC_SUB_12_MKIII_pers.jpg",
-    brand: "equipson",
+    brand: "workpro-sound",
     description:
       "ARC SUB 12 MKIII is a powered subwoofer that integrates a 200W power amplifier and a high-performance 12'' woofer. The amplifier has several controls, allowing you to set parameters such as output gain, subwoofer, frequency crossover or phase inversion.The built-in Standby function offers the possibility of turning off the amplifier in the absence of audio input.ARC SUB 12 MKIII incorporates 2 types of input: full-range mono LINE input and stereo High Level input stereo) for direct connection between external amplifiers and the satellite system.",
     description2: ""

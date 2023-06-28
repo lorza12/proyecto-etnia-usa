@@ -2,8 +2,6 @@ import styles from "@/styles/Footer.module.css";
 import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
 import { FaCopyright } from "react-icons/fa";
 import { TbMapSearch } from "react-icons/tb";
-import Image from "next/image";
-import Logo from "../../../public/assets/logo-indcomer.png";
 import { montserrat } from "@/styles/fonts";
 
 function Footer() {
@@ -26,33 +24,26 @@ function Footer() {
               </a>
               <br />
               <br />
-              <h1>E-Mail</h1>
+              <h1>E-MAIL</h1>
               <p>info@etniapro.com</p>
               <br />
-              <h1>Phone Number</h1>
+              <h1>PHONE NUMBER</h1>
               <p>305 608 3596</p>
             </article>
             <article className={styles.footerContainer__section1__hours}>
-              <h1>attention schedule</h1>
+              <h1>ATTENTION SCHEDULE</h1>
+              <br />
               <div
                 className={styles.footerContainer__section1__hours__sections}
               >
                 <div className={styles.divs__interval}>
                   <p>Monday-Friday</p>
-                  <p>8:00 a.m - 5:00 p.m</p>
-                </div>
-                <div className={styles.divs__interval}>
-                  <p>Saturday</p>
                   <p>9:00 a.m - 5:00 p.m</p>
-                </div>
-                <div>
-                  <p>Sunday</p>
-                  <p>10:00 a.m - 4:00 p.m</p>
                 </div>
               </div>
             </article>
             <article className={styles.footerContainer__section1__networks}>
-              <h1>follow us</h1>
+              <h1>FOLLOW US</h1>
               <div className={styles.div__networks}>
                 <a href={facebookUrl} target="_blank" rel="iconFacebook">
                   <BsFacebook fontSize={30} />
@@ -72,9 +63,6 @@ function Footer() {
             </article>
             <article>
               <p>political EtniaA</p>
-            </article>
-            <article>
-              <Image src={Logo} alt="logo" width={200} />
             </article>
           </section>
         </section>
