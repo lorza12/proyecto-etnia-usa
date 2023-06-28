@@ -3,12 +3,12 @@ import Head from "next/head";
 const About = () => {
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>About Page</title>
         <meta name="description" content="Products Page" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logoIcon1.ico" />
-      </Head>
+      </Head> */}
       <h1>About</h1>
     </>
   );

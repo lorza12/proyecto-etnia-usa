@@ -92,7 +92,6 @@ const Products = () => {
       <Head>
         <title>Etniapro | Products</title>
         <meta name="description" content="Products Page" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logoIcon1.ico" />
       </Head>
       <div className={styles.productsGlobalContainer}>
