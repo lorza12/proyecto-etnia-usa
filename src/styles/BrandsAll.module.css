@@ -12,6 +12,13 @@
   padding: 5rem 0 8rem 0;
 }
 
+.productsContainer__main {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  padding: 2rem 0 10rem 0;
+}
+
 .title {
   text-align: center;
   text-transform: capitalize;
@@ -155,7 +162,7 @@
   }
 
   .title {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .bransAllContainer__brands__inter {

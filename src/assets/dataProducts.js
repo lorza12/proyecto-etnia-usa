@@ -11,7 +11,6 @@ export const products = [
       "The power of the LightShark engine combined with a complete hardware surface.The LS-1 brings together the best features from the world of the LightShark software engine and marries them to an intuitive, ergonomic hardware control surface. 4 encoders, 10 master playbacks and a color built-in display, combined with a complete set of RGB buttons, give the users a full console platform able to manage incredible shows in a very reduced size, which is compatible with airplane carry-on luggage.",
     description2: "LS-1: Includes (LS-1 & Gooseneck Lamp)The LS-1 includes a built-in stand to hold a device like a tablet on the back of the LS-1, and an extra dedicated USB charging socket on the rear panel to keep associated tablets or Smartphones charged at all times."
   },
-
   {
     id: 2,
     category: "Lightshark Controllers",
