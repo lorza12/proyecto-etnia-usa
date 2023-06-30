@@ -22,15 +22,15 @@ export interface ProductModel {
 
 const Products = () => {
   const [brand, setBrand] = useState<string>("all");
-  const [checked, setChecked] = useState(false);
+  const [checked, setChecked] = useState<boolean>(false);
   const [windowSize, setWindowSize] = useState(() => {
     if (typeof window !== "undefined") {
       return window.innerWidth;
     }
     return null;
   });
-  const [top, setTop] = useState(true);
-  const [bottom, setBottom] = useState(false);
+  const [top, setTop] = useState<boolean>(true);
+  const [bottom, setBottom] = useState<boolean>(false);
   const brandCheckboxId = useId();
   const scrollRef = useRef(null);
 
@@ -61,6 +61,9 @@ const Products = () => {
     const newBrand = event.target.value;
     setBrand(newBrand);
     setChecked(!checked);
+    scrollRef.current.scrollLeft *= 0;
+    setTop(true);
+    setBottom(false);
   };
 
   const brandType = getUniqueCategory(prod, "brand");
@@ -118,6 +121,7 @@ const Products = () => {
                     name="brand"
                     value="all"
                     id="all"
+                    defaultChecked
                     className={styles.inputBrand}
                     onChange={handleRadioChange}
                   />

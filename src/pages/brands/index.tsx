@@ -64,7 +64,7 @@ function BrandsAll() {
                 <br />
                 <br />
                 <p className={styles.bransAllContainer__brands__paragraf}>
-                  LIGTHSHRK {`(${lengthLightshark})`}
+                  LIGTHSHARK {`(${lengthLightshark})`}
                 </p>
               </div>
             </article>
@@ -96,7 +96,7 @@ function BrandsAll() {
                   <Image src={brand5} alt="brand3" width={200} height={60} />
                 </Link>
                 <p className={styles.bransAllContainer__brands__paragraf}>
-                  FANTEK {`(${lengthEquipson})`}
+                  WORKPRO-SOUND {`(${lengthEquipson})`}
                 </p>
               </div>
             </article>
