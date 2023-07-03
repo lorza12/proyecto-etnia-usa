@@ -187,6 +187,8 @@
     height: auto;
   }
 
+
+
   .brandListItem {
     font-size: 1em;
     padding: 1em 0;
@@ -260,6 +262,7 @@
     margin: -0.8em 0 0;
     padding: 2em;
     height: auto;
+    width: 70%;
   }
 
   .brandListItem {
