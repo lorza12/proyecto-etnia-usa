@@ -84,12 +84,16 @@
   grid-template-rows: min-content;
   justify-items: center;
   padding: 2rem;
-  cursor: auto;
+
 }
 
 .productImage {
   inline-size: 80%;
   object-fit: contain;
+}
+
+.productImage:hover {
+  transform: scale(1.1);
 }
 
 .details {

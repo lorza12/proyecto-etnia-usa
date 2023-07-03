@@ -160,16 +160,23 @@ const Products = () => {
             <div className={styles.productsContainer} ref={scrollRef}>
               {filteredProducts.map((product) => (
                 <div key={product.name} className={styles.productsItem}>
-                  <Image
-                    src={product.image}
-                    alt={product.name}
-                    width={300}
-                    height={300}
-                    className={styles.productImage}
-                  ></Image>
+                  <Link
+                    key={product.id}
+                    href={`/products/${product.id}`}
+                    className={styles.productsLink}
+                  >
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      width={300}
+                      height={300}
+                      className={styles.productImage}
+                    ></Image>
+                  </Link>
                   <h2 className={montserrat.className}>{product.name}</h2>
                   <p className={montserrat.className}>{product.tags}</p>
                   <br />
+
                   <Link
                     key={product.id}
                     href={`/products/${product.id}`}
