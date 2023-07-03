@@ -70,9 +70,7 @@ const ProductDetailPage = () => {
                       <br />
                       <ul className={styles.feacturesList}>
                         {item.feactures.map((element, index) => (
-                          <li className={styles.feacturesList} key={index}>
-                            &#9679; {element}
-                          </li>
+                          <li key={index}>{element}</li>
                         ))}
                       </ul>
                     </div>
