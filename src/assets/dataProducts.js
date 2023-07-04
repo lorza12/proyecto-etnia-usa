@@ -364,86 +364,86 @@ export const products = [
       "WTS 708. The WTS Series means a change of concept within the front load towers, as it introduces the new Structural Mode. This Structural Mode does not use the winch to lift the load, but involves lifting the load with the help of a manual or electric hoist. That is, the tower is used as a structure that is all locked to the required working height. Once the tower is raised to this desired height, the load must be raised with the hoist. ",
     description2:
       "The Structural Mode performs improved loading capacities. Furthermore, the WTS Series incorporates the innovative Dynamic Overlap system.",
-      feactures: [
-        "Modes of operation: Mechanism Mode and Structural Mode.",
-        "Four extensible profiles made of extruded aluminium.",
-        "Reinforcing bars on the back and front of the lifter for additional reinforcement.",
-        "Castors at the base of the lifter.",
-        "Dynamic Overlap system.",
-        "Available color: Black.",
-        "Compatible accessories: AWS 502, AWS 301, AWS 501.",
-      ],
-      specifications: [
-        {
-          name: "Folded height",
-          values: "2,00(m) - 6,56(ft)",
-        },
-        {
-          name: "Base width",
-          values: "0,705(m) - 2,31(ft)",
-        },
-        {
-          name: "Base length",
-          values: "0,58(m) - 1,90(ft)",
-        },
-        {
-          name: "Maximum Height",
-          values: "8,13(m) - 26,67(ft)",
-        },
-        {
-          name: "Minimum fork height",
-          values: "0,91(m) - 2,98	(ft)",
-        },
-        {
-          name: "Unfolded diameter",
-          values: "3,47(m) - 11,38(ft)",
-        },
-        {
-          name: "Frontal side width",
-          values: "2,15(m) - 7,05(ft)",
-        },
-        {
-          name: "Rear side width",
-          values: "2,55(m) - 8,37(ft)",
-        },
-        {
-          name: "Fork length",
-          values: "0,86(m) - 2,82(ft)",
-        },
-        {
-          name: "Number of profiles",
-          values: "6",
-        },
-        {
-          name: "Minimum load capacity",
-          values: "25(Kg) - 55,12(Lb)",
-        },
-        {
-          name: "Max.load as mechanism",
-          values: "450(Kg) - 992,08(Lb)",
-        },
-        {
-          name: "Max. load as structure",
-          values: "700(Kg) - 1543,24(Lb)",
-        },
-        {
-          name: "Net weight",
-          values: "287(Kg) - 632,72(Lb)",
-        },
-        {
-          name: "Winch",
-          values: "1200(Kg) - 2645,5(Lb)",
-        },
-        {
-          name: "Cable diameter",
-          values: "6(mm2)",
-        },
-        {
-          name: "Noise emissions",
-          values: "73(dB)",
-        },
-      ],
-    },
+    feactures: [
+      "Modes of operation: Mechanism Mode and Structural Mode.",
+      "Four extensible profiles made of extruded aluminium.",
+      "Reinforcing bars on the back and front of the lifter for additional reinforcement.",
+      "Castors at the base of the lifter.",
+      "Dynamic Overlap system.",
+      "Available color: Black.",
+      "Compatible accessories: AWS 502, AWS 301, AWS 501.",
+    ],
+    specifications: [
+      {
+        name: "Folded height",
+        values: "2,00(m) - 6,56(ft)",
+      },
+      {
+        name: "Base width",
+        values: "0,705(m) - 2,31(ft)",
+      },
+      {
+        name: "Base length",
+        values: "0,58(m) - 1,90(ft)",
+      },
+      {
+        name: "Maximum Height",
+        values: "8,13(m) - 26,67(ft)",
+      },
+      {
+        name: "Minimum fork height",
+        values: "0,91(m) - 2,98	(ft)",
+      },
+      {
+        name: "Unfolded diameter",
+        values: "3,47(m) - 11,38(ft)",
+      },
+      {
+        name: "Frontal side width",
+        values: "2,15(m) - 7,05(ft)",
+      },
+      {
+        name: "Rear side width",
+        values: "2,55(m) - 8,37(ft)",
+      },
+      {
+        name: "Fork length",
+        values: "0,86(m) - 2,82(ft)",
+      },
+      {
+        name: "Number of profiles",
+        values: "6",
+      },
+      {
+        name: "Minimum load capacity",
+        values: "25(Kg) - 55,12(Lb)",
+      },
+      {
+        name: "Max.load as mechanism",
+        values: "450(Kg) - 992,08(Lb)",
+      },
+      {
+        name: "Max. load as structure",
+        values: "700(Kg) - 1543,24(Lb)",
+      },
+      {
+        name: "Net weight",
+        values: "287(Kg) - 632,72(Lb)",
+      },
+      {
+        name: "Winch",
+        values: "1200(Kg) - 2645,5(Lb)",
+      },
+      {
+        name: "Cable diameter",
+        values: "6(mm2)",
+      },
+      {
+        name: "Noise emissions",
+        values: "73(dB)",
+      },
+    ],
+  },
   {
     id: 11,
     category: "WORK PRO Lifters, WTS Series (Front Loaded)",
@@ -456,86 +456,86 @@ export const products = [
       "WTS 1206. The WTS Series means a change of concept within the front load towers, as it introduces the new Structural Mode. This Structural Mode does not use the winch to lift the load, but involves lifting the load with the help of a manual or electric hoist. That is, the tower is used as a structure that is all locked to the required working height. ",
     description2:
       "Once the tower is raised to this desired height, the load must be raised with the hoist. The Structural Mode performs improved loading capacities. Furthermore, the WTS Series incorporates the innovative Dynamic Overlap system.",
-      feactures: [
-        "Modes of operation: Mechanism Mode and Structural Mode.",
-        "Four extensible profiles made of extruded aluminium.",
-        "Reinforcing bars on the back and front of the lifter for additional reinforcement.",
-        "Castors at the base of the lifter.",
-        "Dynamic Overlap system.",
-        "Available color: Black.",
-        "Compatible accessories: AWS 502, AWS 301, AWS 501.",
-      ],
-      specifications: [
-        {
-          name: "Folded height",
-          values: "2,00(m) - 6,56(ft)",
-        },
-        {
-          name: "Base width",
-          values: "0,585(m) - 1,92(ft)",
-        },
-        {
-          name: "Base length",
-          values: "0,58(m) - 1,90(ft)",
-        },
-        {
-          name: "Maximum Height",
-          values: "6,00(m) - 19,69(ft)",
-        },
-        {
-          name: "Minimum fork height",
-          values: "0,88(m) - 2,88	(ft)",
-        },
-        {
-          name: "Unfolded diameter",
-          values: "3,40(m) - 11,15(ft)",
-        },
-        {
-          name: "Frontal side width",
-          values: "2,15(m) - 7,05(ft)",
-        },
-        {
-          name: "Rear side width",
-          values: "2,55(m) - 8,37(ft)",
-        },
-        {
-          name: "Fork length",
-          values: "0,86(m) - 2,82(ft)",
-        },
-        {
-          name: "Number of profiles",
-          values: "4",
-        },
-        {
-          name: "Minimum load capacity",
-          values: "25(Kg) - 55,12(Lb)",
-        },
-        {
-          name: "Max.load as mechanism",
-          values: "550(Kg) - 1212,54(Lb)",
-        },
-        {
-          name: "Max. load as structure",
-          values: "1200(Kg) - 2645,55(Lb)",
-        },
-        {
-          name: "Net weight",
-          values: "244(Kg) - 537,92(Lb)",
-        },
-        {
-          name: "Winch",
-          values: "1200(Kg) - 2645,5(Lb)",
-        },
-        {
-          name: "Cable diameter",
-          values: "6(mm2)",
-        },
-        {
-          name: "Noise emissions",
-          values: "73(dB)",
-        },
-      ],
-    },
+    feactures: [
+      "Modes of operation: Mechanism Mode and Structural Mode.",
+      "Four extensible profiles made of extruded aluminium.",
+      "Reinforcing bars on the back and front of the lifter for additional reinforcement.",
+      "Castors at the base of the lifter.",
+      "Dynamic Overlap system.",
+      "Available color: Black.",
+      "Compatible accessories: AWS 502, AWS 301, AWS 501.",
+    ],
+    specifications: [
+      {
+        name: "Folded height",
+        values: "2,00(m) - 6,56(ft)",
+      },
+      {
+        name: "Base width",
+        values: "0,585(m) - 1,92(ft)",
+      },
+      {
+        name: "Base length",
+        values: "0,58(m) - 1,90(ft)",
+      },
+      {
+        name: "Maximum Height",
+        values: "6,00(m) - 19,69(ft)",
+      },
+      {
+        name: "Minimum fork height",
+        values: "0,88(m) - 2,88	(ft)",
+      },
+      {
+        name: "Unfolded diameter",
+        values: "3,40(m) - 11,15(ft)",
+      },
+      {
+        name: "Frontal side width",
+        values: "2,15(m) - 7,05(ft)",
+      },
+      {
+        name: "Rear side width",
+        values: "2,55(m) - 8,37(ft)",
+      },
+      {
+        name: "Fork length",
+        values: "0,86(m) - 2,82(ft)",
+      },
+      {
+        name: "Number of profiles",
+        values: "4",
+      },
+      {
+        name: "Minimum load capacity",
+        values: "25(Kg) - 55,12(Lb)",
+      },
+      {
+        name: "Max.load as mechanism",
+        values: "550(Kg) - 1212,54(Lb)",
+      },
+      {
+        name: "Max. load as structure",
+        values: "1200(Kg) - 2645,55(Lb)",
+      },
+      {
+        name: "Net weight",
+        values: "244(Kg) - 537,92(Lb)",
+      },
+      {
+        name: "Winch",
+        values: "1200(Kg) - 2645,5(Lb)",
+      },
+      {
+        name: "Cable diameter",
+        values: "6(mm2)",
+      },
+      {
+        name: "Noise emissions",
+        values: "73(dB)",
+      },
+    ],
+  },
   {
     id: 12,
     category: "WORK PRO Lifters, WTS Series (Front Loaded)",
@@ -623,6 +623,66 @@ export const products = [
     description:
       "Stage deck with great versatility and the highest success guarantee. Birch plywood 21 mm with WISA® weather-resistant phenolic gluing according to EN-314-2/class 3. Maximum load: 750 Kg/m². Profiles in silver colour. Available in 2x1, 2x0.5 and 1x1 metres.",
     description2: "",
+    feactures: [
+      "Highest quality of materials.",
+      "Availability of custom stage decks.",
+      "Other profile colours on request.",
+    ],
+    specifications: [
+      {
+        name: "Maximum Load",
+        values: "102,41 lb/sq ft",
+      },
+      {
+        name: "Durability",
+        values: "Class 3 (sealed lining and edges)",
+      },
+      {
+        name: "Abrasion",
+        values: "DIN 53799 (1/1986) / EC 438-2:1991",
+      },
+      {
+        name: "Environment",
+        values: "PEFC ST 2002:2013 and PEFC ST 2001:2008.",
+      },
+      {
+        name: "Panel",
+        values: "	Birch plywood 21 mm with WISA® ",
+      },
+      {
+        name: "Material",
+        values: "Aluminum 6082 T6",
+      },
+      {
+        name: "Gluing quality",
+        values: "Class 3 EN 314-2",
+      },
+      {
+        name: "Reaction to fire",
+        values: "EN 13986:2004 +A1:2015",
+      },
+      {
+        name: "Water vapor permeability",
+        values: "Wet cup 90, Dry cup 220 (uncoated)",
+      },
+      {
+        name: "Module dimensions",
+        values:
+          "	6,56 x 3,28 x 0,32 ft 6,56 x 1,64 x 0,32 ft 3,28 x 3,28 x 0,32 ft",
+      },
+      {
+        name: "Board regulations",
+        values: "EN-314-2/Class 3, EN 636",
+      },
+      {
+        name: "Regulations of the complete module",
+        values: "DIN 4112-4113",
+      },
+      {
+        name: "Weight",
+        values: "95,68 lb",
+      },
+    ],
   },
   {
     id: 20,
@@ -634,6 +694,30 @@ export const products = [
     description:
       "Extendable leg for stage decks TA 21 and 25, made of aluminium, 60 x 60 mm wide and 2.5 mm thick. With leveller at the bottom to save possible irregularities in the floor. Extendable size to choose: from 30 to 50 cm / from 40 to 60 cm / from 50 to 80 cm / from 60 to 100 cm / from 70 to 120 cm / from 80 to 140 cm / from 90 to 150 cm / from 100 to 175 cm / from 120 to 200 cm. + 5 cm of the extended leveller. In silver colour.",
     description2: "",
+    feactures: [
+      "Available in different sizes.",
+      "Silver colour.",
+      "Other colours available on request.",
+      "Extendable and with leveller.",
+    ],
+    specifications: [
+      {
+        name: "Material",
+        values: "Aluminium",
+      },
+      {
+        name: "Width",
+        values: "	2,36 in",
+      },
+      {
+        name: "Depth",
+        values: "	2,36 in",
+      },
+      {
+        name: "Height",
+        values: "To choose",
+      },
+    ],
   },
   {
     id: 21,
@@ -645,6 +729,29 @@ export const products = [
     description:
       "Accessory for connecting four 60x60 mm decking legs. Allows the legs to be joined together to make the assembly more robust. For TA 21 and TA 25 platforms. Available in silver colour.",
     description2: "",
+    feactures: [
+      "For TA 21 and TA 25 stage decks.",
+      "Available in silver.",
+      "Provides robustness to the assembly.",
+    ],
+    specifications: [
+      {
+        name: "Height",
+        values: "1,97 in",
+      },
+      {
+        name: "Depth",
+        values: "8,86 in",
+      },
+      {
+        name: "Length",
+        values: "8,27 in",
+      },
+      {
+        name: "Material",
+        values: "Steel",
+      },
+    ],
   },
   {
     id: 22,
@@ -656,6 +763,29 @@ export const products = [
     description:
       "Accessory for connecting two 60x60 mm decking legs. Allows the legs to be joined together to make the assembly more robust. For TA 21 and TA 25 platforms. Available in silver colour.",
     description2: "",
+    feactures: [
+      "For TA 21 and TA 25 stage decks.",
+      "Available in silver.",
+      "Provides robustness to the assembly.",
+    ],
+    specifications: [
+      {
+        name: "Height",
+        values: "1,97 in",
+      },
+      {
+        name: "Depth",
+        values: "3,86 in",
+      },
+      {
+        name: "Length",
+        values: "8,27 in",
+      },
+      {
+        name: "Material",
+        values: "Steel",
+      },
+    ],
   },
   {
     id: 23,
@@ -667,6 +797,28 @@ export const products = [
     description:
       "The pallet connector allows TA 21, TA 25 and TA 15 pallets to be joined together, making the assembly more robust. Made of zamak and steel. Silver colour.",
     description2: "",
+    feactures: [
+      "Available in silver colour.",
+      "Provides robustness to the assembly.",
+    ],
+    specifications: [
+      {
+        name: "Height",
+        values: "1,42 in",
+      },
+      {
+        name: "Depth",
+        values: "1,18 in",
+      },
+      {
+        name: "Length",
+        values: "3,31 in",
+      },
+      {
+        name: "Material",
+        values: "Zamak and steel",
+      },
+    ],
   },
   {
     id: 24,
@@ -678,6 +830,29 @@ export const products = [
     description:
       "Railing for 2x1 metre stage deck, made of 30x30 mm steel profile and 1.5 mm thick. Fixing by means of AT-CONPERH. Black finish.",
     description2: "",
+    feactures: ["Available in black.", "Connection system included."],
+    specifications: [
+      {
+        name: "Height",
+        values: "41,93 in",
+      },
+      {
+        name: "Depth",
+        values: "1,18 in",
+      },
+      {
+        name: "Length",
+        values: "78,74 in",
+      },
+      {
+        name: "Material",
+        values: "Steel",
+      },
+      {
+        name: "Coupling System",
+        values: "AT-CONPERH",
+      },
+    ],
   },
   {
     id: 25,
@@ -689,6 +864,29 @@ export const products = [
     description:
       "Railing for 1x1 metre stage deck, made of 30x30 mm steel profile and 1.5 mm thick. Fixing by means of AT-CONPERH. Black finish.",
     description2: "",
+    feactures: ["Available in black.", "Connection system included."],
+    specifications: [
+      {
+        name: "Height",
+        values: "41,93 in",
+      },
+      {
+        name: "Depth",
+        values: "1,18 in",
+      },
+      {
+        name: "Length",
+        values: "39,37 in",
+      },
+      {
+        name: "Material",
+        values: "Steel",
+      },
+      {
+        name: "Coupling System",
+        values: "AT-CONPERH",
+      },
+    ],
   },
   {
     id: 26,
@@ -700,6 +898,25 @@ export const products = [
     description:
       "Handrail for four-step staircase, made of 30x30 mm steel profile and 1.5 mm thick. Fastened with two metric 10 screws. Black finish.",
     description2: "",
+    feactures: ["Available in black.", "Fixing screws included."],
+    specifications: [
+      {
+        name: "Height",
+        values: "44,29 in",
+      },
+      {
+        name: "Depth",
+        values: "1,18 in",
+      },
+      {
+        name: "Length",
+        values: "	53,15 in",
+      },
+      {
+        name: "Material",
+        values: "Steel",
+      },
+    ],
   },
   {
     id: 27,
@@ -711,6 +928,28 @@ export const products = [
     description:
       "Removable step for stairs. Used to form modular stairs for stage decks in heights multiple of 200 mm. Allows the installation of AT-BARESC handrails every 4 steps. The staircase is connected to the decking by means of the AT-CEDES or AT-CEPEL accessory.",
     description2: "",
+    feactures: [
+      "Stairstep for modular stairs.",
+      "For stage deck heights by multiples of 200 mm.",
+    ],
+    specifications: [
+      {
+        name: "Height",
+        values: "0,656 ft",
+      },
+      {
+        name: "Depth",
+        values: "0,95 ft",
+      },
+      {
+        name: "Length",
+        values: "3,28 ft",
+      },
+      {
+        name: "Material",
+        values: "Steel",
+      },
+    ],
   },
   {
     id: 28,
@@ -722,6 +961,33 @@ export const products = [
     description:
       "Base for screen support is part of the SPLFT modular system, which allows a LED screen to be mounted on the floor. This base is equipped with two adjustable front spindles and a rear spindle that allow the LED screen to be perfectly levelled. The 29 cm ladder truss is connected to the base by means of two double cones CBC50PDC (included in the truss).",
     description2: "",
+    feactures: [
+      "Two M12 adjustable front levelling spindles.",
+      "One adjustable rear levelling spindle M14x150.",
+      "Bubble level.",
+    ],
+    specifications: [
+      {
+        name: "Material",
+        values: "Steel",
+      },
+      {
+        name: "Compatible truss",
+        values: "SPLFT29L",
+      },
+      {
+        name: "Height",
+        values: "Regulable (4,33 minimum)",
+      },
+      {
+        name: "Depth",
+        values: "43,78 in",
+      },
+      {
+        name: "Length",
+        values: "39,29 in",
+      },
+    ],
   },
   {
     id: 29,
@@ -733,6 +999,29 @@ export const products = [
     description:
       "Steel bar to connect two bases and ensure their union and stability. Black finish.0,58 meter length",
     description2: "",
+    feactures: ["Available in black."],
+    specifications: [
+      {
+        name: "Material",
+        values: "Steel",
+      },
+      {
+        name: "Compatible truss",
+        values: "All trusses",
+      },
+      {
+        name: "Height",
+        values: "1,97 in",
+      },
+      {
+        name: "Depth",
+        values: "	0,39 in",
+      },
+      {
+        name: "Length",
+        values: "	22,83 in",
+      },
+    ],
   },
   {
     id: 30,
@@ -744,6 +1033,37 @@ export const products = [
     description:
       "Aluminium parallel truss structure section of 29 cm on each side, manufactured with a main tube of 50 mm diameter and 4 mm thick, and an auxiliary tube of 25 mm diameter and 3 mm thick. With perpendicular crossbars (known as ladder truss). Includes 2 double cones, 2 pins, 2 threaded pins and 2 'R' safety clips. Black finish.",
     description2: "",
+    feactures: ["ladder truss", "Available in black.", "Connections included."],
+    specifications: [
+      {
+        name: "Main Tube Section",
+        values: "1,97 x 0,16 in",
+      },
+      {
+        name: "Main Tube Alloy",
+        values: "EN AW 6082T6",
+      },
+      {
+        name: "Braces Section",
+        values: "0,98 x 0,12 in",
+      },
+      {
+        name: "Braces Alloy",
+        values: "EN AW 6082T6",
+      },
+      {
+        name: "Surface Area Complete Truss",
+        values: "0,9347 in2",
+      },
+      {
+        name: "Coupling System",
+        values: "CBC50PDC",
+      },
+      {
+        name: "Length",
+        values: "	3,28 ft",
+      },
+    ],
   },
   {
     id: 31,
@@ -755,6 +1075,34 @@ export const products = [
     description:
       "The multi-connection plate allows any type of LED screen to be connected to the bracket. It is attached to the truss by means of an extendable aluminium profile of 40 x 40 mm and a clamp that allows it to be anchored to the desired height of the truss.",
     description2: "",
+    feactures: [
+      "Extensible 40x40 mm arm with clamp.",
+      "Adjustable length (200-350 mm).",
+      "Plate of 175x150x5 mm.",
+      "Distance between module holes: Min: 30mm, Max 98mm.",
+    ],
+    specifications: [
+      {
+        name: "Material",
+        values: "Steel",
+      },
+      {
+        name: "Compatible truss",
+        values: "All trusses",
+      },
+      {
+        name: "Height",
+        values: "	6,22 in",
+      },
+      {
+        name: "Depth",
+        values: "Regulable (7,87-13,78)",
+      },
+      {
+        name: "Length",
+        values: "6,89 in",
+      },
+    ],
   },
   {
     id: 32,
