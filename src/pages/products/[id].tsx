@@ -66,68 +66,79 @@ const ProductDetailPage = () => {
                     }
                   >
                     <div>
-                      <h4>Feactures:</h4>
+                      {item.feactures.length === 0 ? null : <h4>Feactures:</h4>}
+
                       <br />
                       <ul className={styles.feacturesList}>
                         {item.feactures.map((element, index) => (
-                          <li key={index}>{element}</li>
+                          <div key={index}>
+                            {element === null ? (
+                              <p>N/A</p>
+                            ) : (
+                              <li key={index}>{element}</li>
+                            )}
+                          </div>
                         ))}
                       </ul>
                     </div>
                     <div
                       className={styles.ProductDetailContainer__feactures__img}
                     >
-                      <h4>Technical Data</h4>
-                      <br />
-                      <table
-                        border={2}
-                        width={"90%"}
-                        rules="columns"
-                        cellPadding={5}
-                        cellSpacing={5}
-                      >
-                        <thead>
-                          <tr>
-                            <th>Model</th>
-                            <th>{item.name}</th>
-                          </tr>
-                        </thead>
-                        <tbody className={styles.productDetail__table}>
-                          {item.specifications.map((element, index) => (
-                            <tr key={index}>
-                              <td
-                                align="center"
-                                valign="middle"
-                                color="#333333"
-                                width={"60%"}
-                                height={39}
-                              >
-                                <span
-                                  className={
-                                    styles.productDetail__paragrafTable
-                                  }
-                                >
-                                  <strong>{element.name}</strong>
-                                </span>
-                              </td>
-                              <td
-                                align="center"
-                                valign="middle"
-                                color="#333333"
-                                width={"30%"}
-                              >
-                                <span
-                                  className={
-                                    styles.productDetail__paragrafTable
-                                  }
-                                >
-                                  <strong>{element.values}</strong>
-                                </span>
-                              </td>
-                            </tr>
-                          ))}
-                        </tbody>
-                      </table>
+                      {item.specifications.length === 0 ? null : (
+                        <>
+                          <h4>Technical Data</h4>
+                          <br />
+                          <table
+                            border={2}
+                            width={"90%"}
+                            rules="columns"
+                            cellPadding={5}
+                            cellSpacing={5}
+                          >
+                            <thead>
+                              <tr>
+                                <th>Model</th>
+                                <th>{item.name}</th>
+                              </tr>
+                            </thead>
+                            <tbody className={styles.productDetail__table}>
+                              {item.specifications.map((element, index) => (
+                                <tr key={index}>
+                                  <td
+                                    align="center"
+                                    valign="middle"
+                                    color="#333333"
+                                    width={"50%"}
+                                    height={39}
+                                  >
+                                    <span
+                                      className={
+                                        styles.productDetail__paragrafTable
+                                      }
+                                    >
+                                      <strong>{element.name}</strong>
+                                    </span>
+                                  </td>
+                                  <td
+                                    align="center"
+                                    valign="middle"
+                                    color="#333333"
+                                    width={"30%"}
+                                  >
+                                    <span
+                                      className={
+                                        styles.productDetail__paragrafTable
+                                      }
+                                    >
+                                      <strong>{element.values}</strong>
+                                    </span>
+                                  </td>
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        </>
+                      )}
                     </div>
                   </article>
                 ) : null}

@@ -1115,6 +1115,74 @@ export const products = [
       "SL 218 SA features a powerful digital signal processing, which provides the filtering and the necessary corrections to the transducers in order to obtain a faithful sound. Both from the monitoring software, via Ethernet, and from the keyboard and screen on the rear side, the preset to be used can be chosen.  Two low pass crossover frequencies are available with or without enhancement at 55Hz, and their corresponding presets for 1 to 1 cardioid settings (one forward, one backward) or 2 to 1 cardioid settings (two forward, one backward). You can also add delay and use up to 8 parametric filters for room corrections.",
     description2:
       "The SL 210 A features high performance and sensitivity transducers: two 10 speakers, one of them passively filtered in order to control the directivity in the Mid-Low range, along with a compression driver featuring a polymer PM-4 membrane coupled to a 120º Horizontal coverage horn",
+    feactures: [
+      "Self-powered subwoofer for ARION SL 210 A line array system.",
+      "DSP control via ethernet with Speaker Manager sofware.",
+      "Presets for cardioid configurations.",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "Self powered subwoofer",
+      },
+      {
+        name: "Power",
+        values: "2000 W RMS, Class D Amplifier",
+      },
+      {
+        name: "Transducers",
+        values: "2 x 18'' Woofer, voicecoil 4''",
+      },
+      {
+        name: "Input Sensitvity",
+        values: "+4 dBu",
+      },
+      {
+        name: "SPL Max",
+        values: "	138 dB",
+      },
+      {
+        name: "Frequency Range",
+        values: "30 Hz - 120 Hz",
+      },
+      {
+        name: "Connections",
+        values:
+          "Power: PowerCON, Audio In: XLR3 hembra, Audo link: XLR3 macho, Control: EtherCon",
+      },
+      {
+        name: "Controls",
+        values: "DSP control via ethernet",
+      },
+      {
+        name: "Protections",
+        values: "RMS y pico limiters, Overtemperature, Overload",
+      },
+      {
+        name: "Power supply",
+        values: "Universal 85 Vac a 265 Vac, 45 Hz a 65 Hz",
+      },
+      {
+        name: "Consumption",
+        values: "3.2 A",
+      },
+      {
+        name: "Enclosure material",
+        values: "21 mm byrch plywood",
+      },
+      {
+        name: "Finished",
+        values: "ISO-Flex paint",
+      },
+      {
+        name: "Inserts / Rigging",
+        values: "Transport trolley (optional), Side handles",
+      },
+      {
+        name: "Colour",
+        values: "Black",
+      },
+    ],
   },
   {
     id: 33,
@@ -1127,6 +1195,57 @@ export const products = [
       "This new subwoofers series is designed for installation and portable audio applications, since both users are in search of a compact element but with a powerful response.Being a direct radiating design, has a large impulse response and compact size (which becomes a 'punch' bass) so it is very suitable for the direct sound and / or discos and clubs.",
     description2:
       "This same design achieves direct radiation cardioid configuration if necessary. This configuration reduces (almost eliminates) the low frequency radiation to the back of the enclosure, eliminating the effect of low level frequencies caused by the musicians on stage and allowing clearly hear the monitor loudspeakers located on the stage.",
+    feactures: [],
+    specifications: [
+      {
+        name: "Type",
+        values: "assive subwoofer",
+      },
+      {
+        name: "Power",
+        values: "1400 W RMS",
+      },
+      {
+        name: "Transducers",
+        values: "2 x 18'' Woofer",
+      },
+      {
+        name: "Nominal Impedance",
+        values: "4 Ohm",
+      },
+      {
+        name: "Sensitivity (1W @ 1m)",
+        values: "103 dB",
+      },
+      {
+        name: "SPL Max",
+        values: "	136 dB",
+      },
+      {
+        name: "Frequency Range",
+        values: "36 Hz - 250 Hz",
+      },
+      {
+        name: "Connections",
+        values: "2 x XLN4",
+      },
+      {
+        name: "Enclosure material",
+        values: "21 mm birch plywood",
+      },
+      {
+        name: "Finished",
+        values: "Water resistant paint",
+      },
+      {
+        name: "Inserts / Rigging",
+        values: "Transport wheels. Side handles",
+      },
+      {
+        name: "Colour",
+        values: "Black",
+      },
+    ],
   },
   {
     id: 34,
@@ -1138,6 +1257,25 @@ export const products = [
     description:
       "MFF 210 is arigging frame for SL 210 A. It is an optional accessory.",
     description2: "",
+    feactures: [],
+    specifications: [
+      {
+        name: "Material	",
+        values: "	Iron",
+      },
+      {
+        name: "Finished",
+        values: "Black",
+      },
+      {
+        name: "Weight",
+        values: "27 Kg",
+      },
+      {
+        name: "Dimensions",
+        values: "701 x 660 x 220 mm",
+      },
+    ],
   },
   {
     id: 35,
@@ -1181,6 +1319,73 @@ export const products = [
     description:
       "ARION 5 is an active three-way line array, composed of 4 SL 025 units and 1 SL 115 A unit. Each SL 025 consists of 2 5.22 loudspeakers and a 2.2 compression driver with polymer membrane attached to the VI-5 waveguide. The SL 115 SA subwoofer cabinet uses a 15 driver, with a 3.5 voice coil. It has digital signal processing, and the power is provided by a Class D amplifier of 800W peak in bass, 650W peak in midrange and 150W peak in treble, which incorporate thermal and overload protections. Independent RMS and peak limiters are used on each path.",
     description2: "",
+    feactures: ["Case-D amp.", "Birch plywood.", "Flying frame included."],
+    specifications: [
+      {
+        name: "LF Transducer",
+        values: "Woofer 15'', Voicecoil 3.5''",
+      },
+      {
+        name: "MF transducer",
+        values: "2 x woofer 5'', Voicecoil 1.46''",
+      },
+      {
+        name: "HF Transducer",
+        values: "Driver compression 2.2'', exit 1.75''",
+      },
+      {
+        name: "LF amplifier",
+        values: "Clase-D 800 W peak",
+      },
+      {
+        name: "MF amplifier",
+        values: "Clase-D 650 W peak",
+      },
+      {
+        name: "HF amplifier",
+        values: "Clase-D, 150 W peak",
+      },
+      {
+        name: "FInput Impedance",
+        values: "10 KOhm",
+      },
+      {
+        name: "Input Sensitvity",
+        values: "+4 dBu",
+      },
+      {
+        name: "Max SPL",
+        values: "	122 dB",
+      },
+      {
+        name: "Horizontal coverage",
+        values: "140º",
+      },
+      {
+        name: "Material",
+        values: "Birch plywood",
+      },
+      {
+        name: "Finished",
+        values: "Polyurethane paint",
+      },
+      {
+        name: "Power supply",
+        values: "115Vac/230Vac, 50Hz/60Hz",
+      },
+      {
+        name: "Consumption",
+        values: "2 A",
+      },
+      {
+        name: "Weight",
+        values: "Satellite: 9.2 Kg, Subwoofer: 33.5 Kg",
+      },
+      {
+        name: "Dimensions",
+        values: "Satellite: 165x490x251 mm, Subwoofer: 521x490x492 mm",
+      },
+    ],
   },
   {
     id: 39,
@@ -1192,6 +1397,75 @@ export const products = [
     description:
       "ENTAR 10A is a two-way self-powered loudspeaker that incorporates a 700W amplifier, made of wood. It consists of a 10'' loudspeaker with a 2'' voice coil and a 1.35'' compression driver, and incorporates a signal processing DSP. Thanks to this DSP, it is possible to select 4 equalization presets, 3 HPF filters with selectable frequency, tone control (treble and bass) and differentiated preset for use as a floor monitor or placed on a support. It has an insertion vessel for a 35 mm support that allows 0º/10º angulations and rigging fixation points. Incorporates 2 Mic/Line inputs with level control and mix function.",
     description2: "",
+    feactures: [
+      "350W + 350W amplifier.",
+      "15-inch Woofer + 1.35-inch Driver.",
+      "Signal processing DSP.",
+      "Made of plywood.",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "	2-Way. Class D amplifier",
+      },
+      {
+        name: "Power",
+        values: "700W amplifier.",
+      },
+      {
+        name: "LF Transducer",
+        values: "10'' Woofer; 2'' Voice Coil",
+      },
+      {
+        name: "HF Transducer",
+        values: "1.35'' compression driver",
+      },
+      {
+        name: "DSP",
+        values: "4 Presets, 3 HPF Filters, Bass / Treble Curve Adjustment",
+      },
+      {
+        name: "SPL Max",
+        values: "126 dB",
+      },
+      {
+        name: "Coverage Angle (H x V)",
+        values: "85.2º x 53.5º",
+      },
+      {
+        name: "Frequency Range",
+        values: "60 Hz - 20 KHz",
+      },
+      {
+        name: "Connections",
+        values:
+          "1 x Combi XLR3/Jack TRS 1/4'' female, 1 x XLR3 female, 1 x XLR3 male",
+      },
+      {
+        name: "Enclosure material",
+        values: "Plywood and metal grill",
+      },
+      {
+        name: "Inserts / Rigging",
+        values: "Insertion: 35 mm - 0°/10° angulation; Rigging",
+      },
+      {
+        name: "Power supply",
+        values: "AC 240 V / 50 Hz ** (120V ON REQUEST)",
+      },
+      {
+        name: "Colour",
+        values: "Black",
+      },
+      {
+        name: "Dimensions",
+        values: "560 x 325 x 310 mm",
+      },
+      {
+        name: "Weight",
+        values: "14.2 Kg",
+      },
+    ],
   },
   {
     id: 40,
@@ -1203,6 +1477,54 @@ export const products = [
     description:
       "ENTAR 15 SUB is a 700 W passive subwoofer at 8 Ohm, incorporating an 15'' loudspeaker, made of high density wood. It has XLN4 connections, side carrying handles and 35 mm diameter top insert for support.",
     description2: "",
+    feactures: [
+      "passive subwoofer",
+      "15",
+      "700W @ 8 ohm",
+      "35 mm top insertion",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "Subwoofer direct radiation",
+      },
+      {
+        name: "Power",
+        values: "700W",
+      },
+      {
+        name: "Transducer",
+        values: "1x 15''",
+      },
+      {
+        name: "Nominal Impedance",
+        values: "	8 ohm",
+      },
+      {
+        name: "Sensitivity (1W @ 1m)",
+        values: "96 dB",
+      },
+      {
+        name: "Frequency Range",
+        values: "40 Hz - 2500 Hz",
+      },
+      {
+        name: "Connections",
+        values: "2x XNL4",
+      },
+      {
+        name: "Enclosure material",
+        values: "Plywood",
+      },
+      {
+        name: "Inserts / Rigging",
+        values: "Top 35 mm",
+      },
+      {
+        name: "Colour",
+        values: "Black",
+      },
+    ],
   },
   {
     id: 41,
@@ -1214,6 +1536,91 @@ export const products = [
     description:
       "Zenith 1000 is a 500W @ 4 Ohm 2-channel professional audio amplifier, with switching power supply, built in a 2-rack-unit metal enclosure. It has balanced inputs in XLR3 format and outputs with XLN4 connectors. It has selectors for input sensitivity and operating mode. It also has protection systems against short circuit, temperature, DC, VHF and constant high frequency signal. The front panel has a power switch, independent volume controls for each channel, and power, signal, clip and protection indicators.",
     description2: "",
+    feactures: [
+      "Stereo / Bridge / Parallel modes.",
+      "Volume control and level meter.",
+      "Signal, clip and protection indicator LEDs.",
+      "2 19-inch rack units.",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "	Class D. Switching source",
+      },
+      {
+        name: "No. Chanels",
+        values: "2",
+      },
+      {
+        name: "W/Ch @ 8 Ohm",
+        values: "300 W",
+      },
+      {
+        name: "W/Ch @ 4 Ohm",
+        values: "500 W",
+      },
+      {
+        name: "W Bridge @ 8 Ohm",
+        values: "1000 W",
+      },
+      {
+        name: "Frequency Range",
+        values: "20 Hz - 20 KHz",
+      },
+      {
+        name: "THD+N",
+        values: "<0.15 %",
+      },
+      {
+        name: "S/N Rate",
+        values: ">100 dB",
+      },
+      {
+        name: "Damping Factor",
+        values: "	>500",
+      },
+      {
+        name: "Gain",
+        values: "	36 dB",
+      },
+      {
+        name: "Input Impedance",
+        values: "20 KOhm (balanced) / 10 KOhm (unbalanced)",
+      },
+      {
+        name: "Input Sensitvity",
+        values: "0.775 V / 1 V / 32 dB",
+      },
+      {
+        name: "Connections",
+        values: "Power: Powercon; Signal: XLR3 for input and output; AMP: NL4",
+      },
+      {
+        name: "Protections",
+        values:
+          "	Soft start, VHF, DC, Overload, Clip, Limiting, Short-circuit, Over-temperature, Progressive volume",
+      },
+      {
+        name: "Refrigeration",
+        values: "Fans Air flow from front to rear",
+      },
+      {
+        name: "Power supply",
+        values: "	AC 100-240 V, 50/60 Hz",
+      },
+      {
+        name: "Consumption",
+        values: "	480 W",
+      },
+      {
+        name: "Dimensions",
+        values: "	483 x 88 x 305.5 mm",
+      },
+      {
+        name: "Weight",
+        values: "7.3 Kg",
+      },
+    ],
   },
   {
     id: 42,
@@ -1225,6 +1632,91 @@ export const products = [
     description:
       "Zenith 2500 is a 2-channel 1250 W @ 4 Ohm professional audio amplifier, with switching power supply, built in a 2-rack-unit metal enclosure. It has balanced inputs in XLR3 format and outputs with XLN4 connectors. It has selectors for input sensitivity and operating mode. It also has protection systems against short circuit, temperature, DC, VHF and constant high frequency signal. The front panel has a power switch, independent volume controls for each channel, and power, signal, clip and protection indicators.",
     description2: "",
+    feactures: [
+      "Stereo / Bridge / Parallel modes.",
+      "Volume control and level meter.",
+      "Signal, clip and protection indicator LEDs.",
+      "2 19-inch rack units.",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "	Class D. Switching source",
+      },
+      {
+        name: "No. Chanels",
+        values: "2",
+      },
+      {
+        name: "W/Ch @ 8 Ohm",
+        values: "700 W",
+      },
+      {
+        name: "W/Ch @ 4 Ohm",
+        values: "1250 W",
+      },
+      {
+        name: "W Bridge @ 8 Ohm",
+        values: "2500 W",
+      },
+      {
+        name: "Frequency Range",
+        values: "20 Hz - 20 KHz",
+      },
+      {
+        name: "THD+N",
+        values: "<0.15 %",
+      },
+      {
+        name: "S/N Rate",
+        values: ">100 dB",
+      },
+      {
+        name: "Damping Factor",
+        values: "	>500",
+      },
+      {
+        name: "Gain",
+        values: "39.7 dB",
+      },
+      {
+        name: "Input Impedance",
+        values: "20 KOhm (balanced) / 10 KOhm (unbalanced)",
+      },
+      {
+        name: "Input Sensitvity",
+        values: "0.775 V / 1 V / 32 dB",
+      },
+      {
+        name: "Connections",
+        values: "Power: Powercon; Signal: XLR3 for input and output; AMP: NL4",
+      },
+      {
+        name: "Protections",
+        values:
+          "	Soft start, VHF, DC, Overload, Clip, Limiting, Short-circuit, Over-temperature, Progressive volume",
+      },
+      {
+        name: "Refrigeration",
+        values: "Fans Air flow from front to rear",
+      },
+      {
+        name: "Power supply",
+        values: "	AC 100-240 V, 50/60 Hz",
+      },
+      {
+        name: "Consumption",
+        values: "1100 W",
+      },
+      {
+        name: "Dimensions",
+        values: "	483 x 88 x 305.5 mm",
+      },
+      {
+        name: "Weight",
+        values: "8 Kg",
+      },
+    ],
   },
   {
     id: 43,
@@ -1237,6 +1729,78 @@ export const products = [
     description:
       "With an IP protection factor of 65, NEO 5 IP guarantees installations in outdoors with heavy rains, which are a very demmanded feature for this kind of surface mounted loudspeakers. Technical specs are identical to NEO 5 except for the rear connection which has been changed to a cable with the different power taps.",
     description2: "",
+    feactures: [
+      "Suitable for high and low impedance installations.",
+      "IP 65",
+      "Wall brackets included.",
+      "Price per couple.",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "2 ways. Passive",
+      },
+      {
+        name: "Low Impedance Power",
+        values: "40 W @ 8 Ohm",
+      },
+      {
+        name: "L100V Power",
+        values: "16 W @ 625 Ohm, 8 W @ 1k25 Ohm, 4 W @ 2k5 Ohm, 2 W @ 5 KOhm",
+      },
+      {
+        name: "L70V Power",
+        values: "8 W @ 625 Ohm, 4 W @ 1k25 Ohm, 2 W @ 2k5 Ohm, 1 W @ 5 KOhm",
+      },
+      {
+        name: "Nominal Impedance",
+        values: "8 Ohm",
+      },
+      {
+        name: "LF Transducer",
+        values: "5.25'' Woofer",
+      },
+      {
+        name: "HF Transduce",
+        values: "0.5'' Tweeter",
+      },
+      {
+        name: "Sensitivity (1W @ 1m)",
+        values: "88 dB",
+      },
+      {
+        name: "SPL Max",
+        values: "100 dB0",
+      },
+      {
+        name: "Coverage Angle (H x V)",
+        values: "90º x 70º",
+      },
+      {
+        name: "Frequency Range",
+        values: "60 Hz - 20 KHz",
+      },
+      {
+        name: "Enclosure materia",
+        values: "Polypropylene",
+      },
+      {
+        name: "Grill",
+        values: "Aluminum",
+      },
+      {
+        name: "Inserts / Rigging",
+        values: "Wall brackets (included",
+      },
+      {
+        name: "Colour",
+        values: "White (RAL 9003), Black (RAL 9004)",
+      },
+      {
+        name: "IP Protection",
+        values: "IP 65",
+      },
+    ],
   },
   {
     id: 44,
@@ -1249,6 +1813,70 @@ export const products = [
     description:
       "NEO 8 IP is a 2-way acoustic box made of ABS plastic and white or black aluminum grille, specially designed for outdoor installation with a degree of protection IP 65. It is composed of an 8'' loudspeaker and a tweeter of 1''. It can be used both in 70/100 V installations and in low impedance installations. When a speaker is connected at low impedance the audio does not pass through the transformer in order to maintain a high level of quality. NEO 8 IP is also very simple and quick to install, thanks to the new support designed exclusively for this model, which also allows a quick orientation of the box in both axes. Sold in pairs (two passive boxes).",
     description2: "",
+    feactures: [
+      "Suitable for 70 / 100V and low impedance line installations.",
+      "IP 65",
+      "Brackets included.",
+      "Price per couple.",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "2 ways. Passive",
+      },
+      {
+        name: "Low Impedance Power",
+        values: "70 W @ 8 Ohm",
+      },
+      {
+        name: "L100V Power",
+        values: "	4 / 8 / 16 / 32 W",
+      },
+      {
+        name: "L70V Power",
+        values: "	2 / 4 / 8 / 16 W",
+      },
+      {
+        name: "Nominal Impedance",
+        values: "8 Ohm",
+      },
+      {
+        name: "LF Transducer",
+        values: "Woofer 8''",
+      },
+      {
+        name: "HF Transduce",
+        values: "Tweeter 1''",
+      },
+      {
+        name: "SPL Max",
+        values: "111 dB",
+      },
+      {
+        name: "Frequency Range",
+        values: "75 Hz - 20 KHz",
+      },
+      {
+        name: "Enclosure materia",
+        values: "Polypropylene",
+      },
+      {
+        name: "Grill",
+        values: "Aluminum",
+      },
+      {
+        name: "Inserts / Rigging",
+        values: "Brackets included",
+      },
+      {
+        name: "Colour",
+        values: "White (RAL 9003), Black (RAL 9004)",
+      },
+      {
+        name: "IP Protection",
+        values: "IP 65",
+      },
+    ],
   },
   {
     id: 45,
@@ -1261,6 +1889,82 @@ export const products = [
     description:
       "The new ATHOS R series is updated with the aim of obtaining a product resistant to inclement weather and at the same time much more sustainable by changing its structure (previously made of fiberglass), and now in an innovative material that is more resistant to effects. adverse weather conditions (rain, extreme temperatures or solid microparticles), making the polymer with which they are built immune to these problems. Its finish simulating wood also provides aesthetic improvements to the product. The new ATHOS R series incorporates a “U”-shaped wall bracket that can use rear supports that allow movement in both horizontal and vertical axis.",
     description2: "",
+    feactures: [
+      "Suited for outdoor applications. IP 54.",
+      "Made of polymer resistant to adverse climatic effects",
+      "Black or white colour.",
+      "Bracket included.",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "Passive",
+      },
+      {
+        name: "Low Impedance Power",
+        values: "125 W RMS",
+      },
+      {
+        name: "L100V Power",
+        values: "30 W",
+      },
+      {
+        name: "L70V Power",
+        values: "15 W",
+      },
+      {
+        name: "Nominal Impedance",
+        values: "8 Ohm",
+      },
+      {
+        name: "LF Transducer",
+        values: "	Woofer 6'', Voice Coil 1.5''",
+      },
+      {
+        name: "HF Transduce",
+        values: "Driver 1'', Ring polymer diaphragm''",
+      },
+      {
+        name: "Sensitivity (1W @ 1m)",
+        values: "	91 dB",
+      },
+      {
+        name: "SPL Max",
+        values: "118 dB",
+      },
+      {
+        name: "Coverage Angle (H x V)",
+        values: "80º x 80º",
+      },
+      {
+        name: "Frequency Range",
+        values: "129 Hz - 20 KHz (-10 dB), 102 Hz - 19 KHz (-6 dB",
+      },
+      {
+        name: "Connections",
+        values: "Four poles stripped wire",
+      },
+      {
+        name: "Enclosure materia",
+        values: "	Polymer resistant to adverse climatic effects",
+      },
+      {
+        name: "Grill",
+        values: "Steel, water proof fabric backing",
+      },
+      {
+        name: "Inserts / Rigging",
+        values: "Brackets included",
+      },
+      {
+        name: "Colour",
+        values: "Black or white",
+      },
+      {
+        name: "IP Protection",
+        values: "IP 54",
+      },
+    ],
   },
   {
     id: 46,
@@ -1272,6 +1976,58 @@ export const products = [
     description:
       "ATHOS B 15 is a passive speaker system with a 15'' woofer. Its robust design, elegant finish (made of medium density wood) and shape are very suitable for bass reinforcement applications, such as conference rooms, schools or home cinema installations. ATHOS B 15 features a 35 mm insert at the top of the woofer.",
     description2: "",
+    feactures: [
+      "Waterproof passive subwoofer",
+      "Maximum admissible power:900w.",
+      "Side handles.",
+      "Top insert for 35mm bracket.",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "Passive, direct radiation",
+      },
+      {
+        name: "Power",
+        values: "900w Prog. / 450w RMS",
+      },
+      {
+        name: "Transducers",
+        values: "	1x15''woofer, 3 ''VC 60OZ ferrite magnet",
+      },
+      {
+        name: "Nominal Impedance",
+        values: "8ohms",
+      },
+      {
+        name: "Sensitivity (1W @ 1m)",
+        values: "96dB",
+      },
+      {
+        name: "Frequency Range",
+        values: "55Hz-250Hz",
+      },
+      {
+        name: "Connections",
+        values: "	2 x XLN 4",
+      },
+      {
+        name: "Enclosure materia",
+        values: "Wooden 15mm MDF",
+      },
+      {
+        name: "Finished",
+        values: "Painting",
+      },
+      {
+        name: "Inserts / Rigging",
+        values: "	Side handles / top insert 35mm",
+      },
+      {
+        name: "Colour",
+        values: "Black",
+      },
+    ],
   },
   {
     id: 47,
@@ -1283,6 +2039,80 @@ export const products = [
     description:
       "PA 120 USB / R is a 100 V 60 W line or low impedance installation amplifier with 5-input mixer audio player / recorder on USB / SD support up to 32 GB, with which it is possible to record messages and store them for use later. The mixer has independent volume control, master control and tone control (treble / bass). It has a Pre-out output to send the mixed signal to an external amplification system. It includes a push button for the siren and a Tel / Emer connection for the broadcasting of messages with priority over all entrances. In addition, it has emergency power terminals (24 V DC).",
     description2: "",
+    feactures: [
+      "2 19-inch rack units.",
+      "USB / SD / MMC recorder / player.",
+      "Telephone / emergency connection for paging and communications functions.",
+      "2 warning tones.",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "Low impedance (8 Ohm), Line 25/70/100 V",
+      },
+      {
+        name: "Power",
+        values: "120 W @ 8 Ohm, L25/70/100V",
+      },
+      {
+        name: "Input Sensitvity",
+        values:
+          "1mV (Mic), 178 mV (Line), 200 mV (Aux1), 630 mV (Aux2), 1V (Power In), 100 mV (Telephone)",
+      },
+      {
+        name: "Input Impedance",
+        values:
+          "250 Ohm (Mic), 47 KOhm (Line, Aux, Power In), 600 Ohm (Telephone).",
+      },
+      {
+        name: "Connectors",
+        values:
+          "4 x XLR3 (MIC), 2 pairs x RCA (AUX IN), 1 pair x RCA (Tape Out), Terminals (Speakers)",
+      },
+      {
+        name: "Controls",
+        values:
+          "Independent gain for mic and aux inputs. Tone control for bass and treble, master control.",
+      },
+      {
+        name: "Frequency Response",
+        values: "50-20000 Hz (Line), 60-15000 Hz (Mic), 200 Hz - 10 kHz (Tel)",
+      },
+      {
+        name: "THD+N",
+        values: "<1% @ 1KHz",
+      },
+      {
+        name: "S/N ratio",
+        values:
+          "Independent gain for mic and aux inputs. Tone control for bass and treble, master control.",
+      },
+      {
+        name: "Phantom Power",
+        values: "+17 V Â± 1V",
+      },
+      {
+        name: "Other functions",
+        values:
+          "MP3 / WMA player (USB / SD), 2 tones (Ã‚Â´Ding-dongÃ‚Â´ tone for warning prior to communication), Priority channel Tel / Emergency",
+      },
+      {
+        name: "Power supply",
+        values: "115/230 V AC - 50/50 Hz. 24V - 4A",
+      },
+      {
+        name: "Consumption",
+        values: "295 W",
+      },
+      {
+        name: "Dimensions",
+        values: "483 x 44 x 300 mm",
+      },
+      {
+        name: "Weight",
+        values: "10 Kg",
+      },
+    ],
   },
   {
     id: 48,
@@ -1294,6 +2124,50 @@ export const products = [
     description:
       "PA 200 is an installation amplifier that can work both in low impedance and with 70 / 100V line loudspeakers. It incorporates a switched power supply. The operating mode is selected by means of a switch on the rear panel and a switch block, which has some terminals reserved for future improvements. It incorporates an unbalanced LINE input and its own volume control, as well as 2 LEDs that mark the presence of a signal and if it exceeds the limit value. At the rear, the amplifier incorporates an RJ45 socket, which supports RS485 commands from an external device to control various functions of the amplifier.",
     description2: "",
+    feactures: [
+      "Switch mode power supply.",
+      "Remote control by RS485 commands.",
+      "Signal and limit LEDs.",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "Low impedance / 8/16 Ohm), Line 70/100 V",
+      },
+      {
+        name: "Power",
+        values: "2 x 100 W @ 8 Ohm, 200 W @ 70/100V",
+      },
+      {
+        name: "Controls",
+        values: "Volume, Function selector, RS485",
+      },
+      {
+        name: "Frequency Response",
+        values: "20 Hz - 20 KHz",
+      },
+      {
+        name: "THD+N",
+        values: "< 0.1% @ 1 KHz, 15 W, 8/16 Ohm; < 0.2% @ 1 KHz, 30 W, 70/100V",
+      },
+      {
+        name: "Connectors",
+        values:
+          "Power supply: 1 x IEC. Audio In: RCA. Audio Out: Terminals. Control 485: RJ45",
+      },
+      {
+        name: "Power supply",
+        values: "AC 110/240V - 50/60 Hz",
+      },
+      {
+        name: "Dimensions (HxWxD)",
+        values: "48 x 215 x 264 mm",
+      },
+      {
+        name: "Weight",
+        values: "2.3 Kg",
+      },
+    ],
   },
   {
     id: 49,
@@ -1305,6 +2179,57 @@ export const products = [
     description:
       "PA 200 MX is a 200 W amplifier for installation, which can work in low impedance or in 70/100 V line. It incorporates 3 LINE inputs (LINE 1 with BLUETOOTH functionality) with selector, volume, and 2 tone controls. It also has a microphone input with Euroblock connector. The rear panel has a dipswitch selector that allows selecting the operating mode (feedback suppression, microphone gain, microphone priority, stereo / mono input, low impedance or L70 / 100V), and an RJ45 connection that supports RS485 commands. from an external device.",
     description2: "",
+    feactures: [
+      "Switch mode power supply.",
+      "3 LINE input with selector and own volume.",
+      "Bluetooth.",
+      "RJ45 (RS485 commands).",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "Low impedance / 8/16 Ohm), Line 70/100 V",
+      },
+      {
+        name: "Power",
+        values: "2 x 100W @ 8 Ohm / 200W (70/100V Line)",
+      },
+      {
+        name: "Controls",
+        values:
+          "Line volume, Mic gain, Tone control (bass, treble), Master volume, Function selector",
+      },
+      {
+        name: "Frequency Response",
+        values: "20 Hz - 20 KHz",
+      },
+      {
+        name: "THD+N",
+        values:
+          "<0.1% @ 1 kHz, 15W, 8 Ohm / 16 Ohm, <0.2% 1 kHz, 30W, 70V / 100V",
+      },
+      {
+        name: "Connections",
+        values:
+          "Mic: 3 pin euroblock, Line in: RCA, Minijack, Line out: RCA, Amp out: terminals, RS485: RJ45",
+      },
+      {
+        name: "Other functions",
+        values: "Bluetooth, RS485 commands, antifeedback, micro priority",
+      },
+      {
+        name: "Power supply",
+        values: "100-240 V - 50/60Hz",
+      },
+      {
+        name: "Dimensions",
+        values: "215 x 48 x 264 mm",
+      },
+      {
+        name: "Weight",
+        values: "2.3 Kg",
+      },
+    ],
   },
   {
     id: 50,
@@ -1316,6 +2241,75 @@ export const products = [
     description:
       "PA 4150 L is an installation amplifier with 4 channels of 150W each, class D. It can work both in 70V and 100V line (selectable through dip-switches). Each channel has its own volume control and LED indicators (signal, clip, and protect). The PA 4150 L amplifier integrates various protections such as short circuit, thermal, ultrasound and RF. Its inputs and outputs are connected through Euroblock terminals, and it has dimensions of 1 HU rack 19''.",
     description2: "",
+    feactures: [
+      "Switch mode power supply.",
+      "70 / 100V operation (selectable).",
+      "Volume control on each channel.",
+      "1 HU rack 19 inch.",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "70/100 V line",
+      },
+      {
+        name: "Power",
+        values: "4 x 150 W",
+      },
+      {
+        name: "Input Sensitvity",
+        values: "1V (Â±0.1V)",
+      },
+      {
+        name: "Input Impedance",
+        values: "	20 KOhm (balanced) 10 KOhm (unbalanced)",
+      },
+      {
+        name: "Connectors",
+        values: "INPUT and OUTPUT: Euroblock",
+      },
+      {
+        name: "Controls",
+        values: "Independent volume per channel",
+      },
+      {
+        name: "Frequency Response",
+        values: "100 Hz - 15 KHz",
+      },
+      {
+        name: "Gain",
+        values: "	40 dB",
+      },
+      {
+        name: "THD+N",
+        values: "< 0.1%",
+      },
+      {
+        name: "S/N ratio",
+        values: "> 95 dB",
+      },
+      {
+        name: "Crosstalk",
+        values: "> 70 dB",
+      },
+      {
+        name: "Protections",
+        values:
+          "	Short circuit, open circuit, overtemperature, ultrasonic and RF",
+      },
+      {
+        name: "Power supply",
+        values: "AC 110-240V, 50/60 Hz",
+      },
+      {
+        name: "Dimensions",
+        values: "483 x 44 x 290 mm",
+      },
+      {
+        name: "Weight",
+        values: "	4.7 Kg",
+      },
+    ],
   },
   {
     id: 51,
@@ -1327,6 +2321,13 @@ export const products = [
     description:
       "WFS 5 CX is an audio projector that has been designed for outdoor applications. It incorporates a 10'' coaxial transducer and a 1'' compression driver. Its high IP rating (IP 66) makes it suitable for sports facilities, recreational areas, etc. Its two connection modes (low impedance 8 Ohm and 70/100V line) allow to adjust the device for different acoustic solutions. WFS 5 CX is also available in white color.",
     description2: "",
+    feactures: [
+      "Outdoor sound projector",
+      "200W @8 ohm",
+      "12.5W to 200W L 100V",
+      "woofer 10",
+    ],
+    specifications: [],
   },
   {
     id: 52,
@@ -1339,6 +2340,73 @@ export const products = [
       "This audio projector has been designed for outdoor appliances. It incorporates a 10'' coaxial transducer and a 1'' compression driver.It elevate IP range (IP 65) makes it very suitable for sports facilities, entertainment complexes, etc.Its 90ºx90º directivity in most of the band, making easier the contractors job designing an installation with the adequate audio dispersion. Its 2 connectivity modes (low impedance 8 Ohm and 100V line) allows to set the devices to several acoustic solutions.",
     description2:
       "WFS 10 CX incorporates the WSTB 10 H for an easy and fast installation.",
+    feactures: [],
+    specifications: [
+      {
+        name: "Type",
+        values: "Passive audio projector. 2 ways",
+      },
+      {
+        name: "Low Impedance Power",
+        values: "300 W Program",
+      },
+      {
+        name: "L100V Power",
+        values: "120 W",
+      },
+      {
+        name: "Nominal Impedance",
+        values: "8 Ohm",
+      },
+      {
+        name: "LF Transducer",
+        values: "10'' Woofer",
+      },
+      {
+        name: "HF Transducer",
+        values: "1'' Compression driver",
+      },
+      {
+        name: "Sensitivity (1W @ 1m)",
+        values: "	104 dB",
+      },
+      {
+        name: "SPL Max",
+        values: "126 dB / 131 dB peak",
+      },
+      {
+        name: "Coverage Angle (H x V)",
+        values: "<90º x 90º (500 Hz - 4 KHz)",
+      },
+      {
+        name: "Frequency Range",
+        values: "89 Hz - 20.5 KHz",
+      },
+      {
+        name: "HPF filter recommended",
+        values: ">72 Hz",
+      },
+      {
+        name: "Enclosure material",
+        values: "ABS plastic",
+      },
+      {
+        name: "Grill",
+        values: "Metal",
+      },
+      {
+        name: "Inserts / Rigging",
+        values: "Installation bracket WSTB 10 V and WSTB 10 H",
+      },
+      {
+        name: "Colour",
+        values: "Black or white",
+      },
+      {
+        name: "IP Protection",
+        values: "	IP 65",
+      },
+    ],
   },
   {
     id: 53,
@@ -1351,6 +2419,62 @@ export const products = [
       "SET MK BIGMAN 1000 A is an amplified system that consists of 2 self-powered subwoofers and 2 satellites, using a 35 mm extensible stand to fix each subwoofer/satellite.",
     description2:
       "The subwoofer integrates a 400+100 W amplifier and several input types (including microphone and Line level inputs), to expand the possibilities and operation modes.",
+    feactures: [],
+    specifications: [
+      {
+        name: "Diameter",
+        values: "12''",
+      },
+      {
+        name: "Coil diameter",
+        values: "2''",
+      },
+      {
+        name: "Power Handling",
+        values: "400 + 100W",
+      },
+      {
+        name: "Frequency Response",
+        values: "35Hz-20kHz",
+      },
+      {
+        name: "Sensitivity",
+        values: "98dB",
+      },
+      {
+        name: "Max SPL",
+        values: "118dB",
+      },
+      {
+        name: "Input Connectors",
+        values: "Jack ¼'' + XLR 3-pin + 2x RCA",
+      },
+      {
+        name: "Output Connectors",
+        values: "XLR 3-pin + NL4 (satellite)",
+      },
+      {
+        name: "Controls",
+        values: "Subwoofer gain + Master volume",
+      },
+      {
+        name: "Functions",
+        values: "MP3 player, LED display, Bluetooth, USB/SD",
+      },
+      {
+        name: "Elements",
+        values: "4x 4'' woofer + 1x 1'' TWT",
+      },
+      {
+        name: "Dimensions (WxHxD)",
+        values:
+          "Subwoofer (480 x 445 x 380  mm) Satellite (580 x 142,4 x 115 mm)",
+      },
+      {
+        name: "Weight",
+        values: "Subwoofer (20.5 kg) Satellite (6.5 kg)",
+      },
+    ],
   },
   {
     id: 54,
@@ -1362,6 +2486,62 @@ export const products = [
     description:
       "SET MK BIGMAN 1000 A is an amplified system that consists of 2 self-powered subwoofers and 2 satellites, using a 35 mm extensible stand to fix each subwoofer/satellite.",
     description2: "",
+    feactures: [],
+    specifications: [
+      {
+        name: "Diameter",
+        values: "12''",
+      },
+      {
+        name: "Coil diameter",
+        values: "2''",
+      },
+      {
+        name: "Power Handling",
+        values: "400 + 100W",
+      },
+      {
+        name: "Frequency Response",
+        values: "35Hz-20kHz",
+      },
+      {
+        name: "Sensitivity",
+        values: "98dB",
+      },
+      {
+        name: "Max SPL",
+        values: "118dB",
+      },
+      {
+        name: "Input Connectors",
+        values: "Jack ¼'' + XLR 3-pin + 2x RCA",
+      },
+      {
+        name: "Output Connectors",
+        values: "XLR 3-pin + NL4 (satellite)",
+      },
+      {
+        name: "Controls",
+        values: "Subwoofer gain + Master volume",
+      },
+      {
+        name: "Functions",
+        values: "MP3 player, LED display, Bluetooth, USB/SD",
+      },
+      {
+        name: "Elements",
+        values: "4x 4'' woofer + 1x 1'' TWT",
+      },
+      {
+        name: "Dimensions (WxHxD)",
+        values:
+          "Subwoofer (480 x 445 x 380  mm) Satellite (580 x 142,4 x 115 mm)",
+      },
+      {
+        name: "Weight",
+        values: "Subwoofer (20.5 kg) Satellite (6.5 kg)",
+      },
+    ],
   },
   {
     id: 55,
@@ -1373,73 +2553,498 @@ export const products = [
     description:
       "SET MK MEGAMAN is an self-powered system consisting of 2 amplified subwoofers and 4 satellites with a total maximum power of 1600W. Each subwoofer integrates a 600 + 200 W amplifier and various types of input (including 2 MIC / LINE inputs and 4 stereo line level inputs with different connection types). It has a USB/Bluetooth player to offer maximum versatility. Includes an echo effect for channels 1 to 4 and DSP with 4 presets. It also has the necessary controls to adjust the volume, the 2 tones and the effect level of the first 4 channels (channels 5-6 only include the volume level).",
     description2: "",
+    feactures: [
+      "MP3 player via USB and Bluetooth.",
+      "4 DSP presets and echo effect.",
+      "TWS function.",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "2 ways. Self-powered",
+      },
+      {
+        name: "Power",
+        values: "800 W RMS",
+      },
+      {
+        name: "LF Transducer",
+        values: "1 woofer 12'' (each sub cabinet)",
+      },
+      {
+        name: "HF Transducer",
+        values: "4 woofer 3'' (each satellite cabinet)",
+      },
+      {
+        name: "Sensitivity (1W @ 1m)",
+        values: "101 dB",
+      },
+      {
+        name: "SPL Max",
+        values: "130 dB",
+      },
+      {
+        name: "Coverage Angle (H x V)",
+        values: "<90º x 90º (500 Hz - 4 KHz)",
+      },
+      {
+        name: "Frequency Range",
+        values: "40 Hz - 20 KHz",
+      },
+      {
+        name: "Connections",
+        values:
+          "Audio In: 2 x Combi XLR3-Jack Ã‚TS¼'', 2 x pair RCA, 1 x Minijack 3.5 mm stereo. Audio Out: XLR5 male. Audio In (sub secundario): XLR5 female",
+      },
+      {
+        name: "Controls",
+        values:
+          "Power switch, Voltage selector, Mic/line selector, Volume, Tone control (high, low), Player control",
+      },
+      {
+        name: "Enclosure material",
+        values: "Plástico ABS",
+      },
+      {
+        name: "Colour",
+        values: "Black",
+      },
+    ],
   },
   {
     id: 56,
     category: "",
-    name: "C PRO 6",
-    tags: "Subgrave de techo",
-    image: "/assets/equipson-img/C-PRO-8-SUB_20181004120817.jpg",
+    name: "ARION SL 210 A",
+    tags: "The Arion Series increases the family with the new biamplified SL 210 A line array system, featuring two class D, 1000W power amplifiers.",
+    image: "/assets/equipson-img/SL_210_A_rear.jpg",
     brand: "workpro-sound",
     description:
-      "C PRO 6 is a two-way ceiling loudspeaker suitable for low impedance or 70/100 V line installations. It consists of a 6.5'' loudspeaker and a 1'' tweeter. It has a grid with magnets, facilitating its assembly. In addition, its cover can be painted, thus facilitating its integration into any space. Once installed, the tweeter can be rotated to control directionality to enhance the audio experience.",
-    description2: "",
+      "The SL210A can suit the requirements of different configurations thanks to it powerful built-in DSP. Each unit can be set manually thanks to its interface and controls placed at the rear part of the enclosure, which allows for the user to navigate through the menu and the different parameters of the system.",
+    description2:
+      "The SL 210 A features high performance and sensitivity transducers: two 10'' speakers, one of them passively filtered in order to control the directivity in the Mid-Low range, along with a compression driver featuring a polymer PM-4 membrane coupled to a 120º Horizontal coverage horn.",
+    feactures: [
+      "Self-powered two-way system.",
+      "Remote monitoring via Ethernet.",
+      "Compression driver with PM4 polymer membrane.",
+      "120° horizontal uniform coverage.",
+      "Factory presets by number of units.",
+      "Delay and up to 8 configurable parametric EQs.",
+      "1000W peak amplifier for Lows and 500W peak amplifier for Highs.",
+      "Switched universal power supply.",
+      "Independent RMS and peak limiters per way.",
+      "27 kg of weight.",
+    ],
+    specifications: [
+      {
+        name: "Frequency Range",
+        values: "100Hz - 18kHz (-10dB)",
+      },
+      {
+        name: "Max Peak SPL",
+        values: "135 dB",
+      },
+      {
+        name: "Horizontal Coverage",
+        values: "120°",
+      },
+      {
+        name: "Transducers",
+        values:
+          "LF, 2 x 10'', 1.46'' voicecoil - HF, 1.4'' exit, 1.75'' voicecoil - PM-4 Membrane",
+      },
+      {
+        name: " Input Connector",
+        values: "Female XLR",
+      },
+      {
+        name: "Output Connector",
+        values: "Male XLR",
+      },
+      {
+        name: "Input Sensitivity",
+        values: "+4dBu",
+      },
+      {
+        name: "Protections",
+        values: "Thermal and Overload.",
+      },
+      {
+        name: "LF Power",
+        values: "1000Wpeak",
+      },
+      {
+        name: "HF Power",
+        values: "500Wpeak",
+      },
+      {
+        name: "Type",
+        values: "Class D",
+      },
+      {
+        name: "Cooling",
+        values: "BlacPassive Dissipationk",
+      },
+      {
+        name: "Power Connector",
+        values: "PowerCON",
+      },
+      {
+        name: "Power Consumption (1/3 Power @ 230v)",
+        values: " 2A",
+      },
+      {
+        name: "Universal Power Supply",
+        values: "85Vac to 265Vac, 45Hz to 65Hz",
+      },
+      {
+        name: "Shut-down Voltage",
+        values: "85Vac",
+      },
+      {
+        name: "Shut-down Temperature",
+        values: "85ºC / 185ºF",
+      },
+      {
+        name: "DSP Control",
+        values: "Ethernet",
+      },
+      {
+        name: "Dimensions ",
+        values: "283 x 769 x 475 mm",
+      },
+      {
+        name: "Weight",
+        values: "27 Kg",
+      },
+      {
+        name: "Enclosure Material",
+        values: "Birch plywood",
+      },
+      {
+        name: "Colour",
+        values: "Black",
+      },
+    ],
   },
   {
     id: 57,
     category: "",
-    name: "C PRO 8 SUB",
-    tags: "Subgrave de techo",
-    image: "/assets/equipson-img/CPRO_6_20180425161123.jpg",
+    name: "CRL 218",
+    tags: "Transportation dolly for the SL 218 SA subwoofer",
+    image:
+      "/assets/equipson-img/CRL_218_pers_20180129120755_20230322110345.jpg",
     brand: "workpro-sound",
     description:
-      "The new CPRO 8 SUB is part of the PURE PRO SERIES ceiling loudspeaker series, a series known for its high quality, design and avant-garde. This new loudspeaker is the one that has just completed the series, being a ceiling subwoofer, the CPRO 8 SUB incorporates an 8'' transducer capable of offering up to 40W of power. It allows its installation both in low impedance and high impedance lines. (100V) and depending on this, the professional can choose the desired power through wiring.",
+      "CRL 218 is a transportation dolly which has been designed for use with the SL 218 SA subwoofer.",
     description2: "",
+    feactures: [
+      "Transportation trolley for the SL 218 SA subwoofer.",
+      "Material: zinc plated iron. Black colour finished.",
+      "Forklift slots.",
+      "Dimensions (H x D x H): 1180 (1236 with handles) x 665 x 220 mm",
+      "Weight: 45 kg",
+    ],
+    specifications: [],
   },
   {
     id: 58,
     category: "",
-    name: "IC 5 K PRO",
-    tags: "Subgrave de techo",
-    image: "/assets/equipson-img/IC-5-K-PRO_Con-Rejilla_20190903160723.jpg",
+    name: "ENTAR 12A",
+    tags: "12'' self-powered loudspeaker",
+    image:
+      "/assets/equipson-img/Entar10-A_Pers_20210608131928_20230322155307.jpg",
     brand: "workpro-sound",
     description:
-      "Designed for commercial audio applications, this ceiling speaker has a transducer made of Kevlar, obtaining high performance in speech intelligibility and musical clarity. Its power selector makes it adaptable to high impedance installations (with several positions depending on the model), and low impedance. The body of the loudspeaker is made of ABS plastic and its metal grill, fixed with magnets, covers almost the entire loudspeaker, configuring a discreet element in any installation.",
+      "ENTAR 12A is a two-way self-powered loudspeaker that incorporates a 1000W amplifier, made of wood. It consists of a 12'' loudspeaker with a 2.5'' voice coil and a 1.35''compression driver, and incorporates a signal processing DSP. Thanks to this DSP, it is possible to select 4 equalization presets, 3 HPF filters with selectable frequency, tone control (treble and bass) and differentiated preset for use as a floor monitor or placed on a support. It has an insertion vessel for a 35 mm support that allows 0º/10º angulations and rigging fixation points. Incorporates 2 Mic/Line inputs with level control and mix function.",
     description2: "",
+    feactures: [],
+    specifications: [
+      {
+        name: "Type",
+        values: "2-Way. Class D amplifier",
+      },
+      {
+        name: "Power",
+        values: "Amplifier 1000 W",
+      },
+      {
+        name: "LF Transducer",
+        values: "12'' Woofer; 2.5'' Voice Coil",
+      },
+      {
+        name: "HF Transducer",
+        values: "1.35'' compression driver",
+      },
+      {
+        name: "DSP",
+        values: "4 Presets, 3 HPF Filters, Bass / Treble Curve Adjustment",
+      },
+      {
+        name: "SPL Max",
+        values: "128 dB",
+      },
+      {
+        name: "Coverage Angle (H x V)",
+        values: "86º x 54.6º",
+      },
+      {
+        name: "Frequency Range",
+        values: "50 Hz - 20 KHz",
+      },
+      {
+        name: "Connections",
+        values:
+          "1 x Combi XLR3/Jack TRS 1/4'' female, 1 x XLR3 female, 1 x XLR3 male",
+      },
+      {
+        name: "Enclosure material",
+        values: "Plywood and metal grill",
+      },
+      {
+        name: "Inserts / Rigging",
+        values:
+          "Insertion: 35 mm - 0°/10° angulation; Rigging: sections for rigging rail and fixing points",
+      },
+      {
+        name: "Power supply",
+        values: "AC 100 - 240 V / 50 - 60 Hz",
+      },
+      {
+        name: "Colour",
+        values: "Black",
+      },
+      {
+        name: "Dimensions",
+        values: "	630 x 360 x 354 mm",
+      },
+      {
+        name: "Weight",
+        values: "20.1 Kg",
+      },
+    ],
   },
   {
     id: 59,
     category: "",
-    name: "NGS 80 LX",
-    tags: "Speaker with led light for garden",
-    image:
-      "/assets/equipson-img/NGS_80_LX_01_20210916160215-removebg-preview.png",
+    name: "ENTAR 18 SUB",
+    tags: "Passive subwoofer 1800 W @ 8 Ohm.",
+    image: "/assets/equipson-img/entar_sub18_w_20230504133358.png",
     brand: "workpro-sound",
     description:
-      "NGS 80 LX is an acoustic enclosure with built-in LED light, designed for installation in gardens. It has an 8'' woofer and a 1.4'' tweeter. It can work both in low impedance installations and in 70/100 volt line installations, with a power of 120W @ 8Ohm and 60/40/20 W in 100 v line (selectable). It incorporates 9W and 3000K led lighting powered at 12v DC (power supply not included). It is made of ABS plastic and designed to offer omnidirectional coverage.",
+      "ENTAR 18 SUB is a 1000 W passive subwoofer at 8 Ohm, incorporating an 18'' loudspeaker, made of high density wood. It has XLN4 connections, side carrying handles and 35 mm diameter top insert for support.",
     description2: "",
+    feactures: [],
+    specifications: [
+      {
+        name: "Type",
+        values: "Direct radiation",
+      },
+      {
+        name: "Power",
+        values: "1000 W",
+      },
+      {
+        name: "Transducers",
+        values: "1x 18''",
+      },
+      {
+        name: "Nominal Impedance",
+        values: "8 Ohm",
+      },
+      {
+        name: "Sensitivity (1W @ 1m)",
+        values: "98 dB",
+      },
+      {
+        name: "Frequency Range",
+        values: "35 Hz - 2000 Hz",
+      },
+      {
+        name: "Connections",
+        values: "	2x XNL 4",
+      },
+      {
+        name: "Enclosure material",
+        values: "Plywood",
+      },
+      {
+        name: "Inserts / Rigging",
+        values: "Top 35 mm",
+      },
+      {
+        name: "Colour",
+        values: "Black",
+      },
+    ],
   },
   {
     id: 60,
     category: "",
-    name: "UDA 16",
-    tags: "Passive acoustic column 400 W @ 8 Ohm.",
-    image: "/assets/equipson-img/UDA_16_B_pers_20201104092939.jpg",
+    name: "ENTAR 15A",
+    tags: "15'' self-powered loudspeaker",
+    image:
+      "/assets/equipson-img/Entar10-A_Pers_20210608131928_20230322155307.jpg",
     brand: "workpro-sound",
     description:
-      "UDA 16 is a passive acoustic enclosure made up of sixteen 2.75'' diameter transducers, with a 0.75'' voice coil. The narrow extruded aluminum enclosure has been designed for seamless visual integration in all locations and is available in a black or white finish. The grill is also made of aluminum and internally covered with a protective water-repellent fabric that prevents splashes and dust from damaging the transducers, with an IP 65 rating. Two wall-mounting accessories are included. The Wall 4V allows you to aim the enclosure up to +/- 50º horizontally and up to +/- 30º vertically. The 4H allows the cabinet to be pointed up to +/- 50º only laterally.",
+      "ENTAR 15A is a two-way self-powered loudspeaker that incorporates a 1000W amplifier, made of wood. It consists of a 15'' loudspeaker with a 2.5'' voice coil and a 1.35''compression driver, and incorporates a signal processing DSP. Thanks to this DSP, it is possible to select 4 equalization presets, 3 HPF filters with selectable frequency, tone control (treble and bass) and differentiated preset for use as a floor monitor or placed on a support. It has an insertion vessel for a 35 mm support that allows 0º/10º angulations and rigging fixation points. Incorporates 2 Mic/Line inputs with level control and mix function.",
     description2: "",
+    feactures: [
+      "1000W amplifier.",
+      "15-inch Woofer + 1.35-inch Driver.",
+      "Signal processing DSP.",
+      "Made of plywood.",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "2-Way. Class D amplifier",
+      },
+      {
+        name: "Power",
+        values: "Amplifier 1000 W",
+      },
+      {
+        name: "LF Transducer",
+        values: "15'' Woofer; 2.5'' Voice Coil",
+      },
+      {
+        name: "HF Transducer",
+        values: "1.35'' compression driver",
+      },
+      {
+        name: "DSP",
+        values: "4 Presets, 3 HPF Filters, Bass / Treble Curve Adjustment",
+      },
+      {
+        name: "SPL Max",
+        values: "129 dB",
+      },
+      {
+        name: "Coverage Angle (H x V)",
+        values: "86º x 54.6º",
+      },
+      {
+        name: "Frequency Range",
+        values: "	45 Hz - 20 KHz",
+      },
+      {
+        name: "Connections",
+        values:
+          "1 x Combi XLR3/Jack TRS 1/4'' female, 1 x XLR3 female, 1 x XLR3 male",
+      },
+      {
+        name: "Enclosure material",
+        values: "Plywood and metal grill",
+      },
+      {
+        name: "Inserts / Rigging",
+        values:
+          "Insertion: 35 mm - 0°/10° angulation; Rigging: sections for rigging rail and fixing points",
+      },
+      {
+        name: "Power supply",
+        values: "AC 100 - 240 V / 50 - 60 Hz",
+      },
+      {
+        name: "Colour",
+        values: "Black",
+      },
+      {
+        name: "Dimensions",
+        values: "	730 x 440 x 419 mm",
+      },
+      {
+        name: "Weight",
+        values: "24.8 Kg",
+      },
+    ],
   },
   {
     id: 61,
     category: "",
-    name: "ARC SUB 12 MKIII",
-    tags: "Subwoofer amplificado. 200 W.",
-    image: "/assets/equipson-img/ARC_SUB_12_MKIII_pers.jpg",
+    name: "NEO 6 MARINE",
+    tags: "IP65 60W installation loudspeaker (32W@100V line)",
+    image: "/assets/equipson-img/NEO MARINE 1_20230627182449.png",
     brand: "workpro-sound",
     description:
-      "ARC SUB 12 MKIII is a powered subwoofer that integrates a 200W power amplifier and a high-performance 12'' woofer. The amplifier has several controls, allowing you to set parameters such as output gain, subwoofer, frequency crossover or phase inversion.The built-in Standby function offers the possibility of turning off the amplifier in the absence of audio input.ARC SUB 12 MKIII incorporates 2 types of input: full-range mono LINE input and stereo High Level input stereo) for direct connection between external amplifiers and the satellite system.",
+      "NEO 6 IP is a 2-way acoustic box made of ABS plastic and white, specially designed for outdoor installation with a degree of protection IP 65. It is composed of a 6.5 '' speaker and a tweeter of 1''. It can be used both in 70/100 V installations and in low impedance installations. When a speaker is connected at low impedance the audio does not pass through the transformer in order to maintain a high level of quality. NEO 6 IP is also very simple and quick to install, thanks to the new bracket designed exclusively for this model, which also allows a quick orientation of the box on both axes. Sold in pairs (two passive boxes).",
     description2: "",
+    feactures: [
+      "Suitable for 70 / 100V and low impedance line installations.",
+      "IP 65.",
+      "Brackets included.",
+      "Price per couple.",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "2 way. Passive",
+      },
+      {
+        name: "Low Impedance Power",
+        values: "60 W @ 8 Ohm",
+      },
+      {
+        name: "L100V Power",
+        values: "	4 / 8 / 16 / 32 W",
+      },
+      {
+        name: "L70V Power",
+        values: "2 / 4 / 8 / 16 W",
+      },
+      {
+        name: "Nominal Impedance",
+        values: "8 Ohm",
+      },
+      {
+        name: "LF Transducer",
+        values: "Woofer 6.5''",
+      },
+      {
+        name: "HF Transducer",
+        values: "Tweeter 1''",
+      },
+      {
+        name: "Sensitivity (1W @ 1m)",
+        values: "92 dB",
+      },
+      {
+        name: "SPL Max",
+        values: "109 dB",
+      },
+      {
+        name: "Coverage Angle (H x V)",
+        values: "120º x 90º",
+      },
+      {
+        name: "Frequency Range",
+        values: "	80 Hz - 20 KHz",
+      },
+      {
+        name: "Connections",
+        values: "Insulated terminals",
+      },
+      {
+        name: "Enclosure material",
+        values: "Polypropylene",
+      },
+      {
+        name: "Grill",
+        values: "Aluminum",
+      },
+      {
+        name: "Inserts / Rigging",
+        values: "Brackets included.",
+      },
+      {
+        name: "Colour",
+        values: "White (RAL 9003)",
+      },
+      {
+        name: "IP Protection",
+        values: "IP 65",
+      },
+    ],
   },
   {
     id: 62,
@@ -1451,6 +3056,69 @@ export const products = [
     description:
       "This provides optimum volume and load capacity for its construction size and a tube diameter of 50mm. This system is connected via a special conical connector system, which is joined together to a complete form fit by means of a copper hammer, creating optimal traction. It is also characterized by a minimum transport volume and the special lightweight design. The conical connectors are of course included in the scope of delivery – special designs and powder coatings can be carried out at short notice. This size truss is meant for a more light duty design.",
     description2: "",
+    feactures: [],
+    specifications: [
+      {
+        name: "Main Tube Section",
+        values: "50 x 2 mm",
+      },
+      {
+        name: "Main Tube Alloy ",
+        values: "EN AW 6082T6",
+      },
+      {
+        name: "Braces Section",
+        values: "20 x 2 mm",
+      },
+      {
+        name: "Braces Alloy",
+        values: "EN AW 6082T6",
+      },
+      {
+        name: "weigth",
+        values: "4,368 lb/ft",
+      },
+      {
+        name: "Surface Area Complete Truss",
+        values: "1,8693 in2",
+      },
+      {
+        name: "Coupling System",
+        values: "CBC50E",
+      },
+      {
+        name: "1.64 feet - Weigth",
+        values: "11,464 lb",
+      },
+      {
+        name: "3.28 feet - Weigth",
+        values: "17,637 lb",
+      },
+      {
+        name: "6.56 feet - Weigth",
+        values: "26,455 lb",
+      },
+      {
+        name: "9.84 feet - Weigth",
+        values: "35,715 lb",
+      },
+      {
+        name: "1.64 feet - Weigth",
+        values: "1,4867 lb",
+      },
+      {
+        name: "3.28 feet - Weigth",
+        values: "2,97 lb",
+      },
+      {
+        name: "6.56 feet - Weigth",
+        values: "5,9399 lb",
+      },
+      {
+        name: "9.84 feet - Weigth",
+        values: "8,9099 lb",
+      },
+    ],
   },
   {
     id: 63,
@@ -1462,6 +3130,13 @@ export const products = [
     description:
       "Our GT-290mm 6 Way Cube is a perfect corner/junction piece. Having the capability to connect 6 pieces of our 290mm truss. When purchased, it comes with 8 connectors which is enough for 2 sides of the 6 way cube. Additional connectors can be purchased in our “Accessories” section.",
     description2: "",
+    feactures: [],
+    specifications: [
+      {
+        name: "Colors",
+        values: "Black, Silver",
+      },
+    ],
   },
   {
     id: 64,
@@ -1473,6 +3148,41 @@ export const products = [
     description:
       "Our 400mm GT-Truss (GT-400) is a 4-point truss system. This provides optimum volume and load capacity for its construction size and a tube diameter of 50mm. This system is connected via a special conical connector system, which is joined together to a complete form fit by means of a copper hammer, creating optimal traction. It is also characterized by a minimum transport volume and the special lightweight design. The conical connectors are of course included in the scope of delivery – special designs and powder coatings can be carried out at short notice. This size truss offer a higher load capacity compared to any of our other sizes.",
     description2: "",
+    feactures: [],
+    specifications: [
+      {
+        name: "Pipe Diameter",
+        values: "50 mm",
+      },
+      {
+        name: "Wall Thickness",
+        values: "2  mm",
+      },
+      {
+        name: "0.5 m",
+        values: "10.8lbs/4.90kgs",
+      },
+      {
+        name: "1m",
+        values: "16.5lbs/7.50kgs",
+      },
+      {
+        name: "2m",
+        values: "26.4lbs/12.00kgs",
+      },
+      {
+        name: "3m",
+        values: "35.2/16.00kgs",
+      },
+      {
+        name: "Colors",
+        values: "Black, Silver",
+      },
+      {
+        name: "Size Option",
+        values: "1 m, 2 m, 3 m",
+      },
+    ],
   },
   {
     id: 65,
@@ -1484,6 +3194,13 @@ export const products = [
     description:
       "Our GT-400mm 6 Way Cube is a perfect corner/junction piece. Having the capability to connect 6 pieces of our 400mm truss. When purchased, it comes with 8 connectors which is enough for 2 sides of the 6 way cube. Additional connectors can be purchased in our “Accessories” section.",
     description2: "",
+    feactures: [],
+    specifications: [
+      {
+        name: "Colors",
+        values: "Black, Silver",
+      },
+    ],
   },
   {
     id: 66,
@@ -1495,5 +3212,586 @@ export const products = [
     description:
       "Our GT-Universal Steel Base Plate is heavy duty and fits a variety of different truss sizes. Made with 4 diagonal slits, this allows the connector to adjust to your size truss. Also made with 6mm thick steel and coming in two different sizes. The first option is a 24×24″ base and the second is a 36×24″ base. Ideal for any truss structure that needs stability and a base that can handle heavy loads.",
     description2: "",
+    feactures: [
+      "6mm Steel Thickness",
+      "Size Options: 24×24″/ 36×24″",
+      "Heavy Duty Application",
+      "Universal Fitting: Can fit our 290mm & our 400mm Truss sizes due to its diagonal slits",
+      "4 Base connectors included",
+    ],
+    specifications: [],
+  },
+  {
+    id: 67,
+    category: "",
+    name: "NEO 6 IP",
+    tags: "IP65 60W installation loudspeaker (32W@100V line)",
+    image:
+      "/assets/equipson-img/NEO_6_bicolor_20221014090132_20230322161234.jpg",
+    brand: "workpro-sound",
+    description:
+      "NEO 6 IP is a 2-way acoustic box made of ABS plastic and white or black aluminum grille, specially designed for outdoor installation with a degree of protection IP 65. It is composed of a 6.5 '' speaker and a tweeter of 1''. It can be used both in 70/100 V installations and in low impedance installations. When a speaker is connected at low impedance the audio does not pass through the transformer in order to maintain a high level of quality. NEO 6 IP is also very simple and quick to install, thanks to the new bracket designed exclusively for this model, which also allows a quick orientation of the box on both axes. Sold in pairs (two passive boxes).",
+    description2: "",
+    feactures: [
+      "Suitable for 70 / 100V and low impedance line installations.",
+      "IP 65.",
+      "Brackets included.",
+      "Price per couple.",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "2 way. Passive",
+      },
+      {
+        name: "Low Impedance Power",
+        values: "60 W @ 8 Ohm",
+      },
+      {
+        name: "L100V Power",
+        values: "	4 / 8 / 16 / 32 W",
+      },
+      {
+        name: "L70V Power",
+        values: "2 / 4 / 8 / 16 W",
+      },
+      {
+        name: "Nominal Impedance",
+        values: "8 Ohm",
+      },
+      {
+        name: "LF Transducer",
+        values: "Woofer 6.5''",
+      },
+      {
+        name: "HF Transducer",
+        values: "Tweeter 1''",
+      },
+      {
+        name: "Sensitivity (1W @ 1m)",
+        values: "92 dB",
+      },
+      {
+        name: "SPL Max",
+        values: "109 dB",
+      },
+      {
+        name: "Coverage Angle (H x V)",
+        values: "120º x 90º",
+      },
+      {
+        name: "Frequency Range",
+        values: "	80 Hz - 20 KHz",
+      },
+      {
+        name: "Connections",
+        values: "Insulated terminals",
+      },
+      {
+        name: "Enclosure material",
+        values: "Polypropylene",
+      },
+      {
+        name: "Grill",
+        values: "Aluminum",
+      },
+      {
+        name: "Inserts / Rigging",
+        values: "Brackets included.",
+      },
+      {
+        name: "Colour",
+        values: "White (RAL 9003), Black (RAL 9004)",
+      },
+      {
+        name: "IP Protection",
+        values: "IP 65",
+      },
+    ],
+  },
+  {
+    id: 68,
+    category: "",
+    name: "Athos 8R",
+    tags: "Passive loudspeaker.",
+    image:
+      "/assets/equipson-img/ATHOS8R_COUPLE_20220428104343_20230322160813.jpg",
+    brand: "workpro-sound",
+    description:
+      "The new ATHOS R series is updated with the aim of obtaining a product resistant to inclement weather and at the same time much more sustainable by changing its structure (previously made of fiberglass), and now in an innovative material that is more resistant to effects. adverse weather conditions (rain, extreme temperatures or solid microparticles), making the polymer with which they are built immune to these problems. Its finish simulating wood also provides aesthetic improvements to the product. The new ATHOS R series incorporates a “U”-shaped wall bracket that can use rear supports that allow movement in both horizontal and vertical axis.",
+    description2: "",
+    feactures: [
+      "Suited for outdoor applications. IP 54.",
+      "Made of polymer resistant to adverse climatic effects",
+      "Black or white colour.",
+      "Bracket included.",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "Passive",
+      },
+      {
+        name: "Low Impedance Power",
+        values: "150 W RMS",
+      },
+      {
+        name: "L100V Power",
+        values: "60 W",
+      },
+      {
+        name: "L70V Power",
+        values: "30 W",
+      },
+      {
+        name: "Nominal Impedance",
+        values: "8 Ohm",
+      },
+      {
+        name: "LF Transducer",
+        values: "Woofer 8'', Voice Coil 2''",
+      },
+      {
+        name: "HF Transduce",
+        values: "Driver 1'', Ring polymer diaphragm''",
+      },
+      {
+        name: "Sensitivity (1W @ 1m)",
+        values: "	96 dB",
+      },
+      {
+        name: "SPL Max",
+        values: "124 dB",
+      },
+      {
+        name: "Coverage Angle (H x V)",
+        values: "80Ã‚º x 80Ã‚º",
+      },
+      {
+        name: "Frequency Range",
+        values: "90 Hz - 20 KHz (-10 dB), 102 Hz - 19 KHz (-6 dB)",
+      },
+      {
+        name: "Connections",
+        values: "Four poles stripped wire",
+      },
+      {
+        name: "Enclosure materia",
+        values: "	Polymer resistant to adverse climatic effects",
+      },
+      {
+        name: "Grill",
+        values: "Steel, water proof fabric backing",
+      },
+      {
+        name: "Inserts / Rigging",
+        values: "Brackets included",
+      },
+      {
+        name: "Colour",
+        values: "Black or white",
+      },
+      {
+        name: "IP Protection",
+        values: "IP 54",
+      },
+    ],
+  },
+  {
+    id: 69,
+    category: "",
+    name: "ATHOS B12 BLACK",
+    tags: "Passive subwoofer.",
+    image: "/assets/equipson-img/ATHOS_B15_DIB_20221220095456.jpg",
+    brand: "workpro-sound",
+    description:
+      "ATHOS B 12 is a passive speaker system with a 12'' woofer. Its robust design, elegant finish (made of medium density wood) and shape are very suitable for bass reinforcement applications, such as conference rooms, schools or home cinema installations. The ATHOS B 12 features a 35 mm insert at the top of the woofer.",
+    description2: "",
+    feactures: [
+      "Waterproof passive subwoofer",
+      "Maximum admissible power:700w.",
+      "Side handles.",
+      "Top insert for 35mm bracket.",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "Passive, direct radiation",
+      },
+      {
+        name: "Power",
+        values: "700w Prog. / 350w RMS",
+      },
+      {
+        name: "Transducers",
+        values: "1x12 '' woofer, 2'' VC 40 OZ ferrite magnet",
+      },
+      {
+        name: "Nominal Impedance",
+        values: "8ohms",
+      },
+      {
+        name: "Sensitivity (1W @ 1m)",
+        values: "95dB",
+      },
+      {
+        name: "Frequency Range",
+        values: "55Hz-250Hz",
+      },
+      {
+        name: "Connections",
+        values: "	2 x XLN 4",
+      },
+      {
+        name: "Enclosure materia",
+        values: "Wooden 15mm MDF",
+      },
+      {
+        name: "Finished",
+        values: "Painting",
+      },
+      {
+        name: "Inserts / Rigging",
+        values: "	Side handles / top insert 35mm",
+      },
+      {
+        name: "Colour",
+        values: "Black",
+      },
+    ],
+  },
+  {
+    id: 70,
+    category: "",
+    name: "MINO 6",
+    tags: "6'' passive loudspeaker. 160 W.",
+    image: "/assets/equipson-img/MINO-6_pers-BLACK_20191202090643.jpg",
+    brand: "workpro-sound",
+    description:
+      "This model is perfectly suited to acclimate pubs, social clubs or shops. The sound quality, size and the trapezoidal shape (to use as a monitor) of this model, multiply the possibilities of installation. In addition, the two colors available (black and white) facilitates the integration of the loudspeakers in the environment.It incorporates a wall-mount stand.",
+    description2: "",
+    feactures: [],
+    specifications: [
+      {
+        name: "Type",
+        values: "2 vways. Passive",
+      },
+      {
+        name: "Power",
+        values: "	80 W RMS",
+      },
+      {
+        name: "Nominal Impedance",
+        values: "8 Ohm",
+      },
+      {
+        name: "LF Transduce",
+        values: "6'' WoofeR",
+      },
+      {
+        name: "HF Transducer",
+        values: "1'' Compression driver",
+      },
+      {
+        name: "Sensitivity (1W @ 1m)",
+        values: "90 dB",
+      },
+      {
+        name: "Coverage Angle (H x V)",
+        values: "140º x 140º",
+      },
+      {
+        name: "Frequency Range",
+        values: "85 Hz - 19 KHz",
+      },
+      {
+        name: "Connections",
+        values: "2 x XLN4",
+      },
+      {
+        name: "Enclosure material",
+        values: "Wood",
+      },
+      {
+        name: "Colour",
+        values: "Black or white",
+      },
+    ],
+  },
+  {
+    id: 71,
+    category: "",
+    name: "MINO 8",
+    tags: "8'' passive loudspeaker. 200 W.",
+    image: "/assets/equipson-img/MINO-6_pers-WHITE.jpg",
+    brand: "workpro-sound",
+    description:
+      "This model is perfectly suited to acclimate pubs, social clubs or shops. The sound quality, size and the trapezoidal shape (to use as a monitor) of this model, multiply the possibilities of installation. In addition, the two colors available (black and white) facilitates the integration of the loudspeakers in the environment.It incorporates a wall-mount stand.",
+    description2: "",
+    feactures: [],
+    specifications: [
+      {
+        name: "Type",
+        values: "2 vways. Passive",
+      },
+      {
+        name: "Power",
+        values: "100 W RMS",
+      },
+      {
+        name: "Nominal Impedance",
+        values: "8 Ohm",
+      },
+      {
+        name: "LF Transduce",
+        values: "8'' WoofeR",
+      },
+      {
+        name: "HF Transducer",
+        values: "1'' Compression driver",
+      },
+      {
+        name: "Sensitivity (1W @ 1m)",
+        values: "93 dB",
+      },
+      {
+        name: "Coverage Angle (H x V)",
+        values: "140º x 140º",
+      },
+      {
+        name: "Frequency Range",
+        values: "80 Hz - 19 KHz",
+      },
+      {
+        name: "Connections",
+        values: "2 x XLN4",
+      },
+      {
+        name: "Enclosure material",
+        values: "Wood",
+      },
+      {
+        name: "Colour",
+        values: "Black or white",
+      },
+    ],
+  },
+  {
+    id: 72,
+    category: "",
+    name: "ZENITH 1700",
+    tags: "Audio amplifier",
+    image: "/assets/equipson-img/Zenith_1000_pers_20210603171953.jpg",
+    brand: "workpro-sound",
+    description:
+      "Zenith 1700 is a 2-channel 850W @ 4 Ohm professional audio amplifier, with switching power supply, built in a 2-rack-unit metal enclosure. It has balanced inputs in XLR3 format and outputs with XLN4 connectors. It has selectors for input sensitivity and operating mode. It also has protection systems against short circuit, temperature, DC, VHF and constant high frequency signal. The front panel has a power switch, independent volume controls for each channel, and power, signal, clip and protection indicators.",
+    description2: "",
+    feactures: [
+      "Stereo / Bridge / Parallel modes.",
+      "Volume control and level meter.",
+      "Signal, clip and protection indicator LEDs.",
+      "2 19-inch rack units.",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "	Class D. Switching source",
+      },
+      {
+        name: "No. Chanels",
+        values: "2",
+      },
+      {
+        name: "W/Ch @ 8 Ohm",
+        values: "500 W",
+      },
+      {
+        name: "W/Ch @ 4 Ohm",
+        values: "850 W",
+      },
+      {
+        name: "W Bridge @ 8 Ohm",
+        values: "1700 W",
+      },
+      {
+        name: "Frequency Range",
+        values: "20 Hz - 20 KHz",
+      },
+      {
+        name: "THD+N",
+        values: "<0.15 %",
+      },
+      {
+        name: "S/N Rate",
+        values: ">100 dB",
+      },
+      {
+        name: "Damping Factor",
+        values: "	>500",
+      },
+      {
+        name: "Gain",
+        values: "38.2 dB",
+      },
+      {
+        name: "Input Impedance",
+        values: "20 KOhm (balanced) / 10 KOhm (unbalanced)",
+      },
+      {
+        name: "Input Sensitvity",
+        values: "0.775 V / 1 V / 32 dB",
+      },
+      {
+        name: "Connections",
+        values: "Power: Powercon; Signal: XLR3 for input and output; AMP: NL4",
+      },
+      {
+        name: "Protections",
+        values:
+          "	Soft start, VHF, DC, Overload, Clip, Limiting, Short-circuit, Over-temperature, Progressive volume",
+      },
+      {
+        name: "Refrigeration",
+        values: "Fans Air flow from front to rear",
+      },
+      {
+        name: "Power supply",
+        values: "	AC 100-240 V, 50/60 Hz",
+      },
+      {
+        name: "Consumption",
+        values: "	800 W",
+      },
+      {
+        name: "Dimensions",
+        values: "	483 x 88 x 305.5 mm",
+      },
+      {
+        name: "Weight",
+        values: "7.6 Kg",
+      },
+    ],
+  },
+  {
+    id: 73,
+    category: "",
+    name: "SYNTHEA 2125",
+    tags: "2x125W @4 ohm / 1x250W (100V line) amplifier.",
+    image: "/assets/equipson-img/synthea_2125_front_web_20230418161843.png",
+    brand: "workpro-sound",
+    description:
+      "Compact two-channel 4 ohm installation amplifier (up to 125W per channel) or 250W on a 100V line output. Digital signal input and output for easy interconnection without conversions. Dedicated DSP with full connectivity and control via stand-alone Wi-Fi. Ethernet and GPIO",
+    description2: "",
+    feactures: [],
+    specifications: [],
+  },
+  {
+    id: 74,
+    category: "",
+    name: "ZENITH 3500",
+    tags: "Audio amplifier",
+    image: "/assets/equipson-img/Zenith_1000_pers_20210603171953.jpg",
+    brand: "workpro-sound",
+    description:
+      "Zenith 3500 is a 2-channel 1750W @ 4 Ohm professional audio amplifier, with switching power supply, built in a 2-rack-unit metal enclosure. It has balanced inputs in XLR3 format and outputs with XLN4 connectors. It has selectors for input sensitivity and operating mode. It also has protection systems against short circuit, temperature, DC, VHF and constant high frequency signal. The front panel has a power switch, independent volume controls for each channel, and power, signal, clip and protection indicators.",
+    description2: "",
+    feactures: [
+      "Stereo / Bridge / Parallel modes.",
+      "Volume control and level meter.",
+      "Signal, clip and protection indicator LEDs.",
+      "2 19-inch rack units.",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "	Class D. Switching source",
+      },
+      {
+        name: "No. Chanels",
+        values: "2",
+      },
+      {
+        name: "W/Ch @ 8 Ohm",
+        values: "1000 W",
+      },
+      {
+        name: "W/Ch @ 4 Ohm",
+        values: "1750 W",
+      },
+      {
+        name: "W Bridge @ 8 Ohm",
+        values: "3500 W",
+      },
+      {
+        name: "Frequency Range",
+        values: "20 Hz - 20 KHz",
+      },
+      {
+        name: "THD+N",
+        values: "<0.15 %",
+      },
+      {
+        name: "S/N Rate",
+        values: ">100 dB",
+      },
+      {
+        name: "Damping Factor",
+        values: "	>500",
+      },
+      {
+        name: "Gain",
+        values: "	41.2 dB",
+      },
+      {
+        name: "Input Impedance",
+        values: "20 KOhm (balanced) / 10 KOhm (unbalanced)",
+      },
+      {
+        name: "Input Sensitvity",
+        values: "0.775 V / 1 V / 32 dB",
+      },
+      {
+        name: "Connections",
+        values: "Power: Powercon; Signal: XLR3 for input and output; AMP: NL4",
+      },
+      {
+        name: "Protections",
+        values:
+          "	Soft start, VHF, DC, Overload, Clip, Limiting, Short-circuit, Over-temperature, Progressive volume",
+      },
+      {
+        name: "Refrigeration",
+        values: "Fans Air flow from front to rear",
+      },
+      {
+        name: "Power supply",
+        values: "	AC 100-240 V, 50/60 Hz",
+      },
+      {
+        name: "Consumption",
+        values: "1550 W",
+      },
+      {
+        name: "Dimensions",
+        values: "	483 x 88 x 305.5 mm",
+      },
+      {
+        name: "Weight",
+        values: "	8.6 Kg",
+      },
+    ],
+  },
+  {
+    id: 75,
+    category: "",
+    name: "SYNTHEA 4125",
+    tags: "4x125W @4 ohm / 2x250W (100V line) amplifier. DSP.",
+    image: "/assets/equipson-img/synthea_2125_front_web_20230418161843.png",
+    brand: "workpro-sound",
+    description:
+      "Compact four-channel 4 ohm installation amplifier (up to 125W per channel) or 250W on each of the two 100V line output. Digital signal input and output for easy interconnection without conversions. Dedicated DSP with full connectivity and control via stand-alone Wi-Fi. Ethernet and GPIO",
+    description2: "",
+    feactures: [],
+    specifications: [],
   },
 ];
