@@ -72,11 +72,7 @@ const ProductDetailPage = () => {
                       <ul className={styles.feacturesList}>
                         {item.feactures.map((element, index) => (
                           <div key={index}>
-                            {element === null ? (
-                              <p>N/A</p>
-                            ) : (
-                              <li key={index}>{element}</li>
-                            )}
+                            <li key={index}>{element}</li>
                           </div>
                         ))}
                       </ul>

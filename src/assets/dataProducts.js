@@ -11,7 +11,7 @@ export const products = [
     description2:
       "LS-1: Includes (LS-1 & Gooseneck Lamp)The LS-1 includes a built-in stand to hold a device like a tablet on the back of the LS-1, and an extra dedicated USB charging socket on the rear panel to keep associated tablets or Smartphones charged at all times.",
     feactures: [
-      "DMX universes (4096 channels)",
+      "8 DMX universes (4096 channels)",
       "Designed for fast programming, avoiding repetitive tasks.",
       "Support for diverse protocols including DMX-512, Art-Net, ACN, MIDI, UDP, OSC & HTTP.",
       "Multiple touch events at the same time.",
@@ -20,14 +20,63 @@ export const products = [
       "Manual crossfade.",
       "Built-in web server app.",
       "Up to 1200 cues.",
-      ">Built-in FX engine (more than 20 customizable effects).",
+      "Built-in FX engine (more than 20 customizable effects).",
       "Submaster FX size & speed.",
       "RGB & CMY color picker.",
       "Customizable user palettes.",
       "Ultrafast cue triggering.>",
       "Internal event scheduler.",
     ],
-    imageTD: "/assets/lightshark-img/technicalDate/td1.png",
+    specifications: [
+      {
+        name: "Power Supply",
+        values: "90-240V 50/60Hz",
+      },
+      {
+        name: "DMX Universes",
+        values: "8",
+      },
+      {
+        name: "Protocols supported",
+        values: "ArtNet, sACN, DMX, OSC, UDP, MIDI",
+      },
+      {
+        name: "Direct DMX Universes",
+        values: "2",
+      },
+      {
+        name: "USB Ports",
+        values: "2 (1 for data, 1 for change)",
+      },
+      {
+        name: "External Lamp Port",
+        values: "1x XLR 5V",
+      },
+      {
+        name: "DMX Ports",
+        values: "2x 3-pin XLR + 2x 5-pin XLR",
+      },
+      {
+        name: "Screen",
+        values: "4,5″ TFT Color",
+      },
+      {
+        name: "Access Point WiFi",
+        values: "2.4GHz",
+      },
+      {
+        name: "Power supply connector",
+        values: "Neutrik TrueOne",
+      },
+      {
+        name: "Dimensions (W x H x D)",
+        values: "430 x 100 x 330 mm",
+      },
+      {
+        name: "Weight",
+        values: "3.7 kg",
+      },
+    ],
   },
   {
     id: 2,
@@ -40,6 +89,55 @@ export const products = [
       "LS-Wing is an innovative hardware which offers several products in one: A Wing for LS-1 / LS -Core, an OSC/UDP hardware controller, a MIDI controller and a user programmable remote controller. ",
     description2:
       "LS-Wing can send/receive OSC commands through ethernet from any software or hardware compatible with this protocol. In  addition, it can send/receive UDP messages, making it compatible with any AV device or software on the market. ",
+    feactures: [],
+    specifications: [
+      {
+        name: "Buttons",
+        values:
+          "20 executor, 10 selection, 20 Playback, 10 Flash, fully configurable",
+      },
+      {
+        name: "Faders",
+        values: "10 faders fully configurable",
+      },
+      {
+        name: "I/O ports",
+        values:
+          "1xLamp port (XLR-3 5V) 2xDMX (XLR-5) 3xLAN (EtherCon®) 2xUSB-A (Data) + 1xUSB-A(only power 5V) 1xUSB-B 1xTrueOne® mains",
+      },
+      {
+        name: "Configuration interface",
+        values: "Via Built-in Webserver. Accesible through LAN connection",
+      },
+      {
+        name: "DMX Outputs",
+        values: "Built-in LAN to DMX ArtNET, sACN node with 2 universe outputs",
+      },
+      {
+        name: "Lamp connector DC Voltage",
+        values: "5V",
+      },
+      {
+        name: "USB POWER connector max. current",
+        values: "2A",
+      },
+      {
+        name: "USB Data connectors max Current",
+        values: "500mA each",
+      },
+      {
+        name: "Dimmensions",
+        values: "325 x 100 x 330 mm",
+      },
+      {
+        name: "Weight",
+        values: "2,7 kg",
+      },
+      {
+        name: "Power supply",
+        values: "90-230V 50/60Hz TrueOne® connector",
+      },
+    ],
   },
   {
     id: 3,
@@ -52,6 +150,69 @@ export const products = [
       "The smallest 8-universe lighting console in the world. LS-Core is the smallest 8 universe lighting console in the market, bringing a built-in hardware with the LightShark engine including all its features. A USB-host input is available to connect a MIDI surface hardware to use real faders and buttons.",
     description2:
       "LS-Core is especially useful as an architectural controller thanks to its size that can be installed on any place and thanks to the LightShark internal scheduler.",
+    feactures: [
+      "8 DMX universes (4096 channels)",
+      "Designed for fast programming, avoiding repetitive tasks.",
+      "Support for diverse protocols including DMX-512, Art-Net, ACN, MIDI, UDP, OSC & HTTP.",
+      "Multiple touch events at the same time.",
+      "10 Physical Playback fader",
+      "20 Virtual Playback faders,",
+      "Manual crossfade.",
+      "Built-in web server app.",
+      "Up to 1200 cues.",
+      "Built-in FX engine (more than 20 customizable effects).",
+      "Submaster FX size & speed.",
+      "RGB & CMY color picker.",
+      "Customizable user palettes.",
+      "Ultrafast cue triggering.>",
+      "Internal event scheduler.",
+    ],
+    specifications: [
+      {
+        name: "Power Supply",
+        values: "DC IN 5V/2A (90-240V 50/60Hz adapter included)",
+      },
+      {
+        name: "DMX Universes",
+        values: "8",
+      },
+      {
+        name: "Protocols supported",
+        values: "ArtNet, sACN, DMX, OSC, UDP, MIDI",
+      },
+      {
+        name: "Direct DMX Universes",
+        values: "2",
+      },
+      {
+        name: "USB Ports",
+        values: "1 USB-Host",
+      },
+      {
+        name: "DMX Ports",
+        values: "2x 5-pin XLR",
+      },
+      {
+        name: "Screen",
+        values: "2×16 LCD",
+      },
+      {
+        name: "Access Point WiFi",
+        values: "2.4GHz",
+      },
+      {
+        name: "Power supply connector",
+        values: "DC Jack",
+      },
+      {
+        name: "Dimensions (W x H x D)",
+        values: "108 x 40 x 142 mm",
+      },
+      {
+        name: "Weight",
+        values: "468 g",
+      },
+    ],
   },
   {
     id: 4,
@@ -64,6 +225,17 @@ export const products = [
       "The LS-Node series is the new RDM/DMX streaming range from WORK PRO that supports industry standards ArtNet & sACN. They feature from 1 up to 4 DMX universes, with 3 different models: LS-Node1, LS-Node2 & LS-Node4, each of which adds its respective number of freely configurable DMX universes. ",
     description2:
       "These small LS-Node products are available in the same quarter-rack physical format as the original LS-Core and are powered via a compact USB-C connector or by PoE, which is helpful when used in installations where they may be rack-mounted with an optional LS-AR 19 rack chassis.",
+    feactures: [
+      "Single Mode: DMX to ArtNet/sACN transceiver (LS-Node1 & LS-Node2 models) configurable via web. ",
+      "Merger mode: where the LS-Nodes can receive different universes (via ArtNet/sACN or DMX) and merge them in the same output, being able to select HTP/LTP merge modes. ",
+      "Backup mode: When LS-Node works in Backup mode with two consoles connected, the device can detect a loss of connection from the primary console and automatically switch to the backup console with a max latency of 3 seconds",
+    ],
+    specifications: [
+      {
+        name: "Nodes",
+        values: "Node 1, Node 2, Node 4",
+      },
+    ],
   },
   {
     id: 5,
@@ -74,6 +246,13 @@ export const products = [
     brand: "lightshark",
     description: "LS-1 Case: Road Case for LS-1.",
     description2: "",
+    feactures: [],
+    specifications: [
+      {
+        name: "Dimensions",
+        values: "W: 616 mm H: 250 mm D: 493 mm",
+      },
+    ],
   },
   {
     id: 6,
@@ -2332,7 +2511,7 @@ export const products = [
   {
     id: 52,
     category: "",
-    name: "WFS 10 CX R",
+    name: "WFS 10 CX ",
     tags: "Outdoor sound projector",
     image: "/assets/equipson-img/10CX_pers_Asa_20210120160808_copy.jpg",
     brand: "workpro-sound",
@@ -2348,7 +2527,7 @@ export const products = [
       },
       {
         name: "Low Impedance Power",
-        values: "300 W Program",
+        values: "150 W RMS",
       },
       {
         name: "L100V Power",
@@ -2388,7 +2567,7 @@ export const products = [
       },
       {
         name: "Enclosure material",
-        values: "ABS plastic",
+        values: "Fiberglass",
       },
       {
         name: "Grill",
@@ -3056,7 +3235,10 @@ export const products = [
     description:
       "This provides optimum volume and load capacity for its construction size and a tube diameter of 50mm. This system is connected via a special conical connector system, which is joined together to a complete form fit by means of a copper hammer, creating optimal traction. It is also characterized by a minimum transport volume and the special lightweight design. The conical connectors are of course included in the scope of delivery – special designs and powder coatings can be carried out at short notice. This size truss is meant for a more light duty design.",
     description2: "",
-    feactures: [],
+    feactures: [
+      "Color Options: Silver or Black (Powder Coated)",
+      "Size Options: 1m/2m/3m",
+    ],
     specifications: [
       {
         name: "Main Tube Section",
@@ -3148,7 +3330,7 @@ export const products = [
     description:
       "Our 400mm GT-Truss (GT-400) is a 4-point truss system. This provides optimum volume and load capacity for its construction size and a tube diameter of 50mm. This system is connected via a special conical connector system, which is joined together to a complete form fit by means of a copper hammer, creating optimal traction. It is also characterized by a minimum transport volume and the special lightweight design. The conical connectors are of course included in the scope of delivery – special designs and powder coatings can be carried out at short notice. This size truss offer a higher load capacity compared to any of our other sizes.",
     description2: "",
-    feactures: [],
+    feactures: ["Color Options: Silver or Black", "Size Options: 1m/2m/3m"],
     specifications: [
       {
         name: "Pipe Diameter",
@@ -3218,6 +3400,9 @@ export const products = [
       "Heavy Duty Application",
       "Universal Fitting: Can fit our 290mm & our 400mm Truss sizes due to its diagonal slits",
       "4 Base connectors included",
+      "Steel Base Plate290mm/12x12''",
+      "Steel Base Plate 600x600mm (24x24'')",
+      "Steel Base Plate 600x900mm (24x36'')",
     ],
     specifications: [],
   },
@@ -3793,5 +3978,1228 @@ export const products = [
     description2: "",
     feactures: [],
     specifications: [],
+  },
+  {
+    id: 76,
+    category: "",
+    name: "WPS 310",
+    tags: "Pendant speaker. 250W @8 ohm / 50W 100V line. 10'' coaxial + 1'' driver. IP 65",
+    image: "/assets/equipson-img/WPS_310_Bajo_20170905110031.jpg",
+    brand: "workpro-sound",
+    description:
+      "The WPS 310 is a new pendant speaker with a powerful coaxial driver 10'' and 1'' compression driver.  Its high sensitivity level and disperssion allows to cover huge areas as a malls, sport venues shops ... It can be operated with low impedance amplifiers or 100V LINE and thanks to its high range IP (IP 65) it can be installed outdoors.",
+    description2: "",
+    feactures: [],
+    specifications: [
+      {
+        name: "Type",
+        values: "Pasivo",
+      },
+      {
+        name: "Power",
+        values: "500 W Programa @ 8 Ohm",
+      },
+      {
+        name: "L100V Power",
+        values: "	50 W",
+      },
+      {
+        name: "Nominal Impedance",
+        values: "8 Ohm",
+      },
+      {
+        name: "LF Transducer",
+        values: "1 x Woofer 10''",
+      },
+      {
+        name: "HF Transducer",
+        values: "1 x Driver 1''",
+      },
+      {
+        name: "Max SPL",
+        values: "125 dB Peak",
+      },
+      {
+        name: "Sensitivity",
+        values: "95 dB",
+      },
+      {
+        name: "Material",
+        values: "Fibra de vidrio de alta calidad",
+      },
+      {
+        name: "IP Protection",
+        values: "IP 65",
+      },
+    ],
+  },
+  {
+    id: 77,
+    category: "",
+    name: "PA 4500 L",
+    tags: "Amplifier 4 x 500 W @ L70 / 100V",
+    image: "/assets/equipson-img/PA_4150_L_pers_20190827112512.jpg",
+    brand: "workpro-sound",
+    description:
+      "PA 4500 L amplifier offers 4 class D channels with 500 W per output. It can work both in 70V and 100V line (selectable through dip-switches). Each channel has its own volume control and LED indicators (signal, clip, and protect). PA 4500 L integrates various protections such as short circuit, thermal, ultrasonic and RF. Its inputs and outputs are connected by Euroblock connectors and it has dimensions of 1 HU rack 19''.",
+    description2: "",
+    feactures: [
+      "Switch mode power supply.",
+      "70 / 100V operation (selectable).",
+      "Volume control on each channel.",
+      "1 HU rack 19 inch.",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "70/100 V line",
+      },
+      {
+        name: "Power",
+        values: "4 x 500 W",
+      },
+      {
+        name: "Input Sensitvity",
+        values: "1V (Â±0.1V)",
+      },
+      {
+        name: "Input Impedance",
+        values: "	20 KOhm (balanced) 10 KOhm (unbalanced)",
+      },
+      {
+        name: "Connectors",
+        values: "INPUT and OUTPUT: Euroblock",
+      },
+      {
+        name: "Frequency Response",
+        values: "100 Hz - 15 KHz",
+      },
+      {
+        name: "Gain",
+        values: "	40 dB",
+      },
+      {
+        name: "THD+N",
+        values: "< 0.1%",
+      },
+      {
+        name: "S/N ratio",
+        values: "> 95 dB",
+      },
+      {
+        name: "Damping Factor",
+        values: "> 200",
+      },
+      {
+        name: "Crosstalk",
+        values: "> 70 dB",
+      },
+      {
+        name: "Protections",
+        values:
+          "	Short circuit, open circuit, overtemperature, ultrasonic and RF",
+      },
+      {
+        name: "Power supply",
+        values: "AC 110-240V, 50/60 Hz",
+      },
+      {
+        name: "Consumption",
+        values: "2000 W",
+      },
+      {
+        name: "Dimensions",
+        values: "483 x 44 x 460 mm",
+      },
+      {
+        name: "Weight",
+        values: "5.1 Kg",
+      },
+    ],
+  },
+  {
+    id: 78,
+    category: "",
+    name: "PBU 31",
+    tags: "Metal handle for WPS 310",
+    image: "/assets/equipson-img/PBU_31_Pers__20180426165029.jpg",
+    brand: "workpro-sound",
+    description:
+      "Optional accessory for WPS 310 that consists of a handle that is screwed in the central part and that allows the orientation of the loudspeaker. It incorporates fixing screw.",
+    description2: "",
+    feactures: [
+      "Metal handle for the WPS 310.",
+      "Allows loudspeaker directionality.",
+    ],
+    specifications: [],
+  },
+  {
+    id: 79,
+    category: "",
+    name: "WFS 500 CX",
+    tags: "Outdoor sound projector",
+    image: "/assets/equipson-img/10CX_pers_Asa_20210120160808_copy.jpg",
+    brand: "workpro-sound",
+    description:
+      "The WFS 500 CX is a passive two-way, full range projector type speaker which provides voice intelligibility and musical clarity for outdoor applications such as aquaparks, theme parks, shopping malls, stadiums, trains stations or swimming pools, where long distances have to be reached.",
+    description2:
+      "It features one horn loaded 10'' diameter transducer, 2.5'' voice coil, in a bass reflex enclosure. The high frequencies are reproduced by a 1'' exit compression driver, 1.75'' voice coil, coupled to a 80º x 60º horn, which provides a consistent coverage over the vocal range.",
+    feactures: [],
+    specifications: [
+      {
+        name: "Type",
+        values: "Passive audio projector. 2 ways",
+      },
+      {
+        name: "Low Impedance Power",
+        values: "500 W RMS (89.5 Vp)",
+      },
+      {
+        name: "Nominal Impedance",
+        values: "8 Ohm",
+      },
+      {
+        name: "LF Transducer",
+        values: "	10'' Woofer, voicecoil 2.5''",
+      },
+      {
+        name: "HF Transducer",
+        values: "1.75'' Compression driver, 1'' exit",
+      },
+      {
+        name: "Sensitivity (1W @ 1m)",
+        values: "	100 dB",
+      },
+      {
+        name: "Coverage Angle (H x V)",
+        values: "80º x 60º",
+      },
+      {
+        name: "Frequency Range",
+        values: "66 Hz - 19 KHz (-10 dB), 86 Hz - 17.3 KHz (-6dB)",
+      },
+      {
+        name: "HPF filter recommended",
+        values: "Butterworth 24dB/Oct, 50Hz",
+      },
+      {
+        name: "Connections",
+        values: "Two pole stripped wire: Red(+) & Black(-)",
+      },
+      {
+        name: "Enclosure material",
+        values: "Fiberglass",
+      },
+      {
+        name: "Grill",
+        values: "Steel, with waterproof coating",
+      },
+      {
+        name: "Inserts / Rigging",
+        values:
+          "Wall mount accessories: WSTB 10 H (included): Tilt from 0º to 45º in 7.5 degree steps WSTB 10 V (optional): ± 90º to the sides",
+      },
+      {
+        name: "Colour",
+        values: "Black or white",
+      },
+      {
+        name: "IP Protection",
+        values: "	IP 65",
+      },
+    ],
+  },
+  {
+    id: 80,
+    category: "",
+    name: "MINIMAN BAT",
+    tags: "Amplified portable audio system",
+    image: "/assets/equipson-img/SET_MK_MEGAMAN_20201022091714.jpg",
+    brand: "workpro-sound",
+    description:
+      "The portable active array system MINIMAN BAT includes two columns with an active subwoofer and a satellite each one. Two elements more per column, with the satellite shape, integrates the LEDs for lighting effect. Each active subwoofer offers 250W with 2 MIC/LINE inputs + 1 additional input. Tone controls and ECHO functions. Also, it integrates USB input for MP3 files player to offer maximum versatility in its use thanks to its file playback via the USB port, or from a smartphone or similar device via Bluetooth. MINIMAN BAT has different supply modes as it includes internal rechargeable battery, AC input and 12V DC input for emergency.",
+    description2: "",
+    feactures: [
+      "500 W",
+      "2 8-inch subwoofers + 2 4 x 2.75-inch satellites.",
+      "Internal rechargeable battery.",
+      "MP3 player through USB port and Bluetooth.",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "	2 ways. Self-powered",
+      },
+      {
+        name: "Low Impedance Power",
+        values: "500 W ",
+      },
+      {
+        name: "LF Transducer",
+        values: "8'' woofer",
+      },
+      {
+        name: "HF Transducer",
+        values: "4 x 2.75'' woofer (each satellite)",
+      },
+      {
+        name: "Sensitivity (1W @ 1m)",
+        values: "	94 dB",
+      },
+      {
+        name: "Frequency Range",
+        values: "55 Hz - 20 KHz",
+      },
+      {
+        name: "SPL Max",
+        values: "118 dB",
+      },
+      {
+        name: "Connections",
+        values:
+          "Microphone: Combi XLR3 / 1/4 '' TRS Jack; Line In: RCA Pair; Line Out: XLR3",
+      },
+      {
+        name: "Controls",
+        values:
+          "Tone control (Bass, Treble), Microphone volume, Line volume, Echo effect, Master volume",
+      },
+      {
+        name: "Colour",
+        values: "Black",
+      },
+    ],
+  },
+  {
+    id: 81,
+    category: "",
+    name: "MD 82 AX MK II",
+    tags: "8-channel digital audio mixer.",
+    image:
+      "/assets/equipson-img/82MEG201_MD_82_AX_MKII_pers_20171115134331.jpg",
+    brand: "workpro-sound",
+    description:
+      "MD 82 AX MK II is a mixer for microphones which integrates a large series of attractive features that allow to optimize the installation and to outfit with multiple audio signal control and management possibilities. This mixer incorporates 8 balanced inputs. It provides individual input level control and master level.",
+    description2:
+      "The encoder in the frontal side allows to navigate through a configuration menu with the different parameters on each channel. Among the functions to be performed, we can set three tone control, low-pass and high-pass filters (with frequency adjustment) and 4 anti-feedback levels. All this information is showed in the LCD display.",
+    feactures: [
+      "MD 82 AX MK II is the natural evolution of the MD 82 AX digital mixer, along with the featuresand functionality of the previous mode, it incorporates Bluetooth connectivityfor control the parameters through its own application in iOS, therefore, froma remote device (iPAD / iPhone) the user can configure the levels of each inputsand their equalization.",
+      "In the first case, this functionality allows to set a value (TARGET) marked as maximum level of the channel, and another parameter (GAIN), which marks the quantity of amplification that the channel needs to reach the TARGET value. This functionality allows several configurations according to the installation requirements",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "8 microphone channels mixer",
+      },
+      {
+        name: "Input sensitivity",
+        values: " 5 mV (1kHz output 1V)",
+      },
+      {
+        name: "Maximum input level",
+        values: "105 mV (1kHz THD -1%)",
+      },
+      {
+        name: "Maximum output level",
+        values: " > 4V (Balanced)",
+      },
+      {
+        name: "Frequency response",
+        values: "20 Hz - 20kHz",
+      },
+      {
+        name: "Phantom power supply",
+        values: "+48V selectable",
+      },
+      {
+        name: "Functionalities",
+        values:
+          "Input gain, low pass filter, high pass filter, antifeedback (per channel), master level, encoder, LCD displa",
+      },
+      {
+        name: "Automixer function",
+        values: "TARGET and GAIN parameters configurables",
+      },
+      {
+        name: "Main supply",
+        values: "AC 115/230 V - 50/60 Hz",
+      },
+      {
+        name: "Dimensions",
+        values: "(WxHxD): 483 x 44 x 150 mm",
+      },
+      {
+        name: "Weight",
+        values: "1.9 kg",
+      },
+    ],
+  },
+  {
+    id: 82,
+    category: "",
+    name: "SN 6",
+    tags: "Passive suspension loudspeaker.",
+    image: "/assets/equipson-img/SN_6_ByN_20210303125323.jpg",
+    brand: "workpro-sound",
+    description:
+      "SN6 is a passive (pendant) loudspeaker. It is a coaxial, two-way, full-range system that provides speech intelligibility and musical clarity in complex acoustic environments such as shopping malls, places of worship, restaurants, conference centers, hotels, airports, train stations, swimming pools, meeting rooms. for conferences or museums, where high ceilings create a highly reverberant sound field. Each unit uses a 6 '' loudspeaker, with a 1.5'' voice coil, in a bass reflex enclosure, and a coaxial compression driver with a polymer diaphragm and a 1'' diameter voice coil. The enclosure is made of single fiberglass part, so that there are no visible screws.",
+    description2: "",
+    feactures: [
+      "Pendant type loudspeaker.",
+      "Fiberglass.",
+      "Coaxial compression driver.",
+      "Low impedance and 70/100 V line.",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "2 ways. Passive",
+      },
+      {
+        name: "Low Impedance Power",
+        values: "125 W RMS",
+      },
+      {
+        name: "L100V Power",
+        values: "60 W",
+      },
+      {
+        name: "L70V Power",
+        values: "	30 W",
+      },
+      {
+        name: "Nominal Impedance",
+        values: "	8 Ohm",
+      },
+      {
+        name: "LF Transducer",
+        values: "	6'' Woofer, 1.5'' Voice Coil",
+      },
+      {
+        name: "HF Transducer",
+        values: "1'' Driver comprtession, 1'' Exit",
+      },
+      {
+        name: "Sensitivity (1W @ 1m)",
+        values: "93 dB",
+      },
+      {
+        name: "SPL Max",
+        values: "120 dB",
+      },
+      {
+        name: "Coverage Angle (H x V)",
+        values: "90º x 90º",
+      },
+      {
+        name: "Frequency Range",
+        values: "72 Hz - 21 kHz (-10dB) 87 Hz - 20.5 kHz (-6 dB)",
+      },
+      {
+        name: "HPF filter recommended",
+        values: "Butterworth 24dB/Oct, 45 Hz",
+      },
+      {
+        name: "Connections",
+        values:
+          "Hose with four cables for connection in high and low impedance",
+      },
+      {
+        name: "Enclosure material",
+        values: "High quality fiberglass",
+      },
+      {
+        name: "Grill",
+        values: "Steel grille, with internal foam protection",
+      },
+      {
+        name: "Inserts / Rigging",
+        values: "A steel rigging point",
+      },
+      {
+        name: "Colour",
+        values: "Black or white",
+      },
+      {
+        name: "Includded accessories",
+        values:
+          "A main steel rigging cable 5m long, 2mm in diameter (CS 10 E), and a steel safety cable 5m long, 2mm in diameter (CS 10 E)",
+      },
+      {
+        name: "Optional accessories",
+        values: "Top cover in wood finish or custom color on request (TP6)",
+      },
+      {
+        name: "Dimensions",
+        values: "309 x 246 x 246 mm",
+      },
+      {
+        name: "Weight",
+        values: "	7.5 Kg",
+      },
+    ],
+  },
+  {
+    id: 83,
+    category: "",
+    name: "SN 8",
+    tags: "Passive suspension loudspeaker.",
+    image: "/assets/equipson-img/SN_6_ByN_20210303125323.jpg",
+    brand: "workpro-sound",
+    description:
+      "SN8 is a passive (pendant) loudspeaker. It is a coaxial, two-way, full-range system that provides speech intelligibility and musical clarity in complex acoustic environments such as shopping malls, places of worship, restaurants, conference centers, hotels, airports, train stations, swimming pools, meeting rooms. for conferences or museums, where high ceilings create a highly reverberant sound field. Each unit uses an 8'' loudspeaker, with a 2'' voice coil, in a bass reflex enclosure, and a coaxial compression driver with a polymer diaphragm and a 1'' diameter voice coil. The enclosure is manufactured from single fiberglass part, so that there are no visible screws.",
+    description2: "",
+    feactures: [
+      "Pendant type loudspeaker.",
+      "Fiberglass.",
+      "Coaxial compression driver.",
+      "Low impedance and 70/100 V line.",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "2 ways. Passive",
+      },
+      {
+        name: "Low Impedance Power",
+        values: "200 W RMS",
+      },
+      {
+        name: "L100V Power",
+        values: "60 W",
+      },
+      {
+        name: "L70V Power",
+        values: "	30 W",
+      },
+      {
+        name: "Nominal Impedance",
+        values: "	8 Ohm",
+      },
+      {
+        name: "LF Transducer",
+        values: "	8'' Woofer, 2'' Voice Coil",
+      },
+      {
+        name: "HF Transducer",
+        values: "1'' Driver comprtession, 1'' Exit",
+      },
+      {
+        name: "Sensitivity (1W @ 1m)",
+        values: "95 dB",
+      },
+      {
+        name: "SPL Max",
+        values: "123 dB",
+      },
+      {
+        name: "Coverage Angle (H x V)",
+        values: "90º x 90º",
+      },
+      {
+        name: "Frequency Range",
+        values: "61 Hz - 19 KHz (-10 dB), 72 Hz - 17 KHz (-6 dB)",
+      },
+      {
+        name: "HPF filter recommended",
+        values: "Butterworth 24dB/Oct, 45 Hz",
+      },
+      {
+        name: "Connections",
+        values:
+          "Hose with four cables for connection in high and low impedance",
+      },
+      {
+        name: "Enclosure material",
+        values: "High quality fiberglass",
+      },
+      {
+        name: "Grill",
+        values: "Steel grille, with internal foam protection",
+      },
+      {
+        name: "Inserts / Rigging",
+        values: "A steel rigging point",
+      },
+      {
+        name: "Colour",
+        values: "Black or white",
+      },
+      {
+        name: "Includded accessories",
+        values:
+          "A main steel rigging cable 5m long, 2mm in diameter (CS 10 E), and a steel safety cable 5m long, 2mm in diameter (CS 10 E)",
+      },
+      {
+        name: "Optional accessories",
+        values: "Top cover in wood finish or custom color on request (TP6)",
+      },
+      {
+        name: "Dimensions",
+        values: "364 x 289 x 289 mm",
+      },
+      {
+        name: "Weight",
+        values: "	9 Kg",
+      },
+    ],
+  },
+  {
+    id: 84,
+    category: "",
+    name: "SN 10",
+    tags: "Passive suspension loudspeaker.",
+    image: "/assets/equipson-img/SN_6_ByN_20210303125323.jpg",
+    brand: "workpro-sound",
+    description:
+      "N 10 is a passive (pendant) loudspeaker. It is a coaxial, two-way, full-range system that provides speech intelligibility and musical clarity in complex acoustic environments such as shopping malls, places of worship, restaurants, conference centers, hotels, airports, train stations, swimming pools, meeting rooms. for conferences or museums, where high ceilings create a highly reverberant sound field. Each unit uses a 10'' loudspeaker, with 2''' voice coil, in a bass reflex enclosure, and a coaxial compression driver with polymer membrane and 1'' diameter voice coil. The enclosure is made of fiberglass of a single part, so that there are no visible screws.",
+    description2: "",
+    feactures: [
+      "Pendant type loudspeaker.",
+      "Fiberglass.",
+      "Coaxial compression driver.",
+      "Low impedance and 70/100 V line.",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "2 ways. Passive",
+      },
+      {
+        name: "Low Impedance Power",
+        values: "250 W RMS",
+      },
+      {
+        name: "L100V Power",
+        values: "60 W",
+      },
+      {
+        name: "L70V Power",
+        values: "	30 W",
+      },
+      {
+        name: "Nominal Impedance",
+        values: "	8 Ohm",
+      },
+      {
+        name: "LF Transducer",
+        values: "	10'' Woofer, 2'' Voice Coil",
+      },
+      {
+        name: "HF Transducer",
+        values: "1'' Driver comprtession, 1.4'' Exit",
+      },
+      {
+        name: "Sensitivity (1W @ 1m)",
+        values: "95 dB",
+      },
+      {
+        name: "SPL Max",
+        values: "125 dB",
+      },
+      {
+        name: "Coverage Angle (H x V)",
+        values: "90º x 90º",
+      },
+      {
+        name: "Frequency Range",
+        values: "57 Hz - 20.7 KHz (-10 dB), 75 Hz - 19.6 KHz (-6 d B)",
+      },
+      {
+        name: "HPF filter recommended",
+        values: "Butterworth 24dB/Oct, 30 Hz",
+      },
+      {
+        name: "Connections",
+        values:
+          "Hose with four cables for connection in high and low impedance",
+      },
+      {
+        name: "Enclosure material",
+        values: "High quality fiberglass",
+      },
+      {
+        name: "Grill",
+        values: "Steel grille, with internal foam protection",
+      },
+      {
+        name: "Inserts / Rigging",
+        values: "A steel rigging point",
+      },
+      {
+        name: "Colour",
+        values: "Black or white",
+      },
+      {
+        name: "Includded accessories",
+        values:
+          "A main steel rigging cable 5m long, 2mm in diameter (CS 10 E), and a steel safety cable 5m long, 2mm in diameter (CS 10 E)",
+      },
+      {
+        name: "Optional accessories",
+        values: "Top cover in wood finish or custom color on request (TP6)",
+      },
+    ],
+  },
+  {
+    id: 85,
+    category: "",
+    name: "SN SUB 8",
+    tags: "Passive suspension subwoofer",
+    image: "/assets/equipson-img/SN_6_ByN_20210303125323.jpg",
+    brand: "workpro-sound",
+    description:
+      "N 10 is a passive (pendant) loudspeaker. It is a coaxial, two-way, full-range system that provides speech intelligibility and musical clarity in complex acoustic environments such as shopping malls, places of worship, restaurants, conference centers, hotels, airports, train stations, swimming pools, meeting rooms. for conferences or museums, where high ceilings create a highly reverberant sound field. Each unit uses a 10'' loudspeaker, with 2''' voice coil, in a bass reflex enclosure, and a coaxial compression driver with polymer membrane and 1'' diameter voice coil. The enclosure is made of fiberglass of a single part, so that there are no visible screws.",
+    description2: "",
+    feactures: ["Pendant type loudspeaker.", "Fiberglass.", "Low impedance"],
+    specifications: [
+      {
+        name: "Type",
+        values: "Passive subwoofer. Bass reflex. Pendant",
+      },
+      {
+        name: "Low Impedance Power",
+        values: "350 W RMS",
+      },
+      {
+        name: "Nominal Impedance",
+        values: "	8 Ohm",
+      },
+      {
+        name: "LF Transducer",
+        values: "	8'' Woofer, 2'' Voice Coil",
+      },
+      {
+        name: "Sensitivity (1W @ 1m)",
+        values: "86 dB",
+      },
+      {
+        name: "SPL Max",
+        values: "116.5 dB SPL peak",
+      },
+      {
+        name: "Coverage Angle (H x V)",
+        values: "Omnidirectional",
+      },
+      {
+        name: "Frequency Range",
+        values: "37 Hz - 185 Hz (-10 dB), 42 Hz - 165 Hz (-6 dB)",
+      },
+      {
+        name: "HPF filter recommended",
+        values: "Butterworth 24dB/Oct, 20 Hz",
+      },
+      {
+        name: "Connections",
+        values: "Two pole stripped wire",
+      },
+      {
+        name: "Enclosure material",
+        values: "High quality fiberglass",
+      },
+      {
+        name: "Grill",
+        values: "Steel grille, with internal foam protection",
+      },
+      {
+        name: "Inserts / Rigging",
+        values: "A steel rigging point",
+      },
+      {
+        name: "Colour",
+        values: "Black or white",
+      },
+      {
+        name: "Includded accessories",
+        values:
+          "A main steel rigging cable 5m long, 2mm in diameter (CS 10 E), and a steel safety cable 5m long, 2mm in diameter (CS 10 E)",
+      },
+      {
+        name: "Optional accessories",
+        values: "Customizable top cap",
+      },
+      {
+        name: "Dimensions",
+        values: "	437 x 347 x 347 mm",
+      },
+      {
+        name: "Weight",
+        values: "12 Kg",
+      },
+    ],
+  },
+  {
+    id: 86,
+    category: "",
+    name: "MPE 50",
+    tags: "Passive suspension loudspeaker. IP66",
+    image: "/assets/equipson-img/MPE-50_ByN_20210921165211.jpg",
+    brand: "workpro-sound",
+    description:
+      "MPE 50 is a passive (pendant) loudspeaker IP66 range. It is a coaxial, two-way and full range 40 W @ 8 Ohm system, which can also work on 70/100 V lines supporting powers of 3.75W / 7.5W / 15W / 30W, suitable for complex acoustic environments such as shopping malls, places of worship, restaurants, conference centers, hotels, airports, train stations, swimming pools, conference rooms or museums, where high ceilings create a highly reverberant sound field. Each unit uses a 5.25 '' speaker, and a 1 '' diameter coaxial driver. It is available in black and white, and installation accessories are included.",
+    description2: "",
+    feactures: [
+      "Pendant type loudspeaker.",
+      "Coaxial driver.",
+      "Made of plastic.",
+      "Low impedance and 70/100 V line.",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "2 ways. Passive",
+      },
+      {
+        name: "Low Impedance Power",
+        values: "30 W RMS",
+      },
+      {
+        name: "L100V Power",
+        values: "3.75W / 7.5W / 15W / 30W",
+      },
+      {
+        name: "L70V Power",
+        values: "1.87W / 3.75W / 7.5W / 15W",
+      },
+      {
+        name: "Nominal Impedance",
+        values: "	8 Ohm",
+      },
+      {
+        name: "LF Transducer",
+        values: "Woofer 5.25''",
+      },
+      {
+        name: "HF Transducer",
+        values: "Driver 1''",
+      },
+      {
+        name: "Sensitivity (1W @ 1m)",
+        values: "84 dB",
+      },
+      {
+        name: "Frequency Range",
+        values: "110 Hz- 20 KHz",
+      },
+      {
+        name: "Enclosure material",
+        values: "Plastic",
+      },
+      {
+        name: "Inserts / Rigging",
+        values: "A rigging point",
+      },
+      {
+        name: "Colour",
+        values: "Black or white",
+      },
+      {
+        name: "IP Protection",
+        values: "IP66",
+      },
+      {
+        name: "Optional accessories",
+        values: "Top cover in wood finish or custom color on request (TP6)",
+      },
+      {
+        name: "Includded accessories",
+        values: "Mounting accessories",
+      },
+      {
+        name: "Dimensions",
+        values: "170 x 170 x 240 mm",
+      },
+    ],
+  },
+  {
+    id: 87,
+    category: "",
+    name: "MPE 65",
+    tags: "Passive suspension loudspeaker. IP66",
+    image: "/assets/equipson-img/MPE-50_ByN_20210921165211.jpg",
+    brand: "workpro-sound",
+    description:
+      "MPE 65 is a passive (pendant) loudspeaker with an IP66 range. It is a coaxial, two-way and full-range 40 W @ 8 Ohm system, which can also work on 70/100 V lines supporting 5W / 10W / 15W / 20W / 40W powers, suitable for complex acoustic environments such as shopping malls, places of worship, restaurants, conference centers, hotels, airports, train stations, swimming pools, conference rooms or museums, where high ceilings create a highly reverberant sound field. Each unit uses a 6.5'' speaker, and a 1'' diameter coaxial driver. It is available in black and white, and installation accessories are included.",
+    description2: "",
+    feactures: [
+      "Pendant type loudspeaker.",
+      "Coaxial driver.",
+      "Made of plastic.",
+      "Low impedance and 70/100 V line.",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "2 ways. Passive",
+      },
+      {
+        name: "Low Impedance Power",
+        values: "40 W @ 8 Ohm",
+      },
+      {
+        name: "L100V Power",
+        values: "5W / 10W / 15W / 20W / 40W",
+      },
+      {
+        name: "L70V Power",
+        values: "2.5W / 5W / 10W / 20W",
+      },
+      {
+        name: "Nominal Impedance",
+        values: "	8 Ohm",
+      },
+      {
+        name: "LF Transducer",
+        values: "Woofer 6.5''",
+      },
+      {
+        name: "HF Transducer",
+        values: "Driver 1''",
+      },
+      {
+        name: "Sensitivity (1W @ 1m)",
+        values: "84 dB",
+      },
+      {
+        name: "Frequency Range",
+        values: "100 Hz- 20 KHz",
+      },
+      {
+        name: "Enclosure material",
+        values: "Plastic",
+      },
+      {
+        name: "Inserts / Rigging",
+        values: "A rigging point",
+      },
+      {
+        name: "Colour",
+        values: "Black or white",
+      },
+      {
+        name: "IP Protection",
+        values: "IP66",
+      },
+      {
+        name: "Includded accessories",
+        values: "Mounting accessories",
+      },
+      {
+        name: "Dimensions",
+        values: "208 x 208 x 280 mm",
+      },
+    ],
+  },
+  {
+    id: 88,
+    category: "",
+    name: "BLR2 LITE MKII",
+    tags: "1 stereo channel AoIP receiver",
+    image: "/assets/equipson-img/BLR2_LITE_MKII_20210120161207.jpg",
+    brand: "workpro-sound",
+    description:
+      "BLR2 LITE MKII es un receptor de audio sobre IP de un canal estéreo. Con él se puede extraer uno de los canales emitidos por los emisores Blueline Digital MKII. El dispositivo puede ser alimentado tanto por PoE como por una fuente de alimentación externa.",
+    description2: "",
+    feactures: [
+      " 1 stereo channel.",
+      "Euroblock connectors.",
+      "Possibility of PoE power supply.",
+      "Configurable through Worcad 3 software.",
+    ],
+    specifications: [
+      {
+        name: "No. Chanels",
+        values:
+          "1 stereo channel (unbalanced) or 1 single / mono channel (balanced)",
+      },
+      {
+        name: "Connections",
+        values: "	Audio Out: Euroblock, 3 pin 5.08mm; Network: RJ-45;",
+      },
+      {
+        name: "Output sensitivity",
+        values: "-1.15 dBu (640mVrms)",
+      },
+      {
+        name: "Audio over IP",
+        values: "BlueLine UDP datagrams",
+      },
+      {
+        name: "Ethernet",
+        values: "100 base TX",
+      },
+      {
+        name: "Consumption",
+        values: "1.5 W",
+      },
+      {
+        name: "Power supply",
+        values:
+          "PoE Class: Class 0 802.3af; External source: 12/24 Vdc (Not included)",
+      },
+      {
+        name: "Control protocols",
+        values: "OSC",
+      },
+      {
+        name: "Audio extraction modes",
+        values: "Stereo / Single / Mono",
+      },
+      {
+        name: "Dimensions",
+        values: "109 x 133.75 x 40.45 mm",
+      },
+      {
+        name: "Weight",
+        values: "360 g",
+      },
+    ],
+  },
+  {
+    id: 89,
+    category: "",
+    name: "BLS2 SD MKII",
+    tags: "AoIP Blueline sender with SD player.",
+    image: "/assets/equipson-img/BLR2_LITE_MKII_20210120161207.jpg",
+    brand: "workpro-sound",
+    description:
+      "BLS2 SD MKII is a stereo channel audio over IP transmitter, which is injected into the network through its micro SD player module or its analog input. The BLS2 SD MKII device will allow you to make use of all the prerecorded audios that your installation needs, that is, you can use the device to store notices, alarms and even playlists. These audios can be launched through OSC commands. The device can be powered by both PoE and external power supply.",
+    description2: "",
+    feactures: [
+      "Mp3 player.",
+      "Euroblock connectors.",
+      "Possibility of PoE power supply.",
+      "Configurable through Worcad 3 software.",
+    ],
+    specifications: [
+      {
+        name: "MIcro SD format",
+        values: "FAT 32",
+      },
+      {
+        name: "MP3 format",
+        values: "ISO 13813-3 layer 3 decoding",
+      },
+      {
+        name: "Wav format",
+        values: "	Sampling rate 8 - 48000 Hz",
+      },
+      {
+        name: "Micro SD input sensitivity",
+        values: "3.2 dBu (1.12 Vrms)",
+      },
+      {
+        name: "No. Chanels",
+        values: "	1 stereo channel (unbalanced)",
+      },
+      {
+        name: "Audio jack",
+        values: "Euroblock, 3 pin 5.08 mm.",
+      },
+      {
+        name: "Input Sensitvity",
+        values: "Input Sensitvity",
+      },
+      {
+        name: "Network connector",
+        values: "	RJ-45",
+      },
+      {
+        name: "Audio over IP",
+        values: "BlueLine UDP datagrams",
+      },
+      {
+        name: "Ethernet",
+        values: "	100 bae TX",
+      },
+      {
+        name: "Power supply",
+        values: "	External source: 12/24 Vdc (Not included)",
+      },
+      {
+        name: "Control protocols",
+        values: "OSC",
+      },
+      {
+        name: "Audio broadcast format",
+        values: "PCM / MP3",
+      },
+      {
+        name: "Dimensions",
+        values: "	109 x 133.75 x 40.45 mm",
+      },
+      {
+        name: "Weight",
+        values: "	360 g",
+      },
+    ],
+  },
+  {
+    id: 90,
+    category: "G-Truss, Bolt Truss",
+    name: "Bolt Truss",
+    tags: "Bolt Truss (12×12″)",
+    image: "/assets/g-truss/Thomas-Truss.jpg",
+    brand: "G-Truss",
+    description:
+      "Our Bolt Truss is a 4 point truss system that is optimal for a heavier duty setup/load than your typical spigot truss. This system is put together with a nut & screw system through its plated edges to join sections together and create the size you desire. This is ideal for any users that are looking to hang medium to heavy loads on the truss.",
+    description2: "",
+    feactures: [
+      "Color Options: Silver & Black",
+      "Size Options: 1m/2m/3m",
+      "6 Way Cube available",
+      "Aluminum Base Plate (30×30″)",
+    ],
+    specifications: [
+      {
+        name: "Pipe Diameter",
+        values: "50 mm",
+      },
+      {
+        name: "Wall Thickness",
+        values: "3.0 mm",
+      },
+      {
+        name: "Brace",
+        values: "25 x 3 mm",
+      },
+      {
+        name: "Material",
+        values: "EN AW 6082 T6",
+      },
+    ],
+  },
+  {
+    id: 91,
+    category: "Outdoor (Tundra Series), Indoor (Elite Series), LED Video Walls",
+    name: "LED Wall Ground Support",
+    tags: "Led, LED Effects / Special Effects, LED Video Walls, LED Wall Ground Support, Lighting",
+    image:
+      "/assets/g-truss/led_video_wall_ground_support_4-removebg-preview.png",
+    brand: "G-Truss",
+    description:
+      "LED Wall Ground Support. Stacking a LED screen at the ground is now a simple task with SPLFT.  SPLFT is a modulable system that combines a steel base with a 29 cm ladder truss and a multiconnection plate capable to get connected to any LED screen. Equipped with two adjustable feet at the front and one at the back of the base in order to perfectly balance the LED screen in combination with a bubble level fitted on it. It’s also very flexible as it can be settled for different LED screen configurations with different heights and widths. ",
+    description2:
+      "The arm that connects the ladder truss with the LED screen includes a side clamp which is joint to the multiconnection plate by an exclusive extensible aluminum tube of 40 mm side.",
+    feactures: [
+      "998 x 1112 mm. Steel. Black coated.",
+      " Two adjustable front spindles M12.",
+      " One adjustable back spindle M14x150.",
+      "Bubble level.",
+      "Two half male connectors CBC50PMCC.",
+      "SPLFT29L50 : 290 x 290 x 500 mm. Ladder truss . Black coated.",
+      "SPLFT29L75 : 290 x 290 x 1000 mm. Ladder truss . Black coated.",
+      "SPLFT29L100 : 290 x 290 x 1000 mm. Ladder truss . Black coated.",
+      "Main tube 50 x 4 mm. Aluminium 6082T6.",
+      "Braces 25 x 3 mm. Aluminium 6082T6.",
+      "Extensible arm 40×40 mm side clamp.",
+      "200-135 mm. Adjustable length. Extruded 6082 aluminium profile.",
+      "175×150 mm. Multiconnection steel plate 5m. Thickness.",
+      "Ballast base 400×300 mm.",
+      "Base connection bar: SPLFTBSC  Connection between bases.",
+    ],
+    specifications: [],
+  },
+  {
+    id: 92,
+    category: "WORK PRO Lifters, WTS Series (Front Loaded)",
+    name: "WTS 256",
+    tags: " Led, Lighting, Work Pro Lifters, WTS 256",
+    image: "/assets/workpro-img/WTS_506-e1676499676148.jpg",
+    brand: "workpro-lifters",
+    description:
+      "The WTS Series means a change of concept within the front load towers, as it introduces the new Structural Mode. This Structural Mode does not use the winch to lift the load, but involves lifting the load with the help of a manual or electric hoist. That is, the tower is used as a structure that is all locked to the required working height. Once the tower is raised to this desired height, the load must be raised with the hoist. The Structural Mode performs improved loading capactities.",
+    description2:
+      "Dynamic Overlap is an innovative solution that increases the resistance of the towers and reduces their deflection, making that each tower section overlaps with the previous one at different distances, as with trees in nature. This means that all efforts are concentrated in the same way in all the sections of the tower. Thanks to this, the tower can withstand greater efforts with less deflection.",
+    feactures: [
+      "Modes of operation: Mechanism Mode and Structural Mode.",
+      "Four extensible profiles made of extruded aluminium.",
+      "Reinforcing bars on the back and front of the lifter for additional reinforcement.",
+      "Castors at the base of the lifter.",
+      "Dynamic Overlap system.",
+      "Available color: Black.",
+      "Compatible accessories: AWS 402, AWS 302, AWS 401.",
+    ],
+    specifications: [
+      {
+        name: "Folded height",
+        values: "1,60(m) - 5,25(ft)",
+      },
+      {
+        name: "Base width",
+        values: "0,56(m) - 1,84(ft)",
+      },
+      {
+        name: "Base length",
+        values: "0,44(m) - 1,44(ft)",
+      },
+      {
+        name: "Maximum Height",
+        values: "6,30(m) - 20,66(ft)",
+      },
+      {
+        name: "Minimum fork height",
+        values: "0,62(m) - 2,03(ft)",
+      },
+      {
+        name: "Unfolded diameter",
+        values: "2,65(m) - 8,69(ft)",
+      },
+      {
+        name: "Frontal side width",
+        values: "1,88(m) - 6,17(ft)",
+      },
+      {
+        name: "Rear side width",
+        values: "1,60(m) - 5,25(ft)",
+      },
+      {
+        name: "Fork length",
+        values: "0,50(m) - 1,64(ft)",
+      },
+      {
+        name: "Number of profiles",
+        values: "5",
+      },
+      {
+        name: "Minimum load capacity",
+        values: "25(Kg) - 55,12(Lb)",
+      },
+      {
+        name: "Max.load as mechanism",
+        values: "260(Kg) - 573,20(Lb)",
+      },
+      {
+        name: "Max. load as structure",
+        values: "260(Kg) - 573,20(Lb)",
+      },
+      {
+        name: "Net weight",
+        values: "199,8(Kg) - 264,11Lb)",
+      },
+      {
+        name: "Winch",
+        values: "900(Kg) - 1984,2(Lb)",
+      },
+      {
+        name: "Cable diameter",
+        values: "6(mm2)",
+      },
+      {
+        name: "Noise emissions",
+        values: "70(dB)",
+      },
+    ],
+  },
+  {
+    id: 93,
+    category: "WORK PRO Lifters, WTS Series (Front Loaded)",
+    name: "AWS 403",
+    tags: "Accesory, Attachments, AWS 403, Line Array, Work Pro Lifters, WTS 256, WTS 375",
+    image: "/assets/workpro-img/AWS-403_20200311120728.jpg",
+    brand: "workpro-lifters",
+    description:
+      "AWS 402. Reinforcement bar, for safe lifting of heavy Line Array systems.",
+    description2: "Suitable for models: WTS 506. ",
   },
 ];
