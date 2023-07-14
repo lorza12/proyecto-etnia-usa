@@ -219,7 +219,7 @@ export const products = [
     category: "Lightshark Controllers",
     name: "LS-Nodes",
     tags: "Led, LED Effects / Special Effects, LED Video Walls, Lighting, Lightshark Controllers, LS-Nodes, Theatrical",
-    image: "/assets/lightshark-img/LS-Nodes-2.png",
+    image: "/assets/lightshark-img/LS-Nodes-2-removebg-preview.png",
     brand: "lightshark",
     description:
       "The LS-Node series is the new RDM/DMX streaming range from WORK PRO that supports industry standards ArtNet & sACN. They feature from 1 up to 4 DMX universes, with 3 different models: LS-Node1, LS-Node2 & LS-Node4, each of which adds its respective number of freely configurable DMX universes. ",
@@ -2495,7 +2495,8 @@ export const products = [
     category: "",
     name: "WFS 5 CX B",
     tags: "200W audio projector. IP 66 70/100V line - 8 Ohm",
-    image: "/assets/equipson-img/WFS_5CX_B_FRONT_WEB_20221121114257.jpg",
+    image:
+      "/assets/equipson-img/WFS_5CX_B_FRONT_WEB_20221121114257-removebg-preview.png",
     brand: "workpro-sound",
     description:
       "WFS 5 CX is an audio projector that has been designed for outdoor applications. It incorporates a 10'' coaxial transducer and a 1'' compression driver. Its high IP rating (IP 66) makes it suitable for sports facilities, recreational areas, etc. Its two connection modes (low impedance 8 Ohm and 70/100V line) allow to adjust the device for different acoustic solutions. WFS 5 CX is also available in white color.",
@@ -4733,7 +4734,8 @@ export const products = [
     category: "",
     name: "MPE 50",
     tags: "Passive suspension loudspeaker. IP66",
-    image: "/assets/equipson-img/MPE-50_ByN_20210921165211.jpg",
+    image:
+      "/assets/equipson-img/MPE-50_ByN_20210921165211-removebg-preview.png",
     brand: "workpro-sound",
     description:
       "MPE 50 is a passive (pendant) loudspeaker IP66 range. It is a coaxial, two-way and full range 40 W @ 8 Ohm system, which can also work on 70/100 V lines supporting powers of 3.75W / 7.5W / 15W / 30W, suitable for complex acoustic environments such as shopping malls, places of worship, restaurants, conference centers, hotels, airports, train stations, swimming pools, conference rooms or museums, where high ceilings create a highly reverberant sound field. Each unit uses a 5.25 '' speaker, and a 1 '' diameter coaxial driver. It is available in black and white, and installation accessories are included.",
