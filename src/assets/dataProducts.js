@@ -4818,7 +4818,8 @@ export const products = [
     category: "",
     name: "MPE 65",
     tags: "Passive suspension loudspeaker. IP66",
-    image: "/assets/equipson-img/MPE-50_ByN_20210921165211.jpg",
+    image:
+      "/assets/equipson-img/MPE-50_ByN_20210921165211-removebg-preview.png",
     brand: "workpro-sound",
     description:
       "MPE 65 is a passive (pendant) loudspeaker with an IP66 range. It is a coaxial, two-way and full-range 40 W @ 8 Ohm system, which can also work on 70/100 V lines supporting 5W / 10W / 15W / 20W / 40W powers, suitable for complex acoustic environments such as shopping malls, places of worship, restaurants, conference centers, hotels, airports, train stations, swimming pools, conference rooms or museums, where high ceilings create a highly reverberant sound field. Each unit uses a 6.5'' speaker, and a 1'' diameter coaxial driver. It is available in black and white, and installation accessories are included.",
