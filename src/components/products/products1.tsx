@@ -28,6 +28,7 @@ function Products() {
                       width={200}
                       height={150}
                     />
+                    <br />
                     <h1 className={montserrat.className}>{product.name}</h1>
                     <p className={montserrat.className}>{product.tags}</p>
                   </div>

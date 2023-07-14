@@ -20,6 +20,10 @@
   margin: auto;
 }
 
+.productsContainer__products h1 {
+
+  font-size: 26px;
+}
 .productsContainer__products p {
 
   opacity: 0.9;

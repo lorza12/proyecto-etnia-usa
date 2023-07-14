@@ -45,9 +45,9 @@ function Footer() {
             <article className={styles.footerContainer__section1__networks}>
               <h1>FOLLOW US</h1>
               <div className={styles.div__networks}>
-                <a href={facebookUrl} target="_blank" rel="iconFacebook">
-                  <BsFacebook fontSize={30} />
-                </a>
+                {/* <a href={facebookUrl} target="_blank" rel="iconFacebook"> */}
+                <BsFacebook fontSize={30} />
+
                 <br />
                 <BsInstagram fontSize={30} />
                 <br />
