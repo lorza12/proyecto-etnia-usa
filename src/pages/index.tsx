@@ -13,6 +13,7 @@ function Home() {
           name="description"
           content="We are a company dedicated to the import and export of high quality products for the world of Audio, Video, Lighting in the sector of shows, live and theatrical events."
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logoIcon1.ico" />
       </Head>
       <Banner />
