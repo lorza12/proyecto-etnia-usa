@@ -7,19 +7,19 @@ import SwiperCore, {
 } from "swiper";
 import styles from "@/styles/Banner.module.css";
 import Image from "next/image";
-import img1 from "../../../public/assets/banner-img/18.png";
-import img2 from "../../../public/assets/banner-img/1.png";
-import img3 from "../../../public/assets/banner-img/6.png";
-import img4 from "../../../public/assets/banner-img/2.png";
-import img5 from "../../../public/assets/banner-img/14.png";
-import img6 from "../../../public/assets/banner-img/21.png";
-import img7 from "../../../public/assets/banner-img/12.png";
-import img8 from "../../../public/assets/banner-img/8.png";
-import img9 from "../../../public/assets/banner-img/5.png";
+import img1 from "../../../public/assets/banner-img/2.png";
+import img2 from "../../../public/assets/banner-img/5.png";
+import img3 from "../../../public/assets/banner-img/1.png";
+import img4 from "../../../public/assets/banner-img/20.png";
+import img5 from "../../../public/assets/banner-img/8.png";
+import img6 from "../../../public/assets/banner-img/14.png";
+import img7 from "../../../public/assets/banner-img/17.png";
+import img8 from "../../../public/assets/banner-img/12.png";
+import img9 from "../../../public/assets/banner-img/6.png";
 import img10 from "../../../public/assets/banner-img/19.png";
-import img11 from "../../../public/assets/banner-img/17.png";
+import img11 from "../../../public/assets/banner-img/21.png";
 import img12 from "../../../public/assets/banner-img/15.png";
-import img13 from "../../../public/assets/banner-img/20.png";
+import img13 from "../../../public/assets/banner-img/18.png";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -181,7 +181,7 @@ function Banner() {
               >
                 <Link href={`/brands/workpro-sound`}>
                   <Image
-                    src={img13}
+                    src={img6}
                     alt="img"
                     width={imageWidth}
                     height={imageHeight}
@@ -195,7 +195,7 @@ function Banner() {
               >
                 <Link href={`/brands/fantek`}>
                   <Image
-                    src={img6}
+                    src={img7}
                     alt="img"
                     width={imageWidth}
                     height={imageHeight}
@@ -209,7 +209,7 @@ function Banner() {
               >
                 <Link href={`/brands/workpro-lifters`}>
                   <Image
-                    src={img7}
+                    src={img8}
                     alt="img"
                     width={imageWidth}
                     height={imageHeight}
@@ -223,7 +223,7 @@ function Banner() {
               >
                 <Link href={`/brands/workpro-sound`}>
                   <Image
-                    src={img8}
+                    src={img9}
                     alt="img"
                     width={imageWidth}
                     height={imageHeight}
@@ -237,7 +237,7 @@ function Banner() {
               >
                 <Link href={`https://gammaledvision.com/`}>
                   <Image
-                    src={img9}
+                    src={img10}
                     alt="img"
                     width={imageWidth}
                     height={imageHeight}
@@ -251,7 +251,7 @@ function Banner() {
               >
                 <Link href={`/brands/workpro-lifters`}>
                   <Image
-                    src={img10}
+                    src={img11}
                     alt="img"
                     width={imageWidth}
                     height={imageHeight}
@@ -265,7 +265,7 @@ function Banner() {
               >
                 <Link href={`/brands/lightshark`}>
                   <Image
-                    src={img11}
+                    src={img12}
                     alt="img"
                     width={imageWidth}
                     height={imageHeight}
@@ -279,7 +279,7 @@ function Banner() {
               >
                 <Link href={`/brands/fantek`}>
                   <Image
-                    src={img12}
+                    src={img13}
                     alt="img"
                     width={imageWidth}
                     height={imageHeight}

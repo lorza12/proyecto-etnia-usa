@@ -1,6 +1,8 @@
 .bannerContainer {
   background-color: rgb(255, 255, 255);
   text-align: center;
+  padding: 5rem 0 0 0;
+
 }
 
 .bannerContainer__banner__mySwiper {
@@ -13,10 +15,12 @@
   background-position: center;
   width: 100%;
   height: 100%;
+
 }
 
 .swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+
 }

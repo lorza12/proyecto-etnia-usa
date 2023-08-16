@@ -19,6 +19,7 @@
     "react-leaflet": "^4.2.1",
     "sitemap": "^7.1.1",
     "sitemaps": "^2.0.4",
+    "svg-inline-react": "^3.2.1",
     "swiper": "^9.0.0",
     "typescript": "5.0.3"
   },

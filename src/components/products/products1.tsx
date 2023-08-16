@@ -4,6 +4,7 @@ import Link from "next/link";
 import { GiCheckMark } from "react-icons/gi";
 import { mainProducts as prod } from "../../assets/dataMainProducts";
 import { montserrat } from "@/styles/fonts";
+import Search from "@/components/searchComponent/search";
 
 function Products() {
   return (

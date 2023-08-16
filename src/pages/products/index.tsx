@@ -8,6 +8,7 @@ import { useEffect, useId, useRef, useState } from "react";
 import { montserrat } from "@/styles/fonts";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { AiOutlineDown } from "react-icons/ai";
+import Search from "@/components/searchComponent/search";
 
 export interface ProductModel {
   id: number;
@@ -126,6 +127,10 @@ const Products = () => {
         <link rel="icon" href="/logoIcon1.ico" />
       </Head>
       <div className={styles.productsGlobalContainer}>
+        <div className={styles.productsGlobalContainer__search}>
+          <Search />
+        </div>
+
         <h1 className={montserrat.className}>/ PRODUCTS /</h1>
         <div className={styles.productsWrapper}>
           <div className={styles.brandContainer}>
@@ -154,6 +159,13 @@ const Products = () => {
                     onChange={handleRadioChange}
                   />
                   <label htmlFor="all">All</label>
+                </div>
+              </li>
+              <li className={styles.brandListItem}>
+                <div className={montserrat.className}>
+                  <Link href={"https://gammaledvision.com/"} target="blank">
+                    <p>Gamma</p>
+                  </Link>
                 </div>
               </li>
               {brandType.map((brand, idx) => (

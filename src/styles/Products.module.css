@@ -1,10 +1,12 @@
 .main2 {
   background-color: rgb(249, 249, 249);
   padding-bottom: 100px;
+
 }
 
+
 .productsContainer__title {
-  padding-top: 10%;
+  padding-top: 5%;
   font-size: 14px;
   color: #000000;
 }

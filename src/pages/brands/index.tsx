@@ -58,6 +58,16 @@ function BrandsAll() {
             </article>
             <article className={styles.bransAllContainer__brand__conteiner}>
               <div className={prompt.className}>
+                <Link href={`/brands/workpro-sound`}>
+                  <Image src={brand5} alt="brand3" width={200} height={60} />
+                </Link>
+                <p className={styles.bransAllContainer__brands__paragraf}>
+                  WORKPRO-SOUND {`(${lengthEquipson})`}
+                </p>
+              </div>
+            </article>
+            <article className={styles.bransAllContainer__brand__conteiner}>
+              <div className={prompt.className}>
                 <Link href={`/brands/lightshark`}>
                   <Image src={brand2} alt="brand2" width={230} height={40} />
                 </Link>
@@ -65,16 +75,6 @@ function BrandsAll() {
                 <br />
                 <p className={styles.bransAllContainer__brands__paragraf}>
                   LIGTHSHARK {`(${lengthLightshark})`}
-                </p>
-              </div>
-            </article>
-            <article className={styles.bransAllContainer__brand__conteiner}>
-              <div className={prompt.className}>
-                <Link href={`/brands/G-Truss`}>
-                  <Image src={brand3} alt="brand3" width={200} height={80} />
-                </Link>
-                <p className={styles.bransAllContainer__brands__paragraf}>
-                  G-TRUSS {`(${lengthGtrus})`}
                 </p>
               </div>
             </article>
@@ -92,11 +92,11 @@ function BrandsAll() {
             </article>
             <article className={styles.bransAllContainer__brand__conteiner}>
               <div className={prompt.className}>
-                <Link href={`/brands/workpro-sound`}>
-                  <Image src={brand5} alt="brand3" width={200} height={60} />
+                <Link href={`/brands/G-Truss`}>
+                  <Image src={brand3} alt="brand3" width={200} height={80} />
                 </Link>
                 <p className={styles.bransAllContainer__brands__paragraf}>
-                  WORKPRO-SOUND {`(${lengthEquipson})`}
+                  G-TRUSS {`(${lengthGtrus})`}
                 </p>
               </div>
             </article>

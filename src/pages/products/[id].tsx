@@ -4,7 +4,6 @@ import styles from "@/styles/ProductDetailPage.module.css";
 import { useRouter } from "next/router";
 import { products as produ } from "../../assets/dataProducts";
 import { montserrat } from "@/styles/fonts";
-import { GrTextAlignCenter } from "react-icons/gr";
 
 const ProductDetailPage = () => {
   const router = useRouter();

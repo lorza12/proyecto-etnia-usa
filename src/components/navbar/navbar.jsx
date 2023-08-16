@@ -52,7 +52,7 @@ function NavBar() {
                   <p>CONTACT US</p>
                 </Link>
 
-                <Link href={"/"}>
+                <Link href={"/about"}>
                   <p>ABOUT US</p>
                 </Link>
               </div>
