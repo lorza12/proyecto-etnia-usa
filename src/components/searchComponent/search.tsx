@@ -21,7 +21,6 @@ function Search() {
     : products.filter((data) =>
         data.name.toLowerCase().includes(search.toLocaleLowerCase())
       );
-  console.log("🚀 ~ file: search.tsx:20 ~ Search ~ result:", result);
 
   return (
     <main className={styles.searchContainer}>
