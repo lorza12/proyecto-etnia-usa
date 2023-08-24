@@ -12,7 +12,7 @@ function Footer() {
 
   return (
     <>
-      <main className={styles.footerContainer} id="footer">
+      <main className={styles.footerContainer}>
         <section className={montserrat.className}>
           <section className={styles.footerContainer__section1}>
             <article className={styles.footerContainer__section1__inf}>

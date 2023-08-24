@@ -6,7 +6,7 @@ import { MdLocationOn } from "react-icons/md";
 import { montserrat } from "@/styles/fonts";
 import { useState } from "react";
 
-const About = (props) => {
+const Contact = (props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
@@ -19,8 +19,8 @@ const About = (props) => {
   return (
     <>
       <Head>
-        <title>About Page</title>
-        <meta name="description" content="About Page" />
+        <title>Contact Us</title>
+        <meta name="description" content="Contact Us" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logoIcon1.ico" />
       </Head>
@@ -1216,4 +1216,4 @@ const About = (props) => {
   );
 };
 
-export default About;
+export default Contact;

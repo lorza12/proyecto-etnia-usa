@@ -48,11 +48,11 @@ function NavBar() {
                   <p>PRODUCTS</p>
                 </Link>
 
-                <Link href={"#footer"}>
+                <Link href={"/contactUs"}>
                   <p>CONTACT US</p>
                 </Link>
 
-                <Link href={"/about"}>
+                <Link href={"/"}>
                   <p>ABOUT US</p>
                 </Link>
               </div>
@@ -128,8 +128,11 @@ function NavBar() {
                 <br />
 
                 <div className={styles.span}>
-                  <Link href={"#footer"}>
-                    <li className={montserrat.className}>
+                  <Link href={"/contactUs"}>
+                    <li
+                      className={montserrat.className}
+                      onClick={() => handleItemClick("contactUs")}
+                    >
                       <MdPermContactCalendar size={20} /> CONTACT US
                     </li>
                   </Link>
@@ -140,8 +143,8 @@ function NavBar() {
                 <br />
 
                 <div className={styles.span}>
-                  <Link href={"/about"}>
-                    <li onClick={() => handleItemClick("about")}>
+                  <Link href={"/"}>
+                    <li onClick={() => handleItemClick("/")}>
                       <HiOfficeBuilding size={20} /> ABOUT US
                     </li>
                   </Link>
