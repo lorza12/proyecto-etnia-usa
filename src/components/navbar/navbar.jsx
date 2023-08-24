@@ -140,8 +140,8 @@ function NavBar() {
                 <br />
 
                 <div className={styles.span}>
-                  <Link href={"/brands"}>
-                    <li onClick={() => handleItemClick("brands")}>
+                  <Link href={"/about"}>
+                    <li onClick={() => handleItemClick("about")}>
                       <HiOfficeBuilding size={20} /> ABOUT US
                     </li>
                   </Link>
