@@ -3,6 +3,7 @@ import Banner from "../components/banner/banner";
 import KnowUs from "../components/knowUs/knowUs";
 import Products from "../components/products/products1";
 import Brands from "@/components/brands/Brands";
+import Search from "@/components/searchComponent/search";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logoIcon1.ico" />
       </Head>
+      <Search />
       <Banner />
       <Brands />
       <Products />

@@ -53,7 +53,7 @@
 @media (max-width: 820px){
   .searchContainer{
 
-    z-index: 0;
+    z-index: 999;
 
   }
 }
