@@ -52,7 +52,7 @@ function NavBar() {
                   <p>CONTACT US</p>
                 </Link>
 
-                <Link href={"/"}>
+                <Link href={"#about"}>
                   <p>ABOUT US</p>
                 </Link>
               </div>
@@ -143,8 +143,8 @@ function NavBar() {
                 <br />
 
                 <div className={styles.span}>
-                  <Link href={"/"}>
-                    <li onClick={() => handleItemClick("/")}>
+                  <Link href={"#about"}>
+                    <li>
                       <HiOfficeBuilding size={20} /> ABOUT US
                     </li>
                   </Link>

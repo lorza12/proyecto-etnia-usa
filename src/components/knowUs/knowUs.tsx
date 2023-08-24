@@ -8,7 +8,7 @@ import { montserrat } from "@/styles/fonts";
 function KnowUs() {
   return (
     <>
-      <main className={styles.main1}>
+      <main className={styles.main1} id="about">
         <section className={styles.knowUSContainer}>
           <article className={styles.knowUSContainer__logo}>
             <br />
@@ -31,14 +31,14 @@ function KnowUs() {
                 <b className={styles.b}> business relationships </b> but to
                 continue to build in them for years to come.
               </p>
-              <Link href={""}>
+              {/* <Link href={""}>
                 <button
                   type="button"
                   className={styles.knowUSContainer__button}
                 >
                   MORE INFO{" "}
                 </button>
-              </Link>
+              </Link> */}
             </div>
           </article>
         </section>

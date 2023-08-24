@@ -2,15 +2,19 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 9rem 0 0 0;
+  padding: 3rem 0 0 0;
 
 }
 .text {
   font-size: 10px;
 }
-
+.aboutContainer__infoEtnia{
+  text-align: center;
+  padding: 4rem 0 4rem 0 ;
+  font-size: 22px;
+}
 .aboutContainer__title {
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
 }
 .brandLists{
@@ -226,6 +230,9 @@
 @media (max-width: 570px) {
   .aboutContainer {
     padding: 0;
+  }
+  .aboutContainer__infoEtnia h3{
+    font-size: 16px;
   }
   .aboutContainer__title {
     font-size: 12px;
