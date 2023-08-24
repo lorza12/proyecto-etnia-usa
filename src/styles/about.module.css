@@ -217,6 +217,9 @@
     font-size: 18px;
     padding-top: 2rem;
   }
+  .aboutContainer__infoEtnia{
+    font-size: 18px;
+  }
   .aboutContainer__map {
     padding: 2rem;
   }
@@ -234,8 +237,11 @@
   .aboutContainer__infoEtnia h3{
     font-size: 16px;
   }
+  .aboutContainer__infoEtnia{
+    font-size: 16px;
+  }
   .aboutContainer__title {
-    font-size: 12px;
+    font-size: 14px;
     padding-top: 2rem;
   }
   .aboutContainer__map {
