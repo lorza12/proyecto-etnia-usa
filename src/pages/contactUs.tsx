@@ -8,6 +8,8 @@ import { useState } from "react";
 
 const Contact = (props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const phoneNumber = "+573016337209";
+  const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -33,6 +35,9 @@ const Contact = (props) => {
               <br />
               <p>Ph: 305 418 8434</p>
               <p>Ph: 305 608 3596</p>
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                <p>ir a whatsapp</p>
+              </a>
             </div>
           </article>
           <section className={styles.aboutContainer__title}>
