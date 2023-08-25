@@ -1,7 +1,7 @@
 export const products = [
   {
     id: 41,
-    category: "",
+    category: "sound",
     name: "ZENITH 1000",
     tags: "Audio amplifier",
     image: "/assets/equipson-img/Zenith_1000_pers_20210603171953.png",
@@ -97,7 +97,7 @@ export const products = [
   },
   {
     id: 1,
-    category: "Lightshark Controllers",
+    category: "elevator",
     name: "LS 1",
     tags: "Led, LED Effects / Special Effects, Lighting, Lightshark Controllers, LS-1, Theatrical",
     image: "/assets/lightshark-img/LightShark_pers.png",

@@ -18,8 +18,11 @@ function Search() {
   };
   const result = !search
     ? products
-    : products.filter((data) =>
-        data.name.toLowerCase().includes(search.toLocaleLowerCase())
+    : products.filter(
+        (data) =>
+          data.name.toLowerCase().includes(search.toLocaleLowerCase()) ||
+          data.brand.toLowerCase().includes(search.toLowerCase()) ||
+          data.category.toLowerCase().includes(search.toLowerCase())
       );
 
   return (

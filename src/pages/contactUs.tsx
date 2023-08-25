@@ -1,15 +1,19 @@
 import Head from "next/head";
-import styles from "@/styles/about.module.css";
+import styles from "@/styles/contactUs.module.css";
 import * as React from "react";
 // import InlineSVG from "svg-inline-react";
 import { MdLocationOn } from "react-icons/md";
 import { montserrat } from "@/styles/fonts";
 import { useState } from "react";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 const Contact = (props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const phoneNumber = "+573016337209";
-  const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
+  const whatsappEtnia1 = `https://api.whatsapp.com/send?phone=3054188434`;
+  const whatsappEtnia2 = `https://api.whatsapp.com/send?phone=13056083596`;
+  const whatsappEtnia3 = `https://api.whatsapp.com/send?phone=19548732447`;
+  const whatsappEtnia4 = `https://api.whatsapp.com/send?phone=573146730543`;
+  const whatsappEtnia5 = `https://api.whatsapp.com/send?phone=593994302571`;
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -33,10 +37,23 @@ const Contact = (props) => {
             <div>
               <h3>info@etniapro.com</h3>
               <br />
-              <p>Ph: 305 418 8434</p>
-              <p>Ph: 305 608 3596</p>
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                <p>ir a whatsapp</p>
+              <a
+                href={whatsappEtnia1}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p className={styles.PhoneInfo}>
+                  Ph: 305 418 8434 <IoLogoWhatsapp color="#25d366" />
+                </p>
+              </a>
+              <a
+                href={whatsappEtnia2}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p className={styles.PhoneInfo}>
+                  Ph: 305 608 3596 <IoLogoWhatsapp color="#25d366" />
+                </p>
               </a>
             </div>
           </article>
@@ -68,7 +85,7 @@ const Contact = (props) => {
                   data-name="Massachusetts"
                   style={{
                     strokeWidth: 0.97063118,
-                    fill: "#f9f9f9",
+                    fill: "#d8e151",
                   }}
                 />
               </a>
@@ -80,7 +97,7 @@ const Contact = (props) => {
                   data-name="Minnesota"
                   style={{
                     strokeWidth: 0.97063118,
-                    fill: "#f9f9f9",
+                    fill: "#d8e151",
                   }}
                 />
               </a>
@@ -118,7 +135,7 @@ const Contact = (props) => {
                   data-name="North Dakota"
                   style={{
                     strokeWidth: 0.97063118,
-                    fill: "#f9f9f9",
+                    fill: "#d8e151",
                   }}
                 />
               </a>
@@ -545,7 +562,7 @@ const Contact = (props) => {
                   data-name="South Dakota"
                   style={{
                     strokeWidth: 0.97063118,
-                    fill: "#f9f9f9",
+                    fill: "#d8e151",
                   }}
                 />
               </a>
@@ -605,7 +622,7 @@ const Contact = (props) => {
                   data-name="Connecticut"
                   style={{
                     strokeWidth: 0.97063118,
-                    fill: "#f9f9f9",
+                    fill: "#d8e151",
                   }}
                 />
               </a>
@@ -617,7 +634,7 @@ const Contact = (props) => {
                   data-name="New Hampshire"
                   style={{
                     strokeWidth: 0.97063118,
-                    fill: "#f9f9f9",
+                    fill: "#d8e151",
                   }}
                 />
               </a>
@@ -629,7 +646,7 @@ const Contact = (props) => {
                   data-name="Rhode Island"
                   style={{
                     strokeWidth: 0.97063118,
-                    fill: "#f9f9f9",
+                    fill: "#d8e151",
                   }}
                 />
               </a>
@@ -641,7 +658,7 @@ const Contact = (props) => {
                   data-name="Vermont"
                   style={{
                     strokeWidth: 0.97063118,
-                    fill: "#f9f9f9",
+                    fill: "#d8e151",
                   }}
                 />
               </a>
@@ -679,7 +696,7 @@ const Contact = (props) => {
                   data-name="Florida"
                   style={{
                     strokeWidth: 0.97063118,
-                    fill: "#f9f9f9",
+                    fill: "#d8e151",
                   }}
                 />
               </a>
@@ -770,7 +787,7 @@ const Contact = (props) => {
                   data-name="Illinois"
                   style={{
                     strokeWidth: 0.97063118,
-                    fill: "#f9f9f9",
+                    fill: "#d8e151",
                   }}
                 />
               </a>
@@ -905,7 +922,7 @@ const Contact = (props) => {
                   data-name="Virginia"
                   style={{
                     strokeWidth: 0.97063118,
-                    fill: "#f9f9f9",
+                    fill: "#d8e151",
                   }}
                 />
               </a>
@@ -917,7 +934,7 @@ const Contact = (props) => {
                   data-name="Wisconsin"
                   style={{
                     strokeWidth: 0.97063118,
-                    fill: "#f9f9f9",
+                    fill: "#d8e151",
                   }}
                 />
               </a>
@@ -929,7 +946,7 @@ const Contact = (props) => {
                   data-name="West Virginia"
                   style={{
                     strokeWidth: 0.97063118,
-                    fill: "#f9f9f9",
+                    fill: "#d8e151",
                   }}
                 />
               </a>
@@ -941,7 +958,7 @@ const Contact = (props) => {
                   data-name="Delaware"
                   style={{
                     strokeWidth: 0.97063118,
-                    fill: "#f9f9f9",
+                    fill: "#d8e151",
                   }}
                 />
               </a>
@@ -953,7 +970,7 @@ const Contact = (props) => {
                   data-name="District of Columbia"
                   style={{
                     strokeWidth: 0.97063118,
-                    fill: "#f9f9f9",
+                    fill: "#d8e151",
                   }}
                 />
               </a>
@@ -965,7 +982,7 @@ const Contact = (props) => {
                   data-name="Maryland"
                   style={{
                     strokeWidth: 0.97063118,
-                    fill: "#f9f9f9",
+                    fill: "#d8e151",
                   }}
                 />
               </a>
@@ -977,7 +994,7 @@ const Contact = (props) => {
                   data-name="New Jersey"
                   style={{
                     strokeWidth: 0.97063118,
-                    fill: "#f9f9f9",
+                    fill: "#d8e151",
                   }}
                 />
               </a>
@@ -989,7 +1006,7 @@ const Contact = (props) => {
                   data-name="New York"
                   style={{
                     strokeWidth: 0.97063118,
-                    fill: "#f9f9f9",
+                    fill: "#d8e151",
                   }}
                 />
               </a>
@@ -1027,7 +1044,7 @@ const Contact = (props) => {
                   data-name="Maine"
                   style={{
                     strokeWidth: 0.97063118,
-                    fill: "#f9f9f9",
+                    fill: "#d8e151",
                   }}
                 />
               </a>
@@ -1239,7 +1256,17 @@ const Contact = (props) => {
                 <p></p>
                 <p>https://www.etniapro.com/</p>
                 <p>edgardo@etniapro.com</p>
-                <p>Ph: +1 954.873.2447 </p>
+                <a
+                  href={whatsappEtnia3}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  <p className={styles.PhoneInfo}>
+                    Ph: +1 954.873.2447 <IoLogoWhatsapp color="#25d366" />
+                  </p>
+                </a>
+
                 <br />
               </div>
               <article className={styles.aboutContainer__infoInter__modules}>
@@ -1249,7 +1276,15 @@ const Contact = (props) => {
                   <p>Johann Castano</p>
                   <p>https://www.etniaavl.com/</p>
                   <p>johann@etniaavl.com</p>
-                  <p>Ph: +57 314 673 05 43</p>
+                  <a
+                    href={whatsappEtnia4}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p className={styles.PhoneInfo}>
+                      Ph: +57 314 673 05 43 <IoLogoWhatsapp color="#25d366" />
+                    </p>
+                  </a>
                 </div>
                 <div>
                   <h3>ECUADOR</h3>
@@ -1257,7 +1292,15 @@ const Contact = (props) => {
                   <p>Steeven Garcia</p>
                   <p>Ilumifer</p>
                   <p>ilumifer.ec@gmail.com</p>
-                  <p>Ph: +59 399 430 25 71</p>
+                  <a
+                    href={whatsappEtnia5}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p className={styles.PhoneInfo}>
+                      Ph: +59 399 430 25 71 <IoLogoWhatsapp color="#25d366" />
+                    </p>
+                  </a>
                 </div>
               </article>
             </section>
