@@ -6,6 +6,7 @@ import { MdLocationOn } from "react-icons/md";
 import { montserrat } from "@/styles/fonts";
 import { useState } from "react";
 import { IoLogoWhatsapp } from "react-icons/io";
+import Link from "next/link";
 
 const Contact = (props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -1182,7 +1183,9 @@ const Contact = (props) => {
             <article className={styles.aboutContainer__table__module}>
               <h2>GRIFFITHS</h2>
               <br />
-              <p>http://griffithsales.com/</p>
+              <a href={"http://griffithsales.com/"} target="_blank">
+                <p>http://griffithsales.com</p>
+              </a>
               <br />
               <p>orders@griffithsales.com</p>
               <br />
@@ -1206,7 +1209,9 @@ const Contact = (props) => {
             <article className={styles.aboutContainer__table__module}>
               <h3>GOLDSMITH</h3>
               <br />
-              <p>https://goldsmithsales.com/</p>
+              <a href={"https://goldsmithsales.com/"} target="_blank">
+                <p>https://goldsmithsales.com</p>
+              </a>
               <br />
               <p></p>
               <br />
@@ -1228,7 +1233,9 @@ const Contact = (props) => {
             <article className={styles.aboutContainer__table__module}>
               <h4>LVX</h4>
               <br />
-              <p>http://lvxmarketing.com/vendors-2/</p>
+              <a href={"http://lvxmarketing.com/"} target="_blank">
+                <p>http://lvxmarketing.com</p>
+              </a>
               <br />
               <p>info@lvxmarketing.com</p>
               <br />
@@ -1278,7 +1285,9 @@ const Contact = (props) => {
             <article className={styles.aboutContainer__table__module}>
               <h6>METRO JOE</h6>
               <br />
-              <p>http://www.metrojoesmarketing.com/</p>
+              <a href={"http://www.metrojoesmarketing.com/"} target="_blank">
+                <p>http://www.metrojoesmarketing.com</p>
+              </a>
               <br />
               <p>metronola@aol.com</p>
               <br />
@@ -1301,7 +1310,9 @@ const Contact = (props) => {
               <p className={styles.h7}>BOD WHITE ASSOCIATES</p>
               <br />
               <br />
-              <p>https://callbwa.com/</p>
+              <a href={"https://callbwa.com/"} target="_blank">
+                <p>https://callbwa.com</p>
+              </a>
               <br />
               <p>tod@callbwa.com</p>
               <br />
@@ -1370,8 +1381,8 @@ const Contact = (props) => {
                   <h3>ECUADOR</h3>
                   <br />
                   <p>Steeven Garcia</p>
-                  <p>Ilumifer</p>
-                  <p>ilumifer.ec@gmail.com</p>
+                  <p>Gerente Ilumifer</p>
+                  <p>Ventas@ilumifer.com</p>
                   <a
                     href={whatsappEtnia5}
                     target="_blank"
