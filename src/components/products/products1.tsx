@@ -1,13 +1,9 @@
 import styles from "@/styles/Products.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import { GiCheckMark } from "react-icons/gi";
-import { mainProducts as prod } from "../../assets/dataMainProducts";
+// import { mainProducts as prod } from "../../assets/dataMainProducts";
 import { montserrat } from "@/styles/fonts";
-import Search from "@/components/searchComponent/search";
-import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
-import { getImageProduct } from "@/pages/services/products";
-
+import { getImageProduct } from "@/services/products";
 function Products({ products }) {
   const attributes = products.map((element) => {
     return element.attributes;

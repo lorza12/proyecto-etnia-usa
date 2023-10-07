@@ -108,7 +108,7 @@ function Banner() {
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
                 <div className={styles.sssss}>
-                  <Link href={`/brands/G-Truss`}>
+                  <Link href={`https://gammaledvision.com/`}>
                     <Image
                       src={img1}
                       alt="img"
@@ -124,13 +124,15 @@ function Banner() {
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
                 <div className={styles.sssss}>
-                  <Image
-                    src={img2}
-                    alt="img"
-                    width={imageWidth}
-                    height={imageHeight}
-                    priority={true}
-                  />
+                  <Link href={`https://gammaledvision.com/`}>
+                    <Image
+                      src={img2}
+                      alt="img"
+                      width={imageWidth}
+                      height={imageHeight}
+                      priority={true}
+                    />
+                  </Link>
                 </div>
               </SwiperSlide>
               <SwiperSlide
@@ -151,7 +153,7 @@ function Banner() {
                 key={4}
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
-                <Link href={`https://gammaledvision.com/`}>
+                <Link href={`/brands/workpro-sound`}>
                   <Image
                     src={img4}
                     alt="img"
@@ -165,7 +167,7 @@ function Banner() {
                 key={5}
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
-                <Link href={`/brands/lightshark`}>
+                <Link href={`/brands/workpro-sound`}>
                   <Image
                     src={img5}
                     alt="img"
@@ -179,7 +181,7 @@ function Banner() {
                 key={6}
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
-                <Link href={`/brands/workpro-sound`}>
+                <Link href={`/brands/lightshark`}>
                   <Image
                     src={img6}
                     alt="img"
@@ -193,7 +195,7 @@ function Banner() {
                 key={7}
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
-                <Link href={`/brands/fantek`}>
+                <Link href={`/brands/lightshark`}>
                   <Image
                     src={img7}
                     alt="img"
@@ -221,7 +223,7 @@ function Banner() {
                 key={9}
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
-                <Link href={`/brands/workpro-sound`}>
+                <Link href={`/brands/workpro-lifters`}>
                   <Image
                     src={img9}
                     alt="img"
@@ -235,7 +237,7 @@ function Banner() {
                 key={10}
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
-                <Link href={`https://gammaledvision.com/`}>
+                <Link href={`/brands/workpro-lifters`}>
                   <Image
                     src={img10}
                     alt="img"
@@ -249,7 +251,7 @@ function Banner() {
                 key={11}
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
-                <Link href={`/brands/workpro-lifters`}>
+                <Link href={`/brands/fantek`}>
                   <Image
                     src={img11}
                     alt="img"
@@ -263,7 +265,7 @@ function Banner() {
                 key={12}
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
-                <Link href={`/brands/lightshark`}>
+                <Link href={`/brands/fantek`}>
                   <Image
                     src={img12}
                     alt="img"
@@ -277,7 +279,7 @@ function Banner() {
                 key={13}
                 className={styles.navBarContainer__banner__SwiperSlide}
               >
-                <Link href={`/brands/fantek`}>
+                <Link href={`/brands/G-Truss`}>
                   <Image
                     src={img13}
                     alt="img"

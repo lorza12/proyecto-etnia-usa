@@ -9,9 +9,8 @@ import brand4 from "../../../public/assets/brands-logos/104a04d9-e509-4ea5-ad82-
 import brand5 from "../../../public/assets/brands-logos/0eb9cbd5-566f-4be3-9191-7a52cfe10bd5.png";
 import brand6 from "../../../public/assets/brands-logos/ea52129e-6176-4927-9e4e-63d962e5c948.png";
 import Link from "next/link";
-import { products as produ } from "../../assets/dataProducts";
+// import { products as produ } from "../../assets/dataProducts";
 import { montserrat } from "@/styles/fonts";
-import { API_URL } from "../services/config";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
 const prompt = Prompt({

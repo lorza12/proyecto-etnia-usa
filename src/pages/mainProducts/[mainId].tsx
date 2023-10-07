@@ -3,9 +3,9 @@ import Image from "next/image";
 import styles from "@/styles/ProductDetailPage.module.css";
 import { Prompt } from "next/font/google";
 import { useRouter } from "next/router";
-import { mainProducts as produ } from "../../assets/dataMainProducts";
+// import { mainProducts as produ } from "../../assets/dataMainProducts";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
-import { getImageProduct } from "../services/products";
+import { getImageProduct } from "../../services/products";
 
 const prompt = Prompt({
   subsets: ["latin"],
@@ -14,9 +14,7 @@ const prompt = Prompt({
 
 const ProductMainDetail = ({ products }) => {
   const router = useRouter();
-  // const { mainId } = router.query;
 
-  // const product = produ.filter((element) => element.id.toString() === mainId);
   const { mainId } = router.query;
 
   const attributes = products.map((element) => {

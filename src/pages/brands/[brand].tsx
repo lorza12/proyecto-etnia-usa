@@ -7,8 +7,7 @@ import { useRef, useState, useEffect } from "react";
 import { montserrat } from "@/styles/fonts";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import styles from "../../styles/BrandsAll.module.css";
-import { API_URL } from "../services/config";
-import { getImageProduct } from "../services/products";
+import { getImageProduct } from "../../services/products";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
 const BrandsDetail = ({ products }) => {

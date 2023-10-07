@@ -1,8 +1,6 @@
 import styles from "@/styles/KnowUs.module.css";
 import Image from "next/image";
 import Logo from "../../../public/assets/logo1.png";
-import Logo2 from "../knowUs/assets/LOGOETNIAAVL2.png";
-import Link from "next/link";
 import { montserrat } from "@/styles/fonts";
 
 function KnowUs() {

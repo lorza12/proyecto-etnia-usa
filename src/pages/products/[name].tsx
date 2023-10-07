@@ -2,10 +2,9 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/ProductDetailPage.module.css";
 import { useRouter } from "next/router";
-import { products as produ } from "../../assets/dataProducts";
+// import { products as produ } from "../../assets/dataProducts";
 import { montserrat } from "@/styles/fonts";
-import { API_URL } from "../services/config";
-import { getImageProduct } from "../services/products";
+import { getImageProduct } from "../../services/products";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
 const ProductDetailPage = ({ products }) => {

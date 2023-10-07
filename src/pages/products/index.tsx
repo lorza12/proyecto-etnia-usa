@@ -2,15 +2,14 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import { products as prod } from "../../assets/dataProducts";
+// import { products as prod } from "../../assets/dataProducts";
 import styles from "./Products.module.css";
 import { useEffect, useId, useRef, useState } from "react";
 import { montserrat } from "@/styles/fonts";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { AiOutlineDown } from "react-icons/ai";
 import Search from "@/components/searchComponent/search";
-import { API_URL } from "../services/config";
-import { getImageProduct } from "../services/products";
+import { getImageProduct } from "../../services/products";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
 export interface ProductModel {
