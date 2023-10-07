@@ -4,12 +4,24 @@ import styles from "@/styles/ProductDetailPage.module.css";
 import { useRouter } from "next/router";
 import { products as produ } from "../../assets/dataProducts";
 import { montserrat } from "@/styles/fonts";
+import { API_URL } from "../services/config";
+import { getImageProduct } from "../services/products";
+import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
-const ProductDetailPage = () => {
+const ProductDetailPage = ({ products }) => {
+  console.log(
+    "🚀 ~ file: [name].tsx:12 ~ ProductDetailPage ~ products:",
+    products
+  );
   const router = useRouter();
-  const { id } = router.query;
+  const { name } = router.query;
 
-  const product = produ.filter((element) => element.id.toString() === id);
+  const attributes = products.map((element) => {
+    return element.attributes;
+  });
+  const product = attributes.filter(
+    (element) => element.name.replace(/ /g, "") === name
+  );
 
   return (
     <>
@@ -21,66 +33,77 @@ const ProductDetailPage = () => {
       </Head>
 
       <main className={montserrat.className}>
-        {product.map((item) => (
+        {/* <div>
+          {product.map((productos) => {
+            <ul>
+              {product.attributes.feactures.map((feacture) => {
+                <li>{feacture.feacture.tim()}</li>;
+              })}
+            </ul>;
+          })}
+        </div> */}
+        {product.map((element) => (
           <>
             <section className={styles.ProductDetailContainer}>
               <section className={styles.ProductDetailContainer__mainConteiner}>
                 <section className={styles.ProductDetailContainer__info}>
                   <article>
                     <Image
-                      src={item.image}
+                      src={getImageProduct(element)}
                       alt="productDetail"
                       width={500}
                       height={450}
                     />
                   </article>
-
                   <article
                     className={styles.ProductDetailContainer__description}
                   >
                     <div>
-                      <h2>{item.name}</h2>
-                      <p>{item.brand}</p>
+                      <h2>{element.name}</h2>
+                      <p>{element.brand}</p>
                       <br />
                       <span
                         className={
                           styles.ProductDetailContainer__description__tag
                         }
                       >
-                        {item.tags}
+                        {element.tags}
                       </span>
                       <br />
                       <br />
-                      <p>{item.description}</p>
+                      <p>{element.description}</p>
                       <br />
-                      <p>{item.description2}</p>
+                      <p>{element.description2}</p>
                     </div>
                   </article>
                 </section>
               </section>
               <section className={styles.ProductDetailContainer__feactures}>
-                {item.feactures && item.specifications ? (
+                {element.features && element.specifications ? (
                   <article
                     className={
                       styles.ProductDetailContainer__feactures__container
                     }
                   >
                     <div>
-                      {item.feactures.length === 0 ? null : <h4>Feactures:</h4>}
+                      {element.features.length === 0 ? null : (
+                        <h4>Feactures:</h4>
+                      )}
 
                       <br />
-                      <ul className={styles.feacturesList}>
-                        {item.feactures.map((element, index) => (
-                          <div key={index}>
-                            <li key={index}>{element}</li>
-                          </div>
-                        ))}
-                      </ul>
+
+                      {element.features.map((feature) => (
+                        <>
+                          <ul key={feature.id} className={styles.feacturesList}>
+                            <li>{feature.feature}</li>
+                          </ul>
+                        </>
+                      ))}
                     </div>
                     <div
                       className={styles.ProductDetailContainer__feactures__img}
                     >
-                      {item.specifications.length === 0 ? null : (
+                      {element.specifications.length === 0 ? null : (
                         <>
                           <h4>Technical Data</h4>
                           <br />
@@ -94,12 +117,12 @@ const ProductDetailPage = () => {
                             <thead>
                               <tr>
                                 <th>Model</th>
-                                <th>{item.name}</th>
+                                <th>{element.name}</th>
                               </tr>
                             </thead>
                             <tbody className={styles.productDetail__table}>
-                              {item.specifications.map((element, index) => (
-                                <tr key={index}>
+                              {element.specifications.map((element) => (
+                                <tr key={element.id}>
                                   <td
                                     align="center"
                                     valign="middle"
@@ -148,3 +171,51 @@ const ProductDetailPage = () => {
 };
 
 export default ProductDetailPage;
+
+export async function getServerSideProps() {
+  const client = new ApolloClient({
+    uri: "https://etniapro-admin-6813ee4430db.herokuapp.com/graphql",
+    cache: new InMemoryCache({
+      addTypename: false,
+      resultCaching: false,
+    }),
+  });
+
+  const { data } = await client.query({
+    query: gql`
+      query getProduct {
+        products(pagination: { pageSize: 1000 }) {
+          data {
+            attributes {
+              name
+              brand
+              tags
+              image {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+              specifications(pagination: { pageSize: 100 }) {
+                name
+                values
+              }
+              features {
+                feature
+              }
+              description
+              description2
+            }
+          }
+        }
+      }
+    `,
+  });
+
+  return {
+    props: {
+      products: data?.products?.data,
+    },
+  };
+}

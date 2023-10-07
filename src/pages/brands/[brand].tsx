@@ -7,8 +7,11 @@ import { useRef, useState, useEffect } from "react";
 import { montserrat } from "@/styles/fonts";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import styles from "../../styles/BrandsAll.module.css";
+import { API_URL } from "../services/config";
+import { getImageProduct } from "../services/products";
+import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
-const BrandsDetail = () => {
+const BrandsDetail = ({ products }) => {
   const router = useRouter();
   const { brand } = router.query;
   const scrollRef = useRef(null);
@@ -21,7 +24,11 @@ const BrandsDetail = () => {
     return null;
   });
 
-  const product = produ.filter((element) => element.brand === brand);
+  const attributes = products.map((element) => {
+    return element.attributes;
+  });
+
+  const product = attributes.filter((element) => element.brand === brand);
 
   useEffect(() => {
     const handleWindowResize = () => {
@@ -85,11 +92,11 @@ const BrandsDetail = () => {
               {product.map((item) => (
                 <Link
                   key={item.id}
-                  href={`/products/${item.id}`}
+                  href={`/products/${item.name.replace(/ /g, "")}`}
                   className={styles.productsItem}
                 >
                   <Image
-                    src={item.image}
+                    src={getImageProduct(item)}
                     alt="img"
                     width={200}
                     height={200}
@@ -128,3 +135,51 @@ const BrandsDetail = () => {
 };
 
 export default BrandsDetail;
+
+export async function getServerSideProps() {
+  const client = new ApolloClient({
+    uri: "https://etniapro-admin-6813ee4430db.herokuapp.com/graphql",
+    cache: new InMemoryCache({
+      addTypename: false,
+      resultCaching: false,
+    }),
+  });
+
+  const { data } = await client.query({
+    query: gql`
+      query getProduct {
+        products(pagination: { pageSize: 1000 }) {
+          data {
+            attributes {
+              name
+              brand
+              tags
+              image {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+              specifications {
+                name
+                values
+              }
+              features {
+                feature
+              }
+              description
+              description2
+            }
+          }
+        }
+      }
+    `,
+  });
+
+  return {
+    props: {
+      products: data?.products?.data,
+    },
+  };
+}

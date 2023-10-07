@@ -4,20 +4,27 @@ import styles from "@/styles/ProductDetailPage.module.css";
 import { Prompt } from "next/font/google";
 import { useRouter } from "next/router";
 import { mainProducts as produ } from "../../assets/dataMainProducts";
+import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
+import { getImageProduct } from "../services/products";
 
 const prompt = Prompt({
   subsets: ["latin"],
   weight: "400",
 });
 
-const ProductMainDetail = () => {
+const ProductMainDetail = ({ products }) => {
   const router = useRouter();
+  // const { mainId } = router.query;
+
+  // const product = produ.filter((element) => element.id.toString() === mainId);
   const { mainId } = router.query;
 
-  //change clasName to original of component
-
-  const product = produ.filter((element) => element.id.toString() === mainId);
-
+  const attributes = products.map((element) => {
+    return element.attributes;
+  });
+  const product = attributes.filter(
+    (element) => element.name.replace(/ /g, "") === mainId
+  );
   return (
     <>
       <Head>
@@ -35,7 +42,7 @@ const ProductMainDetail = () => {
                 <section className={styles.ProductDetailContainer__info}>
                   <article>
                     <Image
-                      src={item.image}
+                      src={getImageProduct(item)}
                       alt="productDetail"
                       width={500}
                       height={450}
@@ -66,20 +73,20 @@ const ProductMainDetail = () => {
                 </section>
               </section>
               <section className={styles.ProductDetailContainer__feactures}>
-                {item.feactures && item.specifications ? (
+                {item.features && item.specifications ? (
                   <article
                     className={
                       styles.ProductDetailContainer__feactures__container
                     }
                   >
                     <div>
-                      {item.feactures.length === 0 ? null : <h4>Feactures:</h4>}
+                      {item.features.length === 0 ? null : <h4>Features:</h4>}
 
                       <br />
                       <ul className={styles.feacturesList}>
-                        {item.feactures.map((element, index) => (
+                        {item.features.map((element, index) => (
                           <div key={index}>
-                            <li key={index}>{element}</li>
+                            <li key={index}>{element.feature}</li>
                           </div>
                         ))}
                       </ul>
@@ -155,3 +162,51 @@ const ProductMainDetail = () => {
 };
 
 export default ProductMainDetail;
+
+export async function getServerSideProps() {
+  const client = new ApolloClient({
+    uri: "https://etniapro-admin-6813ee4430db.herokuapp.com/graphql",
+    cache: new InMemoryCache({
+      addTypename: false,
+      resultCaching: false,
+    }),
+  });
+
+  const { data } = await client.query({
+    query: gql`
+      query getMainProduct {
+        mainProducts {
+          data {
+            attributes {
+              name
+              brand
+              tags
+              image {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+              specifications(pagination: { pageSize: 100 }) {
+                name
+                values
+              }
+              features {
+                feature
+              }
+              description
+              description2
+            }
+          }
+        }
+      }
+    `,
+  });
+
+  return {
+    props: {
+      products: data?.mainProducts?.data,
+    },
+  };
+}

@@ -9,6 +9,9 @@ import { montserrat } from "@/styles/fonts";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { AiOutlineDown } from "react-icons/ai";
 import Search from "@/components/searchComponent/search";
+import { API_URL } from "../services/config";
+import { getImageProduct } from "../services/products";
+import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
 export interface ProductModel {
   id: number;
@@ -21,9 +24,12 @@ export interface ProductModel {
   description2: string;
 }
 
-const Products = () => {
+const Products = ({ products }) => {
+  // const data
   const [brand, setBrand] = useState<string>("all");
   const [checked, setChecked] = useState<boolean>(false);
+  // const [data, setData] = useState([]);
+  // console.log("🚀 ~ file: index.tsx:44 ~ Products ~ data:", data);
   const [windowSize, setWindowSize] = useState(() => {
     if (typeof window !== "undefined") {
       return window.innerWidth;
@@ -34,6 +40,9 @@ const Products = () => {
   const [bottom, setBottom] = useState<boolean>(false);
   const brandCheckboxId = useId();
   const scrollRef = useRef(null);
+  const attributes = products.map((element) => {
+    return element.attributes;
+  });
 
   useEffect(() => {
     const handleWindowResize = () => {
@@ -50,10 +59,6 @@ const Products = () => {
       "productsState",
       JSON.stringify({ brand, checked, top, bottom })
     );
-
-    // return () => {
-    //   localStorage.removeItem("productsState");
-    // };
   }, [brand, checked, top, bottom]);
 
   useEffect(() => {
@@ -94,8 +99,9 @@ const Products = () => {
     setBottom(false);
   };
 
-  const brandType = getUniqueCategory(prod, "brand");
-  const filteredProducts = filterProducts(prod);
+  const brandType = getUniqueCategory(attributes, "brand");
+
+  const filteredProducts = filterProducts(attributes);
 
   const scrollSlide = () => {
     if (windowSize >= 710 && windowSize <= 768) {
@@ -170,6 +176,7 @@ const Products = () => {
               </li>
               {brandType.map((brand, idx) => (
                 <li key={idx} className={styles.brandListItem}>
+                  {brand === "Lightshark" ? <p>Lightshark</p> : null}
                   <div className={montserrat.className}>
                     <input
                       type="radio"
@@ -198,28 +205,27 @@ const Products = () => {
             </div>
 
             <div className={styles.productsContainer} ref={scrollRef}>
-              {filteredProducts.map((product) => (
-                <div key={product.name} className={styles.productsItem}>
+              {filteredProducts.map((element) => (
+                <div key={element.id} className={styles.productsItem}>
                   <Link
-                    key={product.id}
-                    href={`/products/${product.id}`}
+                    href={`/products/${element.name.replace(/ /g, "")}`}
                     className={styles.productsLink}
                   >
                     <Image
-                      src={product.image}
-                      alt={product.name}
+                      src={getImageProduct(element)}
+                      alt={element.name}
                       width={300}
                       height={300}
                       className={styles.productImage}
-                    ></Image>
+                    />
                   </Link>
-                  <h2 className={montserrat.className}>{product.name}</h2>
-                  <p className={montserrat.className}>{product.tags}</p>
+                  <h2 className={montserrat.className}>{element.name}</h2>
+                  <p className={montserrat.className}>{element.tags}</p>
                   <br />
 
                   <Link
-                    key={product.id}
-                    href={`/products/${product.id}`}
+                    key={element.id}
+                    href={`/products/${element.name.replace(/ /g, "")}`}
                     className={styles.productsLink}
                   >
                     <button className={styles.details}>
@@ -247,3 +253,67 @@ const Products = () => {
 };
 
 export default Products;
+function dispatch(arg0: any) {
+  throw new Error("Function not implemented.");
+}
+
+// export async function getStaticProps() {
+//   const response = await fetch(`${API_URL}/products?populate=*`);
+//   const data = await response.json();
+
+//   return {
+//     props: {
+//       products: data,
+//     },
+//   };
+// }
+
+export async function getServerSideProps() {
+  const client = new ApolloClient({
+    uri: "https://etniapro-admin-6813ee4430db.herokuapp.com/graphql",
+    cache: new InMemoryCache({
+      addTypename: false,
+      resultCaching: false,
+    }),
+  });
+
+  const { data } = await client.query({
+    query: gql`
+      query getProduct {
+        products(pagination: { pageSize: 1000 }) {
+          data {
+            attributes {
+              name
+              brand
+              tags
+              image {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+              specifications {
+                name
+                values
+              }
+              features {
+                feature
+              }
+              description
+              description2
+            }
+          }
+        }
+      }
+    `,
+  });
+
+  console.log(data.products.data);
+
+  return {
+    props: {
+      products: data?.products?.data,
+    },
+  };
+}

@@ -99,7 +99,7 @@ export const mainProducts = [
       "Submaster FX size & speed.",
       "RGB & CMY color picker.",
       "Customizable user palettes.",
-      "Ultrafast cue triggering.>",
+      "Ultrafast cue triggering.",
       "Internal event scheduler.",
     ],
     specifications: [

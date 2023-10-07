@@ -313,7 +313,7 @@ export const products = [
   {
     id: 4,
     category: "Lightshark Controllers",
-    name: "LS-Nodes",
+    name: "LS-NodesLS-Nodes",
     tags: "Led, LED Effects / Special Effects, LED Video Walls, Lighting, Lightshark Controllers, LS-Nodes, Theatrical",
     image: "/assets/lightshark-img/LS-Nodes-2-removebg-preview.png",
     brand: "lightshark",
@@ -1910,7 +1910,7 @@ export const products = [
       "With an IP protection factor of 65, NEO 5 IP guarantees installations in outdoors with heavy rains, which are a very demmanded feature for this kind of surface mounted loudspeakers. Technical specs are identical to NEO 5 except for the rear connection which has been changed to a cable with the different power taps.",
     description2: "",
     feactures: [
-      "Suitable for high and low impedance installations.",
+      "Suitable for high and low impedance installations.Suitable for high and low impedance installations.",
       "IP 65",
       "Wall brackets included.",
       "Price per couple.",

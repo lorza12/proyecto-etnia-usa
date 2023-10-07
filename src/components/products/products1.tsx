@@ -5,8 +5,13 @@ import { GiCheckMark } from "react-icons/gi";
 import { mainProducts as prod } from "../../assets/dataMainProducts";
 import { montserrat } from "@/styles/fonts";
 import Search from "@/components/searchComponent/search";
+import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
+import { getImageProduct } from "@/pages/services/products";
 
-function Products() {
+function Products({ products }) {
+  const attributes = products.map((element) => {
+    return element.attributes;
+  });
   return (
     <>
       <main className={styles.main2}>
@@ -18,16 +23,17 @@ function Products() {
           </div>
 
           <div className={styles.productsContainer__products}>
-            {prod.map((product) => (
+            {attributes.map((product) => (
               <>
-                <Link href={`/mainProducts/${product.id}`}>
+                <Link href={`/mainProducts/${product.name.replace(/ /g, "")}`}>
                   <div className={styles.productsContainer__product__cart}>
                     {" "}
                     <Image
-                      src={product.image}
+                      src={getImageProduct(product)}
                       alt={product.name}
                       width={200}
                       height={150}
+                      className={styles.productImage}
                     />
                     <br />
                     <h1 className={montserrat.className}>{product.name}</h1>

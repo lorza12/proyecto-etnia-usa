@@ -11,6 +11,8 @@ import brand6 from "../../../public/assets/brands-logos/ea52129e-6176-4927-9e4e-
 import Link from "next/link";
 import { products as produ } from "../../assets/dataProducts";
 import { montserrat } from "@/styles/fonts";
+import { API_URL } from "../services/config";
+import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
 const prompt = Prompt({
   subsets: ["latin"],
@@ -21,9 +23,12 @@ const lato = Lato({
   weight: "400",
 });
 
-function BrandsAll() {
+function BrandsAll({ products }) {
+  const attributes = products.map((element) => {
+    return element.attributes;
+  });
   const filterBrands = (brand) => {
-    const lengthBrands = produ.filter((product) => {
+    const lengthBrands = attributes.filter((product) => {
       return product.brand === brand;
     });
     return lengthBrands.length;
@@ -118,3 +123,51 @@ function BrandsAll() {
 }
 
 export default BrandsAll;
+
+export async function getServerSideProps() {
+  const client = new ApolloClient({
+    uri: "https://etniapro-admin-6813ee4430db.herokuapp.com/graphql",
+    cache: new InMemoryCache({
+      addTypename: false,
+      resultCaching: false,
+    }),
+  });
+
+  const { data } = await client.query({
+    query: gql`
+      query getProduct {
+        products(pagination: { pageSize: 1000 }) {
+          data {
+            attributes {
+              name
+              brand
+              tags
+              image {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+              specifications {
+                name
+                values
+              }
+              features {
+                feature
+              }
+              description
+              description2
+            }
+          }
+        }
+      }
+    `,
+  });
+
+  return {
+    props: {
+      products: data?.products?.data,
+    },
+  };
+}
