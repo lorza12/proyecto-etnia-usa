@@ -183,7 +183,7 @@ export async function getServerSideProps() {
   const { data } = await client.query({
     query: gql`
       query getProduct {
-        products(pagination: { pageSize: 1000 }) {
+        products(pagination: { pageSize: 100 }) {
           data {
             attributes {
               name
@@ -196,7 +196,7 @@ export async function getServerSideProps() {
                   }
                 }
               }
-              specifications(pagination: { pageSize: 100 }) {
+              specifications(pagination: { pageSize: 50 }) {
                 name
                 values
               }

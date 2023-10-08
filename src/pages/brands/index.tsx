@@ -138,25 +138,7 @@ export async function getServerSideProps() {
         products(pagination: { pageSize: 1000 }) {
           data {
             attributes {
-              name
               brand
-              tags
-              image {
-                data {
-                  attributes {
-                    url
-                  }
-                }
-              }
-              specifications {
-                name
-                values
-              }
-              features {
-                feature
-              }
-              description
-              description2
             }
           }
         }

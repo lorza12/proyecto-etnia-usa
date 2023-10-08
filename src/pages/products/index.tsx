@@ -256,17 +256,6 @@ function dispatch(arg0: any) {
   throw new Error("Function not implemented.");
 }
 
-// export async function getStaticProps() {
-//   const response = await fetch(`${API_URL}/products?populate=*`);
-//   const data = await response.json();
-
-//   return {
-//     props: {
-//       products: data,
-//     },
-//   };
-// }
-
 export async function getServerSideProps() {
   const client = new ApolloClient({
     uri: "https://etniapro-admin-6813ee4430db.herokuapp.com/graphql",
@@ -279,7 +268,7 @@ export async function getServerSideProps() {
   const { data } = await client.query({
     query: gql`
       query getProduct {
-        products(pagination: { pageSize: 1000 }) {
+        products(pagination: { pageSize: 100 }) {
           data {
             attributes {
               name
@@ -292,15 +281,6 @@ export async function getServerSideProps() {
                   }
                 }
               }
-              specifications {
-                name
-                values
-              }
-              features {
-                feature
-              }
-              description
-              description2
             }
           }
         }

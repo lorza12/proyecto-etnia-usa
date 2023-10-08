@@ -45,7 +45,6 @@ export async function getServerSideProps() {
           data {
             attributes {
               name
-              brand
               tags
               image {
                 data {
@@ -54,15 +53,6 @@ export async function getServerSideProps() {
                   }
                 }
               }
-              specifications {
-                name
-                values
-              }
-              features {
-                feature
-              }
-              description
-              description2
             }
           }
         }
