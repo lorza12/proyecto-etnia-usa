@@ -62,7 +62,7 @@ function BrandsAll({ products }) {
             </article>
             <article className={styles.bransAllContainer__brand__conteiner}>
               <div className={prompt.className}>
-                <Link href={`/brands/workpro-sound`}>
+                <Link href={`/brands/workpro-sound?brand=workpro-sound`}>
                   <Image src={brand5} alt="brand3" width={200} height={60} />
                 </Link>
                 <p className={styles.bransAllContainer__brands__paragraf}>
@@ -72,7 +72,7 @@ function BrandsAll({ products }) {
             </article>
             <article className={styles.bransAllContainer__brand__conteiner}>
               <div className={prompt.className}>
-                <Link href={`/brands/lightshark`}>
+                <Link href={`/brands/lightshark?brand=lightshark`}>
                   <Image src={brand2} alt="brand2" width={230} height={40} />
                 </Link>
                 <br />
@@ -86,7 +86,7 @@ function BrandsAll({ products }) {
           <section className={styles.bransAllContainer__brands__inter}>
             <article className={styles.bransAllContainer__brand__conteiner}>
               <div className={prompt.className}>
-                <Link href={`/brands/fantek`}>
+                <Link href={`/brands/fantek?brand=fantek`}>
                   <Image src={brand4} alt="brand3" width={190} height={80} />
                 </Link>
                 <p className={styles.bransAllContainer__brands__paragraf}>
@@ -96,7 +96,7 @@ function BrandsAll({ products }) {
             </article>
             <article className={styles.bransAllContainer__brand__conteiner}>
               <div className={prompt.className}>
-                <Link href={`/brands/G-Truss`}>
+                <Link href={`/brands/G-Truss?brand=G-Truss`}>
                   <Image src={brand3} alt="brand3" width={200} height={80} />
                 </Link>
                 <p className={styles.bransAllContainer__brands__paragraf}>
@@ -106,7 +106,7 @@ function BrandsAll({ products }) {
             </article>
             <article className={styles.bransAllContainer__brand__conteiner}>
               <div className={prompt.className}>
-                <Link href={`/brands/workpro-lifters`}>
+                <Link href={`/brands/workpro-lifters?brand=workpro-lifters`}>
                   <Image src={brand1} alt="brand1" width={210} height={55} />
                 </Link>
                 <p className={styles.bransAllContainer__brands__paragraf}>

@@ -7,20 +7,10 @@ import { montserrat } from "@/styles/fonts";
 import { getImageProduct } from "../../services/products";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
-const ProductDetailPage = ({ products }) => {
-  console.log(
-    "🚀 ~ file: [name].tsx:12 ~ ProductDetailPage ~ products:",
-    products
-  );
-  const router = useRouter();
-  const { name } = router.query;
-
-  const attributes = products.map((element) => {
+const ProductDetailPage = ({ product }) => {
+  const attributes = product.map((element) => {
     return element.attributes;
   });
-  const product = attributes.filter(
-    (element) => element.name.replace(/ /g, "") === name
-  );
 
   return (
     <>
@@ -32,16 +22,7 @@ const ProductDetailPage = ({ products }) => {
       </Head>
 
       <main className={montserrat.className}>
-        {/* <div>
-          {product.map((productos) => {
-            <ul>
-              {product.attributes.feactures.map((feacture) => {
-                <li>{feacture.feacture.tim()}</li>;
-              })}
-            </ul>;
-          })}
-        </div> */}
-        {product.map((element) => (
+        {attributes.map((element) => (
           <>
             <section className={styles.ProductDetailContainer}>
               <section className={styles.ProductDetailContainer__mainConteiner}>
@@ -86,7 +67,7 @@ const ProductDetailPage = ({ products }) => {
                   >
                     <div>
                       {element.features.length === 0 ? null : (
-                        <h4>Feactures:</h4>
+                        <h4>Features:</h4>
                       )}
 
                       <br />
@@ -171,7 +152,9 @@ const ProductDetailPage = ({ products }) => {
 
 export default ProductDetailPage;
 
-export async function getServerSideProps() {
+export async function getServerSideProps(context) {
+  const { name } = context.query;
+
   const client = new ApolloClient({
     uri: "https://etniapro-admin-6813ee4430db.herokuapp.com/graphql",
     cache: new InMemoryCache({
@@ -182,8 +165,8 @@ export async function getServerSideProps() {
 
   const { data } = await client.query({
     query: gql`
-      query getProduct {
-        products(pagination: { pageSize: 100 }) {
+      query getProduct($productName: String!) {
+        products(filters: { name: { eq: $productName } }) {
           data {
             attributes {
               name
@@ -210,11 +193,14 @@ export async function getServerSideProps() {
         }
       }
     `,
+    variables: {
+      productName: name,
+    },
   });
 
   return {
     props: {
-      products: data?.products?.data,
+      product: data?.products?.data,
     },
   };
 }

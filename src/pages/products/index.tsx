@@ -202,12 +202,11 @@ const Products = ({ products }) => {
                 <BsChevronLeft />
               </button>
             </div>
-
             <div className={styles.productsContainer} ref={scrollRef}>
               {filteredProducts.map((element) => (
                 <div key={element.id} className={styles.productsItem}>
                   <Link
-                    href={`/products/${element.name.replace(/ /g, "")}`}
+                    href={`/products/${element.name}?name=${element.name}`}
                     className={styles.productsLink}
                   >
                     <Image
@@ -224,7 +223,7 @@ const Products = ({ products }) => {
 
                   <Link
                     key={element.id}
-                    href={`/products/${element.name.replace(/ /g, "")}`}
+                    href={`/products/${element.name}?name=${element.name}`}
                     className={styles.productsLink}
                   >
                     <button className={styles.details}>
@@ -268,8 +267,9 @@ export async function getServerSideProps() {
   const { data } = await client.query({
     query: gql`
       query getProduct {
-        products(pagination: { pageSize: 100 }) {
+        products(pagination: { page: 1, pageSize: 100 }) {
           data {
+            id
             attributes {
               name
               brand

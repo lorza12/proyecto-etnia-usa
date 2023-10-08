@@ -11,8 +11,7 @@ import { getImageProduct } from "../../services/products";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
 const BrandsDetail = ({ products }) => {
-  const router = useRouter();
-  const { brand } = router.query;
+  console.log("🚀 ~ file: [brand].tsx:14 ~ BrandsDetail ~ products:", products);
   const scrollRef = useRef(null);
   const [top, setTop] = useState(true);
   const [bottom, setBottom] = useState(false);
@@ -26,8 +25,10 @@ const BrandsDetail = ({ products }) => {
   const attributes = products.map((element) => {
     return element.attributes;
   });
-
-  const product = attributes.filter((element) => element.brand === brand);
+  const brand = attributes.map((element) => {
+    return element.brand;
+  });
+  console.log("🚀 ~ file: [brand].tsx:31 ~ brand ~ brand:", brand);
 
   useEffect(() => {
     const handleWindowResize = () => {
@@ -72,8 +73,9 @@ const BrandsDetail = ({ products }) => {
       <main className={styles.productsContainer__main}>
         <section>
           <h1 className={`${montserrat.className} ${styles.title}`}>
-            Product details {brand}
+            Product details {brand[0]}
           </h1>
+          ;
         </section>
         <section>
           <div className={styles.productsGlobalContainer}>
@@ -88,10 +90,10 @@ const BrandsDetail = ({ products }) => {
             </div>
 
             <div className={styles.productsContainer} ref={scrollRef}>
-              {product.map((item) => (
+              {attributes.map((item) => (
                 <Link
                   key={item.id}
-                  href={`/products/${item.name.replace(/ /g, "")}`}
+                  href={`/products/${item.name}?name=${item.name}`}
                   className={styles.productsItem}
                 >
                   <Image
@@ -135,7 +137,8 @@ const BrandsDetail = ({ products }) => {
 
 export default BrandsDetail;
 
-export async function getServerSideProps() {
+export async function getServerSideProps(context) {
+  const { brand } = context.query;
   const client = new ApolloClient({
     uri: "https://etniapro-admin-6813ee4430db.herokuapp.com/graphql",
     cache: new InMemoryCache({
@@ -146,8 +149,8 @@ export async function getServerSideProps() {
 
   const { data } = await client.query({
     query: gql`
-      query getProduct {
-        products(pagination: { pageSize: 100 }) {
+      query getProduct($brandName: String!) {
+        products(filters: { brand: { eq: $brandName } }) {
           data {
             attributes {
               name
@@ -165,6 +168,9 @@ export async function getServerSideProps() {
         }
       }
     `,
+    variables: {
+      brandName: brand,
+    },
   });
 
   return {

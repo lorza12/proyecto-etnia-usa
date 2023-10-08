@@ -313,7 +313,7 @@ export const products = [
   {
     id: 4,
     category: "Lightshark Controllers",
-    name: "LS-NodesLS-Nodes",
+    name: "LS-Nodes",
     tags: "Led, LED Effects / Special Effects, LED Video Walls, Lighting, Lightshark Controllers, LS-Nodes, Theatrical",
     image: "/assets/lightshark-img/LS-Nodes-2-removebg-preview.png",
     brand: "lightshark",

@@ -13,16 +13,10 @@ const prompt = Prompt({
 });
 
 const ProductMainDetail = ({ products }) => {
-  const router = useRouter();
-
-  const { mainId } = router.query;
-
   const attributes = products.map((element) => {
     return element.attributes;
   });
-  const product = attributes.filter(
-    (element) => element.name.replace(/ /g, "") === mainId
-  );
+
   return (
     <>
       <Head>
@@ -33,7 +27,7 @@ const ProductMainDetail = ({ products }) => {
       </Head>
 
       <main className={prompt.className}>
-        {product.map((item) => (
+        {attributes.map((item) => (
           <>
             <section className={styles.ProductDetailContainer}>
               <section className={styles.ProductDetailContainer__mainConteiner}>
@@ -161,7 +155,8 @@ const ProductMainDetail = ({ products }) => {
 
 export default ProductMainDetail;
 
-export async function getServerSideProps() {
+export async function getServerSideProps(context) {
+  const { name } = context.query;
   const client = new ApolloClient({
     uri: "https://etniapro-admin-6813ee4430db.herokuapp.com/graphql",
     cache: new InMemoryCache({
@@ -172,8 +167,8 @@ export async function getServerSideProps() {
 
   const { data } = await client.query({
     query: gql`
-      query getMainProduct {
-        mainProducts {
+      query getMainProduct($productName: String!) {
+        mainProducts(filters: { name: { eq: $productName } }) {
           data {
             attributes {
               name
@@ -200,6 +195,9 @@ export async function getServerSideProps() {
         }
       }
     `,
+    variables: {
+      productName: name,
+    },
   });
 
   return {

@@ -21,7 +21,9 @@ function Products({ products }) {
           <div className={styles.productsContainer__products}>
             {attributes.map((product) => (
               <>
-                <Link href={`/mainProducts/${product.name.replace(/ /g, "")}`}>
+                <Link
+                  href={`/mainProducts/${product.name}?name=${product.name}`}
+                >
                   <div className={styles.productsContainer__product__cart}>
                     {" "}
                     <Image
