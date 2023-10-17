@@ -1,7 +1,7 @@
 import styles from "@/styles/Products.module.css";
 import Image from "next/image";
 import Link from "next/link";
-// import { mainProducts as prod } from "../../assets/dataMainProducts";
+import { mainProducts as prod } from "../../assets/dataMainProducts";
 import { montserrat } from "@/styles/fonts";
 import { getImageProduct } from "@/services/products";
 function Products({ products }) {
@@ -19,25 +19,26 @@ function Products({ products }) {
           </div>
 
           <div className={styles.productsContainer__products}>
-            {attributes.map((product) => (
+            {prod.map((product) => (
               <>
-                <Link
+                {/* <Link
                   href={`/mainProducts/${product.name}?name=${product.name}`}
-                >
-                  <div className={styles.productsContainer__product__cart}>
-                    {" "}
-                    <Image
-                      src={getImageProduct(product)}
-                      alt={product.name}
-                      width={200}
-                      height={150}
-                      className={styles.productImage}
-                    />
-                    <br />
-                    <h1 className={montserrat.className}>{product.name}</h1>
-                    <p className={montserrat.className}>{product.tags}</p>
-                  </div>
-                </Link>
+                > */}
+                <div className={styles.productsContainer__product__cart}>
+                  {" "}
+                  <Image
+                    // src={getImageProduct(product)}
+                    src={product.image}
+                    alt={product.name}
+                    width={200}
+                    height={150}
+                    className={styles.productImage}
+                  />
+                  <br />
+                  <h1 className={montserrat.className}>{product.name}</h1>
+                  <p className={montserrat.className}>{product.tags}</p>
+                </div>
+                {/* </Link> */}
               </>
             ))}
           </div>
