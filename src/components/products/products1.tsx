@@ -4,10 +4,11 @@ import Link from "next/link";
 import { mainProducts as prod } from "../../assets/dataMainProducts";
 import { montserrat } from "@/styles/fonts";
 import { getImageProduct } from "@/services/products";
-function Products() {
+function Products({ products }) {
   // const attributes = products.map((element) => {
   //   return element.attributes;
   // });
+
   return (
     <>
       <main className={styles.main2}>
@@ -17,7 +18,6 @@ function Products() {
               <h1>/ OUR PRODUCTS /</h1>
             </div>
           </div>
-
           <div className={styles.productsContainer__products}>
             {prod.map((product) => (
               <>

@@ -6,7 +6,7 @@ import Brands from "@/components/brands/Brands";
 import Search from "@/components/searchComponent/search";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
-function Home() {
+function Home({ products }) {
   return (
     <>
       <Head>
@@ -21,7 +21,7 @@ function Home() {
       <Search />
       <Banner />
       <Brands />
-      <Products />
+      <Products products={products} />
       <KnowUs />
     </>
   );
@@ -29,40 +29,40 @@ function Home() {
 
 export default Home;
 
-// export async function getServerSideProps() {
-//   const client = new ApolloClient({
-//     uri: "https://etniapro-admin-6813ee4430db.herokuapp.com/graphql",
-//     cache: new InMemoryCache({
-//       addTypename: false,
-//       resultCaching: false,
-//     }),
-//   });
+export async function getServerSideProps() {
+  const client = new ApolloClient({
+    uri: "https://etniapro-admin-6813ee4430db.herokuapp.com/graphql",
+    cache: new InMemoryCache({
+      addTypename: false,
+      resultCaching: false,
+    }),
+  });
 
-//   const { data } = await client.query({
-//     query: gql`
-//       query getMainProduct {
-//         mainProducts {
-//           data {
-//             attributes {
-//               name
-//               tags
-//               image {
-//                 data {
-//                   attributes {
-//                     url
-//                   }
-//                 }
-//               }
-//             }
-//           }
-//         }
-//       }
-//     `,
-//   });
+  const { data } = await client.query({
+    query: gql`
+      query getMainProduct {
+        homeProducts {
+          data {
+            attributes {
+              name
+              tags
+              image {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    `,
+  });
 
-//   return {
-//     props: {
-//       products: data?.mainProducts?.data,
-//     },
-//   };
-// }
+  return {
+    props: {
+      products: data?.homeProducts?.data,
+    },
+  };
+}
