@@ -168,7 +168,7 @@ export async function getServerSideProps(context) {
   const { data } = await client.query({
     query: gql`
       query getMainProduct($productName: String!) {
-        mainProducts(filters: { name: { eq: $productName } }) {
+        homeProducts(filters: { name: { eq: $productName } }) {
           data {
             attributes {
               name
@@ -202,7 +202,7 @@ export async function getServerSideProps(context) {
 
   return {
     props: {
-      products: data?.mainProducts?.data,
+      products: data?.homeProducts?.data,
     },
   };
 }

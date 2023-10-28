@@ -24,6 +24,7 @@ export interface ProductModel {
 }
 
 const Products = ({ products }) => {
+  console.log("🚀 ~ file: index.tsx:27 ~ Products ~ products:", products);
   // const data
   const [brand, setBrand] = useState<string>("all");
   const [checked, setChecked] = useState<boolean>(false);
@@ -274,6 +275,9 @@ export async function getServerSideProps() {
               name
               brand
               tags
+              features {
+                feature
+              }
               image {
                 data {
                   attributes {
