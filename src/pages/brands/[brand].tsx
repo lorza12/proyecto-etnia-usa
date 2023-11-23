@@ -11,7 +11,6 @@ import { getImageProduct } from "../../services/products";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
 const BrandsDetail = ({ products }) => {
-  console.log("🚀 ~ file: [brand].tsx:14 ~ BrandsDetail ~ products:", products);
   const scrollRef = useRef(null);
   const [top, setTop] = useState(true);
   const [bottom, setBottom] = useState(false);
@@ -28,7 +27,6 @@ const BrandsDetail = ({ products }) => {
   const brand = attributes.map((element) => {
     return element.brand;
   });
-  console.log("🚀 ~ file: [brand].tsx:31 ~ brand ~ brand:", brand);
 
   useEffect(() => {
     const handleWindowResize = () => {
@@ -73,7 +71,7 @@ const BrandsDetail = ({ products }) => {
       <main className={styles.productsContainer__main}>
         <section>
           <h1 className={`${montserrat.className} ${styles.title}`}>
-            Product details {brand[0]}
+            / {brand[0]} /
           </h1>
           ;
         </section>
