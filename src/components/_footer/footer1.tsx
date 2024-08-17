@@ -6,7 +6,7 @@ import { montserrat } from "@/styles/fonts";
 
 function Footer() {
   const googleMapsUrl =
-    "https://www.google.com/maps/place/10400+W+McNab+Rd,+Tamarac,+FL+33321,+EE.+UU./@26.2075532,-80.2887334,17z/data=!4m6!3m5!1s0x88d90f42a34a120f:0xaa4da0f6e6cf93bb!8m2!3d26.2077165!4d-80.2888942!16s%2Fg%2F11c5jmn9__?hl=es&entry=ttu";
+    "https://www.google.com/maps/place/4600+36th+St+d,+Orlando,+FL+32811,+EE.+UU./@28.5033309,-81.4477134,15.25z/data=!4m5!3m4!1s0x88e7794dfea3bd53:0x3360aa92cfe49f31!8m2!3d28.5019636!4d-81.439199?entry=ttu";
 
   const facebookUrl = "https://es-la.facebook.com/";
 
@@ -17,7 +17,7 @@ function Footer() {
           <section className={styles.footerContainer__section1}>
             <article className={styles.footerContainer__section1__inf}>
               <h1>SHOW ROOM LOCATION</h1>
-              <p>10400 W McNab Rd Tamarac, Fl 33321</p>
+              <p>4600 36th St d, Orlando, FL 32811, EE. UU.</p>
               <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer">
                 <TbMapSearch fontSize={19} /> &nbsp;
                 <span className={styles.subrayado}>See map</span>
