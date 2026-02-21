@@ -53,7 +53,7 @@ const Products = ({ products }) => {
   useEffect(() => {
     localStorage.setItem(
       "productsState",
-      JSON.stringify({ brand, checked, top, bottom })
+      JSON.stringify({ brand, checked, top, bottom }),
     );
   }, [brand, checked, top, bottom]);
 
@@ -113,7 +113,7 @@ const Products = ({ products }) => {
     const scrollPosition = (scrollRef.current.scrollLeft += scrollOffset);
     const scrollToTop =
       Math.floor(
-        scrollRef.current.scrollWidth - (scrollRef.current.scrollLeft + 1)
+        scrollRef.current.scrollWidth - (scrollRef.current.scrollLeft + 1),
       ) <= scrollRef.current.clientWidth;
     const buttonLeft = scrollPosition <= 300 ? true : false;
     setBottom(scrollToTop);
@@ -254,7 +254,7 @@ function dispatch(arg0: any) {
 
 export async function getServerSideProps() {
   const client = new ApolloClient({
-    uri: "https://etniapro-admin-6813ee4430db.herokuapp.com/graphql",
+    uri: "https://etnia-pro-ded8cbbd3346.herokuapp.com/graphql",
     cache: new InMemoryCache({
       addTypename: false,
       resultCaching: false,

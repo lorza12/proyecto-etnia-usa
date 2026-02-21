@@ -125,7 +125,7 @@ export default BrandsAll;
 
 export async function getServerSideProps() {
   const client = new ApolloClient({
-    uri: "https://etniapro-admin-6813ee4430db.herokuapp.com/graphql",
+    uri: "https://etnia-pro-ded8cbbd3346.herokuapp.com/graphql",
     cache: new InMemoryCache({
       addTypename: false,
       resultCaching: false,

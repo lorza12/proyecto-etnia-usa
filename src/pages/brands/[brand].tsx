@@ -52,7 +52,7 @@ const BrandsDetail = ({ products }) => {
     const scrollPosition = (scrollRef.current.scrollLeft += scrollOffset);
     const scrollToTop =
       Math.floor(
-        scrollRef.current.scrollWidth - (scrollRef.current.scrollLeft + 1)
+        scrollRef.current.scrollWidth - (scrollRef.current.scrollLeft + 1),
       ) <= scrollRef.current.clientWidth;
     const buttonLeft = scrollPosition <= 300 ? true : false;
     setBottom(scrollToTop);
@@ -138,7 +138,7 @@ export default BrandsDetail;
 export async function getServerSideProps(context) {
   const { brand } = context.query;
   const client = new ApolloClient({
-    uri: "https://etniapro-admin-6813ee4430db.herokuapp.com/graphql",
+    uri: "https://etnia-pro-ded8cbbd3346.herokuapp.com/graphql",
     cache: new InMemoryCache({
       addTypename: false,
       resultCaching: false,
